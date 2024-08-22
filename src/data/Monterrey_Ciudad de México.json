@@ -1,0 +1,3458 @@
+{
+    "data": [
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B12",
+                "delay": 10,
+                "scheduled": "2024-08-22T20:16:00+00:00",
+                "estimated": "2024-08-22T20:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T22:05:00+00:00",
+                "estimated": "2024-08-22T22:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6252",
+                "iata": "WS6252",
+                "icao": "WJA6252",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "957",
+                    "flight_iata": "am957",
+                    "flight_icao": "amx957"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": "9",
+                "delay": 14,
+                "scheduled": "2024-08-22T06:20:00+00:00",
+                "estimated": "2024-08-22T06:20:00+00:00",
+                "actual": "2024-08-22T06:33:00+00:00",
+                "estimated_runway": "2024-08-22T06:33:00+00:00",
+                "actual_runway": "2024-08-22T06:33:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T08:00:00+00:00",
+                "estimated": "2024-08-22T08:00:00+00:00",
+                "actual": "2024-08-22T07:37:00+00:00",
+                "estimated_runway": "2024-08-22T07:37:00+00:00",
+                "actual_runway": "2024-08-22T07:37:00+00:00"
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1355",
+                "iata": "VB1355",
+                "icao": "VIV1355",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-VXE",
+                "iata": "A21N",
+                "icao": "A21N",
+                "icao24": "0D0E5A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 10,
+                "scheduled": "2024-08-22T18:16:00+00:00",
+                "estimated": "2024-08-22T18:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T20:05:00+00:00",
+                "estimated": "2024-08-22T20:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air France",
+                "iata": "AF",
+                "icao": "AFR"
+            },
+            "flight": {
+                "number": "3406",
+                "iata": "AF3406",
+                "icao": "AFR3406",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "949",
+                    "flight_iata": "am949",
+                    "flight_icao": "amx949"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B12",
+                "delay": 10,
+                "scheduled": "2024-08-22T17:21:00+00:00",
+                "estimated": "2024-08-22T17:21:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T19:10:00+00:00",
+                "estimated": "2024-08-22T19:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air France",
+                "iata": "AF",
+                "icao": "AFR"
+            },
+            "flight": {
+                "number": "3411",
+                "iata": "AF3411",
+                "icao": "AFR3411",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "945",
+                    "flight_iata": "am945",
+                    "flight_icao": "amx945"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B10",
+                "delay": 33,
+                "scheduled": "2024-08-22T14:30:00+00:00",
+                "estimated": "2024-08-22T14:30:00+00:00",
+                "actual": "2024-08-22T15:03:00+00:00",
+                "estimated_runway": "2024-08-22T15:03:00+00:00",
+                "actual_runway": "2024-08-22T15:03:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T16:25:00+00:00",
+                "estimated": "2024-08-22T16:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air France",
+                "iata": "AF",
+                "icao": "AFR"
+            },
+            "flight": {
+                "number": "3430",
+                "iata": "AF3430",
+                "icao": "AFR3430",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "933",
+                    "flight_iata": "am933",
+                    "flight_icao": "amx933"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 5,
+                "scheduled": "2024-08-22T07:20:00+00:00",
+                "estimated": "2024-08-22T07:20:00+00:00",
+                "actual": "2024-08-22T07:24:00+00:00",
+                "estimated_runway": "2024-08-22T07:24:00+00:00",
+                "actual_runway": "2024-08-22T07:24:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T08:55:00+00:00",
+                "estimated": "2024-08-22T08:55:00+00:00",
+                "actual": "2024-08-22T08:30:00+00:00",
+                "estimated_runway": "2024-08-22T08:30:00+00:00",
+                "actual_runway": "2024-08-22T08:30:00+00:00"
+            },
+            "airline": {
+                "name": "Volaris",
+                "iata": "Y4",
+                "icao": "VOI"
+            },
+            "flight": {
+                "number": "241",
+                "iata": "Y4241",
+                "icao": "VOI241",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-VRH",
+                "iata": "A20N",
+                "icao": "A20N",
+                "icao24": "0D0B44"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 13,
+                "scheduled": "2024-08-22T13:36:00+00:00",
+                "estimated": "2024-08-22T13:36:00+00:00",
+                "actual": "2024-08-22T13:48:00+00:00",
+                "estimated_runway": "2024-08-22T13:48:00+00:00",
+                "actual_runway": "2024-08-22T13:48:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "65",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T15:25:00+00:00",
+                "estimated": "2024-08-22T15:25:00+00:00",
+                "actual": "2024-08-22T15:07:00+00:00",
+                "estimated_runway": "2024-08-22T15:07:00+00:00",
+                "actual_runway": "2024-08-22T15:07:00+00:00"
+            },
+            "airline": {
+                "name": "Air France",
+                "iata": "AF",
+                "icao": "AFR"
+            },
+            "flight": {
+                "number": "6067",
+                "iata": "AF6067",
+                "icao": "AFR6067",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "931",
+                    "flight_iata": "am931",
+                    "flight_icao": "amx931"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B14",
+                "delay": 36,
+                "scheduled": "2024-08-22T12:19:00+00:00",
+                "estimated": "2024-08-22T12:19:00+00:00",
+                "actual": "2024-08-22T12:54:00+00:00",
+                "estimated_runway": "2024-08-22T12:54:00+00:00",
+                "actual_runway": "2024-08-22T12:54:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T14:05:00+00:00",
+                "estimated": "2024-08-22T14:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air France",
+                "iata": "AF",
+                "icao": "AFR"
+            },
+            "flight": {
+                "number": "8101",
+                "iata": "AF8101",
+                "icao": "AFR8101",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "927",
+                    "flight_iata": "am927",
+                    "flight_icao": "amx927"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": null,
+                "scheduled": "2024-08-22T19:11:00+00:00",
+                "estimated": "2024-08-22T19:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T21:00:00+00:00",
+                "estimated": "2024-08-22T21:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6250",
+                "iata": "WS6250",
+                "icao": "WJA6250",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "953",
+                    "flight_iata": "am953",
+                    "flight_icao": "amx953"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": 11,
+                "scheduled": "2024-08-22T05:46:00+00:00",
+                "estimated": "2024-08-22T05:46:00+00:00",
+                "actual": "2024-08-22T05:56:00+00:00",
+                "estimated_runway": "2024-08-22T05:56:00+00:00",
+                "actual_runway": "2024-08-22T05:56:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "78",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T07:35:00+00:00",
+                "estimated": "2024-08-22T07:35:00+00:00",
+                "actual": "2024-08-22T07:02:00+00:00",
+                "estimated_runway": "2024-08-22T07:02:00+00:00",
+                "actual_runway": "2024-08-22T07:02:00+00:00"
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "901",
+                "iata": "AM901",
+                "icao": "AMX901",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-CCM",
+                "iata": "B38M",
+                "icao": "B38M",
+                "icao24": "0D0C7C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B6",
+                "delay": 19,
+                "scheduled": "2024-08-22T06:33:00+00:00",
+                "estimated": "2024-08-22T06:33:00+00:00",
+                "actual": "2024-08-22T06:52:00+00:00",
+                "estimated_runway": "2024-08-22T06:52:00+00:00",
+                "actual_runway": "2024-08-22T06:52:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "57",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T08:20:00+00:00",
+                "estimated": "2024-08-22T08:20:00+00:00",
+                "actual": "2024-08-22T07:57:00+00:00",
+                "estimated_runway": "2024-08-22T07:57:00+00:00",
+                "actual_runway": "2024-08-22T07:57:00+00:00"
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "903",
+                "iata": "AM903",
+                "icao": "AMX903",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-JGQ",
+                "iata": "B39M",
+                "icao": "B39M",
+                "icao24": "0D0DE7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B14",
+                "delay": 17,
+                "scheduled": "2024-08-22T07:13:00+00:00",
+                "estimated": "2024-08-22T07:13:00+00:00",
+                "actual": "2024-08-22T07:30:00+00:00",
+                "estimated_runway": "2024-08-22T07:30:00+00:00",
+                "actual_runway": "2024-08-22T07:30:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "78",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T09:00:00+00:00",
+                "estimated": "2024-08-22T09:00:00+00:00",
+                "actual": "2024-08-22T08:34:00+00:00",
+                "estimated_runway": "2024-08-22T08:34:00+00:00",
+                "actual_runway": "2024-08-22T08:34:00+00:00"
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "905",
+                "iata": "AM905",
+                "icao": "AMX905",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-EBN",
+                "iata": "B738",
+                "icao": "B738",
+                "icao24": "0D0DA5"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": 13,
+                "scheduled": "2024-08-22T21:11:00+00:00",
+                "estimated": "2024-08-22T21:11:00+00:00",
+                "actual": "2024-08-22T13:48:00+00:00",
+                "estimated_runway": "2024-08-22T13:48:00+00:00",
+                "actual_runway": "2024-08-22T13:48:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T23:00:00+00:00",
+                "estimated": "2024-08-22T23:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6246",
+                "iata": "WS6246",
+                "icao": "WJA6246",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "961",
+                    "flight_iata": "am961",
+                    "flight_icao": "amx961"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 12,
+                "scheduled": "2024-08-22T08:18:00+00:00",
+                "estimated": "2024-08-22T08:18:00+00:00",
+                "actual": "2024-08-22T08:29:00+00:00",
+                "estimated_runway": "2024-08-22T08:29:00+00:00",
+                "actual_runway": "2024-08-22T08:29:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T10:05:00+00:00",
+                "estimated": "2024-08-22T10:05:00+00:00",
+                "actual": "2024-08-22T09:37:00+00:00",
+                "estimated_runway": "2024-08-22T09:37:00+00:00",
+                "actual_runway": "2024-08-22T09:37:00+00:00"
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "909",
+                "iata": "AM909",
+                "icao": "AMX909",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-BBB",
+                "iata": "B39M",
+                "icao": "B39M",
+                "icao24": "0D0BCE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B6",
+                "delay": 13,
+                "scheduled": "2024-08-22T09:13:00+00:00",
+                "estimated": "2024-08-22T09:13:00+00:00",
+                "actual": "2024-08-22T09:25:00+00:00",
+                "estimated_runway": "2024-08-22T09:25:00+00:00",
+                "actual_runway": "2024-08-22T09:25:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "67",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T11:00:00+00:00",
+                "estimated": "2024-08-22T11:00:00+00:00",
+                "actual": "2024-08-22T10:31:00+00:00",
+                "estimated_runway": "2024-08-22T10:31:00+00:00",
+                "actual_runway": "2024-08-22T10:31:00+00:00"
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "913",
+                "iata": "AM913",
+                "icao": "AMX913",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "N974AM",
+                "iata": "B39M",
+                "icao": "B39M",
+                "icao24": "AD928D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 20,
+                "scheduled": "2024-08-22T10:50:00+00:00",
+                "estimated": "2024-08-22T10:50:00+00:00",
+                "actual": "2024-08-22T11:10:00+00:00",
+                "estimated_runway": "2024-08-22T11:10:00+00:00",
+                "actual_runway": "2024-08-22T11:10:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "76",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T12:40:00+00:00",
+                "estimated": "2024-08-22T12:40:00+00:00",
+                "actual": "2024-08-22T12:15:00+00:00",
+                "estimated_runway": "2024-08-22T12:15:00+00:00",
+                "actual_runway": "2024-08-22T12:15:00+00:00"
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "921",
+                "iata": "AM921",
+                "icao": "AMX921",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-GNS",
+                "iata": "B38M",
+                "icao": "B38M",
+                "icao24": "0D0EB6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B14",
+                "delay": 36,
+                "scheduled": "2024-08-22T12:19:00+00:00",
+                "estimated": "2024-08-22T12:19:00+00:00",
+                "actual": "2024-08-22T12:54:00+00:00",
+                "estimated_runway": "2024-08-22T12:54:00+00:00",
+                "actual_runway": "2024-08-22T12:54:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "76",
+                "baggage": null,
+                "delay": 3,
+                "scheduled": "2024-08-22T14:05:00+00:00",
+                "estimated": "2024-08-22T14:05:00+00:00",
+                "actual": "2024-08-22T14:02:00+00:00",
+                "estimated_runway": "2024-08-22T14:02:00+00:00",
+                "actual_runway": "2024-08-22T14:02:00+00:00"
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "927",
+                "iata": "AM927",
+                "icao": "AMX927",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-HSB",
+                "iata": "B39M",
+                "icao": "B39M",
+                "icao24": "0D0BB3"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 13,
+                "scheduled": "2024-08-22T13:36:00+00:00",
+                "estimated": "2024-08-22T13:36:00+00:00",
+                "actual": "2024-08-22T13:48:00+00:00",
+                "estimated_runway": "2024-08-22T13:48:00+00:00",
+                "actual_runway": "2024-08-22T13:48:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "65",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T15:25:00+00:00",
+                "estimated": "2024-08-22T15:25:00+00:00",
+                "actual": "2024-08-22T15:07:00+00:00",
+                "estimated_runway": "2024-08-22T15:07:00+00:00",
+                "actual_runway": "2024-08-22T15:07:00+00:00"
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "931",
+                "iata": "AM931",
+                "icao": "AMX931",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-MIJ",
+                "iata": "B39M",
+                "icao": "B39M",
+                "icao24": "0D0E20"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B10",
+                "delay": 33,
+                "scheduled": "2024-08-22T14:30:00+00:00",
+                "estimated": "2024-08-22T14:30:00+00:00",
+                "actual": "2024-08-22T15:03:00+00:00",
+                "estimated_runway": "2024-08-22T15:03:00+00:00",
+                "actual_runway": "2024-08-22T15:03:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T16:25:00+00:00",
+                "estimated": "2024-08-22T16:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "933",
+                "iata": "AM933",
+                "icao": "AMX933",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-ADG",
+                "iata": "B789",
+                "icao": "B789",
+                "icao24": "0D0A9A"
+            },
+            "live": {
+                "updated": "2024-08-22T21:49:32+00:00",
+                "latitude": 20.2213,
+                "longitude": -99.7586,
+                "altitude": 6812.28,
+                "direction": 174,
+                "speed_horizontal": 622.272,
+                "speed_vertical": 0,
+                "is_ground": false
+            }
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B6",
+                "delay": null,
+                "scheduled": "2024-08-22T15:41:00+00:00",
+                "estimated": "2024-08-22T15:41:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T17:30:00+00:00",
+                "estimated": "2024-08-22T17:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "939",
+                "iata": "AM939",
+                "icao": "AMX939",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 10,
+                "scheduled": "2024-08-22T20:20:00+00:00",
+                "estimated": "2024-08-22T20:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T21:55:00+00:00",
+                "estimated": "2024-08-22T21:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1143",
+                "iata": "VB1143",
+                "icao": "VIV1143",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B12",
+                "delay": 10,
+                "scheduled": "2024-08-22T17:21:00+00:00",
+                "estimated": "2024-08-22T17:21:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T19:10:00+00:00",
+                "estimated": "2024-08-22T19:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "945",
+                "iata": "AM945",
+                "icao": "AMX945",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 10,
+                "scheduled": "2024-08-22T18:16:00+00:00",
+                "estimated": "2024-08-22T18:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T20:05:00+00:00",
+                "estimated": "2024-08-22T20:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "949",
+                "iata": "AM949",
+                "icao": "AMX949",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": null,
+                "scheduled": "2024-08-22T19:11:00+00:00",
+                "estimated": "2024-08-22T19:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T21:00:00+00:00",
+                "estimated": "2024-08-22T21:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "953",
+                "iata": "AM953",
+                "icao": "AMX953",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B12",
+                "delay": 10,
+                "scheduled": "2024-08-22T20:16:00+00:00",
+                "estimated": "2024-08-22T20:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T22:05:00+00:00",
+                "estimated": "2024-08-22T22:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "957",
+                "iata": "AM957",
+                "icao": "AMX957",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": 10,
+                "scheduled": "2024-08-22T21:11:00+00:00",
+                "estimated": "2024-08-22T21:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T23:00:00+00:00",
+                "estimated": "2024-08-22T23:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "961",
+                "iata": "AM961",
+                "icao": "AMX961",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": 11,
+                "scheduled": "2024-08-22T05:46:00+00:00",
+                "estimated": "2024-08-22T05:46:00+00:00",
+                "actual": "2024-08-22T05:56:00+00:00",
+                "estimated_runway": "2024-08-22T05:56:00+00:00",
+                "actual_runway": "2024-08-22T05:56:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "78",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T07:35:00+00:00",
+                "estimated": "2024-08-22T07:35:00+00:00",
+                "actual": "2024-08-22T07:02:00+00:00",
+                "estimated_runway": "2024-08-22T07:02:00+00:00",
+                "actual_runway": "2024-08-22T07:02:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6254",
+                "iata": "WS6254",
+                "icao": "WJA6254",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "901",
+                    "flight_iata": "am901",
+                    "flight_icao": "amx901"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": 11,
+                "scheduled": "2024-08-22T05:46:00+00:00",
+                "estimated": "2024-08-22T05:46:00+00:00",
+                "actual": "2024-08-22T05:56:00+00:00",
+                "estimated_runway": "2024-08-22T05:56:00+00:00",
+                "actual_runway": "2024-08-22T05:56:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "78",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T07:35:00+00:00",
+                "estimated": "2024-08-22T07:35:00+00:00",
+                "actual": "2024-08-22T07:02:00+00:00",
+                "estimated_runway": "2024-08-22T07:02:00+00:00",
+                "actual_runway": "2024-08-22T07:02:00+00:00"
+            },
+            "airline": {
+                "name": "Aerolineas Argentinas",
+                "iata": "AR",
+                "icao": "ARG"
+            },
+            "flight": {
+                "number": "7425",
+                "iata": "AR7425",
+                "icao": "ARG7425",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "901",
+                    "flight_iata": "am901",
+                    "flight_icao": "amx901"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B14",
+                "delay": 36,
+                "scheduled": "2024-08-22T12:19:00+00:00",
+                "estimated": "2024-08-22T12:19:00+00:00",
+                "actual": "2024-08-22T12:54:00+00:00",
+                "estimated_runway": "2024-08-22T12:54:00+00:00",
+                "actual_runway": "2024-08-22T12:54:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "76",
+                "baggage": null,
+                "delay": 3,
+                "scheduled": "2024-08-22T14:05:00+00:00",
+                "estimated": "2024-08-22T14:05:00+00:00",
+                "actual": "2024-08-22T14:02:00+00:00",
+                "estimated_runway": "2024-08-22T14:02:00+00:00",
+                "actual_runway": "2024-08-22T14:02:00+00:00"
+            },
+            "airline": {
+                "name": "Aerolineas Argentinas",
+                "iata": "AR",
+                "icao": "ARG"
+            },
+            "flight": {
+                "number": "7427",
+                "iata": "AR7427",
+                "icao": "ARG7427",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "927",
+                    "flight_iata": "am927",
+                    "flight_icao": "amx927"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B12",
+                "delay": 10,
+                "scheduled": "2024-08-22T20:16:00+00:00",
+                "estimated": "2024-08-22T20:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T22:05:00+00:00",
+                "estimated": "2024-08-22T22:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aerolineas Argentinas",
+                "iata": "AR",
+                "icao": "ARG"
+            },
+            "flight": {
+                "number": "7429",
+                "iata": "AR7429",
+                "icao": "ARG7429",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "957",
+                    "flight_iata": "am957",
+                    "flight_icao": "amx957"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B12",
+                "delay": 10,
+                "scheduled": "2024-08-22T20:16:00+00:00",
+                "estimated": "2024-08-22T20:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T22:05:00+00:00",
+                "estimated": "2024-08-22T22:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "3813",
+                "iata": "G33813",
+                "icao": "GLO3813",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "957",
+                    "flight_iata": "am957",
+                    "flight_icao": "amx957"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": 11,
+                "scheduled": "2024-08-22T05:46:00+00:00",
+                "estimated": "2024-08-22T05:46:00+00:00",
+                "actual": "2024-08-22T05:56:00+00:00",
+                "estimated_runway": "2024-08-22T05:56:00+00:00",
+                "actual_runway": "2024-08-22T05:56:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "78",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T07:35:00+00:00",
+                "estimated": "2024-08-22T07:35:00+00:00",
+                "actual": "2024-08-22T07:02:00+00:00",
+                "estimated_runway": "2024-08-22T07:02:00+00:00",
+                "actual_runway": "2024-08-22T07:02:00+00:00"
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "3825",
+                "iata": "G33825",
+                "icao": "GLO3825",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "901",
+                    "flight_iata": "am901",
+                    "flight_icao": "amx901"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "C",
+                "gate": null,
+                "delay": 8,
+                "scheduled": "2024-08-22T08:15:00+00:00",
+                "estimated": "2024-08-22T08:15:00+00:00",
+                "actual": "2024-08-22T08:22:00+00:00",
+                "estimated_runway": "2024-08-22T08:22:00+00:00",
+                "actual_runway": "2024-08-22T08:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T09:55:00+00:00",
+                "estimated": "2024-08-22T09:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1151",
+                "iata": "IB1151",
+                "icao": "IBE1151",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1121",
+                    "flight_iata": "vb1121",
+                    "flight_icao": "viv1121"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": "9",
+                "delay": 14,
+                "scheduled": "2024-08-22T06:20:00+00:00",
+                "estimated": "2024-08-22T06:20:00+00:00",
+                "actual": "2024-08-22T06:33:00+00:00",
+                "estimated_runway": "2024-08-22T06:33:00+00:00",
+                "actual_runway": "2024-08-22T06:33:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T08:00:00+00:00",
+                "estimated": "2024-08-22T08:00:00+00:00",
+                "actual": "2024-08-22T07:37:00+00:00",
+                "estimated_runway": "2024-08-22T07:37:00+00:00",
+                "actual_runway": "2024-08-22T07:37:00+00:00"
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1155",
+                "iata": "IB1155",
+                "icao": "IBE1155",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1355",
+                    "flight_iata": "vb1355",
+                    "flight_icao": "viv1355"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "C",
+                "gate": "24",
+                "delay": 8,
+                "scheduled": "2024-08-22T08:15:00+00:00",
+                "estimated": "2024-08-22T08:15:00+00:00",
+                "actual": "2024-08-22T08:22:00+00:00",
+                "estimated_runway": "2024-08-22T08:22:00+00:00",
+                "actual_runway": "2024-08-22T08:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T09:55:00+00:00",
+                "estimated": "2024-08-22T09:55:00+00:00",
+                "actual": "2024-08-22T09:26:00+00:00",
+                "estimated_runway": "2024-08-22T09:26:00+00:00",
+                "actual_runway": "2024-08-22T09:26:00+00:00"
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1310",
+                "iata": "IB1310",
+                "icao": "IBE1310",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1121",
+                    "flight_iata": "vb1121",
+                    "flight_icao": "viv1121"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 13,
+                "scheduled": "2024-08-22T05:25:00+00:00",
+                "estimated": "2024-08-22T05:25:00+00:00",
+                "actual": "2024-08-22T05:37:00+00:00",
+                "estimated_runway": "2024-08-22T05:37:00+00:00",
+                "actual_runway": "2024-08-22T05:37:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T07:05:00+00:00",
+                "estimated": "2024-08-22T07:05:00+00:00",
+                "actual": "2024-08-22T06:44:00+00:00",
+                "estimated_runway": "2024-08-22T06:44:00+00:00",
+                "actual_runway": "2024-08-22T06:44:00+00:00"
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1321",
+                "iata": "IB1321",
+                "icao": "IBE1321",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1133",
+                    "flight_iata": "vb1133",
+                    "flight_icao": "viv1133"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 13,
+                "scheduled": "2024-08-22T13:36:00+00:00",
+                "estimated": "2024-08-22T13:36:00+00:00",
+                "actual": "2024-08-22T13:48:00+00:00",
+                "estimated_runway": "2024-08-22T13:48:00+00:00",
+                "actual_runway": "2024-08-22T13:48:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "65",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T15:25:00+00:00",
+                "estimated": "2024-08-22T15:25:00+00:00",
+                "actual": "2024-08-22T15:07:00+00:00",
+                "estimated_runway": "2024-08-22T15:07:00+00:00",
+                "actual_runway": "2024-08-22T15:07:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6248",
+                "iata": "WS6248",
+                "icao": "WJA6248",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "931",
+                    "flight_iata": "am931",
+                    "flight_icao": "amx931"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 31,
+                "scheduled": "2024-08-22T04:30:00+00:00",
+                "estimated": "2024-08-22T04:30:00+00:00",
+                "actual": "2024-08-22T05:01:00+00:00",
+                "estimated_runway": "2024-08-22T05:01:00+00:00",
+                "actual_runway": "2024-08-22T05:01:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": 4,
+                "scheduled": "2024-08-22T06:05:00+00:00",
+                "estimated": "2024-08-22T06:05:00+00:00",
+                "actual": "2024-08-22T06:09:00+00:00",
+                "estimated_runway": "2024-08-22T06:09:00+00:00",
+                "actual_runway": "2024-08-22T06:09:00+00:00"
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1325",
+                "iata": "IB1325",
+                "icao": "IBE1325",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1117",
+                    "flight_iata": "vb1117",
+                    "flight_icao": "viv1117"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "C",
+                "gate": null,
+                "delay": 10,
+                "scheduled": "2024-08-22T16:00:00+00:00",
+                "estimated": "2024-08-22T16:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T17:40:00+00:00",
+                "estimated": "2024-08-22T17:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1137",
+                "iata": "VB1137",
+                "icao": "VIV1137",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": "8",
+                "delay": 24,
+                "scheduled": "2024-08-22T12:05:00+00:00",
+                "estimated": "2024-08-22T12:05:00+00:00",
+                "actual": "2024-08-22T12:28:00+00:00",
+                "estimated_runway": "2024-08-22T12:28:00+00:00",
+                "actual_runway": "2024-08-22T12:28:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T13:45:00+00:00",
+                "estimated": "2024-08-22T13:45:00+00:00",
+                "actual": "2024-08-22T13:32:00+00:00",
+                "estimated_runway": "2024-08-22T13:32:00+00:00",
+                "actual_runway": "2024-08-22T13:32:00+00:00"
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1331",
+                "iata": "IB1331",
+                "icao": "IBE1331",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1129",
+                    "flight_iata": "vb1129",
+                    "flight_icao": "viv1129"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 20,
+                "scheduled": "2024-08-22T10:50:00+00:00",
+                "estimated": "2024-08-22T10:50:00+00:00",
+                "actual": "2024-08-22T11:10:00+00:00",
+                "estimated_runway": "2024-08-22T11:10:00+00:00",
+                "actual_runway": "2024-08-22T11:10:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "76",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T12:40:00+00:00",
+                "estimated": "2024-08-22T12:40:00+00:00",
+                "actual": "2024-08-22T12:15:00+00:00",
+                "estimated_runway": "2024-08-22T12:15:00+00:00",
+                "actual_runway": "2024-08-22T12:15:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6260",
+                "iata": "WS6260",
+                "icao": "WJA6260",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "921",
+                    "flight_iata": "am921",
+                    "flight_icao": "amx921"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 10,
+                "scheduled": "2024-08-22T20:20:00+00:00",
+                "estimated": "2024-08-22T20:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T21:55:00+00:00",
+                "estimated": "2024-08-22T21:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1341",
+                "iata": "IB1341",
+                "icao": "IBE1341",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1143",
+                    "flight_iata": "vb1143",
+                    "flight_icao": "viv1143"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "C",
+                "gate": null,
+                "delay": 10,
+                "scheduled": "2024-08-22T16:00:00+00:00",
+                "estimated": "2024-08-22T16:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T17:40:00+00:00",
+                "estimated": "2024-08-22T17:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1417",
+                "iata": "IB1417",
+                "icao": "IBE1417",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1137",
+                    "flight_iata": "vb1137",
+                    "flight_icao": "viv1137"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "C",
+                "gate": null,
+                "delay": 10,
+                "scheduled": "2024-08-22T18:55:00+00:00",
+                "estimated": "2024-08-22T18:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T20:35:00+00:00",
+                "estimated": "2024-08-22T20:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "1641",
+                "iata": "IB1641",
+                "icao": "IBE1641",
+                "codeshared": {
+                    "airline_name": "vivaaerobus",
+                    "airline_iata": "vb",
+                    "airline_icao": "viv",
+                    "flight_number": "1127",
+                    "flight_iata": "vb1127",
+                    "flight_icao": "viv1127"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B14",
+                "delay": 17,
+                "scheduled": "2024-08-22T07:13:00+00:00",
+                "estimated": "2024-08-22T07:13:00+00:00",
+                "actual": "2024-08-22T07:30:00+00:00",
+                "estimated_runway": "2024-08-22T07:30:00+00:00",
+                "actual_runway": "2024-08-22T07:30:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "78",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T09:00:00+00:00",
+                "estimated": "2024-08-22T09:00:00+00:00",
+                "actual": "2024-08-22T08:34:00+00:00",
+                "estimated_runway": "2024-08-22T08:34:00+00:00",
+                "actual_runway": "2024-08-22T08:34:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6258",
+                "iata": "WS6258",
+                "icao": "WJA6258",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "905",
+                    "flight_iata": "am905",
+                    "flight_icao": "amx905"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": 10,
+                "scheduled": "2024-08-22T21:11:00+00:00",
+                "estimated": "2024-08-22T21:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T23:00:00+00:00",
+                "estimated": "2024-08-22T23:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "KLM",
+                "iata": "KL",
+                "icao": "KLM"
+            },
+            "flight": {
+                "number": "8961",
+                "iata": "KL8961",
+                "icao": "KLM8961",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "961",
+                    "flight_iata": "am961",
+                    "flight_icao": "amx961"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 13,
+                "scheduled": "2024-08-22T05:25:00+00:00",
+                "estimated": "2024-08-22T05:25:00+00:00",
+                "actual": "2024-08-22T05:37:00+00:00",
+                "estimated_runway": "2024-08-22T05:37:00+00:00",
+                "actual_runway": "2024-08-22T05:37:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T07:05:00+00:00",
+                "estimated": "2024-08-22T07:05:00+00:00",
+                "actual": "2024-08-22T06:44:00+00:00",
+                "estimated_runway": "2024-08-22T06:44:00+00:00",
+                "actual_runway": "2024-08-22T06:44:00+00:00"
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1133",
+                "iata": "VB1133",
+                "icao": "VIV1133",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-VXL",
+                "iata": "A21N",
+                "icao": "A21N",
+                "icao24": "0D0F35"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": null,
+                "scheduled": "2024-08-22T21:11:00+00:00",
+                "estimated": "2024-08-22T21:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T23:00:00+00:00",
+                "estimated": "2024-08-22T23:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "KLM",
+                "iata": "KL",
+                "icao": "KLM"
+            },
+            "flight": {
+                "number": "8963",
+                "iata": "KL8963",
+                "icao": "KLM8963",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "961",
+                    "flight_iata": "am961",
+                    "flight_icao": "amx961"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B10",
+                "delay": 33,
+                "scheduled": "2024-08-22T14:30:00+00:00",
+                "estimated": "2024-08-22T14:30:00+00:00",
+                "actual": "2024-08-22T15:03:00+00:00",
+                "estimated_runway": "2024-08-22T15:03:00+00:00",
+                "actual_runway": "2024-08-22T15:03:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T16:25:00+00:00",
+                "estimated": "2024-08-22T16:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "7542",
+                "iata": "LA7542",
+                "icao": "LAN7542",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "933",
+                    "flight_iata": "am933",
+                    "flight_icao": "amx933"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B6",
+                "delay": null,
+                "scheduled": "2024-08-22T15:41:00+00:00",
+                "estimated": "2024-08-22T15:41:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T17:30:00+00:00",
+                "estimated": "2024-08-22T17:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "7577",
+                "iata": "LA7577",
+                "icao": "LAN7577",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "939",
+                    "flight_iata": "am939",
+                    "flight_icao": "amx939"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 20,
+                "scheduled": "2024-08-22T10:50:00+00:00",
+                "estimated": "2024-08-22T10:50:00+00:00",
+                "actual": "2024-08-22T11:10:00+00:00",
+                "estimated_runway": "2024-08-22T11:10:00+00:00",
+                "actual_runway": "2024-08-22T11:10:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T12:40:00+00:00",
+                "estimated": "2024-08-22T12:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "7589",
+                "iata": "LA7589",
+                "icao": "LAN7589",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "921",
+                    "flight_iata": "am921",
+                    "flight_icao": "amx921"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B10",
+                "delay": 33,
+                "scheduled": "2024-08-22T14:30:00+00:00",
+                "estimated": "2024-08-22T14:30:00+00:00",
+                "actual": "2024-08-22T15:03:00+00:00",
+                "estimated_runway": "2024-08-22T15:03:00+00:00",
+                "actual_runway": "2024-08-22T15:03:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T16:25:00+00:00",
+                "estimated": "2024-08-22T16:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "7594",
+                "iata": "LA7594",
+                "icao": "LAN7594",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "933",
+                    "flight_iata": "am933",
+                    "flight_icao": "amx933"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B6",
+                "delay": null,
+                "scheduled": "2024-08-22T15:41:00+00:00",
+                "estimated": "2024-08-22T15:41:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T17:30:00+00:00",
+                "estimated": "2024-08-22T17:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "7596",
+                "iata": "LA7596",
+                "icao": "LAN7596",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "939",
+                    "flight_iata": "am939",
+                    "flight_icao": "amx939"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B6",
+                "delay": 13,
+                "scheduled": "2024-08-22T09:13:00+00:00",
+                "estimated": "2024-08-22T09:13:00+00:00",
+                "actual": "2024-08-22T09:25:00+00:00",
+                "estimated_runway": "2024-08-22T09:25:00+00:00",
+                "actual_runway": "2024-08-22T09:25:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "67",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T11:00:00+00:00",
+                "estimated": "2024-08-22T11:00:00+00:00",
+                "actual": "2024-08-22T10:31:00+00:00",
+                "estimated_runway": "2024-08-22T10:31:00+00:00",
+                "actual_runway": "2024-08-22T10:31:00+00:00"
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "7770",
+                "iata": "LA7770",
+                "icao": "LAN7770",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "913",
+                    "flight_iata": "am913",
+                    "flight_icao": "amx913"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 20,
+                "scheduled": "2024-08-22T10:50:00+00:00",
+                "estimated": "2024-08-22T10:50:00+00:00",
+                "actual": "2024-08-22T11:10:00+00:00",
+                "estimated_runway": "2024-08-22T11:10:00+00:00",
+                "actual_runway": "2024-08-22T11:10:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "76",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T12:40:00+00:00",
+                "estimated": "2024-08-22T12:40:00+00:00",
+                "actual": "2024-08-22T12:15:00+00:00",
+                "estimated_runway": "2024-08-22T12:15:00+00:00",
+                "actual_runway": "2024-08-22T12:15:00+00:00"
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "7772",
+                "iata": "LA7772",
+                "icao": "LAN7772",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "921",
+                    "flight_iata": "am921",
+                    "flight_icao": "amx921"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B8",
+                "delay": null,
+                "scheduled": "2024-08-22T19:11:00+00:00",
+                "estimated": "2024-08-22T19:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T21:00:00+00:00",
+                "estimated": "2024-08-22T21:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Europa",
+                "iata": "UX",
+                "icao": "AEA"
+            },
+            "flight": {
+                "number": "2530",
+                "iata": "UX2530",
+                "icao": "AEA2530",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "953",
+                    "flight_iata": "am953",
+                    "flight_icao": "amx953"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": "8",
+                "delay": 24,
+                "scheduled": "2024-08-22T12:05:00+00:00",
+                "estimated": "2024-08-22T12:05:00+00:00",
+                "actual": "2024-08-22T12:28:00+00:00",
+                "estimated_runway": "2024-08-22T12:28:00+00:00",
+                "actual_runway": "2024-08-22T12:28:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T13:45:00+00:00",
+                "estimated": "2024-08-22T13:45:00+00:00",
+                "actual": "2024-08-22T13:32:00+00:00",
+                "estimated_runway": "2024-08-22T13:32:00+00:00",
+                "actual_runway": "2024-08-22T13:32:00+00:00"
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1129",
+                "iata": "VB1129",
+                "icao": "VIV1129",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-VBP",
+                "iata": "A321",
+                "icao": "A321",
+                "icao24": "0D0D86"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 10,
+                "scheduled": "2024-08-22T18:16:00+00:00",
+                "estimated": "2024-08-22T18:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T20:05:00+00:00",
+                "estimated": "2024-08-22T20:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Europa",
+                "iata": "UX",
+                "icao": "AEA"
+            },
+            "flight": {
+                "number": "2538",
+                "iata": "UX2538",
+                "icao": "AEA2538",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "949",
+                    "flight_iata": "am949",
+                    "flight_icao": "amx949"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B10",
+                "delay": 33,
+                "scheduled": "2024-08-22T14:30:00+00:00",
+                "estimated": "2024-08-22T14:30:00+00:00",
+                "actual": "2024-08-22T15:03:00+00:00",
+                "estimated_runway": "2024-08-22T15:03:00+00:00",
+                "actual_runway": "2024-08-22T15:03:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T16:25:00+00:00",
+                "estimated": "2024-08-22T16:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Europa",
+                "iata": "UX",
+                "icao": "AEA"
+            },
+            "flight": {
+                "number": "2539",
+                "iata": "UX2539",
+                "icao": "AEA2539",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "933",
+                    "flight_iata": "am933",
+                    "flight_icao": "amx933"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "B",
+                "gate": "B16",
+                "delay": 13,
+                "scheduled": "2024-08-22T13:36:00+00:00",
+                "estimated": "2024-08-22T13:36:00+00:00",
+                "actual": "2024-08-22T13:48:00+00:00",
+                "estimated_runway": "2024-08-22T13:48:00+00:00",
+                "actual_runway": "2024-08-22T13:48:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "65",
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T15:25:00+00:00",
+                "estimated": "2024-08-22T15:25:00+00:00",
+                "actual": "2024-08-22T15:07:00+00:00",
+                "estimated_runway": "2024-08-22T15:07:00+00:00",
+                "actual_runway": "2024-08-22T15:07:00+00:00"
+            },
+            "airline": {
+                "name": "Air Europa",
+                "iata": "UX",
+                "icao": "AEA"
+            },
+            "flight": {
+                "number": "2541",
+                "iata": "UX2541",
+                "icao": "AEA2541",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "931",
+                    "flight_iata": "am931",
+                    "flight_icao": "amx931"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 31,
+                "scheduled": "2024-08-22T04:30:00+00:00",
+                "estimated": "2024-08-22T04:30:00+00:00",
+                "actual": "2024-08-22T05:01:00+00:00",
+                "estimated_runway": "2024-08-22T05:01:00+00:00",
+                "actual_runway": "2024-08-22T05:01:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": 4,
+                "scheduled": "2024-08-22T06:05:00+00:00",
+                "estimated": "2024-08-22T06:05:00+00:00",
+                "actual": "2024-08-22T06:09:00+00:00",
+                "estimated_runway": "2024-08-22T06:09:00+00:00",
+                "actual_runway": "2024-08-22T06:09:00+00:00"
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1117",
+                "iata": "VB1117",
+                "icao": "VIV1117",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "9H-AML",
+                "iata": "A320",
+                "icao": "A320",
+                "icao24": "4D2336"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 10,
+                "scheduled": "2024-08-22T18:55:00+00:00",
+                "estimated": "2024-08-22T18:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T20:35:00+00:00",
+                "estimated": "2024-08-22T20:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1127",
+                "iata": "VB1127",
+                "icao": "VIV1127",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-22",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "C",
+                "gate": "24",
+                "delay": 8,
+                "scheduled": "2024-08-22T08:15:00+00:00",
+                "estimated": "2024-08-22T08:15:00+00:00",
+                "actual": "2024-08-22T08:22:00+00:00",
+                "estimated_runway": "2024-08-22T08:22:00+00:00",
+                "actual_runway": "2024-08-22T08:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T09:55:00+00:00",
+                "estimated": "2024-08-22T09:55:00+00:00",
+                "actual": "2024-08-22T09:26:00+00:00",
+                "estimated_runway": "2024-08-22T09:26:00+00:00",
+                "actual_runway": "2024-08-22T09:26:00+00:00"
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1121",
+                "iata": "VB1121",
+                "icao": "VIV1121",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-VAK",
+                "iata": "A320",
+                "icao": "A320",
+                "icao24": "0D0934"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-21",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": null,
+                "gate": null,
+                "delay": 30,
+                "scheduled": "2024-08-21T23:00:00+00:00",
+                "estimated": "2024-08-21T23:00:00+00:00",
+                "actual": "2024-08-21T23:30:00+00:00",
+                "estimated_runway": "2024-08-21T23:30:00+00:00",
+                "actual_runway": "2024-08-21T23:30:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "delay": 8,
+                "scheduled": "2024-08-22T00:35:00+00:00",
+                "estimated": "2024-08-22T00:35:00+00:00",
+                "actual": "2024-08-22T00:34:00+00:00",
+                "estimated_runway": "2024-08-22T00:34:00+00:00",
+                "actual_runway": "2024-08-22T00:34:00+00:00"
+            },
+            "airline": {
+                "name": "AeroMexico Connect",
+                "iata": "5D",
+                "icao": "SLI"
+            },
+            "flight": {
+                "number": "9496",
+                "iata": "5D9496",
+                "icao": "SLI9496",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-21",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 16,
+                "scheduled": "2024-08-21T23:55:00+00:00",
+                "estimated": "2024-08-21T23:55:00+00:00",
+                "actual": "2024-08-22T00:11:00+00:00",
+                "estimated_runway": "2024-08-22T00:11:00+00:00",
+                "actual_runway": "2024-08-22T00:11:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T01:30:00+00:00",
+                "estimated": "2024-08-22T01:30:00+00:00",
+                "actual": "2024-08-22T01:16:00+00:00",
+                "estimated_runway": "2024-08-22T01:16:00+00:00",
+                "actual_runway": "2024-08-22T01:16:00+00:00"
+            },
+            "airline": {
+                "name": "Volaris",
+                "iata": "Y4",
+                "icao": "VOI"
+            },
+            "flight": {
+                "number": "245",
+                "iata": "Y4245",
+                "icao": "VOI245",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-VLY",
+                "iata": "A321",
+                "icao": "A321",
+                "icao24": "0D0A19"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-21",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": "9",
+                "delay": 36,
+                "scheduled": "2024-08-21T22:30:00+00:00",
+                "estimated": "2024-08-21T22:30:00+00:00",
+                "actual": "2024-08-21T23:05:00+00:00",
+                "estimated_runway": "2024-08-21T23:05:00+00:00",
+                "actual_runway": "2024-08-21T23:05:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": 6,
+                "scheduled": "2024-08-22T00:05:00+00:00",
+                "estimated": "2024-08-22T00:05:00+00:00",
+                "actual": "2024-08-22T00:11:00+00:00",
+                "estimated_runway": "2024-08-22T00:11:00+00:00",
+                "actual_runway": "2024-08-22T00:11:00+00:00"
+            },
+            "airline": {
+                "name": "VivaAerobus",
+                "iata": "VB",
+                "icao": "VIV"
+            },
+            "flight": {
+                "number": "1359",
+                "iata": "VB1359",
+                "icao": "VIV1359",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-VII",
+                "iata": "A20N",
+                "icao": "A20N",
+                "icao24": "0D0B36"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2024-08-21",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Gen Mariano Escobedo",
+                "timezone": "America/Monterrey",
+                "iata": "MTY",
+                "icao": "MMMY",
+                "terminal": "A",
+                "gate": null,
+                "delay": 16,
+                "scheduled": "2024-08-21T23:55:00+00:00",
+                "estimated": "2024-08-21T23:55:00+00:00",
+                "actual": "2024-08-22T00:11:00+00:00",
+                "estimated_runway": "2024-08-22T00:11:00+00:00",
+                "actual_runway": "2024-08-22T00:11:00+00:00"
+            },
+            "arrival": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2024-08-22T01:30:00+00:00",
+                "estimated": "2024-08-22T01:30:00+00:00",
+                "actual": "2024-08-22T01:16:00+00:00",
+                "estimated_runway": "2024-08-22T01:16:00+00:00",
+                "actual_runway": "2024-08-22T01:16:00+00:00"
+            },
+            "airline": {
+                "name": "Volaris",
+                "iata": "Y4",
+                "icao": "VOI"
+            },
+            "flight": {
+                "number": "245",
+                "iata": "Y4245",
+                "icao": "VOI245",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "XA-VLY",
+                "iata": "A321",
+                "icao": "A321",
+                "icao24": "0D0A19"
+            },
+            "live": null
+        }
+    ]
+}
