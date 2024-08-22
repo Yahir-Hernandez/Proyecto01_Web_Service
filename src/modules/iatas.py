@@ -4,7 +4,10 @@ import os
 import json
 
 #Regresa el codigo IATA de la ciudad introducida
-def iatasC(ciudad):
+def iatasC(ciudad=""):
+    
+    if ciudad == "":
+        return "MEX"
    
     # Construir la ruta al archivo JSON
     archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data/IATAS.csv'))

@@ -5,7 +5,11 @@ import os
 # Módulo de predicción para la entrada de los usuarios
 # Busca los resultados de entradas de usuario erróneas
 #Regresa la mejor prediccion para la ciudad
-def predicc(entrada):
+def predicc(entrada=""):
+    
+    if entrada == "":
+        return "Ciudad de México"
+    
     #diccionario donde se alamacera el json cargado
     datos = {}
     
