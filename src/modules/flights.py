@@ -10,7 +10,7 @@ import os
 #en caso de que origen es diferente de CDMX, entonces destino es igual a ""
 #Si se ingresa flight_iata se buscara el vuelo en concreto
 def obtener_vuelos(origen,  destino=None, flight_iata=None):
-    api_key = 'USA_Tu_KEY'
+    api_key = '57fdee256d89b56c321e90f5f9a8cc17'
     endpoint = 'http://api.aviationstack.com/v1/flights'
     
      # Ruta relativa a la carpeta donde quieres guardar el archivo JSON
