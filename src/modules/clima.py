@@ -6,7 +6,7 @@ import pandas as pd
 import requests
 import json
 
-def weather(lugar):
+def weather(lugar=""):
     key = "bafa68a647e077182f2e167abc8648dd"
     lat = lati(lugar)
     lon = long(lugar)
@@ -36,7 +36,11 @@ def weather(lugar):
         return "No se pudo obtener el clima. Verifica el nombre de la ciudad."
     
     
-def lati(lugar):
+def lati(lugar=""):
+    
+    if lugar == "":
+        return 19.4363
+    
     # Obtener la ruta del directorio del script
     dir_path = os.path.dirname(os.path.abspath(__file__))
     # Construir la ruta al archivo JSON
@@ -60,7 +64,10 @@ def lati(lugar):
     lat = busca[f"{columna}_latitude"].values
     return lat[0]
 
-def long(lugar):
+def long(lugar=""):
+    
+    if lugar == "":
+        return -99.0721
     # Obtener la ruta del directorio del script
     dir_path = os.path.dirname(os.path.abspath(__file__))
     # Construir la ruta al archivo JSON
