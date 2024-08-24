@@ -6,53 +6,40 @@ import os
 # Busca los resultados de entradas de usuario erróneas
 #Regresa la mejor prediccion para la ciudad
 def predicc(entrada=""):
-    
     if entrada == "":
         return "Ciudad de México"
     
-    #diccionario donde se alamacera el json cargado
-    datos = {}
-    
-    
-    # Construir la ruta al archivo JSON
+    # Construir la ruta al archivo CSV
     archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data/IATAS.csv'))
     
-    # Manejo de errores al abrir el archivo
-    #LEE el pdf de pandas y lo regresa en un data frame
+    # Leer el archivo CSV en un DataFrame
     try: 
         df = pd.read_csv(archivo)
-    except Exception:
+    except Exception as e:
+        print(f"Error al abrir el archivo: {e}")
         return None
-    
-    #genera un data frame de la fila de la IATA encontrada
+
+    # Buscar la ciudad por código IATA
     iata = df[df["IATA"] == entrada.upper()]
     if not iata.empty:
-        res = iata["Ciudad"].values
-        return res[0]
+        return iata["Ciudad"].values[0]
     
-    # Formatear la entrada
+    # Formatear la entrada para coincidencias
     ct = entrada.title()
     
-    #data frame de la columna ciudad
-    ciudad = df['Ciudad']
-
     # Obtener los nombres de las ciudades
-    nombres = ciudad.values
+    nombres = df['Ciudad'].values
 
     # Buscar la mejor coincidencia
     coincidencias = process.extractOne(ct, nombres)
 
     if coincidencias:
-        #Regresa la mejor coincidencia
-        "Borra este print, solo es para pruebas" 
-        print(f"Mejor coincidencia para '{ct}': {coincidencias[0]} con un puntaje de {coincidencias[1]}")
-        return coincidencias[0]  # Retorna la mejor coincidencia para uso posterior
+        # Retornar la mejor coincidencia
+        return coincidencias[0]
     else:
-        #Regresa la mejor coicidencias
-        "Borra este print, solo es para pruebas" 
-        print(f"No se encontró una coincidencia para '{ct}'.")
+        # No se encontró una coincidencia
         return None
     
 if __name__ == "__main__":
     ci = input()
-    predicc(ci)
+    print(predicc(ci))
