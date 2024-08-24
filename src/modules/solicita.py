@@ -6,90 +6,60 @@ import pandas as pd
 import requests
 import json
 
+#Metodo para solicitar el clima de lugar que se da como parametro
 def weather(lugar=""):
     key = "bafa68a647e077182f2e167abc8648dd"
-    lat = lati(lugar)
-    lon = long(lugar)
+    lat, lon = obtener_coordenadas(lugar) #valor la latitud y longitud del lugar
     url = f"https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={key}"
-    rp = requests.get(url)
+    rp = requests.get(url) 
     
+    # status_code sera igual a 200 si la solicitud fue recibida, entendida y procesada con éxito.
     if rp.status_code == 200:
         data = rp.json()
         
-        # Crear la ruta absoluta a la carpeta 'src/data'
-        carpeta_destino = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data'))
-        nombre_archivo = f'clima_{pc(lugar)}.json'
-
-        # Crear la carpeta si no existe
-        os.makedirs(carpeta_destino, exist_ok=True)
-
-        # Ruta completa del archivo JSON
-        ruta_completa = os.path.join(carpeta_destino, nombre_archivo)
-
-        # Guardar el JSON en un archivo
-        with open(ruta_completa, "w") as archivo:
-            json.dump(data, archivo, indent=4)
+        #Devuelve la lista de vuelos       
+        return data["list"]
         
-        print(f"Datos guardados en: {ruta_completa}")
     else:
-        print(f"Error {rp.status_code}: {rp.json()}")
-        return "No se pudo obtener el clima. Verifica el nombre de la ciudad."
-    
-    
-def lati(lugar=""):
-    
-    if lugar == "":
-        return 19.4363
+        #Si hubo un fallo es la solicitud devolvera una lista vacia
+        return []
 
-    # Construir la ruta al archivo JSON
+def obtener_coordenadas(lugar=""):
+    # Coordenadas por defecto: Aeropuerto Internacional de la Ciudad de México
+    coordenadas_default = (19.4363, -99.0721)
+    
+    #Si el lugar es igual a "" entonces devolvera el la latitud y longitud del 
+    #aeropuerto internacional de la Ciudad de México
+    if lugar == "":
+        return coordenadas_default
+
+    # Construir la ruta al archivo CSV
     file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data/dataset.csv'))
     
-    #LEE el pdf de pandas y lo regresa en un data frame
+    # Leer el archivo CSV en un DataFrame
     try: 
         df = pd.read_csv(file_path)
     except Exception:
         return None
-    
+
+    # Obtener el código IATA del lugar especificado
     Iata = iatasC(lugar)
     
-    columna = "origin"
-    busca = df[df[columna] == Iata]
-    
-    if busca.empty:
-        columna = "destination"
+    # Buscar en las columnas 'origin' y 'destination'
+    for columna in ["origin", "destination"]:
         busca = df[df[columna] == Iata]
+        if not busca.empty:
+            lat = busca[f"{columna}_latitude"].values[0]
+            lon = busca[f"{columna}_longitude"].values[0]
+            return lat, lon
     
-    lat = busca[f"{columna}_latitude"].values
-    return lat[0]
+    # Si no se encuentra el lugar, devolver None
+    return None
 
-def long(lugar=""):
-    
-    if lugar == "":
-        return -99.0721
-    
-    # Construir la ruta al archivo JSON
-    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data/dataset.csv'))
-    
-    #LEE el pdf de pandas y lo regresa en un data frame
-    try: 
-        df = pd.read_csv(file_path)
-    except Exception:
-        return None
-    
-    Iata = iatasC(lugar)
-    
-    columna = "origin"
-    busca = df[df[columna] == Iata]
-    
-    if busca.empty:
-        columna = "destination"
-        busca = df[df[columna] == Iata]
-    
-    lat = busca[f"{columna}_longitude"].values
-    return lat[0]
+if __name__ == "__main__":
+    lugar = input("ingresa el lugar: ")
+    latitud, longitud = obtener_coordenadas(lugar)
+    print(latitud)
+    print(longitud)
 
-lugar = input("ingresa el lugar: ")
-print(f"latitud: {lati(lugar)}")
-print(f"longitud: {long(lugar)}")
-
-weather(lugar)
+    print(weather(lugar))

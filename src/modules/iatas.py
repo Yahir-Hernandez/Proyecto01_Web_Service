@@ -1,7 +1,6 @@
 from prediccion import predicc 
 import pandas as pd
 import os
-import json
 
 #Regresa el codigo IATA de la ciudad introducida
 def iatasC(ciudad=""):
