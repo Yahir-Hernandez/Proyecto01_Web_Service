@@ -3,10 +3,7 @@ import pandas as pd
 import os
 
 #Regresa el codigo IATA de la ciudad introducida
-def iatasC(ciudad=""):
-    
-    if ciudad == "":
-        return "MEX"
+def iatasC(ciudad):
    
     # Construir la ruta al archivo JSON
     archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data/IATAS.csv'))
@@ -25,6 +22,7 @@ def iatasC(ciudad=""):
     
     #convierte el Df en una lista de un solo string
     iata_code = ciudad["IATA"].values 
+    
     if len(iata_code) == 0:
         return "No regreso nada"
     
