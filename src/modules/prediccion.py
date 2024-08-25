@@ -5,9 +5,7 @@ import os
 # Módulo de predicción para la entrada de los usuarios
 # Busca los resultados de entradas de usuario erróneas
 #Regresa la mejor prediccion para la ciudad
-def predicc(entrada=""):
-    if entrada == "":
-        return "Ciudad de México"
+def predicc(entrada):
     
     # Construir la ruta al archivo CSV
     archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data/IATAS.csv'))
@@ -17,7 +15,6 @@ def predicc(entrada=""):
         df = pd.read_csv(archivo)
     except Exception as e:
         print(f"Error al abrir el archivo: {e}")
-        return None
 
     # Buscar la ciudad por código IATA
     iata = df[df["IATA"] == entrada.upper()]
@@ -38,8 +35,6 @@ def predicc(entrada=""):
         return coincidencias[0]
     else:
         # No se encontró una coincidencia
-        return None
-"""
-ci = input("elige un lugar: ")
-print(predicc(ci))
-"""
+        raise ValueError("No se encontraron coincidencias para esa ciudad.")
+    
+
