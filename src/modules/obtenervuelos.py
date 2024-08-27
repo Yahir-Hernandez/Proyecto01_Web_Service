@@ -155,6 +155,7 @@ def crear_vuelos(json_data):
             "hrdestino": vuelo_data['arrival']['estimated'],
             "ciudadOr": predicc(vuelo_data['departure']['iata']),
             "ciudadDes": predicc(vuelo_data['arrival']['iata']),
+            "Aereolínea:": vuelo_data['airline']['name'],
             "iataorigen": vuelo_data['departure']['iata'],
             "iatadestino": vuelo_data['arrival']['iata'],
             "iata": vuelo_data['flight']['iata']
@@ -163,4 +164,4 @@ def crear_vuelos(json_data):
     
     return vuelos
 
-obtener_vuelosPorIATA("")
+obtener_vuelosPorIATA("Y4240")
