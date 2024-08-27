@@ -17,12 +17,13 @@ def weather(lugar=""):
     if rp.status_code == 200:
         data = rp.json()
         
-        #Devuelve la lista de vuelos       
-        return data["list"]
-        
-    else:
-        #Si hubo un fallo es la solicitud devolvera una lista vacia
-        return []
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar los objetos
+    nombre_archivo= f'climas.json' 
+    ruta = os.path.join(carpeta_destino, nombre_archivo)
+
+    with open(ruta, 'w') as archivo:
+        json.dump(data, archivo)
+
 
 def obtener_coordenadas(lugar=""):
     # Coordenadas por defecto: Aeropuerto Internacional de la Ciudad de México
@@ -56,10 +57,9 @@ def obtener_coordenadas(lugar=""):
     # Si no se encuentra el lugar, devolver None
     return None
 
-if __name__ == "__main__":
-    lugar = input("ingresa el lugar: ")
-    latitud, longitud = obtener_coordenadas(lugar)
-    print(latitud)
-    print(longitud)
+lugar = input("ingresa el lugar: ")
+latitud, longitud = obtener_coordenadas(lugar)
+print(latitud)
+print(longitud)
 
-    print(weather(lugar))
+print(weather(lugar))
