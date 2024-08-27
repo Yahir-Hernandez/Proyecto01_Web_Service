@@ -1,3518 +1,1730 @@
-{
-    "cod": "200",
-    "message": 0,
-    "cnt": 96,
-    "list": [
-        {
-            "dt": 1724745600,
-            "main": {
-                "temp": 26.58,
-                "feels_like": 26.58,
-                "temp_min": 24.91,
-                "temp_max": 26.58,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 969,
-                "humidity": 75,
-                "temp_kf": 1.67
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 60
-            },
-            "wind": {
-                "speed": 2.62,
-                "deg": 82,
-                "gust": 4.36
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-27 08:00:00"
-        },
-        {
-            "dt": 1724749200,
-            "main": {
-                "temp": 26.07,
-                "feels_like": 26.07,
-                "temp_min": 24.68,
-                "temp_max": 26.07,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 969,
-                "humidity": 76,
-                "temp_kf": 1.39
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 45
-            },
-            "wind": {
-                "speed": 2.22,
-                "deg": 73,
-                "gust": 2.9
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-27 09:00:00"
-        },
-        {
-            "dt": 1724752800,
-            "main": {
-                "temp": 25.36,
-                "feels_like": 25.99,
-                "temp_min": 24.27,
-                "temp_max": 25.36,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 78,
-                "temp_kf": 1.09
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 30
-            },
-            "wind": {
-                "speed": 1.55,
-                "deg": 81,
-                "gust": 1.78
-            },
-            "visibility": 10000,
-            "pop": 0.01,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-27 10:00:00"
-        },
-        {
-            "dt": 1724756400,
-            "main": {
-                "temp": 24.62,
-                "feels_like": 25.25,
-                "temp_min": 24.02,
-                "temp_max": 24.62,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 81,
-                "temp_kf": 0.6
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02n"
-                }
-            ],
-            "clouds": {
-                "all": 15
-            },
-            "wind": {
-                "speed": 0.85,
-                "deg": 57,
-                "gust": 0.87
-            },
-            "visibility": 10000,
-            "pop": 0.02,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-27 11:00:00"
-        },
-        {
-            "dt": 1724760000,
-            "main": {
-                "temp": 23.85,
-                "feels_like": 24.46,
-                "temp_min": 23.85,
-                "temp_max": 23.85,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 969,
-                "humidity": 83,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 1
-            },
-            "wind": {
-                "speed": 1.01,
-                "deg": 46,
-                "gust": 0.98
-            },
-            "visibility": 10000,
-            "pop": 0.01,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-27 12:00:00"
-        },
-        {
-            "dt": 1724763600,
-            "main": {
-                "temp": 24.42,
-                "feels_like": 25.01,
-                "temp_min": 24.42,
-                "temp_max": 24.42,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 970,
-                "humidity": 80,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 0
-            },
-            "wind": {
-                "speed": 1.09,
-                "deg": 46,
-                "gust": 1.44
-            },
-            "visibility": 10000,
-            "pop": 0.33,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 13:00:00"
-        },
-        {
-            "dt": 1724767200,
-            "main": {
-                "temp": 25.69,
-                "feels_like": 26.27,
-                "temp_min": 25.69,
-                "temp_max": 25.69,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 970,
-                "humidity": 75,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 0
-            },
-            "wind": {
-                "speed": 1.47,
-                "deg": 93,
-                "gust": 1.75
-            },
-            "visibility": 10000,
-            "pop": 0.37,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 14:00:00"
-        },
-        {
-            "dt": 1724770800,
-            "main": {
-                "temp": 27.29,
-                "feels_like": 29.07,
-                "temp_min": 27.29,
-                "temp_max": 27.29,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 970,
-                "humidity": 67,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 1
-            },
-            "wind": {
-                "speed": 1.97,
-                "deg": 105,
-                "gust": 2.3
-            },
-            "visibility": 10000,
-            "pop": 0.3,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 15:00:00"
-        },
-        {
-            "dt": 1724774400,
-            "main": {
-                "temp": 29.36,
-                "feels_like": 31.49,
-                "temp_min": 29.36,
-                "temp_max": 29.36,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 970,
-                "humidity": 59,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 4
-            },
-            "wind": {
-                "speed": 2.91,
-                "deg": 118,
-                "gust": 3.47
-            },
-            "visibility": 10000,
-            "pop": 0.25,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 16:00:00"
-        },
-        {
-            "dt": 1724778000,
-            "main": {
-                "temp": 31.2,
-                "feels_like": 33.16,
-                "temp_min": 31.2,
-                "temp_max": 31.2,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 970,
-                "humidity": 51,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 4
-            },
-            "wind": {
-                "speed": 3.69,
-                "deg": 122,
-                "gust": 4.3
-            },
-            "visibility": 10000,
-            "pop": 0.25,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 17:00:00"
-        },
-        {
-            "dt": 1724781600,
-            "main": {
-                "temp": 32.88,
-                "feels_like": 34.26,
-                "temp_min": 32.88,
-                "temp_max": 32.88,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 43,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 4
-            },
-            "wind": {
-                "speed": 4.31,
-                "deg": 117,
-                "gust": 4.33
-            },
-            "visibility": 10000,
-            "pop": 0.21,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 18:00:00"
-        },
-        {
-            "dt": 1724785200,
-            "main": {
-                "temp": 34.13,
-                "feels_like": 34.91,
-                "temp_min": 34.13,
-                "temp_max": 34.13,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 37,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 17
-            },
-            "wind": {
-                "speed": 5.02,
-                "deg": 111,
-                "gust": 4.56
-            },
-            "visibility": 10000,
-            "pop": 0.21,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 19:00:00"
-        },
-        {
-            "dt": 1724788800,
-            "main": {
-                "temp": 34.82,
-                "feels_like": 35.3,
-                "temp_min": 34.82,
-                "temp_max": 34.82,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 968,
-                "humidity": 34,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 23
-            },
-            "wind": {
-                "speed": 4.8,
-                "deg": 100,
-                "gust": 4.32
-            },
-            "visibility": 10000,
-            "pop": 0.31,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 20:00:00"
-        },
-        {
-            "dt": 1724792400,
-            "main": {
-                "temp": 34.53,
-                "feels_like": 34.84,
-                "temp_min": 34.53,
-                "temp_max": 34.53,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 34,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03d"
-                }
-            ],
-            "clouds": {
-                "all": 43
-            },
-            "wind": {
-                "speed": 4.32,
-                "deg": 126,
-                "gust": 4.68
-            },
-            "visibility": 10000,
-            "pop": 0.29,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 21:00:00"
-        },
-        {
-            "dt": 1724796000,
-            "main": {
-                "temp": 29.75,
-                "feels_like": 30.83,
-                "temp_min": 29.75,
-                "temp_max": 29.75,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 51,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 57
-            },
-            "wind": {
-                "speed": 6.59,
-                "deg": 200,
-                "gust": 7.59
-            },
-            "visibility": 10000,
-            "pop": 0.31,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 22:00:00"
-        },
-        {
-            "dt": 1724799600,
-            "main": {
-                "temp": 29.28,
-                "feels_like": 30.44,
-                "temp_min": 29.28,
-                "temp_max": 29.28,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 53,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 66
-            },
-            "wind": {
-                "speed": 7.17,
-                "deg": 197,
-                "gust": 8.21
-            },
-            "visibility": 10000,
-            "pop": 0.3,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-27 23:00:00"
-        },
-        {
-            "dt": 1724803200,
-            "main": {
-                "temp": 29.8,
-                "feels_like": 30.47,
-                "temp_min": 29.8,
-                "temp_max": 29.8,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 48,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 71
-            },
-            "wind": {
-                "speed": 4.87,
-                "deg": 207,
-                "gust": 6.07
-            },
-            "visibility": 10000,
-            "pop": 0.28,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 00:00:00"
-        },
-        {
-            "dt": 1724806800,
-            "main": {
-                "temp": 28.59,
-                "feels_like": 29.48,
-                "temp_min": 28.59,
-                "temp_max": 28.59,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 53,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03d"
-                }
-            ],
-            "clouds": {
-                "all": 50
-            },
-            "wind": {
-                "speed": 0.86,
-                "deg": 238,
-                "gust": 1.39
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 01:00:00"
-        },
-        {
-            "dt": 1724810400,
-            "main": {
-                "temp": 28.53,
-                "feels_like": 29.18,
-                "temp_min": 28.53,
-                "temp_max": 28.53,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 967,
-                "humidity": 51,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 46
-            },
-            "wind": {
-                "speed": 3.16,
-                "deg": 105,
-                "gust": 3.98
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 02:00:00"
-        },
-        {
-            "dt": 1724814000,
-            "main": {
-                "temp": 27.08,
-                "feels_like": 28.18,
-                "temp_min": 27.08,
-                "temp_max": 27.08,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 60,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 40
-            },
-            "wind": {
-                "speed": 5.06,
-                "deg": 120,
-                "gust": 8.14
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 03:00:00"
-        },
-        {
-            "dt": 1724817600,
-            "main": {
-                "temp": 25.97,
-                "feels_like": 25.97,
-                "temp_min": 25.97,
-                "temp_max": 25.97,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 969,
-                "humidity": 66,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 31
-            },
-            "wind": {
-                "speed": 3.98,
-                "deg": 128,
-                "gust": 8.32
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 04:00:00"
-        },
-        {
-            "dt": 1724821200,
-            "main": {
-                "temp": 25.41,
-                "feels_like": 25.83,
-                "temp_min": 25.41,
-                "temp_max": 25.41,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 969,
-                "humidity": 70,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 26
-            },
-            "wind": {
-                "speed": 3.33,
-                "deg": 115,
-                "gust": 6.34
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 05:00:00"
-        },
-        {
-            "dt": 1724824800,
-            "main": {
-                "temp": 24.92,
-                "feels_like": 25.4,
-                "temp_min": 24.92,
-                "temp_max": 24.92,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 74,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02n"
-                }
-            ],
-            "clouds": {
-                "all": 23
-            },
-            "wind": {
-                "speed": 3.02,
-                "deg": 108,
-                "gust": 5.13
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 06:00:00"
-        },
-        {
-            "dt": 1724828400,
-            "main": {
-                "temp": 24.53,
-                "feels_like": 25.05,
-                "temp_min": 24.53,
-                "temp_max": 24.53,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 77,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 3
-            },
-            "wind": {
-                "speed": 2.58,
-                "deg": 85,
-                "gust": 3.74
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 07:00:00"
-        },
-        {
-            "dt": 1724832000,
-            "main": {
-                "temp": 24.3,
-                "feels_like": 24.87,
-                "temp_min": 24.3,
-                "temp_max": 24.3,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 80,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10n"
-                }
-            ],
-            "clouds": {
-                "all": 3
-            },
-            "wind": {
-                "speed": 3.2,
-                "deg": 83,
-                "gust": 5.2
-            },
-            "visibility": 10000,
-            "pop": 0.58,
-            "rain": {
-                "1h": 0.34
-            },
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 08:00:00"
-        },
-        {
-            "dt": 1724835600,
-            "main": {
-                "temp": 24.16,
-                "feels_like": 24.77,
-                "temp_min": 24.16,
-                "temp_max": 24.16,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 82,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 3
-            },
-            "wind": {
-                "speed": 2.6,
-                "deg": 100,
-                "gust": 4.65
-            },
-            "visibility": 10000,
-            "pop": 0.48,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 09:00:00"
-        },
-        {
-            "dt": 1724839200,
-            "main": {
-                "temp": 23.86,
-                "feels_like": 24.49,
-                "temp_min": 23.86,
-                "temp_max": 23.86,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 84,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 3
-            },
-            "wind": {
-                "speed": 2.32,
-                "deg": 96,
-                "gust": 3.95
-            },
-            "visibility": 10000,
-            "pop": 0.39,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 10:00:00"
-        },
-        {
-            "dt": 1724842800,
-            "main": {
-                "temp": 23.46,
-                "feels_like": 24.13,
-                "temp_min": 23.46,
-                "temp_max": 23.46,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 87,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 3
-            },
-            "wind": {
-                "speed": 1.6,
-                "deg": 94,
-                "gust": 3.14
-            },
-            "visibility": 10000,
-            "pop": 0.33,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 11:00:00"
-        },
-        {
-            "dt": 1724846400,
-            "main": {
-                "temp": 22.97,
-                "feels_like": 23.65,
-                "temp_min": 22.97,
-                "temp_max": 22.97,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 89,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 4
-            },
-            "wind": {
-                "speed": 1.37,
-                "deg": 96,
-                "gust": 1.66
-            },
-            "visibility": 10000,
-            "pop": 0.25,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-28 12:00:00"
-        },
-        {
-            "dt": 1724850000,
-            "main": {
-                "temp": 23.68,
-                "feels_like": 24.35,
-                "temp_min": 23.68,
-                "temp_max": 23.68,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 86,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 11
-            },
-            "wind": {
-                "speed": 1.16,
-                "deg": 89,
-                "gust": 2.13
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 13:00:00"
-        },
-        {
-            "dt": 1724853600,
-            "main": {
-                "temp": 25.19,
-                "feels_like": 25.8,
-                "temp_min": 25.19,
-                "temp_max": 25.19,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 969,
-                "humidity": 78,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 7
-            },
-            "wind": {
-                "speed": 1.4,
-                "deg": 111,
-                "gust": 2.4
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 14:00:00"
-        },
-        {
-            "dt": 1724857200,
-            "main": {
-                "temp": 27.11,
-                "feels_like": 28.87,
-                "temp_min": 27.11,
-                "temp_max": 27.11,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 970,
-                "humidity": 68,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 9
-            },
-            "wind": {
-                "speed": 2.08,
-                "deg": 116,
-                "gust": 3.06
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 15:00:00"
-        },
-        {
-            "dt": 1724860800,
-            "main": {
-                "temp": 29.09,
-                "feels_like": 30.88,
-                "temp_min": 29.09,
-                "temp_max": 29.09,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 970,
-                "humidity": 58,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 13
-            },
-            "wind": {
-                "speed": 3.13,
-                "deg": 121,
-                "gust": 3.85
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 16:00:00"
-        },
-        {
-            "dt": 1724864400,
-            "main": {
-                "temp": 31.07,
-                "feels_like": 32.73,
-                "temp_min": 31.07,
-                "temp_max": 31.07,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 969,
-                "humidity": 50,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 15
-            },
-            "wind": {
-                "speed": 3.91,
-                "deg": 121,
-                "gust": 4.55
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 17:00:00"
-        },
-        {
-            "dt": 1724868000,
-            "main": {
-                "temp": 32.62,
-                "feels_like": 33.82,
-                "temp_min": 32.62,
-                "temp_max": 32.62,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 43,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 15
-            },
-            "wind": {
-                "speed": 4.54,
-                "deg": 122,
-                "gust": 4.99
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 18:00:00"
-        },
-        {
-            "dt": 1724871600,
-            "main": {
-                "temp": 33.74,
-                "feels_like": 34.75,
-                "temp_min": 33.74,
-                "temp_max": 33.74,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 39,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 4
-            },
-            "wind": {
-                "speed": 5.12,
-                "deg": 122,
-                "gust": 5.22
-            },
-            "visibility": 10000,
-            "pop": 0.03,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 19:00:00"
-        },
-        {
-            "dt": 1724875200,
-            "main": {
-                "temp": 34.49,
-                "feels_like": 35.5,
-                "temp_min": 34.49,
-                "temp_max": 34.49,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 37,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 5
-            },
-            "wind": {
-                "speed": 5.65,
-                "deg": 118,
-                "gust": 5.6
-            },
-            "visibility": 10000,
-            "pop": 0.03,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 20:00:00"
-        },
-        {
-            "dt": 1724878800,
-            "main": {
-                "temp": 34.89,
-                "feels_like": 35.65,
-                "temp_min": 34.89,
-                "temp_max": 34.89,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 35,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 4
-            },
-            "wind": {
-                "speed": 5.63,
-                "deg": 116,
-                "gust": 5.57
-            },
-            "visibility": 10000,
-            "pop": 0.03,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 21:00:00"
-        },
-        {
-            "dt": 1724882400,
-            "main": {
-                "temp": 35.08,
-                "feels_like": 35.96,
-                "temp_min": 35.08,
-                "temp_max": 35.08,
-                "pressure": 1011,
-                "sea_level": 1011,
-                "grnd_level": 966,
-                "humidity": 35,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 5
-            },
-            "wind": {
-                "speed": 5.66,
-                "deg": 110,
-                "gust": 5.6
-            },
-            "visibility": 10000,
-            "pop": 0.03,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 22:00:00"
-        },
-        {
-            "dt": 1724886000,
-            "main": {
-                "temp": 34.86,
-                "feels_like": 35.6,
-                "temp_min": 34.86,
-                "temp_max": 34.86,
-                "pressure": 1011,
-                "sea_level": 1011,
-                "grnd_level": 966,
-                "humidity": 35,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 7
-            },
-            "wind": {
-                "speed": 6.22,
-                "deg": 111,
-                "gust": 6.09
-            },
-            "visibility": 10000,
-            "pop": 0.03,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-28 23:00:00"
-        },
-        {
-            "dt": 1724889600,
-            "main": {
-                "temp": 34.46,
-                "feels_like": 34.96,
-                "temp_min": 34.46,
-                "temp_max": 34.46,
-                "pressure": 1011,
-                "sea_level": 1011,
-                "grnd_level": 966,
-                "humidity": 35,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 8
-            },
-            "wind": {
-                "speed": 7.03,
-                "deg": 117,
-                "gust": 6.76
-            },
-            "visibility": 10000,
-            "pop": 0.05,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 00:00:00"
-        },
-        {
-            "dt": 1724893200,
-            "main": {
-                "temp": 30.22,
-                "feels_like": 31.55,
-                "temp_min": 30.22,
-                "temp_max": 30.22,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 51,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 51
-            },
-            "wind": {
-                "speed": 6.93,
-                "deg": 119,
-                "gust": 11.02
-            },
-            "visibility": 10000,
-            "pop": 0.63,
-            "rain": {
-                "1h": 0.2
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 01:00:00"
-        },
-        {
-            "dt": 1724896800,
-            "main": {
-                "temp": 27.04,
-                "feels_like": 28.67,
-                "temp_min": 27.04,
-                "temp_max": 27.04,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 967,
-                "humidity": 67,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "lluvia moderada",
-                    "icon": "10n"
-                }
-            ],
-            "clouds": {
-                "all": 59
-            },
-            "wind": {
-                "speed": 2.76,
-                "deg": 144,
-                "gust": 5.38
-            },
-            "visibility": 10000,
-            "pop": 0.85,
-            "rain": {
-                "1h": 2.5
-            },
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 02:00:00"
-        },
-        {
-            "dt": 1724900400,
-            "main": {
-                "temp": 26.8,
-                "feels_like": 28.24,
-                "temp_min": 26.8,
-                "temp_max": 26.8,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 66,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10n"
-                }
-            ],
-            "clouds": {
-                "all": 49
-            },
-            "wind": {
-                "speed": 3.02,
-                "deg": 99,
-                "gust": 4.75
-            },
-            "visibility": 10000,
-            "pop": 0.85,
-            "rain": {
-                "1h": 0.6
-            },
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 03:00:00"
-        },
-        {
-            "dt": 1724904000,
-            "main": {
-                "temp": 26.4,
-                "feels_like": 26.4,
-                "temp_min": 26.4,
-                "temp_max": 26.4,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 68,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 40
-            },
-            "wind": {
-                "speed": 3.34,
-                "deg": 112,
-                "gust": 5.15
-            },
-            "visibility": 10000,
-            "pop": 0.82,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 04:00:00"
-        },
-        {
-            "dt": 1724907600,
-            "main": {
-                "temp": 25.88,
-                "feels_like": 26.4,
-                "temp_min": 25.88,
-                "temp_max": 25.88,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 72,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 33
-            },
-            "wind": {
-                "speed": 3.08,
-                "deg": 112,
-                "gust": 5.21
-            },
-            "visibility": 10000,
-            "pop": 0.82,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 05:00:00"
-        },
-        {
-            "dt": 1724911200,
-            "main": {
-                "temp": 25.41,
-                "feels_like": 25.96,
-                "temp_min": 25.41,
-                "temp_max": 25.41,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 75,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 27
-            },
-            "wind": {
-                "speed": 2.09,
-                "deg": 95,
-                "gust": 3.47
-            },
-            "visibility": 10000,
-            "pop": 0.81,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 06:00:00"
-        },
-        {
-            "dt": 1724914800,
-            "main": {
-                "temp": 25.37,
-                "feels_like": 25.95,
-                "temp_min": 25.37,
-                "temp_max": 25.37,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 76,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 35
-            },
-            "wind": {
-                "speed": 1.54,
-                "deg": 90,
-                "gust": 2.02
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 07:00:00"
-        },
-        {
-            "dt": 1724918400,
-            "main": {
-                "temp": 25.22,
-                "feels_like": 25.83,
-                "temp_min": 25.22,
-                "temp_max": 25.22,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 78,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 32
-            },
-            "wind": {
-                "speed": 1.51,
-                "deg": 90,
-                "gust": 1.63
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 08:00:00"
-        },
-        {
-            "dt": 1724922000,
-            "main": {
-                "temp": 24.84,
-                "feels_like": 25.47,
-                "temp_min": 24.84,
-                "temp_max": 24.84,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 80,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 28
-            },
-            "wind": {
-                "speed": 2.01,
-                "deg": 68,
-                "gust": 2.27
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 09:00:00"
-        },
-        {
-            "dt": 1724925600,
-            "main": {
-                "temp": 24.5,
-                "feels_like": 25.17,
-                "temp_min": 24.5,
-                "temp_max": 24.5,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 83,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 26
-            },
-            "wind": {
-                "speed": 1.57,
-                "deg": 58,
-                "gust": 1.82
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 10:00:00"
-        },
-        {
-            "dt": 1724929200,
-            "main": {
-                "temp": 24.31,
-                "feels_like": 24.99,
-                "temp_min": 24.31,
-                "temp_max": 24.31,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 84,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02n"
-                }
-            ],
-            "clouds": {
-                "all": 22
-            },
-            "wind": {
-                "speed": 1.51,
-                "deg": 62,
-                "gust": 1.73
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 11:00:00"
-        },
-        {
-            "dt": 1724932800,
-            "main": {
-                "temp": 24.14,
-                "feels_like": 24.83,
-                "temp_min": 24.14,
-                "temp_max": 24.14,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 85,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02n"
-                }
-            ],
-            "clouds": {
-                "all": 20
-            },
-            "wind": {
-                "speed": 1.63,
-                "deg": 66,
-                "gust": 1.99
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-29 12:00:00"
-        },
-        {
-            "dt": 1724936400,
-            "main": {
-                "temp": 24.69,
-                "feels_like": 25.38,
-                "temp_min": 24.69,
-                "temp_max": 24.69,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 83,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 11
-            },
-            "wind": {
-                "speed": 1.2,
-                "deg": 76,
-                "gust": 2.29
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 13:00:00"
-        },
-        {
-            "dt": 1724940000,
-            "main": {
-                "temp": 25.89,
-                "feels_like": 26.52,
-                "temp_min": 25.89,
-                "temp_max": 25.89,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 76,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 16
-            },
-            "wind": {
-                "speed": 1.84,
-                "deg": 99,
-                "gust": 1.95
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 14:00:00"
-        },
-        {
-            "dt": 1724943600,
-            "main": {
-                "temp": 27.29,
-                "feels_like": 29.26,
-                "temp_min": 27.29,
-                "temp_max": 27.29,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 69,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 19
-            },
-            "wind": {
-                "speed": 2.52,
-                "deg": 109,
-                "gust": 2.95
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 15:00:00"
-        },
-        {
-            "dt": 1724947200,
-            "main": {
-                "temp": 29.02,
-                "feels_like": 31.38,
-                "temp_min": 29.02,
-                "temp_max": 29.02,
-                "pressure": 1016,
-                "sea_level": 1016,
-                "grnd_level": 969,
-                "humidity": 62,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 20
-            },
-            "wind": {
-                "speed": 3.11,
-                "deg": 119,
-                "gust": 3.67
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 16:00:00"
-        },
-        {
-            "dt": 1724950800,
-            "main": {
-                "temp": 30.67,
-                "feels_like": 33.06,
-                "temp_min": 30.67,
-                "temp_max": 30.67,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 969,
-                "humidity": 55,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "algo de nubes",
-                    "icon": "02d"
-                }
-            ],
-            "clouds": {
-                "all": 21
-            },
-            "wind": {
-                "speed": 3.25,
-                "deg": 126,
-                "gust": 3.72
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 17:00:00"
-        },
-        {
-            "dt": 1724954400,
-            "main": {
-                "temp": 32.13,
-                "feels_like": 34.36,
-                "temp_min": 32.13,
-                "temp_max": 32.13,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 49,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 24
-            },
-            "wind": {
-                "speed": 3.66,
-                "deg": 128,
-                "gust": 3.98
-            },
-            "visibility": 10000,
-            "pop": 0.23,
-            "rain": {
-                "1h": 0.11
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 18:00:00"
-        },
-        {
-            "dt": 1724958000,
-            "main": {
-                "temp": 33.41,
-                "feels_like": 35.69,
-                "temp_min": 33.41,
-                "temp_max": 33.41,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 45,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 50
-            },
-            "wind": {
-                "speed": 4.15,
-                "deg": 128,
-                "gust": 3.82
-            },
-            "visibility": 10000,
-            "pop": 0.59,
-            "rain": {
-                "1h": 0.18
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 19:00:00"
-        },
-        {
-            "dt": 1724961600,
-            "main": {
-                "temp": 34.01,
-                "feels_like": 35.97,
-                "temp_min": 34.01,
-                "temp_max": 34.01,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 967,
-                "humidity": 42,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 59
-            },
-            "wind": {
-                "speed": 4.31,
-                "deg": 116,
-                "gust": 3.75
-            },
-            "visibility": 10000,
-            "pop": 0.67,
-            "rain": {
-                "1h": 0.12
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 20:00:00"
-        },
-        {
-            "dt": 1724965200,
-            "main": {
-                "temp": 33.13,
-                "feels_like": 34.93,
-                "temp_min": 33.13,
-                "temp_max": 33.13,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 44,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 69
-            },
-            "wind": {
-                "speed": 4.51,
-                "deg": 104,
-                "gust": 4.15
-            },
-            "visibility": 10000,
-            "pop": 0.67,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 21:00:00"
-        },
-        {
-            "dt": 1724968800,
-            "main": {
-                "temp": 32.31,
-                "feels_like": 33.98,
-                "temp_min": 32.31,
-                "temp_max": 32.31,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 46,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 78
-            },
-            "wind": {
-                "speed": 3.41,
-                "deg": 98,
-                "gust": 4.11
-            },
-            "visibility": 10000,
-            "pop": 0.66,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 22:00:00"
-        },
-        {
-            "dt": 1724972400,
-            "main": {
-                "temp": 32.3,
-                "feels_like": 33.74,
-                "temp_min": 32.3,
-                "temp_max": 32.3,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 45,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 82
-            },
-            "wind": {
-                "speed": 1.47,
-                "deg": 126,
-                "gust": 2.82
-            },
-            "visibility": 10000,
-            "pop": 0.68,
-            "rain": {
-                "1h": 0.11
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-29 23:00:00"
-        },
-        {
-            "dt": 1724976000,
-            "main": {
-                "temp": 31.76,
-                "feels_like": 33.48,
-                "temp_min": 31.76,
-                "temp_max": 31.76,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 48,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 84
-            },
-            "wind": {
-                "speed": 2.29,
-                "deg": 200,
-                "gust": 4.01
-            },
-            "visibility": 10000,
-            "pop": 0.64,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 00:00:00"
-        },
-        {
-            "dt": 1724979600,
-            "main": {
-                "temp": 30.83,
-                "feels_like": 32.53,
-                "temp_min": 30.83,
-                "temp_max": 30.83,
-                "pressure": 1011,
-                "sea_level": 1011,
-                "grnd_level": 966,
-                "humidity": 51,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 76
-            },
-            "wind": {
-                "speed": 1.61,
-                "deg": 208,
-                "gust": 1.08
-            },
-            "visibility": 10000,
-            "pop": 0.01,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 01:00:00"
-        },
-        {
-            "dt": 1724983200,
-            "main": {
-                "temp": 30.33,
-                "feels_like": 31.9,
-                "temp_min": 30.33,
-                "temp_max": 30.33,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 52,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 76
-            },
-            "wind": {
-                "speed": 3.36,
-                "deg": 96,
-                "gust": 5.32
-            },
-            "visibility": 10000,
-            "pop": 0.22,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 02:00:00"
-        },
-        {
-            "dt": 1724986800,
-            "main": {
-                "temp": 28.77,
-                "feels_like": 30.65,
-                "temp_min": 28.77,
-                "temp_max": 28.77,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 60,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10n"
-                }
-            ],
-            "clouds": {
-                "all": 74
-            },
-            "wind": {
-                "speed": 4.18,
-                "deg": 130,
-                "gust": 7.62
-            },
-            "visibility": 10000,
-            "pop": 0.64,
-            "rain": {
-                "1h": 0.45
-            },
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 03:00:00"
-        },
-        {
-            "dt": 1724990400,
-            "main": {
-                "temp": 27.87,
-                "feels_like": 29.59,
-                "temp_min": 27.87,
-                "temp_max": 27.87,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 63,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10n"
-                }
-            ],
-            "clouds": {
-                "all": 68
-            },
-            "wind": {
-                "speed": 2.9,
-                "deg": 117,
-                "gust": 4.23
-            },
-            "visibility": 10000,
-            "pop": 0.63,
-            "rain": {
-                "1h": 0.11
-            },
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 04:00:00"
-        },
-        {
-            "dt": 1724994000,
-            "main": {
-                "temp": 27.04,
-                "feels_like": 28.67,
-                "temp_min": 27.04,
-                "temp_max": 27.04,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 967,
-                "humidity": 67,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 52
-            },
-            "wind": {
-                "speed": 3.24,
-                "deg": 104,
-                "gust": 4.63
-            },
-            "visibility": 10000,
-            "pop": 0.54,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 05:00:00"
-        },
-        {
-            "dt": 1724997600,
-            "main": {
-                "temp": 26.61,
-                "feels_like": 26.61,
-                "temp_min": 26.61,
-                "temp_max": 26.61,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 69,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03n"
-                }
-            ],
-            "clouds": {
-                "all": 43
-            },
-            "wind": {
-                "speed": 2.66,
-                "deg": 102,
-                "gust": 3.52
-            },
-            "visibility": 10000,
-            "pop": 0.48,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 06:00:00"
-        },
-        {
-            "dt": 1725001200,
-            "main": {
-                "temp": 26.26,
-                "feels_like": 26.26,
-                "temp_min": 26.26,
-                "temp_max": 26.26,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 69,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 2
-            },
-            "wind": {
-                "speed": 2.88,
-                "deg": 92,
-                "gust": 4.18
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 07:00:00"
-        },
-        {
-            "dt": 1725004800,
-            "main": {
-                "temp": 25.73,
-                "feels_like": 26.26,
-                "temp_min": 25.73,
-                "temp_max": 25.73,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 73,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 1
-            },
-            "wind": {
-                "speed": 3.21,
-                "deg": 93,
-                "gust": 5.34
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 08:00:00"
-        },
-        {
-            "dt": 1725008400,
-            "main": {
-                "temp": 25.38,
-                "feels_like": 25.98,
-                "temp_min": 25.38,
-                "temp_max": 25.38,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 77,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 1
-            },
-            "wind": {
-                "speed": 2.95,
-                "deg": 101,
-                "gust": 4.89
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 09:00:00"
-        },
-        {
-            "dt": 1725012000,
-            "main": {
-                "temp": 24.99,
-                "feels_like": 25.63,
-                "temp_min": 24.99,
-                "temp_max": 24.99,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 80,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 1
-            },
-            "wind": {
-                "speed": 2.35,
-                "deg": 97,
-                "gust": 3.42
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 10:00:00"
-        },
-        {
-            "dt": 1725015600,
-            "main": {
-                "temp": 24.67,
-                "feels_like": 25.33,
-                "temp_min": 24.67,
-                "temp_max": 24.67,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 82,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 0
-            },
-            "wind": {
-                "speed": 1.93,
-                "deg": 100,
-                "gust": 2.38
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 11:00:00"
-        },
-        {
-            "dt": 1725019200,
-            "main": {
-                "temp": 24.49,
-                "feels_like": 25.19,
-                "temp_min": 24.49,
-                "temp_max": 24.49,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 967,
-                "humidity": 84,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 0
-            },
-            "wind": {
-                "speed": 1.57,
-                "deg": 114,
-                "gust": 1.75
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-30 12:00:00"
-        },
-        {
-            "dt": 1725022800,
-            "main": {
-                "temp": 25.04,
-                "feels_like": 25.74,
-                "temp_min": 25.04,
-                "temp_max": 25.04,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 82,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 0
-            },
-            "wind": {
-                "speed": 1.2,
-                "deg": 120,
-                "gust": 2.5
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 13:00:00"
-        },
-        {
-            "dt": 1725026400,
-            "main": {
-                "temp": 26.39,
-                "feels_like": 26.39,
-                "temp_min": 26.39,
-                "temp_max": 26.39,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 75,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 0
-            },
-            "wind": {
-                "speed": 1.78,
-                "deg": 128,
-                "gust": 2.59
-            },
-            "visibility": 10000,
-            "pop": 0.04,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 14:00:00"
-        },
-        {
-            "dt": 1725030000,
-            "main": {
-                "temp": 27.99,
-                "feels_like": 30.39,
-                "temp_min": 27.99,
-                "temp_max": 27.99,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 68,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01d"
-                }
-            ],
-            "clouds": {
-                "all": 0
-            },
-            "wind": {
-                "speed": 2.19,
-                "deg": 127,
-                "gust": 2.97
-            },
-            "visibility": 10000,
-            "pop": 0.15,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 15:00:00"
-        },
-        {
-            "dt": 1725033600,
-            "main": {
-                "temp": 29.74,
-                "feels_like": 32.34,
-                "temp_min": 29.74,
-                "temp_max": 29.74,
-                "pressure": 1015,
-                "sea_level": 1015,
-                "grnd_level": 968,
-                "humidity": 60,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 6
-            },
-            "wind": {
-                "speed": 2.75,
-                "deg": 133,
-                "gust": 3.58
-            },
-            "visibility": 10000,
-            "pop": 0.4,
-            "rain": {
-                "1h": 0.31
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 16:00:00"
-        },
-        {
-            "dt": 1725037200,
-            "main": {
-                "temp": 31.22,
-                "feels_like": 33.85,
-                "temp_min": 31.22,
-                "temp_max": 31.22,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 54,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 19
-            },
-            "wind": {
-                "speed": 2.95,
-                "deg": 127,
-                "gust": 3.59
-            },
-            "visibility": 10000,
-            "pop": 0.49,
-            "rain": {
-                "1h": 0.31
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 17:00:00"
-        },
-        {
-            "dt": 1725040800,
-            "main": {
-                "temp": 32.05,
-                "feels_like": 34.46,
-                "temp_min": 32.05,
-                "temp_max": 32.05,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 968,
-                "humidity": 50,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "nubes dispersas",
-                    "icon": "03d"
-                }
-            ],
-            "clouds": {
-                "all": 33
-            },
-            "wind": {
-                "speed": 3.52,
-                "deg": 112,
-                "gust": 3.72
-            },
-            "visibility": 10000,
-            "pop": 0.47,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 18:00:00"
-        },
-        {
-            "dt": 1725044400,
-            "main": {
-                "temp": 32.94,
-                "feels_like": 35.09,
-                "temp_min": 32.94,
-                "temp_max": 32.94,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 46,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "nubes",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 96
-            },
-            "wind": {
-                "speed": 3.55,
-                "deg": 98,
-                "gust": 3.36
-            },
-            "visibility": 10000,
-            "pop": 0.14,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 19:00:00"
-        },
-        {
-            "dt": 1725048000,
-            "main": {
-                "temp": 34.06,
-                "feels_like": 36.34,
-                "temp_min": 34.06,
-                "temp_max": 34.06,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 43,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "nubes",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 92
-            },
-            "wind": {
-                "speed": 3.32,
-                "deg": 88,
-                "gust": 3
-            },
-            "visibility": 10000,
-            "pop": 0.21,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 20:00:00"
-        },
-        {
-            "dt": 1725051600,
-            "main": {
-                "temp": 34.78,
-                "feels_like": 36.81,
-                "temp_min": 34.78,
-                "temp_max": 34.78,
-                "pressure": 1011,
-                "sea_level": 1011,
-                "grnd_level": 965,
-                "humidity": 40,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 82
-            },
-            "wind": {
-                "speed": 2.99,
-                "deg": 78,
-                "gust": 2.57
-            },
-            "visibility": 10000,
-            "pop": 0.24,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 21:00:00"
-        },
-        {
-            "dt": 1725055200,
-            "main": {
-                "temp": 34.87,
-                "feels_like": 36.41,
-                "temp_min": 34.87,
-                "temp_max": 34.87,
-                "pressure": 1010,
-                "sea_level": 1010,
-                "grnd_level": 965,
-                "humidity": 38,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 76
-            },
-            "wind": {
-                "speed": 2.17,
-                "deg": 77,
-                "gust": 2.5
-            },
-            "visibility": 10000,
-            "pop": 0.26,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 22:00:00"
-        },
-        {
-            "dt": 1725058800,
-            "main": {
-                "temp": 35.07,
-                "feels_like": 36.48,
-                "temp_min": 35.07,
-                "temp_max": 35.07,
-                "pressure": 1010,
-                "sea_level": 1010,
-                "grnd_level": 964,
-                "humidity": 37,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04d"
-                }
-            ],
-            "clouds": {
-                "all": 74
-            },
-            "wind": {
-                "speed": 3.52,
-                "deg": 64,
-                "gust": 3.39
-            },
-            "visibility": 10000,
-            "pop": 0.27,
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-30 23:00:00"
-        },
-        {
-            "dt": 1725062400,
-            "main": {
-                "temp": 33.32,
-                "feels_like": 35.01,
-                "temp_min": 33.32,
-                "temp_max": 33.32,
-                "pressure": 1010,
-                "sea_level": 1010,
-                "grnd_level": 964,
-                "humidity": 43,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 76
-            },
-            "wind": {
-                "speed": 4.72,
-                "deg": 83,
-                "gust": 6.01
-            },
-            "visibility": 10000,
-            "pop": 0.26,
-            "rain": {
-                "1h": 0.24
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-31 00:00:00"
-        },
-        {
-            "dt": 1725066000,
-            "main": {
-                "temp": 29.74,
-                "feels_like": 31.63,
-                "temp_min": 29.74,
-                "temp_max": 29.74,
-                "pressure": 1011,
-                "sea_level": 1011,
-                "grnd_level": 965,
-                "humidity": 56,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "lluvia ligera",
-                    "icon": "10d"
-                }
-            ],
-            "clouds": {
-                "all": 100
-            },
-            "wind": {
-                "speed": 4.26,
-                "deg": 180,
-                "gust": 7.28
-            },
-            "visibility": 10000,
-            "pop": 0.82,
-            "rain": {
-                "1h": 0.7
-            },
-            "sys": {
-                "pod": "d"
-            },
-            "dt_txt": "2024-08-31 01:00:00"
-        },
-        {
-            "dt": 1725069600,
-            "main": {
-                "temp": 29.27,
-                "feels_like": 30.86,
-                "temp_min": 29.27,
-                "temp_max": 29.27,
-                "pressure": 1011,
-                "sea_level": 1011,
-                "grnd_level": 965,
-                "humidity": 56,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "nubes",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 100
-            },
-            "wind": {
-                "speed": 3.5,
-                "deg": 229,
-                "gust": 5.74
-            },
-            "visibility": 10000,
-            "pop": 0.75,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-31 02:00:00"
-        },
-        {
-            "dt": 1725073200,
-            "main": {
-                "temp": 28.52,
-                "feels_like": 30.12,
-                "temp_min": 28.52,
-                "temp_max": 28.52,
-                "pressure": 1012,
-                "sea_level": 1012,
-                "grnd_level": 966,
-                "humidity": 59,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "nubes",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 97
-            },
-            "wind": {
-                "speed": 2.27,
-                "deg": 68,
-                "gust": 2.29
-            },
-            "visibility": 10000,
-            "pop": 0.67,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-31 03:00:00"
-        },
-        {
-            "dt": 1725076800,
-            "main": {
-                "temp": 27.26,
-                "feels_like": 28.75,
-                "temp_min": 27.26,
-                "temp_max": 27.26,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 966,
-                "humidity": 64,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "nubes",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 86
-            },
-            "wind": {
-                "speed": 3.2,
-                "deg": 94,
-                "gust": 4.38
-            },
-            "visibility": 10000,
-            "pop": 0.62,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-31 04:00:00"
-        },
-        {
-            "dt": 1725080400,
-            "main": {
-                "temp": 26.59,
-                "feels_like": 26.59,
-                "temp_min": 26.59,
-                "temp_max": 26.59,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 65,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 78
-            },
-            "wind": {
-                "speed": 2.44,
-                "deg": 109,
-                "gust": 3.72
-            },
-            "visibility": 10000,
-            "pop": 0.55,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-31 05:00:00"
-        },
-        {
-            "dt": 1725084000,
-            "main": {
-                "temp": 26.16,
-                "feels_like": 26.16,
-                "temp_min": 26.16,
-                "temp_max": 26.16,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 967,
-                "humidity": 64,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "muy nuboso",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 73
-            },
-            "wind": {
-                "speed": 2.83,
-                "deg": 107,
-                "gust": 4.89
-            },
-            "visibility": 10000,
-            "pop": 0.44,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-31 06:00:00"
-        },
-        {
-            "dt": 1725087600,
-            "main": {
-                "temp": 25.56,
-                "feels_like": 25.92,
-                "temp_min": 25.56,
-                "temp_max": 25.56,
-                "pressure": 1013,
-                "sea_level": 1013,
-                "grnd_level": 966,
-                "humidity": 67,
-                "temp_kf": 0
-            },
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "cielo claro",
-                    "icon": "01n"
-                }
-            ],
-            "clouds": {
-                "all": 0
-            },
-            "wind": {
-                "speed": 2.38,
-                "deg": 97,
-                "gust": 3.29
-            },
-            "visibility": 10000,
-            "pop": 0.2,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2024-08-31 07:00:00"
-        }
-    ],
-    "city": {
-        "id": 3999707,
-        "name": "Las Ladrilleras",
-        "coord": {
-            "lat": 25.7785,
-            "lon": -100.107
-        },
-        "country": "MX",
-        "population": 0,
-        "timezone": -21600,
-        "sunrise": 1724761145,
-        "sunset": 1724807096
+[
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 20.62,
+        "Nubosidad": 0,
+        "Presi\u00f3n a nivel del mar": 1019,
+        "Presi\u00f3n a nivel del suelo": 1019,
+        "Presi\u00f3n atmosf\u00e9rica": 1019,
+        "Temperatura minima": 19.31,
+        "Temperatura maxima": 20.62,
+        "Velocidad del viento": 1.86,
+        "Direcci\u00f3n del viento": 113,
+        "R\u00e1fagas del viento": 2.34,
+        "Fecha y hora": "2024-08-27 19:00:00",
+        "Humedad": 68,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "algo de nubes",
+        "Temperatura": 20.23,
+        "Nubosidad": 11,
+        "Presi\u00f3n a nivel del mar": 1019,
+        "Presi\u00f3n a nivel del suelo": 1019,
+        "Presi\u00f3n atmosf\u00e9rica": 1019,
+        "Temperatura minima": 18.69,
+        "Temperatura maxima": 20.23,
+        "Velocidad del viento": 2.1,
+        "Direcci\u00f3n del viento": 121,
+        "R\u00e1fagas del viento": 3.02,
+        "Fecha y hora": "2024-08-27 20:00:00",
+        "Humedad": 67,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 19.62,
+        "Nubosidad": 28,
+        "Presi\u00f3n a nivel del mar": 1019,
+        "Presi\u00f3n a nivel del suelo": 1019,
+        "Presi\u00f3n atmosf\u00e9rica": 1019,
+        "Temperatura minima": 18.13,
+        "Temperatura maxima": 19.62,
+        "Velocidad del viento": 2.17,
+        "Direcci\u00f3n del viento": 119,
+        "R\u00e1fagas del viento": 3.43,
+        "Fecha y hora": "2024-08-27 21:00:00",
+        "Humedad": 68,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 18.74,
+        "Nubosidad": 47,
+        "Presi\u00f3n a nivel del mar": 1019,
+        "Presi\u00f3n a nivel del suelo": 1019,
+        "Presi\u00f3n atmosf\u00e9rica": 1019,
+        "Temperatura minima": 17.48,
+        "Temperatura maxima": 18.74,
+        "Velocidad del viento": 2.39,
+        "Direcci\u00f3n del viento": 117,
+        "R\u00e1fagas del viento": 4.41,
+        "Fecha y hora": "2024-08-27 22:00:00",
+        "Humedad": 70,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 17.76,
+        "Nubosidad": 57,
+        "Presi\u00f3n a nivel del mar": 1018,
+        "Presi\u00f3n a nivel del suelo": 1018,
+        "Presi\u00f3n atmosf\u00e9rica": 1018,
+        "Temperatura minima": 17.05,
+        "Temperatura maxima": 17.76,
+        "Velocidad del viento": 2.28,
+        "Direcci\u00f3n del viento": 122,
+        "R\u00e1fagas del viento": 3.99,
+        "Fecha y hora": "2024-08-27 23:00:00",
+        "Humedad": 70,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 16.83,
+        "Nubosidad": 61,
+        "Presi\u00f3n a nivel del mar": 1018,
+        "Presi\u00f3n a nivel del suelo": 1018,
+        "Presi\u00f3n atmosf\u00e9rica": 1018,
+        "Temperatura minima": 16.83,
+        "Temperatura maxima": 16.83,
+        "Velocidad del viento": 2.14,
+        "Direcci\u00f3n del viento": 124,
+        "R\u00e1fagas del viento": 3.3,
+        "Fecha y hora": "2024-08-28 00:00:00",
+        "Humedad": 70,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 16.38,
+        "Nubosidad": 6,
+        "Presi\u00f3n a nivel del mar": 1018,
+        "Presi\u00f3n a nivel del suelo": 1018,
+        "Presi\u00f3n atmosf\u00e9rica": 1018,
+        "Temperatura minima": 16.38,
+        "Temperatura maxima": 16.38,
+        "Velocidad del viento": 2.01,
+        "Direcci\u00f3n del viento": 122,
+        "R\u00e1fagas del viento": 2.7,
+        "Fecha y hora": "2024-08-28 01:00:00",
+        "Humedad": 71,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 16.1,
+        "Nubosidad": 7,
+        "Presi\u00f3n a nivel del mar": 1017,
+        "Presi\u00f3n a nivel del suelo": 1018,
+        "Presi\u00f3n atmosf\u00e9rica": 1017,
+        "Temperatura minima": 16.1,
+        "Temperatura maxima": 16.1,
+        "Velocidad del viento": 2,
+        "Direcci\u00f3n del viento": 117,
+        "R\u00e1fagas del viento": 2.44,
+        "Fecha y hora": "2024-08-28 02:00:00",
+        "Humedad": 72,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 15.91,
+        "Nubosidad": 7,
+        "Presi\u00f3n a nivel del mar": 1017,
+        "Presi\u00f3n a nivel del suelo": 1017,
+        "Presi\u00f3n atmosf\u00e9rica": 1017,
+        "Temperatura minima": 15.91,
+        "Temperatura maxima": 15.91,
+        "Velocidad del viento": 1.67,
+        "Direcci\u00f3n del viento": 122,
+        "R\u00e1fagas del viento": 1.69,
+        "Fecha y hora": "2024-08-28 03:00:00",
+        "Humedad": 72,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 15.78,
+        "Nubosidad": 7,
+        "Presi\u00f3n a nivel del mar": 1017,
+        "Presi\u00f3n a nivel del suelo": 1017,
+        "Presi\u00f3n atmosf\u00e9rica": 1017,
+        "Temperatura minima": 15.78,
+        "Temperatura maxima": 15.78,
+        "Velocidad del viento": 1.87,
+        "Direcci\u00f3n del viento": 118,
+        "R\u00e1fagas del viento": 2.03,
+        "Fecha y hora": "2024-08-28 04:00:00",
+        "Humedad": 72,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 15.49,
+        "Nubosidad": 8,
+        "Presi\u00f3n a nivel del mar": 1017,
+        "Presi\u00f3n a nivel del suelo": 1017,
+        "Presi\u00f3n atmosf\u00e9rica": 1017,
+        "Temperatura minima": 15.49,
+        "Temperatura maxima": 15.49,
+        "Velocidad del viento": 2.14,
+        "Direcci\u00f3n del viento": 120,
+        "R\u00e1fagas del viento": 2.65,
+        "Fecha y hora": "2024-08-28 05:00:00",
+        "Humedad": 72,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 16.44,
+        "Nubosidad": 8,
+        "Presi\u00f3n a nivel del mar": 1017,
+        "Presi\u00f3n a nivel del suelo": 1017,
+        "Presi\u00f3n atmosf\u00e9rica": 1017,
+        "Temperatura minima": 16.44,
+        "Temperatura maxima": 16.44,
+        "Velocidad del viento": 2.04,
+        "Direcci\u00f3n del viento": 115,
+        "R\u00e1fagas del viento": 3.96,
+        "Fecha y hora": "2024-08-28 06:00:00",
+        "Humedad": 71,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 18.71,
+        "Nubosidad": 72,
+        "Presi\u00f3n a nivel del mar": 1017,
+        "Presi\u00f3n a nivel del suelo": 1017,
+        "Presi\u00f3n atmosf\u00e9rica": 1017,
+        "Temperatura minima": 18.71,
+        "Temperatura maxima": 18.71,
+        "Velocidad del viento": 2.25,
+        "Direcci\u00f3n del viento": 121,
+        "R\u00e1fagas del viento": 4.24,
+        "Fecha y hora": "2024-08-28 07:00:00",
+        "Humedad": 63,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 21.03,
+        "Nubosidad": 66,
+        "Presi\u00f3n a nivel del mar": 1016,
+        "Presi\u00f3n a nivel del suelo": 1016,
+        "Presi\u00f3n atmosf\u00e9rica": 1016,
+        "Temperatura minima": 21.03,
+        "Temperatura maxima": 21.03,
+        "Velocidad del viento": 2.62,
+        "Direcci\u00f3n del viento": 127,
+        "R\u00e1fagas del viento": 4.46,
+        "Fecha y hora": "2024-08-28 08:00:00",
+        "Humedad": 58,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 23.16,
+        "Nubosidad": 77,
+        "Presi\u00f3n a nivel del mar": 1016,
+        "Presi\u00f3n a nivel del suelo": 1016,
+        "Presi\u00f3n atmosf\u00e9rica": 1016,
+        "Temperatura minima": 23.16,
+        "Temperatura maxima": 23.16,
+        "Velocidad del viento": 2.7,
+        "Direcci\u00f3n del viento": 132,
+        "R\u00e1fagas del viento": 4.54,
+        "Fecha y hora": "2024-08-28 09:00:00",
+        "Humedad": 54,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 25.07,
+        "Nubosidad": 79,
+        "Presi\u00f3n a nivel del mar": 1016,
+        "Presi\u00f3n a nivel del suelo": 1016,
+        "Presi\u00f3n atmosf\u00e9rica": 1016,
+        "Temperatura minima": 25.07,
+        "Temperatura maxima": 25.07,
+        "Velocidad del viento": 3.06,
+        "Direcci\u00f3n del viento": 136,
+        "R\u00e1fagas del viento": 4.82,
+        "Fecha y hora": "2024-08-28 10:00:00",
+        "Humedad": 50,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 26.39,
+        "Nubosidad": 75,
+        "Presi\u00f3n a nivel del mar": 1015,
+        "Presi\u00f3n a nivel del suelo": 1015,
+        "Presi\u00f3n atmosf\u00e9rica": 1015,
+        "Temperatura minima": 26.39,
+        "Temperatura maxima": 26.39,
+        "Velocidad del viento": 3.39,
+        "Direcci\u00f3n del viento": 142,
+        "R\u00e1fagas del viento": 4.9,
+        "Fecha y hora": "2024-08-28 11:00:00",
+        "Humedad": 48,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 27.33,
+        "Nubosidad": 79,
+        "Presi\u00f3n a nivel del mar": 1015,
+        "Presi\u00f3n a nivel del suelo": 1015,
+        "Presi\u00f3n atmosf\u00e9rica": 1015,
+        "Temperatura minima": 27.33,
+        "Temperatura maxima": 27.33,
+        "Velocidad del viento": 3.49,
+        "Direcci\u00f3n del viento": 149,
+        "R\u00e1fagas del viento": 4.9,
+        "Fecha y hora": "2024-08-28 12:00:00",
+        "Humedad": 46,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 27.77,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1014,
+        "Presi\u00f3n a nivel del suelo": 1014,
+        "Presi\u00f3n atmosf\u00e9rica": 1014,
+        "Temperatura minima": 27.77,
+        "Temperatura maxima": 27.77,
+        "Velocidad del viento": 3.48,
+        "Direcci\u00f3n del viento": 155,
+        "R\u00e1fagas del viento": 4.56,
+        "Fecha y hora": "2024-08-28 13:00:00",
+        "Humedad": 44,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 28.03,
+        "Nubosidad": 58,
+        "Presi\u00f3n a nivel del mar": 1014,
+        "Presi\u00f3n a nivel del suelo": 1014,
+        "Presi\u00f3n atmosf\u00e9rica": 1014,
+        "Temperatura minima": 28.03,
+        "Temperatura maxima": 28.03,
+        "Velocidad del viento": 3.58,
+        "Direcci\u00f3n del viento": 158,
+        "R\u00e1fagas del viento": 4.43,
+        "Fecha y hora": "2024-08-28 14:00:00",
+        "Humedad": 44,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 27.9,
+        "Nubosidad": 41,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 27.9,
+        "Temperatura maxima": 27.9,
+        "Velocidad del viento": 3.59,
+        "Direcci\u00f3n del viento": 158,
+        "R\u00e1fagas del viento": 4.42,
+        "Fecha y hora": "2024-08-28 15:00:00",
+        "Humedad": 45,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 27.55,
+        "Nubosidad": 34,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 27.55,
+        "Temperatura maxima": 27.55,
+        "Velocidad del viento": 3.18,
+        "Direcci\u00f3n del viento": 155,
+        "R\u00e1fagas del viento": 4.41,
+        "Fecha y hora": "2024-08-28 16:00:00",
+        "Humedad": 48,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 26.65,
+        "Nubosidad": 30,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 26.65,
+        "Temperatura maxima": 26.65,
+        "Velocidad del viento": 2.24,
+        "Direcci\u00f3n del viento": 142,
+        "R\u00e1fagas del viento": 4.13,
+        "Fecha y hora": "2024-08-28 17:00:00",
+        "Humedad": 54,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 24.45,
+        "Nubosidad": 27,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 24.45,
+        "Temperatura maxima": 24.45,
+        "Velocidad del viento": 2.07,
+        "Direcci\u00f3n del viento": 138,
+        "R\u00e1fagas del viento": 3.06,
+        "Fecha y hora": "2024-08-28 18:00:00",
+        "Humedad": 62,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 22.75,
+        "Nubosidad": 7,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 22.75,
+        "Temperatura maxima": 22.75,
+        "Velocidad del viento": 2.07,
+        "Direcci\u00f3n del viento": 138,
+        "R\u00e1fagas del viento": 2.77,
+        "Fecha y hora": "2024-08-28 19:00:00",
+        "Humedad": 67,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 22.12,
+        "Nubosidad": 8,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 22.12,
+        "Temperatura maxima": 22.12,
+        "Velocidad del viento": 1.94,
+        "Direcci\u00f3n del viento": 140,
+        "R\u00e1fagas del viento": 2.38,
+        "Fecha y hora": "2024-08-28 20:00:00",
+        "Humedad": 69,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 21.5,
+        "Nubosidad": 38,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 21.5,
+        "Temperatura maxima": 21.5,
+        "Velocidad del viento": 2.11,
+        "Direcci\u00f3n del viento": 151,
+        "R\u00e1fagas del viento": 3.08,
+        "Fecha y hora": "2024-08-28 21:00:00",
+        "Humedad": 71,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 20.9,
+        "Nubosidad": 45,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 20.9,
+        "Temperatura maxima": 20.9,
+        "Velocidad del viento": 2.15,
+        "Direcci\u00f3n del viento": 164,
+        "R\u00e1fagas del viento": 3.49,
+        "Fecha y hora": "2024-08-28 22:00:00",
+        "Humedad": 74,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 20.62,
+        "Nubosidad": 46,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 20.62,
+        "Temperatura maxima": 20.62,
+        "Velocidad del viento": 2.29,
+        "Direcci\u00f3n del viento": 164,
+        "R\u00e1fagas del viento": 4.04,
+        "Fecha y hora": "2024-08-28 23:00:00",
+        "Humedad": 74,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "muy nuboso",
+        "Temperatura": 20.13,
+        "Nubosidad": 52,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 20.13,
+        "Temperatura maxima": 20.13,
+        "Velocidad del viento": 2.44,
+        "Direcci\u00f3n del viento": 173,
+        "R\u00e1fagas del viento": 4.81,
+        "Fecha y hora": "2024-08-29 00:00:00",
+        "Humedad": 73,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 19.73,
+        "Nubosidad": 34,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 19.73,
+        "Temperatura maxima": 19.73,
+        "Velocidad del viento": 2.37,
+        "Direcci\u00f3n del viento": 176,
+        "R\u00e1fagas del viento": 4.49,
+        "Fecha y hora": "2024-08-29 01:00:00",
+        "Humedad": 73,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 19.38,
+        "Nubosidad": 25,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 19.38,
+        "Temperatura maxima": 19.38,
+        "Velocidad del viento": 2.37,
+        "Direcci\u00f3n del viento": 174,
+        "R\u00e1fagas del viento": 4.33,
+        "Fecha y hora": "2024-08-29 02:00:00",
+        "Humedad": 73,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 19.08,
+        "Nubosidad": 42,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 19.08,
+        "Temperatura maxima": 19.08,
+        "Velocidad del viento": 2.35,
+        "Direcci\u00f3n del viento": 167,
+        "R\u00e1fagas del viento": 4.33,
+        "Fecha y hora": "2024-08-29 03:00:00",
+        "Humedad": 74,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 18.66,
+        "Nubosidad": 38,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 18.66,
+        "Temperatura maxima": 18.66,
+        "Velocidad del viento": 2.46,
+        "Direcci\u00f3n del viento": 169,
+        "R\u00e1fagas del viento": 5.35,
+        "Fecha y hora": "2024-08-29 04:00:00",
+        "Humedad": 78,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 18.26,
+        "Nubosidad": 32,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 18.26,
+        "Temperatura maxima": 18.26,
+        "Velocidad del viento": 2.27,
+        "Direcci\u00f3n del viento": 179,
+        "R\u00e1fagas del viento": 5.08,
+        "Fecha y hora": "2024-08-29 05:00:00",
+        "Humedad": 80,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 19.2,
+        "Nubosidad": 29,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 19.2,
+        "Temperatura maxima": 19.2,
+        "Velocidad del viento": 2.15,
+        "Direcci\u00f3n del viento": 175,
+        "R\u00e1fagas del viento": 5.39,
+        "Fecha y hora": "2024-08-29 06:00:00",
+        "Humedad": 77,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "algo de nubes",
+        "Temperatura": 21.31,
+        "Nubosidad": 18,
+        "Presi\u00f3n a nivel del mar": 1013,
+        "Presi\u00f3n a nivel del suelo": 1013,
+        "Presi\u00f3n atmosf\u00e9rica": 1013,
+        "Temperatura minima": 21.31,
+        "Temperatura maxima": 21.31,
+        "Velocidad del viento": 2.45,
+        "Direcci\u00f3n del viento": 203,
+        "R\u00e1fagas del viento": 4.83,
+        "Fecha y hora": "2024-08-29 07:00:00",
+        "Humedad": 68,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 22.94,
+        "Nubosidad": 33,
+        "Presi\u00f3n a nivel del mar": 1014,
+        "Presi\u00f3n a nivel del suelo": 1014,
+        "Presi\u00f3n atmosf\u00e9rica": 1014,
+        "Temperatura minima": 22.94,
+        "Temperatura maxima": 22.94,
+        "Velocidad del viento": 2.91,
+        "Direcci\u00f3n del viento": 229,
+        "R\u00e1fagas del viento": 4.59,
+        "Fecha y hora": "2024-08-29 08:00:00",
+        "Humedad": 62,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 24.13,
+        "Nubosidad": 42,
+        "Presi\u00f3n a nivel del mar": 1014,
+        "Presi\u00f3n a nivel del suelo": 1014,
+        "Presi\u00f3n atmosf\u00e9rica": 1014,
+        "Temperatura minima": 24.13,
+        "Temperatura maxima": 24.13,
+        "Velocidad del viento": 3.1,
+        "Direcci\u00f3n del viento": 250,
+        "R\u00e1fagas del viento": 4.5,
+        "Fecha y hora": "2024-08-29 09:00:00",
+        "Humedad": 59,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 24.32,
+        "Nubosidad": 36,
+        "Presi\u00f3n a nivel del mar": 1014,
+        "Presi\u00f3n a nivel del suelo": 1015,
+        "Presi\u00f3n atmosf\u00e9rica": 1014,
+        "Temperatura minima": 24.32,
+        "Temperatura maxima": 24.32,
+        "Velocidad del viento": 4.47,
+        "Direcci\u00f3n del viento": 277,
+        "R\u00e1fagas del viento": 5.26,
+        "Fecha y hora": "2024-08-29 10:00:00",
+        "Humedad": 58,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 23.29,
+        "Nubosidad": 33,
+        "Presi\u00f3n a nivel del mar": 1015,
+        "Presi\u00f3n a nivel del suelo": 1015,
+        "Presi\u00f3n atmosf\u00e9rica": 1015,
+        "Temperatura minima": 23.29,
+        "Temperatura maxima": 23.29,
+        "Velocidad del viento": 5.33,
+        "Direcci\u00f3n del viento": 292,
+        "R\u00e1fagas del viento": 6.26,
+        "Fecha y hora": "2024-08-29 11:00:00",
+        "Humedad": 60,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 23,
+        "Nubosidad": 31,
+        "Presi\u00f3n a nivel del mar": 1016,
+        "Presi\u00f3n a nivel del suelo": 1016,
+        "Presi\u00f3n atmosf\u00e9rica": 1016,
+        "Temperatura minima": 23,
+        "Temperatura maxima": 23,
+        "Velocidad del viento": 5.06,
+        "Direcci\u00f3n del viento": 295,
+        "R\u00e1fagas del viento": 6.38,
+        "Fecha y hora": "2024-08-29 12:00:00",
+        "Humedad": 60,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 22.37,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1017,
+        "Presi\u00f3n a nivel del suelo": 1017,
+        "Presi\u00f3n atmosf\u00e9rica": 1017,
+        "Temperatura minima": 22.37,
+        "Temperatura maxima": 22.37,
+        "Velocidad del viento": 5.24,
+        "Direcci\u00f3n del viento": 297,
+        "R\u00e1fagas del viento": 6.32,
+        "Fecha y hora": "2024-08-29 13:00:00",
+        "Humedad": 61,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 21.51,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1017,
+        "Presi\u00f3n a nivel del suelo": 1017,
+        "Presi\u00f3n atmosf\u00e9rica": 1017,
+        "Temperatura minima": 21.51,
+        "Temperatura maxima": 21.51,
+        "Velocidad del viento": 4.53,
+        "Direcci\u00f3n del viento": 301,
+        "R\u00e1fagas del viento": 5.85,
+        "Fecha y hora": "2024-08-29 14:00:00",
+        "Humedad": 62,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 21.04,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1018,
+        "Presi\u00f3n a nivel del suelo": 1018,
+        "Presi\u00f3n atmosf\u00e9rica": 1018,
+        "Temperatura minima": 21.04,
+        "Temperatura maxima": 21.04,
+        "Velocidad del viento": 4.19,
+        "Direcci\u00f3n del viento": 301,
+        "R\u00e1fagas del viento": 5.28,
+        "Fecha y hora": "2024-08-29 15:00:00",
+        "Humedad": 61,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 20.06,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1018,
+        "Presi\u00f3n a nivel del suelo": 1018,
+        "Presi\u00f3n atmosf\u00e9rica": 1018,
+        "Temperatura minima": 20.06,
+        "Temperatura maxima": 20.06,
+        "Velocidad del viento": 3.86,
+        "Direcci\u00f3n del viento": 304,
+        "R\u00e1fagas del viento": 4.95,
+        "Fecha y hora": "2024-08-29 16:00:00",
+        "Humedad": 63,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 19.34,
+        "Nubosidad": 99,
+        "Presi\u00f3n a nivel del mar": 1018,
+        "Presi\u00f3n a nivel del suelo": 1018,
+        "Presi\u00f3n atmosf\u00e9rica": 1018,
+        "Temperatura minima": 19.34,
+        "Temperatura maxima": 19.34,
+        "Velocidad del viento": 3.48,
+        "Direcci\u00f3n del viento": 313,
+        "R\u00e1fagas del viento": 4.75,
+        "Fecha y hora": "2024-08-29 17:00:00",
+        "Humedad": 66,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 18.15,
+        "Nubosidad": 99,
+        "Presi\u00f3n a nivel del mar": 1019,
+        "Presi\u00f3n a nivel del suelo": 1019,
+        "Presi\u00f3n atmosf\u00e9rica": 1019,
+        "Temperatura minima": 18.15,
+        "Temperatura maxima": 18.15,
+        "Velocidad del viento": 2.9,
+        "Direcci\u00f3n del viento": 327,
+        "R\u00e1fagas del viento": 4.64,
+        "Fecha y hora": "2024-08-29 18:00:00",
+        "Humedad": 73,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 17.06,
+        "Nubosidad": 98,
+        "Presi\u00f3n a nivel del mar": 1020,
+        "Presi\u00f3n a nivel del suelo": 1020,
+        "Presi\u00f3n atmosf\u00e9rica": 1020,
+        "Temperatura minima": 17.06,
+        "Temperatura maxima": 17.06,
+        "Velocidad del viento": 2.2,
+        "Direcci\u00f3n del viento": 339,
+        "R\u00e1fagas del viento": 4.08,
+        "Fecha y hora": "2024-08-29 19:00:00",
+        "Humedad": 78,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 16.58,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1020,
+        "Presi\u00f3n a nivel del suelo": 1020,
+        "Presi\u00f3n atmosf\u00e9rica": 1020,
+        "Temperatura minima": 16.58,
+        "Temperatura maxima": 16.58,
+        "Velocidad del viento": 2.02,
+        "Direcci\u00f3n del viento": 337,
+        "R\u00e1fagas del viento": 4.11,
+        "Fecha y hora": "2024-08-29 20:00:00",
+        "Humedad": 80,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 16.21,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1020,
+        "Presi\u00f3n a nivel del suelo": 1020,
+        "Presi\u00f3n atmosf\u00e9rica": 1020,
+        "Temperatura minima": 16.21,
+        "Temperatura maxima": 16.21,
+        "Velocidad del viento": 1.77,
+        "Direcci\u00f3n del viento": 350,
+        "R\u00e1fagas del viento": 3.73,
+        "Fecha y hora": "2024-08-29 21:00:00",
+        "Humedad": 79,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 15.72,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1020,
+        "Presi\u00f3n a nivel del suelo": 1020,
+        "Presi\u00f3n atmosf\u00e9rica": 1020,
+        "Temperatura minima": 15.72,
+        "Temperatura maxima": 15.72,
+        "Velocidad del viento": 1.5,
+        "Direcci\u00f3n del viento": 4,
+        "R\u00e1fagas del viento": 3,
+        "Fecha y hora": "2024-08-29 22:00:00",
+        "Humedad": 77,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 15.24,
+        "Nubosidad": 89,
+        "Presi\u00f3n a nivel del mar": 1021,
+        "Presi\u00f3n a nivel del suelo": 1021,
+        "Presi\u00f3n atmosf\u00e9rica": 1021,
+        "Temperatura minima": 15.24,
+        "Temperatura maxima": 15.24,
+        "Velocidad del viento": 1.25,
+        "Direcci\u00f3n del viento": 36,
+        "R\u00e1fagas del viento": 1.81,
+        "Fecha y hora": "2024-08-29 23:00:00",
+        "Humedad": 76,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 14.81,
+        "Nubosidad": 90,
+        "Presi\u00f3n a nivel del mar": 1021,
+        "Presi\u00f3n a nivel del suelo": 1021,
+        "Presi\u00f3n atmosf\u00e9rica": 1021,
+        "Temperatura minima": 14.81,
+        "Temperatura maxima": 14.81,
+        "Velocidad del viento": 1.42,
+        "Direcci\u00f3n del viento": 67,
+        "R\u00e1fagas del viento": 1.86,
+        "Fecha y hora": "2024-08-30 00:00:00",
+        "Humedad": 75,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 14.81,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1020,
+        "Presi\u00f3n a nivel del suelo": 1021,
+        "Presi\u00f3n atmosf\u00e9rica": 1020,
+        "Temperatura minima": 14.81,
+        "Temperatura maxima": 14.81,
+        "Velocidad del viento": 1.45,
+        "Direcci\u00f3n del viento": 52,
+        "R\u00e1fagas del viento": 2.23,
+        "Fecha y hora": "2024-08-30 01:00:00",
+        "Humedad": 73,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 14.68,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1020,
+        "Presi\u00f3n a nivel del suelo": 1020,
+        "Presi\u00f3n atmosf\u00e9rica": 1020,
+        "Temperatura minima": 14.68,
+        "Temperatura maxima": 14.68,
+        "Velocidad del viento": 1.3,
+        "Direcci\u00f3n del viento": 43,
+        "R\u00e1fagas del viento": 1.88,
+        "Fecha y hora": "2024-08-30 02:00:00",
+        "Humedad": 71,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 14.63,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1020,
+        "Presi\u00f3n a nivel del suelo": 1020,
+        "Presi\u00f3n atmosf\u00e9rica": 1020,
+        "Temperatura minima": 14.63,
+        "Temperatura maxima": 14.63,
+        "Velocidad del viento": 1.7,
+        "Direcci\u00f3n del viento": 43,
+        "R\u00e1fagas del viento": 2.73,
+        "Fecha y hora": "2024-08-30 03:00:00",
+        "Humedad": 69,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 14.61,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1021,
+        "Presi\u00f3n a nivel del suelo": 1021,
+        "Presi\u00f3n atmosf\u00e9rica": 1021,
+        "Temperatura minima": 14.61,
+        "Temperatura maxima": 14.61,
+        "Velocidad del viento": 1.62,
+        "Direcci\u00f3n del viento": 57,
+        "R\u00e1fagas del viento": 2.47,
+        "Fecha y hora": "2024-08-30 04:00:00",
+        "Humedad": 69,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 14.51,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1021,
+        "Presi\u00f3n a nivel del suelo": 1021,
+        "Presi\u00f3n atmosf\u00e9rica": 1021,
+        "Temperatura minima": 14.51,
+        "Temperatura maxima": 14.51,
+        "Velocidad del viento": 1.78,
+        "Direcci\u00f3n del viento": 32,
+        "R\u00e1fagas del viento": 3.29,
+        "Fecha y hora": "2024-08-30 05:00:00",
+        "Humedad": 70,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 15.19,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1021,
+        "Presi\u00f3n a nivel del suelo": 1021,
+        "Presi\u00f3n atmosf\u00e9rica": 1021,
+        "Temperatura minima": 15.19,
+        "Temperatura maxima": 15.19,
+        "Velocidad del viento": 1.51,
+        "Direcci\u00f3n del viento": 40,
+        "R\u00e1fagas del viento": 3.62,
+        "Fecha y hora": "2024-08-30 06:00:00",
+        "Humedad": 70,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 16.5,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 16.5,
+        "Temperatura maxima": 16.5,
+        "Velocidad del viento": 1.8,
+        "Direcci\u00f3n del viento": 67,
+        "R\u00e1fagas del viento": 3.68,
+        "Fecha y hora": "2024-08-30 07:00:00",
+        "Humedad": 67,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 17.23,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 17.23,
+        "Temperatura maxima": 17.23,
+        "Velocidad del viento": 2.03,
+        "Direcci\u00f3n del viento": 75,
+        "R\u00e1fagas del viento": 3.58,
+        "Fecha y hora": "2024-08-30 08:00:00",
+        "Humedad": 65,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 17.94,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 17.94,
+        "Temperatura maxima": 17.94,
+        "Velocidad del viento": 2.27,
+        "Direcci\u00f3n del viento": 69,
+        "R\u00e1fagas del viento": 3.38,
+        "Fecha y hora": "2024-08-30 09:00:00",
+        "Humedad": 60,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 19.48,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 19.48,
+        "Temperatura maxima": 19.48,
+        "Velocidad del viento": 2.39,
+        "Direcci\u00f3n del viento": 65,
+        "R\u00e1fagas del viento": 3.19,
+        "Fecha y hora": "2024-08-30 10:00:00",
+        "Humedad": 51,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 20.78,
+        "Nubosidad": 99,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 20.78,
+        "Temperatura maxima": 20.78,
+        "Velocidad del viento": 2.61,
+        "Direcci\u00f3n del viento": 62,
+        "R\u00e1fagas del viento": 3.05,
+        "Fecha y hora": "2024-08-30 11:00:00",
+        "Humedad": 45,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 21.65,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 21.65,
+        "Temperatura maxima": 21.65,
+        "Velocidad del viento": 2.93,
+        "Direcci\u00f3n del viento": 55,
+        "R\u00e1fagas del viento": 3.06,
+        "Fecha y hora": "2024-08-30 12:00:00",
+        "Humedad": 42,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 22.02,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 22.02,
+        "Temperatura maxima": 22.02,
+        "Velocidad del viento": 3.43,
+        "Direcci\u00f3n del viento": 53,
+        "R\u00e1fagas del viento": 3.25,
+        "Fecha y hora": "2024-08-30 13:00:00",
+        "Humedad": 42,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 21.79,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 21.79,
+        "Temperatura maxima": 21.79,
+        "Velocidad del viento": 3.66,
+        "Direcci\u00f3n del viento": 55,
+        "R\u00e1fagas del viento": 3.24,
+        "Fecha y hora": "2024-08-30 14:00:00",
+        "Humedad": 43,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 21.33,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 21.33,
+        "Temperatura maxima": 21.33,
+        "Velocidad del viento": 3.77,
+        "Direcci\u00f3n del viento": 56,
+        "R\u00e1fagas del viento": 3.66,
+        "Fecha y hora": "2024-08-30 15:00:00",
+        "Humedad": 44,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 20.78,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 20.78,
+        "Temperatura maxima": 20.78,
+        "Velocidad del viento": 4.05,
+        "Direcci\u00f3n del viento": 50,
+        "R\u00e1fagas del viento": 4.52,
+        "Fecha y hora": "2024-08-30 16:00:00",
+        "Humedad": 46,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 19.71,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1023,
+        "Presi\u00f3n a nivel del suelo": 1023,
+        "Presi\u00f3n atmosf\u00e9rica": 1023,
+        "Temperatura minima": 19.71,
+        "Temperatura maxima": 19.71,
+        "Velocidad del viento": 3.66,
+        "Direcci\u00f3n del viento": 46,
+        "R\u00e1fagas del viento": 5.2,
+        "Fecha y hora": "2024-08-30 17:00:00",
+        "Humedad": 50,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 18.06,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1023,
+        "Presi\u00f3n a nivel del suelo": 1023,
+        "Presi\u00f3n atmosf\u00e9rica": 1023,
+        "Temperatura minima": 18.06,
+        "Temperatura maxima": 18.06,
+        "Velocidad del viento": 3.53,
+        "Direcci\u00f3n del viento": 34,
+        "R\u00e1fagas del viento": 6.51,
+        "Fecha y hora": "2024-08-30 18:00:00",
+        "Humedad": 57,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 16.62,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1023,
+        "Presi\u00f3n a nivel del suelo": 1023,
+        "Presi\u00f3n atmosf\u00e9rica": 1023,
+        "Temperatura minima": 16.62,
+        "Temperatura maxima": 16.62,
+        "Velocidad del viento": 3.69,
+        "Direcci\u00f3n del viento": 30,
+        "R\u00e1fagas del viento": 8.31,
+        "Fecha y hora": "2024-08-30 19:00:00",
+        "Humedad": 66,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 15.97,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 15.97,
+        "Temperatura maxima": 15.97,
+        "Velocidad del viento": 3.26,
+        "Direcci\u00f3n del viento": 32,
+        "R\u00e1fagas del viento": 7.95,
+        "Fecha y hora": "2024-08-30 20:00:00",
+        "Humedad": 74,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 15.34,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 15.34,
+        "Temperatura maxima": 15.34,
+        "Velocidad del viento": 2.8,
+        "Direcci\u00f3n del viento": 37,
+        "R\u00e1fagas del viento": 6.99,
+        "Fecha y hora": "2024-08-30 21:00:00",
+        "Humedad": 79,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 15.08,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 15.08,
+        "Temperatura maxima": 15.08,
+        "Velocidad del viento": 2.83,
+        "Direcci\u00f3n del viento": 41,
+        "R\u00e1fagas del viento": 6.79,
+        "Fecha y hora": "2024-08-30 22:00:00",
+        "Humedad": 81,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 14.72,
+        "Nubosidad": 100,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1025,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 14.72,
+        "Temperatura maxima": 14.72,
+        "Velocidad del viento": 2.71,
+        "Direcci\u00f3n del viento": 40,
+        "R\u00e1fagas del viento": 6.66,
+        "Fecha y hora": "2024-08-30 23:00:00",
+        "Humedad": 83,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes",
+        "Temperatura": 14.16,
+        "Nubosidad": 96,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 14.16,
+        "Temperatura maxima": 14.16,
+        "Velocidad del viento": 2.6,
+        "Direcci\u00f3n del viento": 45,
+        "R\u00e1fagas del viento": 6.36,
+        "Fecha y hora": "2024-08-31 00:00:00",
+        "Humedad": 85,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "algo de nubes",
+        "Temperatura": 13.75,
+        "Nubosidad": 14,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 13.75,
+        "Temperatura maxima": 13.75,
+        "Velocidad del viento": 2.52,
+        "Direcci\u00f3n del viento": 45,
+        "R\u00e1fagas del viento": 6.35,
+        "Fecha y hora": "2024-08-31 01:00:00",
+        "Humedad": 86,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "algo de nubes",
+        "Temperatura": 13.47,
+        "Nubosidad": 18,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 13.47,
+        "Temperatura maxima": 13.47,
+        "Velocidad del viento": 2.54,
+        "Direcci\u00f3n del viento": 41,
+        "R\u00e1fagas del viento": 6.53,
+        "Fecha y hora": "2024-08-31 02:00:00",
+        "Humedad": 87,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 13.23,
+        "Nubosidad": 27,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 13.23,
+        "Temperatura maxima": 13.23,
+        "Velocidad del viento": 2.6,
+        "Direcci\u00f3n del viento": 44,
+        "R\u00e1fagas del viento": 6.83,
+        "Fecha y hora": "2024-08-31 03:00:00",
+        "Humedad": 87,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 12.94,
+        "Nubosidad": 30,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 12.94,
+        "Temperatura maxima": 12.94,
+        "Velocidad del viento": 2.76,
+        "Direcci\u00f3n del viento": 39,
+        "R\u00e1fagas del viento": 7.42,
+        "Fecha y hora": "2024-08-31 04:00:00",
+        "Humedad": 87,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 12.76,
+        "Nubosidad": 30,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 12.76,
+        "Temperatura maxima": 12.76,
+        "Velocidad del viento": 2.69,
+        "Direcci\u00f3n del viento": 42,
+        "R\u00e1fagas del viento": 7.22,
+        "Fecha y hora": "2024-08-31 05:00:00",
+        "Humedad": 87,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 13.5,
+        "Nubosidad": 36,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1025,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 13.5,
+        "Temperatura maxima": 13.5,
+        "Velocidad del viento": 2.65,
+        "Direcci\u00f3n del viento": 49,
+        "R\u00e1fagas del viento": 7.86,
+        "Fecha y hora": "2024-08-31 06:00:00",
+        "Humedad": 82,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 15.47,
+        "Nubosidad": 7,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 15.47,
+        "Temperatura maxima": 15.47,
+        "Velocidad del viento": 3.8,
+        "Direcci\u00f3n del viento": 56,
+        "R\u00e1fagas del viento": 7.44,
+        "Fecha y hora": "2024-08-31 07:00:00",
+        "Humedad": 72,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 16.91,
+        "Nubosidad": 7,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 16.91,
+        "Temperatura maxima": 16.91,
+        "Velocidad del viento": 4.52,
+        "Direcci\u00f3n del viento": 57,
+        "R\u00e1fagas del viento": 6.7,
+        "Fecha y hora": "2024-08-31 08:00:00",
+        "Humedad": 61,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 18.01,
+        "Nubosidad": 4,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 18.01,
+        "Temperatura maxima": 18.01,
+        "Velocidad del viento": 4.57,
+        "Direcci\u00f3n del viento": 58,
+        "R\u00e1fagas del viento": 6.03,
+        "Fecha y hora": "2024-08-31 09:00:00",
+        "Humedad": 55,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 18.95,
+        "Nubosidad": 4,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 18.95,
+        "Temperatura maxima": 18.95,
+        "Velocidad del viento": 4.65,
+        "Direcci\u00f3n del viento": 56,
+        "R\u00e1fagas del viento": 5.84,
+        "Fecha y hora": "2024-08-31 10:00:00",
+        "Humedad": 51,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 19.85,
+        "Nubosidad": 4,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 19.85,
+        "Temperatura maxima": 19.85,
+        "Velocidad del viento": 4.63,
+        "Direcci\u00f3n del viento": 54,
+        "R\u00e1fagas del viento": 5.62,
+        "Fecha y hora": "2024-08-31 11:00:00",
+        "Humedad": 48,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 20.42,
+        "Nubosidad": 3,
+        "Presi\u00f3n a nivel del mar": 1024,
+        "Presi\u00f3n a nivel del suelo": 1024,
+        "Presi\u00f3n atmosf\u00e9rica": 1024,
+        "Temperatura minima": 20.42,
+        "Temperatura maxima": 20.42,
+        "Velocidad del viento": 4.86,
+        "Direcci\u00f3n del viento": 51,
+        "R\u00e1fagas del viento": 5.63,
+        "Fecha y hora": "2024-08-31 12:00:00",
+        "Humedad": 46,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "algo de nubes",
+        "Temperatura": 20.81,
+        "Nubosidad": 14,
+        "Presi\u00f3n a nivel del mar": 1023,
+        "Presi\u00f3n a nivel del suelo": 1023,
+        "Presi\u00f3n atmosf\u00e9rica": 1023,
+        "Temperatura minima": 20.81,
+        "Temperatura maxima": 20.81,
+        "Velocidad del viento": 4.93,
+        "Direcci\u00f3n del viento": 50,
+        "R\u00e1fagas del viento": 5.72,
+        "Fecha y hora": "2024-08-31 13:00:00",
+        "Humedad": 45,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clear",
+        "Descripcion": "cielo claro",
+        "Temperatura": 20.84,
+        "Nubosidad": 8,
+        "Presi\u00f3n a nivel del mar": 1023,
+        "Presi\u00f3n a nivel del suelo": 1023,
+        "Presi\u00f3n atmosf\u00e9rica": 1023,
+        "Temperatura minima": 20.84,
+        "Temperatura maxima": 20.84,
+        "Velocidad del viento": 5.04,
+        "Direcci\u00f3n del viento": 48,
+        "R\u00e1fagas del viento": 5.74,
+        "Fecha y hora": "2024-08-31 14:00:00",
+        "Humedad": 45,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "algo de nubes",
+        "Temperatura": 20.51,
+        "Nubosidad": 12,
+        "Presi\u00f3n a nivel del mar": 1023,
+        "Presi\u00f3n a nivel del suelo": 1023,
+        "Presi\u00f3n atmosf\u00e9rica": 1023,
+        "Temperatura minima": 20.51,
+        "Temperatura maxima": 20.51,
+        "Velocidad del viento": 5.13,
+        "Direcci\u00f3n del viento": 49,
+        "R\u00e1fagas del viento": 5.94,
+        "Fecha y hora": "2024-08-31 15:00:00",
+        "Humedad": 47,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "algo de nubes",
+        "Temperatura": 19.87,
+        "Nubosidad": 14,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 19.87,
+        "Temperatura maxima": 19.87,
+        "Velocidad del viento": 5.26,
+        "Direcci\u00f3n del viento": 48,
+        "R\u00e1fagas del viento": 6.3,
+        "Fecha y hora": "2024-08-31 16:00:00",
+        "Humedad": 49,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "algo de nubes",
+        "Temperatura": 18.86,
+        "Nubosidad": 20,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 18.86,
+        "Temperatura maxima": 18.86,
+        "Velocidad del viento": 4.91,
+        "Direcci\u00f3n del viento": 45,
+        "R\u00e1fagas del viento": 7.14,
+        "Fecha y hora": "2024-08-31 17:00:00",
+        "Humedad": 54,
+        "Visibilidad": 10000
+    },
+    {
+        "Ciudad": "\u00c1msterdam",
+        "Clima": "Clouds",
+        "Descripcion": "nubes dispersas",
+        "Temperatura": 17.29,
+        "Nubosidad": 33,
+        "Presi\u00f3n a nivel del mar": 1022,
+        "Presi\u00f3n a nivel del suelo": 1022,
+        "Presi\u00f3n atmosf\u00e9rica": 1022,
+        "Temperatura minima": 17.29,
+        "Temperatura maxima": 17.29,
+        "Velocidad del viento": 4.53,
+        "Direcci\u00f3n del viento": 45,
+        "R\u00e1fagas del viento": 8.67,
+        "Fecha y hora": "2024-08-31 18:00:00",
+        "Humedad": 59,
+        "Visibilidad": 10000
     }
-}
+]
