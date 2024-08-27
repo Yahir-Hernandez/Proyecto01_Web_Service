@@ -1,17 +1,11 @@
-import pickle
 from iatas import iatasC
-from datetime import datetime as tm
-from vuelo import Vuelo
 from prediccion import predicc
 from cacheyEscritura import cargar_cache
 from cacheyEscritura import guardar_cache
 import requests
-import json
-import os
+import os 
 
 #Si se ingresas origen en CDMX, se debe de ingresar destino
-#en caso de que origen es diferente de CDMX, entonces destino es igual a ""
-#Si se ingresa flight_iata se buscara el vuelo en concreto
 
 # Clave de acceso para la API
 api_key = 'c4e545f6c150f757d7dd30a3b0501599'
@@ -20,9 +14,12 @@ endpoint = 'http://api.aviationstack.com/v1/flights'
     
 def obtener_vuelosCiudad(origen, destino):
 
+    origen.replace(" ", "")
+    destino.replace(" ", "")
+
     # Verificar si se ha proporcionado un origen
-    if not (origen or destino):
-        raise ValueError("Selecciona una iata, origen o destino válidos")  # Si no se proporciona origen, devolver False
+    if not origen or not destino or origen=="" or destino=="":
+        raise ValueError("Selecciona un origen o destino válidos")  # Si no se proporciona origen, devolver False
 
     # Convertir el nombre del aeropuerto de origen y destino en códigos IATA
     #agregar try except
@@ -37,40 +34,36 @@ def obtener_vuelosCiudad(origen, destino):
         raise ValueError("La ciudad de origen y destino deben ser distintas") 
 
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar los objetos
-    nombre_archivo= f'vuelos_cache.pkl' 
+    nombre_archivo= f'vuelos_cache.json' 
     ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
 
     vuelos = verificaEnCacheCiudad(ruta, dep_iata, arr_iata)
 
-    return imprimeVuelos(vuelos)
-
-def imprimeVuelos(vuelos):
-
-    for Vuelo in vuelos:
-        print(Vuelo)
-
-def imprimeVuelo(vuelo):
-
-    print(vuelo)
+    return print(vuelos)
 
 def verificaEnCacheCiudad(ruta, dep_iata, arr_iata):
 
     # Cargar los vuelos desde el archivo de caché si existe
     data_cache = cargar_cache(ruta)
-    
-    if data_cache:
-        vuelos_encontrados = []
-        # Buscar en la lista de vuelos el que coincida con la ciudad proporcionada
-        for vuelo in data_cache:
-            if (vuelo.getIataorigen() == dep_iata) and (vuelo.getIatadestino() == arr_iata):
-                print("Vuelos encontrado en caché")
-                vuelos_encontrados.append(vuelo)
-                return vuelos_encontrados
+    vuelos_encontrados = []
 
-    # Si no hay vuelos en caché, solicitar nuevos datos a la API
+    if data_cache:
+        print("Verificando coincidencias en caché...")
+
+        # Buscar en la lista de vuelos los que coincidan con la ciudad proporcionada
+        for vuelo in data_cache:
+            if vuelo['iataorigen'] == dep_iata and vuelo['iatadestino'] == arr_iata:
+                vuelos_encontrados.append(vuelo)
+
+        # Si se encontraron vuelos, devolverlos
+        if vuelos_encontrados:
+            print("Coincidencias encontradas en caché.")
+            return vuelos_encontrados
+
+    # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
     print("Vuelos no encontrados en caché. Solicitando vuelos a la API.")
     data = obtener_vuelosAPI_ciudad(dep_iata, arr_iata)
-    vuelos = crear_vuelos(data, dep_iata, arr_iata)
+    vuelos = crear_vuelos(data)
     guardar_cache(ruta, vuelos)
 
     return vuelos
@@ -89,45 +82,54 @@ def obtener_vuelosAPI_ciudad(dep_iata, arr_iata):
     apiresponse = requests.get(endpoint, params=params)
 
     if apiresponse.status_code != 200: #confirmar el éxito de la respuesta del API
-            raise Exception(f"Error en la solicitud de la API: {apiresponse.status_code}")
-    
+        raise Exception(f"Error en la solicitud de la API: {apiresponse.status_code}")
+
     return apiresponse.json()
 
 def obtener_vuelosPorIATA(iata):
 
-    if not iata:
-        raise ValueError("Por favor selecciona un iata válido")
+    iata.replace(" ", "")
+
+    if not iata or iata=="":
+        raise Exception("Por favor selecciona un iata válido")
     
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar el json
-    nombre_archivo= f'vuelos_cache.pkl' 
+    nombre_archivo= f'vuelos_cache.json' 
 
     ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
 
     vuelo = verificaEnCacheIATA(ruta, iata)
-    
-    return imprimeVuelo(vuelo)
+
+    return print(vuelo)
 
 def verificaEnCacheIATA(ruta, iata):
-
     # Cargar los vuelos desde el archivo de caché si existe
     data_cache = cargar_cache(ruta)
+    vuelos_encontrados = []
 
     if data_cache:
-        # Buscar en la lista de vuelos el que coincida con el IATA proporcionado
+        print("Verificando coincidencias en caché...")
+
+        # Buscar en la lista de vuelos los que coincidan con el IATA proporcionado
         for vuelo in data_cache:
-            if vuelo.getIata() == iata:
-                print("Vuelo encontrado en caché")
-                return vuelo
-    
-    print("Vuelo no encontrado en caché, solicitando datos de la API")
-    # Si no hay coincidencia en el caché, solicitar nuevos datos a la API
+            if vuelo['iata'] == iata:
+                vuelos_encontrados.append(vuelo)
+
+        # Si se encontraron vuelos, devolverlos
+        if vuelos_encontrados:
+            print("Coincidencias encontradas en caché.")
+            return vuelos_encontrados
+
+    # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
+    print("Vuelo no encontrado en caché. Solicitando datos de la API.")
     data_nueva = obtener_vuelosAPI_IATA(iata)
     vuelo = crear_vuelos(data_nueva)
     guardar_cache(ruta, vuelo)
-    
+
     return vuelo
 
 def obtener_vuelosAPI_IATA(iata):
+
     params = {
         'access_key': api_key,
         'flight_iata' : iata,
@@ -137,38 +139,28 @@ def obtener_vuelosAPI_IATA(iata):
 
     apiresponse = requests.get(endpoint, params=params)
 
-    if apiresponse.status_code != 200: #confirmar el éxito de la respuesta del API
-            raise Exception(f"Error en la solicitud de la API: {apiresponse.status_code}")
     
+    if apiresponse.status_code != 200: #confirmar el éxito de la respuesta del API
+        raise Exception(f"Error en la solicitud de la API: {apiresponse.status_code}")
+
     return apiresponse.json()
 
-def crear_vuelos(json_data, origen, destino):
+def crear_vuelos(json_data):
     vuelos = []
     for vuelo_data in json_data['data']:
-        ori = vuelo_data['departure']['airport']
-        des = vuelo_data['arrival']['airport']
-        hrorigen = vuelo_data['departure']['estimated']
-        hrdestino = vuelo_data['arrival']['estimated']
-        ciudadOr = predicc(vuelo_data['departure']['iata'])
-        ciudadDes = predicc(vuelo_data['arrival']['iata'])
-        iataorigen = origen
-        iatadestino = destino
-        iata = vuelo_data['flight']['iata']
-        
-        vuelo = Vuelo(
-            origen=ori,
-            destino=des,
-            hrorigen=hrorigen,
-            hrdestino=hrdestino,
-            ciudadOr=ciudadOr,
-            ciudadDes=ciudadDes,
-            iataorigen=iataorigen,
-            iatadestino=iatadestino,
-            iata=iata
-        )
-        print(vuelo) #quitar este print, es sólo para pruebas
+        vuelo = {
+            "origen": vuelo_data['departure']['airport'],
+            "destino": vuelo_data['arrival']['airport'],
+            "hrorigen": vuelo_data['departure']['estimated'],
+            "hrdestino": vuelo_data['arrival']['estimated'],
+            "ciudadOr": predicc(vuelo_data['departure']['iata']),
+            "ciudadDes": predicc(vuelo_data['arrival']['iata']),
+            "iataorigen": vuelo_data['departure']['iata'],
+            "iatadestino": vuelo_data['arrival']['iata'],
+            "iata": vuelo_data['flight']['iata']
+        }
         vuelos.append(vuelo)
     
     return vuelos
 
-obtener_vuelosCiudad("Ciudad de Mexico", "Madrid")
+obtener_vuelosPorIATA("")
