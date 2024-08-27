@@ -9,19 +9,19 @@ def cargar_cache(ruta):
             return json.load(archivo)
     return None
 
-def guardar_cache(ruta, vuelos):
+def guardar_cache(ruta, archivos):
     # Cargar los vuelos existentes desde el archivo si existe
-    vuelos_existentes = cargar_cache(ruta)
+    arch_existentes = cargar_cache(ruta)
 
-    if vuelos_existentes: # Agregar los nuevos vuelos a la lista existente
+    if arch_existentes: # Agregar los nuevos vuelos a la lista existente
 
-        vuelos_existentes.extend(vuelos)
+        arch_existentes.extend(archivos)
     else:
-        vuelos_existentes = vuelos # Si no existen vuelos previos, usar solo los nuevos
+        arch_existentes = archivos # Si no existen vuelos previos, usar solo los nuevos
 
     # Serializar y guardar la lista actualizada de vuelos en un archivo
     with open(ruta, 'w') as archivo:
-        json.dump(vuelos_existentes, archivo, indent=4)
+        json.dump(arch_existentes, archivo, indent=4)
 
     
     
