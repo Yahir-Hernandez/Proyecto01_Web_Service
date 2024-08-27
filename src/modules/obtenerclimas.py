@@ -1,4 +1,3 @@
-from datetime import datetime
 from iatas import iatasC
 from cacheyEscritura import cargar_cache
 from cacheyEscritura import guardar_cache
@@ -11,6 +10,13 @@ import json
 #Metodo para solicitar el clima de lugar que se da como parametro
 def weather(lugar):
 
+    lugar = lugar.replace(" ", "")
+    
+    if not lugar or lugar == "":
+        raise Exception("Por favor selecciona un lugar válido.")
+    
+    lugar = pc(lugar)
+    
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar los objetos
     nombre_archivo= f'climas_cache.json' 
     ruta = os.path.join(carpeta_destino, nombre_archivo)
@@ -44,7 +50,7 @@ def verificaEnCacheClima(ruta, ciudad):
 
         # Buscar en la lista de climas los que coincidan con la ciudad proporcionada
         for clima in data_cache:
-            if clima['city']['name'] == ciudad:
+            if clima['Ciudad'] == ciudad:
                 climas_encontrados.append(clima)
 
         # Si se encontraron climas, devolverlos
@@ -55,8 +61,8 @@ def verificaEnCacheClima(ruta, ciudad):
     # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
     print("Clima no encontrado en caché. Solicitando datos a la API.")
     data = solictarAPIClima(ciudad)
-    #climas_creados = crear_clima(data)
-    guardar_cache(ruta, data)
+    climas_creados = crear_clima(data, ciudad)
+    guardar_cache(ruta, climas_creados)
 
     return data
 
@@ -88,31 +94,32 @@ def obtener_coordenadas(lugar):
     
     # Si no se encuentra el lugar, devolver None
     return None
-"""
-def crear_clima(json_data):
+
+def crear_clima(json_data, ciudad):
     climas = []
-    for clima_data in json_data:
+    
+    for clima_data in json_data.get('list', []):
+        #Usar get en lugar de acceder directamente a las claves y listas.
+        #Evitar excepciones si una clave no está presente en el diccionario.
         clima = {
-            "Ciudad": clima_data['city']['name'],
-            "Clima": clima_data['weather']['main'],
-            "Descripcion": clima_data['weather']['description'],
-            "Temperatura": clima_data['main']['temp'],
-            "Nubosidad": clima_data['clouds']['all'],
-            "Presión a nivel del mar": clima_data['main']['sea_level'],
-            "Presión a nivel del suelo": clima_data['main']['grnd_level'],
-            "Presión atmosférica": clima_data['main']['pressure'],
-            "Temperatura minima": clima_data['main']['temp_min'],
-            "Temperatura maxima": clima_data['main']['temp_max'],
-            "Velocidad del viento": clima_data['wind']['speed'],
-            "Dirección del viento": clima_data['wind']['deg'],
-            "Ráfagas del viento": clima_data['wind']['gust'],
-            "Fecha y hora": clima_data['dt_txt'],
-            "Humedad": clima_data['main']['humidity'],
-            "Visibilidad": clima_data['visibility'],
+            "Ciudad": ciudad,
+            "Clima": clima_data.get('weather')[0].get('main'),
+            "Descripcion": clima_data.get('weather')[0].get('description'),
+            "Temperatura": clima_data.get('main').get('temp'),
+            "Nubosidad": clima_data.get('clouds').get('all'),
+            "Presión a nivel del mar": clima_data.get('main').get('sea_level'),
+            "Presión a nivel del suelo": clima_data.get('main').get('grnd_level'),
+            "Presión atmosférica": clima_data.get('main').get('pressure'),
+            "Temperatura minima": clima_data.get('main').get('temp_min'),
+            "Temperatura maxima": clima_data.get('main').get('temp_max'),
+            "Velocidad del viento": clima_data.get('wind').get('speed'),
+            "Dirección del viento": clima_data.get('wind').get('deg'),
+            "Ráfagas del viento": clima_data.get('wind').get('gust'),
+            "Fecha y hora": clima_data.get('dt_txt'),
+            "Humedad": clima_data.get('main').get('humidity'),
+            "Visibilidad": clima_data.get('visibility'),
         }
         climas.append(clima)
     
     return climas
-"""
 
-weather("Monterrey")

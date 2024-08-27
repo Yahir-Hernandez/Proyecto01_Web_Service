@@ -2,6 +2,7 @@ from iatas import iatasC
 from prediccion import predicc
 from cacheyEscritura import cargar_cache
 from cacheyEscritura import guardar_cache
+from horasyTiempo import reescribe_hora
 import requests
 import os 
 
@@ -151,8 +152,8 @@ def crear_vuelos(json_data):
         vuelo = {
             "origen": vuelo_data['departure']['airport'],
             "destino": vuelo_data['arrival']['airport'],
-            "hrorigen": vuelo_data['departure']['estimated'],
-            "hrdestino": vuelo_data['arrival']['estimated'],
+            "hrorigen": reescribe_hora(vuelo_data['departure']['estimated']),
+            "hrdestino": reescribe_hora(vuelo_data['arrival']['estimated']),
             "ciudadOr": predicc(vuelo_data['departure']['iata']),
             "ciudadDes": predicc(vuelo_data['arrival']['iata']),
             "Aereolínea:": vuelo_data['airline']['name'],
@@ -164,4 +165,4 @@ def crear_vuelos(json_data):
     
     return vuelos
 
-obtener_vuelosPorIATA("Y4240")
+obtener_vuelosCiudad("Ciduade déxico", "ámsterdddsam")
