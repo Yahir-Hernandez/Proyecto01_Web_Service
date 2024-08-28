@@ -40,7 +40,7 @@ def obtener_vuelosCiudad(origen, destino):
 
     vuelos = verificaEnCacheCiudad(ruta, dep_iata, arr_iata)
 
-    return print(vuelos)
+    return vuelos
 
 def verificaEnCacheCiudad(ruta, dep_iata, arr_iata):
 
@@ -58,7 +58,7 @@ def verificaEnCacheCiudad(ruta, dep_iata, arr_iata):
 
         # Si se encontraron vuelos, devolverlos
         if vuelos_encontrados:
-            print("Coincidencias encontradas en caché.")
+            print("Coincidencias de vuelo encontradas en caché.")
             return vuelos_encontrados
 
     # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
@@ -101,7 +101,7 @@ def obtener_vuelosPorIATA(iata):
 
     vuelo = verificaEnCacheIATA(ruta, iata)
 
-    return print(vuelo)
+    return vuelo
 
 def verificaEnCacheIATA(ruta, iata):
     # Cargar los vuelos desde el archivo de caché si existe
@@ -118,7 +118,7 @@ def verificaEnCacheIATA(ruta, iata):
 
         # Si se encontraron vuelos, devolverlos
         if vuelos_encontrados:
-            print("Coincidencias encontradas en caché.")
+            print("Coincidencias de vuelo encontradas en caché.")
             return vuelos_encontrados
 
     # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
@@ -164,5 +164,3 @@ def crear_vuelos(json_data):
         vuelos.append(vuelo)
     
     return vuelos
-
-obtener_vuelosCiudad("Ciduade déxico", "ámsterdddsam")

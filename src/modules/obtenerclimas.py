@@ -23,7 +23,7 @@ def weather(lugar):
 
     climas = verificaEnCacheClima(ruta, lugar)
 
-    return print(climas)
+    return climas
 
 def solictarAPIClima(lugar):
 
@@ -50,12 +50,12 @@ def verificaEnCacheClima(ruta, ciudad):
 
         # Buscar en la lista de climas los que coincidan con la ciudad proporcionada
         for clima in data_cache:
-            if clima['Ciudad'] == ciudad:
+            if ciudad == clima['Ciudad']:
                 climas_encontrados.append(clima)
 
         # Si se encontraron climas, devolverlos
         if climas_encontrados:
-            print("Coincidencias encontradas en caché.")
+            print("Coincidencias de clima encontradas en caché.")
             return climas_encontrados
 
     # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
@@ -64,7 +64,7 @@ def verificaEnCacheClima(ruta, ciudad):
     climas_creados = crear_clima(data, ciudad)
     guardar_cache(ruta, climas_creados)
 
-    return data
+    return climas_creados
 
 
 def obtener_coordenadas(lugar):
@@ -95,6 +95,14 @@ def obtener_coordenadas(lugar):
     # Si no se encuentra el lugar, devolver None
     return None
 
+def buscar_clima(clima_data, ciudad, hora):
+
+    for clima in clima_data:
+        if clima['Fecha y hora']==hora and clima['Ciudad']==ciudad:
+            return clima
+    return None
+
+
 def crear_clima(json_data, ciudad):
     climas = []
     
@@ -123,3 +131,4 @@ def crear_clima(json_data, ciudad):
     
     return climas
 
+weather("Monterrey")
