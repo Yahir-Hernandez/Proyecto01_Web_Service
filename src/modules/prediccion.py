@@ -27,8 +27,8 @@ def predicc(entrada):
     # Obtener los nombres de las ciudades
     nombres = df['Ciudad'].values
 
-    # Buscar la mejor coincidencia
-    coincidencias = process.extractOne(ct, nombres)
+   # Solo aceptar a las mejores concidencias del 75%
+    coincidencias = process.extractOne(ct, nombres, score_cutoff=80)
 
     if coincidencias:
         # Retornar la mejor coincidencia

@@ -23,3 +23,12 @@ def test_prediccion_con_ciudad_con_error_tipografico():
     # Test para una ciudad con error tipográfico
     assert predicc("Guadalajra") == "Guadalajara"
 
+def test_prediccion_bajo_umbral():
+    with pytest.raises(ValueError):
+    # test para superar el 75% de parecido
+        predicc("Xylophone")
+
+
+def test_prediccion_con_mayusculas():
+    #tets para ver como se comporta con mayusculas
+    assert predicc("TIJUANA") == "Tijuana"

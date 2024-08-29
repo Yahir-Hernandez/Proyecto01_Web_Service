@@ -207,6 +207,206 @@
         {
             "IATA": "SCL",
             "Ciudad": "Santiago de Chile"
+        },
+        {
+            "IATA": "AUS",
+            "Ciudad": "Austin"
+        },
+        {
+            "IATA": "EZE",
+            "Ciudad": "Buenos Aires"
+        },
+        {
+            "IATA": "BOS",
+            "Ciudad": "Boston"
+        },
+        {
+            "IATA": "CPE",
+            "Ciudad": "Campeche"
+        },
+        {
+            "IATA": "CUL",
+            "Ciudad": "Culiacán"
+        },
+        {
+            "IATA": "DEN",
+            "Ciudad": "Denver"
+        },
+        {
+            "IATA": "DTW",
+            "Ciudad": "Detroit"
+        },
+        {
+            "IATA": "DXB",
+            "Ciudad": "Dubái"
+        },
+        {
+            "IATA": "DGO",
+            "Ciudad": "Durango"
+        },
+        {
+            "IATA": "IST",
+            "Ciudad": "Estambul"
+        },
+        {
+            "IATA": "FRA",
+            "Ciudad": "Frankfurt"
+        },
+        {
+            "IATA": "LAP",
+            "Ciudad": "La Paz"
+        },
+        {
+            "IATA": "LAS",
+            "Ciudad": "Las Vegas"
+        },
+        {
+            "IATA": "BJX",
+            "Ciudad": "León/Bajío"
+        },
+        {
+            "IATA": "LMM",
+            "Ciudad": "Los Mochis"
+        },
+        {
+            "IATA": "MGA",
+            "Ciudad": "Managua"
+        },
+        {
+            "IATA": "ZLO",
+            "Ciudad": "Manzanillo"
+        },
+        {
+            "IATA": "MAM",
+            "Ciudad": "Matamoros"
+        },
+        {
+            "IATA": "MDE",
+            "Ciudad": "Medellín"
+        },
+        {
+            "IATA": "MXL",
+            "Ciudad": "Mexicali"
+        },
+        {
+            "IATA": "MTT",
+            "Ciudad": "Minatitlán"
+        },
+        {
+            "IATA": "MSP",
+            "Ciudad": "Minneapolis"
+        },
+        {
+            "IATA": "YUL",
+            "Ciudad": "Montreal"
+        },
+        {
+            "IATA": "EWR",
+            "Ciudad": "Newark"
+        },
+        {
+            "IATA": "NLD",
+            "Ciudad": "Nuevo Laredo"
+        },
+        {
+            "IATA": "OAK",
+            "Ciudad": "Oakland"
+        },
+        {
+            "IATA": "MCO",
+            "Ciudad": "Orlando"
+        },
+        {
+            "IATA": "PTY",
+            "Ciudad": "Panamá"
+        },
+        {
+            "IATA": "RDU",
+            "Ciudad": "Raleigh"
+        },
+        {
+            "IATA": "REX",
+            "Ciudad": "Reynosa"
+        },
+        {
+            "IATA": "FCO",
+            "Ciudad": "Roma"
+        },
+        {
+            "IATA": "SAT",
+            "Ciudad": "San Antonio"
+        },
+        {
+            "IATA": "SFO",
+            "Ciudad": "San Francisco"
+        },
+        {
+            "IATA": "SAL",
+            "Ciudad": "San Salvador"
+        },
+        {
+            "IATA": "SLC",
+            "Ciudad": "Salt Lake City"
+        },
+        {
+            "IATA": "SJO",
+            "Ciudad": "San José"
+        },
+        {
+            "IATA": "GRU",
+            "Ciudad": "São Paulo"
+        },
+        {
+            "IATA": "SEA",
+            "Ciudad": "Seattle"
+        },
+        {
+            "IATA": "ICN",
+            "Ciudad": "Seúl"
+        },
+        {
+            "IATA": "SZX",
+            "Ciudad": "Shenzhen"
+        },
+        {
+            "IATA": "SJD",
+            "Ciudad": "San José del Cabo"
+        },
+        {
+            "IATA": "SDQ",
+            "Ciudad": "Santo Domingo"
+        },
+        {
+            "IATA": "TPA",
+            "Ciudad": "Tampa"
+        },
+        {
+            "IATA": "TAP",
+            "Ciudad": "Tapachula"
+        },
+        {
+            "IATA": "TPQ",
+            "Ciudad": "Tepic"
+        },
+        {
+            "IATA": "NRT",
+            "Ciudad": "Tokio"
+        },
+        {
+            "IATA": "TGZ",
+            "Ciudad": "Tuxtla Gutiérrez"
+        },
+        {
+            "IATA": "DCA",
+            "Ciudad": "Washington D.C."
+        },
+        {
+            "IATA": "MAD",
+            "Ciudad": "Madrid"
+        },
+        {
+            "IATA": "SCL",
+            "Ciudad": "Santiago de Chile"
         }
     ]
 }
