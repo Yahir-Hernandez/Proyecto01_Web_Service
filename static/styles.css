@@ -72,8 +72,13 @@ header h2 {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
-.ciudad_search {
+.ciudad_search,
+.iata_search{
     margin-right: 10px;
+}
+
+#BSeach {
+    margin-left: 10px;
 }
 
 #ciudad-input:focus, 
@@ -97,6 +102,11 @@ header h2 {
     font-size: 14px;
     font-weight: 400;
     line-height: normal
+}
+
+#SEARCH_1, #SEARCH_2 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
