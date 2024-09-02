@@ -2,30 +2,30 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("toggle-button");
-    const ciudadSearchDivs = document.querySelectorAll(".ciudad_search");
-    const iataSearchDiv = document.querySelector(".iata_search");
+    const Form1 = document.querySelector("#SEARCH_1");
+    const Form2 = document.querySelector("#SEARCH_2");
     const boton = document.querySelector("#BSeach");
     const erro = document.querySelector(".error");
 
     // Verifica si los elementos existen
-    if (toggleButton && ciudadSearchDivs.length && iataSearchDiv) {
+    if (toggleButton && Form2.length && Form1.length) {
         toggleButton.addEventListener("click", function () {
             borrarTexto();
-            if (iataSearchDiv.style.display === "none" || !iataSearchDiv.style.display) {
+            if (Form2.style.display === "none" || !Form2.style.display) {
                 // Mostrar el div "iata_search" y ocultar los "ciudad_search"
-                iataSearchDiv.style.display = "block";
-                ciudadSearchDivs.forEach(div => div.style.display = "none");
+                Form2.style.display = "flex";
+                Form1.style.display = "none";
                 toggleButton.textContent = "Buscar por IATA";
             } else {
                 // Mostrar los divs "ciudad_search" y ocultar el "iata_search"
-                iataSearchDiv.style.display = "none";
-                ciudadSearchDivs.forEach(div => div.style.display = "block");
+                Form2.style.display = "none";
+                Form1.style.display = "flex";
                 toggleButton.textContent = "Buscar por ciudad";
             }
         });
     }
 
-    // Verifica si el botón existe antes de agregar el evento
+    /*/ Verifica si el botón existe antes de agregar el evento
     if (boton) {
         boton.addEventListener("click", function() {
             borra_list();
@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             borrarTexto();
         });
-    }
+    }*/
 
-    document.getElementById('BSeach').addEventListener('click', function(event) {
+    /*document.getElementById('BSeach').addEventListener('click', function(event) {
         event.preventDefault();
 
         let ciudad = document.getElementById('ciudad-input').value;
@@ -63,7 +63,40 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log(data); // Aquí puedes actualizar el DOM con la respuesta
             })
             .catch(error => console.error('Error:', error));
-        });
+    });*/
+
+    document.getElementById('BSeach1').addEventListener('click', function(event) {
+        event.preventDefault(); // Evita el envío tradicional del formulario
+
+        let ciudadOrigen = document.getElementById('ciudad-input').value;
+        let ciudadDestino = document.getElementById('airline-input').value;
+
+        fetch(`/search?ciudad=${encodeURIComponent(ciudadOrigen)}&destino=${encodeURIComponent(ciudadDestino)}`)
+            .then(response => response.text())
+            .then(data => {
+                console.log(data); // Aquí puedes actualizar el DOM con la respuesta
+            })
+            .catch(error => console.error('Error:', error));
+        
+        // Si deseas enviar el formulario al servidor, puedes hacerlo con fetch o similar
+        this.click(); // Opcionalmente puedes enviar el formulario después de la lógica
+    });
+
+    document.getElementById('BSeach2').addEventListener('click', function(event) {
+        event.preventDefault(); // Evita el envío tradicional del formulario
+
+        let codigoVuelo = document.getElementById('iata-input').value;
+
+        fetch(`/search?iata=${encodeURIComponent(codigoVuelo)}`)
+            .then(response => response.text())
+            .then(data => {
+                console.log(data); // Aquí puedes actualizar el DOM con la respuesta
+            })
+            .catch(error => console.error('Error:', error));
+
+        // Si deseas enviar el formulario al servidor, puedes hacerlo con fetch o similar
+        this.click(); // Opcionalmente puedes enviar el formulario después de la lógica
+    });
 });
 
 // Función para borrar los textos de los inputs

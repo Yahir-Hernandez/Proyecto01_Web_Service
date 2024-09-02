@@ -15,24 +15,31 @@
             <h2>Busca tu vuelo</h2>
             <div class="search-container ">
                 <button type="button" id="toggle-button" class="button">Buscar por ciudad</button>
-                <form class="section" action="/search" method="get">
+                <form id="SEARCH_1" action="/search" method="get">
                     <div class="ciudad_search">
-                        <input type="text" id="ciudad-input" placeholder="Ingresa ciudad de origen">
+                        <input type="text" id="ciudad-input" name="ciudad" placeholder="Ingresa ciudad de origen">
                     </div>
                     <div class="ciudad_search">
-                        <input type="text" id="airline-input" placeholder="Ingresa ciudad de destino">
+                        <input type="text" id="airline-input" name="destino" placeholder="Ingresa ciudad de destino">
                     </div>
-                    <div class="iata_search" style="display: none;">
-                        <input type="text" id="iata-input" placeholder="Ingresa código de vuelo">
-                    </div>
-                    <button type="submit" class="button search-button" id="BSeach">
+                    <button type="submit" class="button search-button" id="BSeach1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
                             <circle cx="11" cy="11" r="8"></circle>
                             <path d="m21 21-4.3-4.3"></path>
                         </svg>
                     </button>
                 </form>
-
+                <form id="SEARCH_2" action="/search" method="get" style="display: none">
+                    <div class="iata_search">
+                        <input type="text" id="iata-input" name="iata" placeholder="Ingresa código de vuelo">
+                    </div>
+                    <button type="submit" class="button search-button" id="BSeach2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </section>
     </header>

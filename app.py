@@ -20,12 +20,17 @@ def error_page(error):
 
 @app.route('/search', methods=['GET'])
 def search():
-    ciudad = request.args.get('ciudad')
-    destino = request.args.get('destino')
-    # Aquí podrías hacer la lógica para obtener información del clima
-    # Por ejemplo, pasar los datos a una API o realizar cálculos
-    return f"Ciudad de origen: {ciudad}, Ciudad de destino: {destino}"
+    ciudad_origen = request.args.get('ciudad')
+    ciudad_destino = request.args.get('destino')
+    codigo_vuelo = request.args.get('iata')
+
+    if codigo_vuelo != None:
+        # Lógica para el formulario 2 (código de vuelo)
+        return f"Código de Vuelo recibido:, {codigo_vuelo}\n"
+    else:
+        # Lógica para el formulario 1 (ciudad origen y destino)
+        return f"Ciudad de Origen recibida:, {ciudad_origen}\nCiudad de Destino recibida:, {ciudad_destino}\n"
 
 if __name__ == '__main__':
     app.register_error_handler(404, error_page)
-    app.run()
+    app.run(debug=True)
