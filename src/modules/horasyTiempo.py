@@ -1,5 +1,5 @@
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 def reescribe_hora(fecha_hora_str):
     #convierte una cadena en formato ISO 8601 (como "2024-08-27T05:25:00+00:00") a un objeto datetime de Python.
@@ -18,3 +18,14 @@ def reescribe_hora(fecha_hora_str):
     return fecha_hora_redondeada.strftime("%Y-%m-%d %H:%M:%S")
 
     
+def convertir_hora(hora):
+
+    # Convertir la cadena a un objeto datetime en UTC
+    utc = datetime.strptime(hora, "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
+    
+    # Restar 6 horas para convertir a CST
+    cst = timezone(timedelta(hours=-6))
+    horaSCT = utc.astimezone(cst)
+    
+    # Convertir de nuevo el objeto datetime a string en el formato solicitado
+    return horaSCT.strftime("%Y-%m-%d %H:%M:%S")

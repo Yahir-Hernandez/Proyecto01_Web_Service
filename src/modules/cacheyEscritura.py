@@ -1,6 +1,5 @@
 import json
 import os
-import pickle
 
 def cargar_cache(ruta):
     # Deserializar y cargar los objetos de la lista de vuelos desde un archivo

@@ -64,4 +64,4 @@ def obtenerDatosporIATA(iata):
     return print(vuelos_combinados)
 
 
-obtenerDatosporCiudad("Ciudad de México", "Monterrey")
+
