@@ -2,6 +2,7 @@ from iatas import iatasC
 from cacheyEscritura import cargar_cache
 from cacheyEscritura import guardar_cache
 from prediccion import predicc as pc
+from horasyTiempo import convertir_hora
 import os
 import pandas as pd
 import requests
@@ -115,15 +116,15 @@ def crear_clima(json_data, ciudad):
             "Descripcion": clima_data.get('weather')[0].get('description'),
             "Temperatura": clima_data.get('main').get('temp'),
             "Nubosidad": clima_data.get('clouds').get('all'),
-            "Presión a nivel del mar": clima_data.get('main').get('sea_level'),
-            "Presión a nivel del suelo": clima_data.get('main').get('grnd_level'),
-            "Presión atmosférica": clima_data.get('main').get('pressure'),
+            "Presion a nivel del mar": clima_data.get('main').get('sea_level'),
+            "Presion a nivel del suelo": clima_data.get('main').get('grnd_level'),
+            "Presion atmosferica": clima_data.get('main').get('pressure'),
             "Temperatura minima": clima_data.get('main').get('temp_min'),
             "Temperatura maxima": clima_data.get('main').get('temp_max'),
             "Velocidad del viento": clima_data.get('wind').get('speed'),
-            "Dirección del viento": clima_data.get('wind').get('deg'),
-            "Ráfagas del viento": clima_data.get('wind').get('gust'),
-            "Fecha y hora": clima_data.get('dt_txt'),
+            "Direccion del viento": clima_data.get('wind').get('deg'),
+            "Rafagas del viento": clima_data.get('wind').get('gust'),
+            "Fecha y hora": convertir_hora(clima_data.get('dt_txt')),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
         }
@@ -131,4 +132,3 @@ def crear_clima(json_data, ciudad):
     
     return climas
 
-weather("Monterrey")
