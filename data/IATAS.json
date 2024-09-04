@@ -1,0 +1,412 @@
+{
+    "ciudades": [
+        {
+            "IATA": "TLC",
+            "Ciudad": "Toluca"
+        },
+        {
+            "IATA": "MTY",
+            "Ciudad": "Monterrey"
+        },
+        {
+            "IATA": "MEX",
+            "Ciudad": "Ciudad de M\u00e9xico"
+        },
+        {
+            "IATA": "TAM",
+            "Ciudad": "Tampico"
+        },
+        {
+            "IATA": "GDL",
+            "Ciudad": "Guadalajara"
+        },
+        {
+            "IATA": "CJS",
+            "Ciudad": "Ciudad Ju\u00e1rez"
+        },
+        {
+            "IATA": "CUN",
+            "Ciudad": "Canc\u00fan"
+        },
+        {
+            "IATA": "TIJ",
+            "Ciudad": "Tijuana"
+        },
+        {
+            "IATA": "HMO",
+            "Ciudad": "Hermosillo"
+        },
+        {
+            "IATA": "CME",
+            "Ciudad": "Ciudad del Carmen"
+        },
+        {
+            "IATA": "MID",
+            "Ciudad": "M\u00e9rida"
+        },
+        {
+            "IATA": "CTM",
+            "Ciudad": "Chetumal"
+        },
+        {
+            "IATA": "VER",
+            "Ciudad": "Veracruz"
+        },
+        {
+            "IATA": "OAX",
+            "Ciudad": "Oaxaca"
+        },
+        {
+            "IATA": "HUX",
+            "Ciudad": "Huatulco"
+        },
+        {
+            "IATA": "PVR",
+            "Ciudad": "Puerto Vallarta"
+        },
+        {
+            "IATA": "PXM",
+            "Ciudad": "Puerto Escondido"
+        },
+        {
+            "IATA": "ACA",
+            "Ciudad": "Acapulco"
+        },
+        {
+            "IATA": "ZIH",
+            "Ciudad": "Ixtapa-Zihuatanejo"
+        },
+        {
+            "IATA": "AGU",
+            "Ciudad": "Aguascalientes"
+        },
+        {
+            "IATA": "VSA",
+            "Ciudad": "Villahermosa"
+        },
+        {
+            "IATA": "CZM",
+            "Ciudad": "Cozumel"
+        },
+        {
+            "IATA": "CUU",
+            "Ciudad": "Chihuahua"
+        },
+        {
+            "IATA": "TRC",
+            "Ciudad": "Torre\u00f3n"
+        },
+        {
+            "IATA": "QRO",
+            "Ciudad": "Quer\u00e9taro"
+        },
+        {
+            "IATA": "BJX",
+            "Ciudad": "Guanajuato"
+        },
+        {
+            "IATA": "PBC",
+            "Ciudad": "Puebla"
+        },
+        {
+            "IATA": "SLP",
+            "Ciudad": "San Luis Potos\u00ed"
+        },
+        {
+            "IATA": "ZCL",
+            "Ciudad": "Zacatecas"
+        },
+        {
+            "IATA": "LIM",
+            "Ciudad": "Lima"
+        },
+        {
+            "IATA": "HAV",
+            "Ciudad": "La Habana"
+        },
+        {
+            "IATA": "BOG",
+            "Ciudad": "Bogot\u00e1"
+        },
+        {
+            "IATA": "MIA",
+            "Ciudad": "Miami"
+        },
+        {
+            "IATA": "LAX",
+            "Ciudad": "Los \u00c1ngeles"
+        },
+        {
+            "IATA": "JFK",
+            "Ciudad": "Nueva York"
+        },
+        {
+            "IATA": "MZT",
+            "Ciudad": "Mazatl\u00e1n"
+        },
+        {
+            "IATA": "GUA",
+            "Ciudad": "Ciudad de Guatemala"
+        },
+        {
+            "IATA": "BZE",
+            "Ciudad": "Belice"
+        },
+        {
+            "IATA": "DFW",
+            "Ciudad": "Dallas/Fort Worth"
+        },
+        {
+            "IATA": "ORD",
+            "Ciudad": "Chicago"
+        },
+        {
+            "IATA": "PHX",
+            "Ciudad": "Phoenix"
+        },
+        {
+            "IATA": "PHL",
+            "Ciudad": "Filadelfia"
+        },
+        {
+            "IATA": "CLT",
+            "Ciudad": "Charlotte"
+        },
+        {
+            "IATA": "YYZ",
+            "Ciudad": "Toronto"
+        },
+        {
+            "IATA": "IAH",
+            "Ciudad": "Houston"
+        },
+        {
+            "IATA": "YVR",
+            "Ciudad": "Vancouver"
+        },
+        {
+            "IATA": "CDG",
+            "Ciudad": "Par\u00eds"
+        },
+        {
+            "IATA": "AMS",
+            "Ciudad": "\u00c1msterdam"
+        },
+        {
+            "IATA": "ATL",
+            "Ciudad": "Atlanta"
+        },
+        {
+            "IATA": "CEN",
+            "Ciudad": "Ciudad Obreg\u00f3n"
+        },
+        {
+            "IATA": "MAD",
+            "Ciudad": "Madrid"
+        },
+        {
+            "IATA": "SCL",
+            "Ciudad": "Santiago de Chile"
+        },
+        {
+            "IATA": "AUS",
+            "Ciudad": "Austin"
+        },
+        {
+            "IATA": "EZE",
+            "Ciudad": "Buenos Aires"
+        },
+        {
+            "IATA": "BOS",
+            "Ciudad": "Boston"
+        },
+        {
+            "IATA": "CPE",
+            "Ciudad": "Campeche"
+        },
+        {
+            "IATA": "CUL",
+            "Ciudad": "Culiacán"
+        },
+        {
+            "IATA": "DEN",
+            "Ciudad": "Denver"
+        },
+        {
+            "IATA": "DTW",
+            "Ciudad": "Detroit"
+        },
+        {
+            "IATA": "DXB",
+            "Ciudad": "Dubái"
+        },
+        {
+            "IATA": "DGO",
+            "Ciudad": "Durango"
+        },
+        {
+            "IATA": "IST",
+            "Ciudad": "Estambul"
+        },
+        {
+            "IATA": "FRA",
+            "Ciudad": "Frankfurt"
+        },
+        {
+            "IATA": "LAP",
+            "Ciudad": "La Paz"
+        },
+        {
+            "IATA": "LAS",
+            "Ciudad": "Las Vegas"
+        },
+        {
+            "IATA": "BJX",
+            "Ciudad": "León/Bajío"
+        },
+        {
+            "IATA": "LMM",
+            "Ciudad": "Los Mochis"
+        },
+        {
+            "IATA": "MGA",
+            "Ciudad": "Managua"
+        },
+        {
+            "IATA": "ZLO",
+            "Ciudad": "Manzanillo"
+        },
+        {
+            "IATA": "MAM",
+            "Ciudad": "Matamoros"
+        },
+        {
+            "IATA": "MDE",
+            "Ciudad": "Medellín"
+        },
+        {
+            "IATA": "MXL",
+            "Ciudad": "Mexicali"
+        },
+        {
+            "IATA": "MTT",
+            "Ciudad": "Minatitlán"
+        },
+        {
+            "IATA": "MSP",
+            "Ciudad": "Minneapolis"
+        },
+        {
+            "IATA": "YUL",
+            "Ciudad": "Montreal"
+        },
+        {
+            "IATA": "EWR",
+            "Ciudad": "Newark"
+        },
+        {
+            "IATA": "NLD",
+            "Ciudad": "Nuevo Laredo"
+        },
+        {
+            "IATA": "OAK",
+            "Ciudad": "Oakland"
+        },
+        {
+            "IATA": "MCO",
+            "Ciudad": "Orlando"
+        },
+        {
+            "IATA": "PTY",
+            "Ciudad": "Panamá"
+        },
+        {
+            "IATA": "RDU",
+            "Ciudad": "Raleigh"
+        },
+        {
+            "IATA": "REX",
+            "Ciudad": "Reynosa"
+        },
+        {
+            "IATA": "FCO",
+            "Ciudad": "Roma"
+        },
+        {
+            "IATA": "SAT",
+            "Ciudad": "San Antonio"
+        },
+        {
+            "IATA": "SFO",
+            "Ciudad": "San Francisco"
+        },
+        {
+            "IATA": "SAL",
+            "Ciudad": "San Salvador"
+        },
+        {
+            "IATA": "SLC",
+            "Ciudad": "Salt Lake City"
+        },
+        {
+            "IATA": "SJO",
+            "Ciudad": "San José"
+        },
+        {
+            "IATA": "GRU",
+            "Ciudad": "São Paulo"
+        },
+        {
+            "IATA": "SEA",
+            "Ciudad": "Seattle"
+        },
+        {
+            "IATA": "ICN",
+            "Ciudad": "Seúl"
+        },
+        {
+            "IATA": "SZX",
+            "Ciudad": "Shenzhen"
+        },
+        {
+            "IATA": "SJD",
+            "Ciudad": "San José del Cabo"
+        },
+        {
+            "IATA": "SDQ",
+            "Ciudad": "Santo Domingo"
+        },
+        {
+            "IATA": "TPA",
+            "Ciudad": "Tampa"
+        },
+        {
+            "IATA": "TAP",
+            "Ciudad": "Tapachula"
+        },
+        {
+            "IATA": "TPQ",
+            "Ciudad": "Tepic"
+        },
+        {
+            "IATA": "NRT",
+            "Ciudad": "Tokio"
+        },
+        {
+            "IATA": "TGZ",
+            "Ciudad": "Tuxtla Gutiérrez"
+        },
+        {
+            "IATA": "DCA",
+            "Ciudad": "Washington D.C."
+        },
+        {
+            "IATA": "MAD",
+            "Ciudad": "Madrid"
+        },
+        {
+            "IATA": "SCL",
+            "Ciudad": "Santiago de Chile"
+        }
+    ]
+}
