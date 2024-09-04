@@ -66,20 +66,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });*/
 
     document.getElementById('BSeach1').addEventListener('click', function(event) {
-        event.preventDefault(); // Evita el envío tradicional del formulario
+    event.preventDefault();
 
-        let ciudadOrigen = document.getElementById('ciudad-input').value;
-        let ciudadDestino = document.getElementById('airline-input').value;
+    let ciudadOrigen = document.getElementById('ciudad-input').value;
+    let ciudadDestino = document.getElementById('airline-input').value;
 
-        fetch(`/search?ciudad=${encodeURIComponent(ciudadOrigen)}&destino=${encodeURIComponent(ciudadDestino)}`)
-            .then(response => response.text())
-            .then(data => {
-                console.log(data); // Aquí puedes actualizar el DOM con la respuesta
-            })
-            .catch(error => console.error('Error:', error));
-        
-        // Si deseas enviar el formulario al servidor, puedes hacerlo con fetch o similar
-        this.click(); // Opcionalmente puedes enviar el formulario después de la lógica
+    fetch(`/search?ciudad=${encodeURIComponent(ciudadOrigen)}&destino=${encodeURIComponent(ciudadDestino)}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json(); // Asegúrate de que el servidor devuelve JSON
+        })
+        .then(data => {
+            if (!data) {
+                console.log("Hubo un error");
+            } else {
+                expoDatos(data); // Supone que data es un objeto JSON
+            }
+        })
+        .catch(error => console.error('Error:', error));
     });
 
     document.getElementById('BSeach2').addEventListener('click', function(event) {

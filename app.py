@@ -1,5 +1,6 @@
 import os
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, jsonify
+from utils.obtenerDatosFINALES import obtenerDatosporCiudad
 
 #El usuario debe de instalar Flask
 
@@ -28,8 +29,9 @@ def search():
         # Lógica para el formulario 2 (código de vuelo)
         return f"Código de Vuelo recibido:, {codigo_vuelo}\n"
     else:
+        datos = obtenerDatosporCiudad(ciudad_origen, ciudad_destino)
         # Lógica para el formulario 1 (ciudad origen y destino)
-        return f"Ciudad de Origen recibida:, {ciudad_origen}\nCiudad de Destino recibida:, {ciudad_destino}\n"
+        return jsonify(datos)
 
 if __name__ == '__main__':
     app.register_error_handler(404, error_page)

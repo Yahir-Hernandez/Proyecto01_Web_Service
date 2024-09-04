@@ -1,5 +1,9 @@
 
 from datetime import datetime, timedelta, timezone
+import pytz
+
+# Configurar la zona horaria CST (Central Standard Time)
+cst = pytz.timezone('America/Chicago')
 
 def reescribe_hora(fecha_hora_str):
     #convierte una cadena en formato ISO 8601 (como "2024-08-27T05:25:00+00:00") a un objeto datetime de Python.
@@ -30,3 +34,53 @@ def convertir_hora(hora):
     # Convertir de nuevo el objeto datetime a string en el formato solicitado
     return horaSCT.strftime("%Y-%m-%d %H:%M:%S")
 
+
+def fecha_inicio(fecha):
+    '''
+    Convierte la fecha proporcionada al inicio del día en formato UTC y devuelve el timestamp correspondiente.
+
+    Esta función toma una fecha en formato 'YYYY-MM-DD', la convierte al inicio del día en la zona horaria CST,
+    la convierte a UTC y luego devuelve el valor en formato timestamp.
+
+    Args:
+        fecha (str): Fecha en formato 'YYYY-MM-DD'.
+
+    Returns:
+        int: Timestamp en formato UTC correspondiente al inicio del día.
+    '''
+    # Convertir la fecha al inicio del día en CST
+    inicio_del_dia = cst.localize(datetime.strptime(fecha, "%Y-%m-%d").replace(hour=0, minute=0, second=0))
+    return int(inicio_del_dia.timestamp())
+
+def fecha_final(fecha):
+    '''
+        Convierte la fecha proporcionada final del día en formato UTC y devuelve el timestamp correspondiente.
+
+        Esta función toma una fecha en formato 'YYYY-MM-DD', la convierte al inicio del día en la zona horaria CST,
+        la convierte a UTC y luego devuelve el valor en formato timestamp.
+
+        Args:
+            fecha (str): Fecha en formato 'YYYY-MM-DD'.
+
+        Returns:
+            int: Timestamp en formato UTC correspondiente al inicio del día.
+        '''
+    # Convertir la fecha al final del día en CST
+    final_del_dia = cst.localize(datetime.strptime(fecha, "%Y-%m-%d").replace(hour=23, minute=59, second=59))
+    return int(final_del_dia.timestamp())
+
+def fecha_hoy():
+    """
+    Devuelve la fecha actual en formato 'YYYY-MM-DD'.
+
+    Returns:
+        str: Fecha actual en formato 'YYYY-MM-DD'.
+    """
+    # Obtener la fecha actual
+    hoy = datetime.now()
+    # Formatear la fecha como 'YYYY-MM-DD'
+    return hoy.strftime('%Y-%m-%d')
+
+def convertDT_a_CST(dt):
+    '''Convierte una fecha de codigo dt a fecha cst enformato año-mes-dia hora-minuto-segundo'''
+    return datetime.fromtimestamp(dt, cst).strftime('%Y-%m-%d %H:%M:%S')

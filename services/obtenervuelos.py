@@ -112,7 +112,7 @@ def verificaEnCacheIATA(ruta, iata):
 
         # Buscar en la lista de vuelos los que coincidan con el IATA proporcionado
         for vuelo in data_cache:
-            if vuelo['iata'] == iata:
+            if vuelo['iata'].upper() == iata.upper():
                 vuelos_encontrados.append(vuelo)
 
         # Si se encontraron vuelos, devolverlos
