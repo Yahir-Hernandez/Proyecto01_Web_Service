@@ -1,6 +1,9 @@
 from fuzzywuzzy import process
 import pandas as pd
 import os
+import  sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Módulo de predicción para la entrada de los usuarios
 # Busca los resultados de entradas de usuario erróneas
@@ -8,7 +11,7 @@ import os
 def predicc(entrada):
     
     # Construir la ruta al archivo CSV
-    archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data/IATAS.csv'))
+    archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/IATAS.csv'))
     
     # Leer el archivo CSV en un DataFrame
     try: 
@@ -28,11 +31,11 @@ def predicc(entrada):
     nombres = df['Ciudad'].values
 
     # Buscar la mejor coincidencia
-    coincidencias = process.extractOne(ct, nombres)
+    coincidencias = process.extractOne(ct, nombres, score_cutoff=70)
 
     if coincidencias:
         # Retornar la mejor coincidencia
         return coincidencias[0]
     else:
         # No se encontró una coincidencia
-        raise ValueError("No se encontraron coincidencias para esa ciudad.")
+        raise Exception("No se encontraron coincidencias para esa ciudad.")
