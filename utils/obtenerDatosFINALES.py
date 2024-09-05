@@ -84,3 +84,4 @@ def obtenerDatosporIATA(iata):
         print(f"Error al obtener los datos: {e}")
         return []
 
+obtenerDatosporCiudad("Monterrey", "México")

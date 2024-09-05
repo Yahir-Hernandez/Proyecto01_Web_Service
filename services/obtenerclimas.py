@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 import sys
 
-from utils.horasyTiempo import fecha_inicio, fecha_hoy, fecha_final, ayer
+from utils.horasyTiempo import fecha_hoy, fecha_final, ayer
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.iatas import iatasC
 from utils.cacheyEscritura import cargar_cache
