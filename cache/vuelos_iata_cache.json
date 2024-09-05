@@ -1,0 +1,98 @@
+[
+    {
+        "origen": "Gen Mariano Escobedo",
+        "destino": "Internacional Benito Juarez",
+        "hrorigen": "2024-09-05 08:00:00",
+        "hrdestino": "2024-09-05 10:00:00",
+        "ciudadOr": "Monterrey",
+        "ciudadDes": "Ciudad de M\u00e9xico",
+        "Aereolinea:": "Iberia",
+        "iataorigen": "MTY",
+        "iatadestino": "MEX",
+        "iata": "IB1151"
+    },
+    {
+        "origen": "Gen Mariano Escobedo",
+        "destino": "Internacional Benito Juarez",
+        "hrorigen": "2024-09-04 08:00:00",
+        "hrdestino": "2024-09-04 10:00:00",
+        "ciudadOr": "Monterrey",
+        "ciudadDes": "Ciudad de M\u00e9xico",
+        "Aereolinea:": "Iberia",
+        "iataorigen": "MTY",
+        "iatadestino": "MEX",
+        "iata": "IB1151"
+    },
+    {
+        "origen": "Gen Mariano Escobedo",
+        "destino": "Internacional Benito Juarez",
+        "hrorigen": "2024-09-05 08:00:00",
+        "hrdestino": "2024-09-05 10:00:00",
+        "ciudadOr": "Monterrey",
+        "ciudadDes": "Ciudad de M\u00e9xico",
+        "Aereolinea:": "Iberia",
+        "iataorigen": "MTY",
+        "iatadestino": "MEX",
+        "iata": "IB1151"
+    },
+    {
+        "origen": "Gen Mariano Escobedo",
+        "destino": "Internacional Benito Juarez",
+        "hrorigen": "2024-09-04 08:00:00",
+        "hrdestino": "2024-09-04 10:00:00",
+        "ciudadOr": "Monterrey",
+        "ciudadDes": "Ciudad de M\u00e9xico",
+        "Aereolinea:": "Iberia",
+        "iataorigen": "MTY",
+        "iatadestino": "MEX",
+        "iata": "IB1151"
+    },
+    {
+        "origen": "Gen Mariano Escobedo",
+        "destino": "Internacional Benito Juarez",
+        "hrorigen": "2024-09-05 05:00:00",
+        "hrdestino": "2024-09-05 07:00:00",
+        "ciudadOr": "Monterrey",
+        "ciudadDes": "Ciudad de M\u00e9xico",
+        "Aereolinea:": "VivaAerobus",
+        "iataorigen": "MTY",
+        "iatadestino": "MEX",
+        "iata": "VB1133"
+    },
+    {
+        "origen": "Gen Mariano Escobedo",
+        "destino": "Internacional Benito Juarez",
+        "hrorigen": "2024-09-04 05:00:00",
+        "hrdestino": "2024-09-04 07:00:00",
+        "ciudadOr": "Monterrey",
+        "ciudadDes": "Ciudad de M\u00e9xico",
+        "Aereolinea:": "VivaAerobus",
+        "iataorigen": "MTY",
+        "iatadestino": "MEX",
+        "iata": "VB1133"
+    },
+    {
+        "origen": "Gen Mariano Escobedo",
+        "destino": "Internacional Benito Juarez",
+        "hrorigen": "2024-09-05 05:00:00",
+        "hrdestino": "2024-09-05 07:00:00",
+        "ciudadOr": "Monterrey",
+        "ciudadDes": "Ciudad de M\u00e9xico",
+        "Aereolinea:": "VivaAerobus",
+        "iataorigen": "MTY",
+        "iatadestino": "MEX",
+        "iata": "VB1133"
+    },
+    {
+        "origen": "Gen Mariano Escobedo",
+        "destino": "Internacional Benito Juarez",
+        "hrorigen": "2024-09-04 05:00:00",
+        "hrdestino": "2024-09-04 07:00:00",
+        "ciudadOr": "Monterrey",
+        "ciudadDes": "Ciudad de M\u00e9xico",
+        "Aereolinea:": "VivaAerobus",
+        "iataorigen": "MTY",
+        "iatadestino": "MEX",
+        "iata": "VB1133"
+    }
+]
