@@ -60,8 +60,7 @@ def obtenerDatosporIATA(iata):
             vuelos_combinados.append(vuelo)
 
     guardar_cache(ruta, vuelos_combinados)
-
-    return print(vuelos_combinados)
-
+    
+    return vuelos_combinados
 
 
