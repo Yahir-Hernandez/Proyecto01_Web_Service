@@ -1,12 +1,17 @@
-from iatas import iatasC
-from cacheyEscritura import cargar_cache
-from cacheyEscritura import guardar_cache
-from prediccion import predicc as pc
-from horasyTiempo import convertir_hora
 import os
 import pandas as pd
 import requests
-import json
+import sys
+
+from utils.horasyTiempo import fecha_inicio, fecha_hoy, fecha_final, ayer
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.iatas import iatasC
+from utils.cacheyEscritura import cargar_cache
+from utils.cacheyEscritura import guardar_cache
+from utils.predicc import predicc as pc
+from utils.horasyTiempo import convertDT_a_CST
+from utils.traductor import traducir_descripcion, traducir_main
+
 
 #Metodo para solicitar el clima de lugar que se da como parametro
 def weather(lugar):
@@ -26,7 +31,7 @@ def weather(lugar):
 
     return climas
 
-def solictarAPIClima(lugar):
+def solicitarAPIClima(lugar):
 
     key = "bafa68a647e077182f2e167abc8648dd"
     lat, lon = obtener_coordenadas(lugar) #valor la latitud y longitud del lugar
@@ -37,6 +42,23 @@ def solictarAPIClima(lugar):
     if rp.status_code != 200:
         raise Exception(f"Error en la solicitud de la API: {rp.status_code}")
     
+    return rp.json()
+
+def solicitarAPIClimaHistorico(lugar):
+    '''Solicita datos de horas anteriores a la hora actual de este mismo dias
+    @lugar: ciudad que se quiere consulta climar
+    @return: respuesta de la api del clima'''
+    key = "bafa68a647e077182f2e167abc8648dd"
+    lat, lon = obtener_coordenadas(lugar)  # valor la latitud y longitud del lugar
+    start = ayer()
+    end = fecha_final(fecha_hoy())
+    url = f"https://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={key}&units=metric"
+    rp = requests.get(url)
+
+    # status_code sera igual a 200 si la solicitud fue recibida, entendida y procesada con éxito.
+    if rp.status_code != 200:
+        raise Exception(f"Error en la solicitud de la API: {rp.status_code}")
+
     return rp.json()
 
     
@@ -61,12 +83,15 @@ def verificaEnCacheClima(ruta, ciudad):
 
     # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
     print("Clima no encontrado en caché. Solicitando datos a la API.")
-    data = solictarAPIClima(ciudad)
+    data = solicitarAPIClimaHistorico(ciudad)
     climas_creados = crear_clima(data, ciudad)
     guardar_cache(ruta, climas_creados)
 
-    return climas_creados
+    data2 = solicitarAPIClima(ciudad)
+    climas_creados2 = crear_clima(data2, ciudad)
+    guardar_cache(ruta, climas_creados2)
 
+    return climas_creados + climas_creados2
 
 def obtener_coordenadas(lugar):
 
@@ -74,7 +99,7 @@ def obtener_coordenadas(lugar):
         raise Exception("Por favor, selecciona un lugar válido")
     
     # Construir la ruta al archivo CSV
-    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/data/dataset.csv'))
+    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/dataset.csv'))
     
     # Leer el archivo CSV en un DataFrame
     try: 
@@ -112,23 +137,19 @@ def crear_clima(json_data, ciudad):
         #Evitar excepciones si una clave no está presente en el diccionario.
         clima = {
             "Ciudad": ciudad,
-            "Clima": clima_data.get('weather')[0].get('main'),
-            "Descripcion": clima_data.get('weather')[0].get('description'),
+            "Clima": traducir_descripcion(clima_data.get('weather')[0].get('main')),
+            "Descripcion": traducir_main(clima_data.get('weather')[0].get('id')),
             "Temperatura": clima_data.get('main').get('temp'),
             "Nubosidad": clima_data.get('clouds').get('all'),
-            "Presion a nivel del mar": clima_data.get('main').get('sea_level'),
-            "Presion a nivel del suelo": clima_data.get('main').get('grnd_level'),
             "Presion atmosferica": clima_data.get('main').get('pressure'),
             "Temperatura minima": clima_data.get('main').get('temp_min'),
             "Temperatura maxima": clima_data.get('main').get('temp_max'),
             "Velocidad del viento": clima_data.get('wind').get('speed'),
             "Direccion del viento": clima_data.get('wind').get('deg'),
-            "Rafagas del viento": clima_data.get('wind').get('gust'),
-            "Fecha y hora": convertir_hora(clima_data.get('dt_txt')),
+            "Fecha y hora": convertDT_a_CST(clima_data.get('dt')),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
         }
         climas.append(clima)
     
     return climas
-
