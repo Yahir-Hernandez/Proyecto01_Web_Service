@@ -1,7 +1,7 @@
 from utils.iatas import iatasC
 from utils.predicc import predicc
 from utils.cacheyEscritura import cargar_cache, guardar_cache
-from utils.horasyTiempo import reescribe_hora, formato_hora_minuto
+from utils.horasyTiempo import reescribe_hora, formato_hora_minuto, formato_ano_mes
 import requests
 import os 
 
@@ -19,7 +19,7 @@ def obtener_vuelosCiudad(origen, destino):
 
     # Verificar si se ha proporcionado un origen
     if not origen or not destino or origen=="" or destino=="":
-        raise Exception("Selecciona un origen o destino válidos")  
+        raise Exception("Selecciona un origen o destino válidos.")  
 
     # Convertir el nombre del aeropuerto de origen y destino en códigos IATA
     
@@ -31,7 +31,7 @@ def obtener_vuelosCiudad(origen, destino):
     
     # Si el origen y el destino son el mismo aeropuerto, devolver False
     if dep_iata ==  arr_iata :
-        raise Exception("La ciudad de origen y destino deben ser distintas") 
+        raise Exception("La ciudad de origen y destino deben ser distintas.") 
 
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar los objetos
     nombre_archivo= f'vuelos_cache.json' 
@@ -92,7 +92,7 @@ def obtener_vuelosPorIATA(iata):
     iata.replace("%20","")
 
     if not iata or iata=="":
-        raise Exception("Por favor selecciona un iata válido")
+        raise Exception("Por favor selecciona un iata válido.")
     
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar el json
     nombre_archivo= f'vuelos_iata_cache.json' 
@@ -153,11 +153,13 @@ def crear_vuelos(json_data):
             "destino": vuelo_data['arrival']['airport'],
             "hrorigen": reescribe_hora(vuelo_data['departure']['estimated']),
             "hrdestino": reescribe_hora(vuelo_data['arrival']['estimated']),
-            "hora real o": formato_hora_minuto(vuelo_data['departure']['estimated']),
-            "hora real d": formato_hora_minuto(vuelo_data['arrival']['estimated']),
+            "hora realOr": formato_hora_minuto(vuelo_data['departure']['estimated']),
+            "hora realDes": formato_hora_minuto(vuelo_data['arrival']['estimated']),
+            "fecha abreviadaOr": formato_ano_mes(vuelo_data['departure']['estimated']),
+            "fecha abreviadaDes": formato_ano_mes(vuelo_data['arrival']['estimated']),
             "ciudadOr": predicc(vuelo_data['departure']['iata']),
             "ciudadDes": predicc(vuelo_data['arrival']['iata']),
-            "Aereolinea": vuelo_data['airline']['name'],
+            "aereolinea": vuelo_data['airline']['name'],
             "iataorigen": vuelo_data['departure']['iata'],
             "iatadestino": vuelo_data['arrival']['iata'],
             "iata": vuelo_data['flight']['iata']
