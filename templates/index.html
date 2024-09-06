@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de clima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calcula el clima de tu destino</h1>
+        <section id="search" class="section">
+            <h2>Busca tu vuelo</h2>
+            <div class="search-container ">
+                <button type="button" id="toggle-button" class="button">Buscar por ciudad<span class="material-symbols-outlined">change_circle</span></button>
+                <form id="SEARCH_1" action="/search" method="get">
+                    <div class="ciudad_search">
+                        <input type="text" id="ciudad-input" name="ciudad" placeholder="Ingresa ciudad de origen">
+                    </div>
+                    <div class="ciudad_search">
+                        <input type="text" id="airline-input" name="destino" placeholder="Ingresa ciudad de destino">
+                    </div>
+                    <button type="submit" class="button search-button" id="BSeach1">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </form>
+                <form id="SEARCH_2" action="/search" method="get" style="display: none">
+                    <div class="iata_search">
+                        <input type="text" id="iata-input" name="iata" placeholder="Ingresa código de vuelo">
+                    </div>
+                    <button type="submit" class="button search-button" id="BSeach2">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </header>
+    <main id="main">
+        <div class="carga aviso" style="display: none;">
+            <h1>Cargando información</h1>
+            <p>Espere porfavor</p>
+        </div>
+        <div class="error aviso" style="display: none;">
+            <h1>Error de busqueda</h1>
+            <p>Ingrese datos correctos</p>
+        </div>
+        <div class="apierror aviso" style="display: none">
+            <hi>Hay un problemas con nuestra pagina</hi>
+            <p>Por el momento no podemos bridarle este servicio</p>
+        </div>
+        <ul id="listaVuelo">
+        </ul>
+        <div class="content_vuelo" id="card_clima" style="display: none;">
+            <div class="vuelo_ticket" id="ticket">
+                <div class="aerolinea">
+                    <b>Aerolinea</b>
+                    <p class="lineaDevuelo">holaaaaaaaaaaa</p>
+                </div>
+                <div class="ciudad">
+                    <b class="ciudad_o">Ciudad de origen: </b>
+                    <p class="ciudadOr" id="ciudadOr">Ciudad de México</p>
+                </div>
+                <div class="iata_vuelo">
+                    <b class="iata_v">Código de vuelo: </b>
+                    <p class="iata_vuelos" id="iata_vuelos">AM 127</p>
+                </div>
+                <div class="ciudad">
+                    <b class="ciudad_d">Ciudad de destino: </b>
+                    <p class="ciudadDes" id="ciudadDes">Monterrey</p>
+                </div>
+            </div>
+            <div class="climas" id="informacion">
+                <div class="origen">
+                    <div class="info_vuelo" id="origen">
+                        <span class="material-symbols-sharp">flight_takeoff</span> <h2 class="text">Origen</h2>
+                    </div>
+                    <div class="info_vuelo" id="origen">
+                        <h3 id="infoAero_01">Aeropuerto Internacional de la Ciudad de México</h3>
+                        <div class="info_ciudad">
+                            <p id="info_ciudad01">Ciudad: Ciudad de México</p>
+                            <p id="infoHora01">Hora: 13:00 hrs</p>
+                        </div>
+                    </div>
+                    <div class="info_clima" id="origen">
+                        <div class="info_clima00" id="temp00">
+                            <div class="info_00" id="origen">
+                                <h4 id="infociudad_01">Ciudad de México</h4>
+                                <p id="infofecha01">13:00 CST • 24/08</p>
+                            </div>
+                            <div class="info_01" id="origen">
+                                <div class="temperatura">
+                                    <div class="weather-icon">
+                                        <i class="wi" id="oIcono"></i>
+                                    </div>
+                                    <div class="weather-temp">
+                                        <p id="infClima_01">Despejado</p>
+                                        <p class="temp" id="infoTemp_01">24°</p>
+                                    </div>
+                                </div>
+                                <div class="temp-range" id="range01">23° - 25°</div>
+                            </div>
+                            <div class="lineaHorizontal"></div>
+                            <div class="info_02" id="origen">
+                                <p>Condiciones principales:</p>
+                                <ul>
+                                    <li id="principal01">Condición principal: nubes dispersas.</li>
+                                    <li id="Termica01">Sensación térmica: 29°</li>
+                                    <li id="CNubosa01">Cobertura nubosa: 46%</li>
+                                    <li id="Humedad01">Humedad: 0%</li>
+                                    <li id="atmosfera01"></li>
+                                </ul>
+                            </div>
+                            <div class="info_03" id="origen">
+                                <p>Viento:</p>
+                                <ul>
+                                    <li id="velocidad01">Velocidad del viento: 4.53 m/s.</li>
+                                    <li id="direccion01">Dirección del viento: 27° Noroeste</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destino">
+                    <div class="info_vuelo" id="destino">
+                        <span class="material-symbols-sharp">flight_land</span>
+                        <h2 class="text">Destino</h2>
+                    </div>
+                    <div class="info_vuelo" id="destino">
+                        <h3 id="infoAero_02">Aeropuerto Internacional de la Ciudad de México</h3>
+                        <div class="info_ciudad">
+                            <p id="info_ciudad02">Ciudad: Ciudad de México</p>
+                            <p id="infoHora02">Hora: 13:00 hrs</p>
+                        </div>
+                    </div>
+                    <div class="info_clima" id="destino">
+                        <div class="info_clima00" id="temp01">
+                            <div class="info_00" id="destino">
+                                <h4 id="infociudad_02">Ciudad de México</h4>
+                                <p id="infofecha02">13:00 CST • 24/08</p>
+                            </div>
+                            <div class="info_01" id="destino">
+                                <div class="temperatura">
+                                    <div class="weather-icon">
+                                        <i class="wi" id="dIcono"></i>
+                                    </div>
+                                    <div class="weather-temp">
+                                        <p id="infClima_02">Despejado</p>
+                                        <p class="temp" id="infoTemp_02">24°</p>
+                                    </div>
+                                </div>
+                                <div class="temp-range" id="range02">23° - 25°</div>
+                            </div>
+                            <div class="lineaHorizontal"></div>
+                            <div class="info_02" id="destino">
+                                <p>Condiciones principales:</p>
+                                <ul>
+                                    <li id="principal02">Condición principal: nubes dispersas.</li>
+                                    <li id="Termica02">Sensación térmica: 29°</li>
+                                    <li id="CNubosa02">Cobertura nubosa: 46%</li>
+                                    <li id="Humedad02">Humedad: 0%</li>
+                                    <li id="atmosfera02"></li>
+                                </ul>
+                            </div>
+                            <div class="info_03" id="destino">
+                                <p>Viento:</p>
+                                <ul>
+                                    <li id="velocidad02">Velocidad del viento: 4.53 m/s.</li>
+                                    <li id="direccion02">Dirección del viento: 27° Noroeste</li
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../static/script.js"></script>
+</body>
+</html>
