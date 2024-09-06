@@ -38,4 +38,4 @@ def predicc(entrada):
         return coincidencias[0]
     else:
         # No se encontró una coincidencia
-        raise ValueError("No se encontraron coincidencias para esa ciudad.")
+        raise Exception("No se encontraron coincidencias para esa ciudad.")
