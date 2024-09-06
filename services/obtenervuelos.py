@@ -1,14 +1,14 @@
 from utils.iatas import iatasC
 from utils.predicc import predicc
 from utils.cacheyEscritura import cargar_cache, guardar_cache
-from utils.horasyTiempo import reescribe_hora
+from utils.horasyTiempo import reescribe_hora, formato_hora_minuto, formato_ano_mes
 import requests
 import os 
 
 #Si se ingresas origen en CDMX, se debe de ingresar destino
 
 # Clave de acceso para la API
-api_key = 'c4e545f6c150f757d7dd30a3b0501599'
+api_key = '57fdee256d89b56c321e90f5f9a8cc17'
 # Endpoint de la API para obtener información de vuelos
 endpoint = 'http://api.aviationstack.com/v1/flights'
     
@@ -89,6 +89,7 @@ def obtener_vuelosAPI_ciudad(dep_iata, arr_iata):
 def obtener_vuelosPorIATA(iata):
 
     iata.replace(" ", "")
+    iata.replace("%20","")
 
     if not iata or iata=="":
         raise Exception("Por favor selecciona un iata válido")
@@ -152,9 +153,13 @@ def crear_vuelos(json_data):
             "destino": vuelo_data['arrival']['airport'],
             "hrorigen": reescribe_hora(vuelo_data['departure']['estimated']),
             "hrdestino": reescribe_hora(vuelo_data['arrival']['estimated']),
+            "hora realOr": formato_hora_minuto(vuelo_data['departure']['estimated']),
+            "hora realDes": formato_hora_minuto(vuelo_data['arrival']['estimated']),
+            "fecha abreviadaOr": formato_ano_mes(vuelo_data['departure']['estimated']),
+            "fecha abreviadaDes": formato_ano_mes(vuelo_data['arrival']['estimated']),
             "ciudadOr": predicc(vuelo_data['departure']['iata']),
             "ciudadDes": predicc(vuelo_data['arrival']['iata']),
-            "Aereolinea:": vuelo_data['airline']['name'],
+            "aereolinea": vuelo_data['airline']['name'],
             "iataorigen": vuelo_data['departure']['iata'],
             "iatadestino": vuelo_data['arrival']['iata'],
             "iata": vuelo_data['flight']['iata']

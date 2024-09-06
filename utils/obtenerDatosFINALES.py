@@ -69,7 +69,7 @@ def obtenerDatosporIATA(iata):
             clima_para_origen = buscar_clima(climaorigen, origen, hr_origen)
             clima_para_destino = buscar_clima(climadestino, destino, hr_destino)
 
-            if clima_para_origen and clima_para_destino: 
+            if clima_para_origen and clima_para_destino:
                 vuelo['clima_origen'] = clima_para_origen
                 vuelo['clima_destino'] = clima_para_destino
 
@@ -82,6 +82,8 @@ def obtenerDatosporIATA(iata):
     except Exception as e:
 
         print(f"Error al obtener los datos: {e}")
-        return []
+        return [f"ERRORR {e}"]
 
-obtenerDatosporCiudad("Monterrey", "México")
+obtenerDatosporIATA("Y4390")
+
+
