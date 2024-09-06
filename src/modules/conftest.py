@@ -18,6 +18,9 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     
     # Resumen para los tests de corrección
     total_correccion, passed_correccion, failed_correccion, skipped_correccion, percentage_correccion = count_tests_by_mark('correccion')
+
+    # Resumen para los tests de exceptions
+    total_exceptions, passed_exceptions, failed_exceptions, skipped_exceptions, percentage_exceptions = count_tests_by_mark('exceptions')
     
     # Mostrar los resultados generales
     terminalreporter.write_sep("=", "Resumen de tests por categoría")
@@ -37,3 +40,11 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     terminalreporter.write_line(f"Tests Corrección fallidos: {failed_correccion}")
     terminalreporter.write_line(f"Tests Corrección omitidos: {skipped_correccion}")
     terminalreporter.write_line(f"Porcentaje de éxito Corrección: {percentage_correccion:.2f}%")
+
+    # Resumen de los tests de exceptions
+    terminalreporter.write_sep("-", "Resumen de tests Exceptions")
+    terminalreporter.write_line(f"Total de tests Exceptions: {total_exceptions}")
+    terminalreporter.write_line(f"Tests Corrección pasados: {passed_exceptions}")
+    terminalreporter.write_line(f"Tests Corrección fallidos: {failed_exceptions}")
+    terminalreporter.write_line(f"Tests Corrección omitidos: {skipped_exceptions}")
+    terminalreporter.write_line(f"Porcentaje de éxito Exceptions: {percentage_exceptions:.2f}%")
