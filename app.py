@@ -41,9 +41,6 @@ def search():
         datos = obtenerDatosporCiudad(ciudad_origen, ciudad_destino)
         return jsonify(datos)
 
-    else:
-        return jsonify([])  # Devuelve una lista vacía en formato JSON
-
 
 if __name__ == '__main__':
     app.register_error_handler(404, error_page)
