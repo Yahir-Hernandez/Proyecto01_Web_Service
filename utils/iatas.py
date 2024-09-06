@@ -17,7 +17,7 @@ def iatasC(ciudad):
     try: 
         df = pd.read_csv(archivo)
     except Exception:
-        return None
+        raise Exception("No se pudo leer o no existe el archivo CSV IATAS.")
     
      # Formatear la entrada en modo capitalizado
     ct = predicc(ciudad.title())
@@ -29,7 +29,7 @@ def iatasC(ciudad):
     iata_code = ciudad["IATA"].values 
     
     if len(iata_code) == 0:
-        return "No regreso nada"
+        raise Exception("No se encontró el IATA")
     
     #Devuelve el valor del string
     return iata_code[0]

@@ -19,7 +19,7 @@ def obtener_vuelosCiudad(origen, destino):
 
     # Verificar si se ha proporcionado un origen
     if not origen or not destino or origen=="" or destino=="":
-        raise Exception("Selecciona un origen o destino válidos")  
+        raise Exception("Selecciona un origen o destino válidos.")  
 
     # Convertir el nombre del aeropuerto de origen y destino en códigos IATA
     
@@ -31,7 +31,7 @@ def obtener_vuelosCiudad(origen, destino):
     
     # Si el origen y el destino son el mismo aeropuerto, devolver False
     if dep_iata ==  arr_iata :
-        raise Exception("La ciudad de origen y destino deben ser distintas") 
+        raise Exception("La ciudad de origen y destino deben ser distintas.") 
 
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar los objetos
     nombre_archivo= f'vuelos_cache.json' 
@@ -92,7 +92,7 @@ def obtener_vuelosPorIATA(iata):
     iata.replace("%20","")
 
     if not iata or iata=="":
-        raise Exception("Por favor selecciona un iata válido")
+        raise Exception("Por favor selecciona un iata válido.")
     
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar el json
     nombre_archivo= f'vuelos_iata_cache.json' 
