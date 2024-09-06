@@ -42,7 +42,21 @@ def obtenerDatosporCiudad(origen, destino):
         return vuelos_combinados
     
     except Exception as e:
-        return print(traducirExcepcion(str(e)))
+        return traducirExcepcion(str(e))
+
+"""
+    Combina los datos de vuelos entre dos ciudades con sus respectivos climas y guarda el resultado en caché.
+
+    Args:
+        origen (str): Nombre de la ciudad de origen.
+        destino (str): Nombre de la ciudad de destino.
+
+    Returns:
+        list: Lista de vuelos combinados con los datos climáticos del origen y destino.
+    
+    Raises:
+        Exception: Si ocurre algún error en el proceso, se traduce el mensaje de excepción.
+"""
     
 def obtenerDatosporIATA(iata):
 
@@ -82,6 +96,20 @@ def obtenerDatosporIATA(iata):
     except Exception as e:
 
         return traducirExcepcion(str(e))
+    
+"""
+    Combina los datos de vuelos obtenidos a través de un código IATA con los climas de las ciudades de origen y destino,
+    y guarda el resultado en caché.
+
+    Args:
+        iata (str): Código IATA de la ciudad para la que se desean obtener los datos.
+
+    Returns:
+        list: Lista de vuelos combinados con los datos climáticos del origen y destino.
+    
+    Raises:
+        Exception: Si ocurre algún error en el proceso, se traduce el mensaje de excepción.
+"""
 
 
 
