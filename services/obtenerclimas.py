@@ -10,7 +10,7 @@ from utils.cacheyEscritura import cargar_cache
 from utils.cacheyEscritura import guardar_cache
 from utils.predicc import predicc as pc
 from utils.horasyTiempo import convertDT_a_CST, formato_ano_mes, formato_hora_minuto
-from utils.traductor import traducir_descripcion, traducir_main
+from utils.traductor import traducir_descripcion, traducir_main, traducir
 
 
 #Metodo para solicitar el clima de lugar que se da como parametro
@@ -19,7 +19,7 @@ def weather(lugar):
     lugar = lugar.replace(" ", "")
     
     if not lugar or lugar == "":
-        raise Exception("Por favor selecciona un lugar válido.")
+        raise Exception("Por favor selecciona un lugar válido para solicitar el clima.")
     
     lugar = pc(lugar)
     
@@ -46,7 +46,7 @@ def solicitarAPIClima(lugar):
 
 def solicitarAPIClimaHistorico(lugar):
     '''Solicita datos de horas anteriores a la hora actual de este mismo dias
-    @lugar: ciudad que se quiere consulta climar
+    @param: ciudad que se quiere consulta climar
     @return: respuesta de la api del clima'''
     key = "bafa68a647e077182f2e167abc8648dd"
     lat, lon = obtener_coordenadas(lugar)  # valor la latitud y longitud del lugar
@@ -96,7 +96,7 @@ def verificaEnCacheClima(ruta, ciudad):
 def obtener_coordenadas(lugar):
 
     if not lugar or lugar == "":
-        raise Exception("Por favor, selecciona un lugar válido")
+        raise Exception("Por favor, selecciona un lugar válido para las coordenadas")
     
     # Construir la ruta al archivo CSV
     file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/dataset.csv'))
@@ -104,8 +104,8 @@ def obtener_coordenadas(lugar):
     # Leer el archivo CSV en un DataFrame
     try: 
         df = pd.read_csv(file_path)
-    except Exception:
-        return None
+    except:
+        raise Exception("No se pudo leer o no existe el archivo SCV dataset.")
 
     # Obtener el código IATA del lugar especificado
     Iata = iatasC(lugar)
@@ -137,7 +137,7 @@ def crear_clima(json_data, ciudad):
         #Evitar excepciones si una clave no está presente en el diccionario.
         clima = {
             "Ciudad": ciudad,
-            "Clima": traducir_descripcion(clima_data.get('weather')[0].get('main')),
+            "Clima": clima_data.get('weather')[0].get('main'),
             "Descripcion": traducir_main(clima_data.get('weather')[0].get('id')),
             "Temperatura": clima_data.get('main').get('temp'),
             "Nubosidad": clima_data.get('clouds').get('all'),
@@ -147,9 +147,12 @@ def crear_clima(json_data, ciudad):
             "Velocidad del viento": clima_data.get('wind').get('speed'),
             "Direccion del viento": clima_data.get('wind').get('deg'),
             "Fecha y hora": convertDT_a_CST(clima_data.get('dt')),
-            "Fecha real": formato_ano_mes(convertDT_a_CST(clima_data.get('dt'))),
+            "Fecha simplificada": formato_ano_mes(convertDT_a_CST(clima_data.get('dt'))),
+            "Hora simplificada": formato_hora_minuto(convertDT_a_CST(clima_data.get('dt'))),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
+            "icono": clima_data.get('weather')[0].get("icon") ,
+            "Termica": clima_data.get('main').get("feels_like"),
         }
         climas.append(clima)
     

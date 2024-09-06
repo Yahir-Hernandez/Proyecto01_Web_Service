@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const BSeach1 = getElementByIdSafe('BSeach1');
     if (BSeach1) {
         BSeach1.addEventListener('click', function (event) {
+            document.querySelector("#card_clima").style.display = "none";
             event.preventDefault();
+            borra_list()
             buscarPorCiudad();
         });
     }
@@ -28,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (BSeach2) {
         BSeach2.addEventListener('click', function (event) {
             event.preventDefault();
+            borra_list()
             buscarPorIATA();
         });
     }
@@ -49,7 +52,10 @@ function formula(toggleButton, Form1, Form2) {
 
     Form1.style.display = isForm2Visible ? "flex" : "none";
     Form2.style.display = isForm2Visible ? "none" : "flex";
-    toggleButton.textContent = isForm2Visible ? "Buscar por ciudad" : "Buscar por IATA";
+    // Usa innerHTML para agregar texto y HTML juntos
+    toggleButton.innerHTML = isForm2Visible
+        ? 'Buscar por ciudad <span class="material-symbols-outlined">change_circle</span>'
+        : 'Buscar por IATA <span class="material-symbols-outlined">change_circle</span>';
 }
 
 // Función para manejar las búsquedas genéricas
@@ -63,9 +69,9 @@ function manejarBusqueda(url, procesarRespuesta) {
         })
         .then(data => {
             if (data) {
-                procesarRespuesta(data); // Procesa la respuesta con el callback adecuado
+                expoErro(data, procesarRespuesta);
             } else {
-                console.log("Hubo un error al procesar la respuesta");
+                console.log(`Hubo un error al procesar la respuesta:  ${data}`);
             }
         })
         .catch(error => console.error('Error:', error));
@@ -180,7 +186,7 @@ function expoDatos(datos) {
         // Clona el formato del ticket
         const tClone = ticket.cloneNode(true);
         tClone.classList.add('vuelo_ticket');
-        tClone.querySelector('.lineaDevuelo').textContent = vuelo.Aereolinea;
+        tClone.querySelector('.lineaDevuelo').textContent = vuelo.aereolinea;
         tClone.querySelector('.ciudadOr').textContent = vuelo.ciudadOr;
         tClone.querySelector('.iata_vuelos').textContent = vuelo.iata;
         tClone.querySelector('.ciudadDes').textContent = vuelo.ciudadDes;
@@ -225,35 +231,37 @@ function asigna(vuelo) {
         cClone.classList.add("climas");
         cClone.querySelector('#infoAero_01').textContent = vuelo.origen;
         cClone.querySelector('#info_ciudad01').textContent = `Ciudad ${vuelo.ciudadOr}`;
-        cClone.querySelector('#infoHora01').textContent = `Hora: ${vuelo["hora real o"]}`;
+        cClone.querySelector('#infoHora01').textContent = `Hora: ${vuelo["hora realOr"]}`;
         cClone.querySelector('#infociudad_01').textContent = vuelo.ciudadOr;
-        cClone.querySelector('#infofecha01').textContent = `${vuelo["hora real o"]} CST • ${vuelo.clima_origen["Fecha real"]}`;
+        cClone.querySelector('#infofecha01').textContent = `${vuelo["hora realOr"]} CST • ${vuelo["fecha abreviadaOr"]}`;
         cClone.querySelector('#infClima_01').textContent = vuelo.clima_origen.Clima;
         cClone.querySelector('#infoTemp_01').textContent = vuelo.clima_origen.Temperatura;
         cClone.querySelector('#range01').textContent = `${vuelo.clima_origen['Temperatura minima']}° - ${vuelo.clima_origen["Temperatura maxima"]}°`;
-        cClone.querySelector('#principal01').textContent = `Condición principal: ${vuelo.clima_origen["Descripcion del clima"]}.`;
+        cClone.querySelector('#principal01').textContent = `Condición principal: ${vuelo.clima_origen["Descripcion"]}.`;
         cClone.querySelector('#CNubosa01').textContent = `Cobertura nubosa: ${vuelo.clima_origen.Nubosidad}%`;
         cClone.querySelector('#Humedad01').textContent = `Humedad: ${vuelo.clima_origen.Humedad}%`;
-        cClone.querySelector('#Termica01').textContent = `Sensación térmica: ${vuelo.clima_origen.Termica01}°`;
+        cClone.querySelector('#Termica01').textContent = `Sensación térmica: ${vuelo.clima_origen.Termica}°`;
         cClone.querySelector('#velocidad01').textContent = `Velocidad del viento: ${vuelo.clima_origen["Velocidad del viento"]} m/s.`;
         cClone.querySelector('#direccion01').textContent = `Dirección del viento: ${vuelo.clima_origen["Direccion del viento"]}°`;
-        cClone.querySelector('#rafaga01').textContent = `Ráfagas de viento: ${vuelo.clima_origen["Rafagas de viento"]} m/s.`;
+        cClone.querySelector('#atmosfera01').textContent = `Presión atmosférica: ${vuelo.clima_origen["Presion atmosferica"]} hPa`;
+        icono(cClone, "#oIcono", vuelo.clima_origen.icono)
 
         cClone.querySelector('#infoAero_02').textContent = vuelo.destino;
         cClone.querySelector('#info_ciudad02').textContent = `Ciudad ${vuelo.ciudadDes}`;
-        cClone.querySelector('#infoHora02').textContent = `Hora: ${vuelo["hora real o"]}`;
+        cClone.querySelector('#infoHora02').textContent = `Hora: ${vuelo["hora realDes"]}`;
         cClone.querySelector('#infociudad_02').textContent = vuelo.ciudadDes;
-        cClone.querySelector('#infofecha02').textContent = `${vuelo.vuelo["hora real d"]} CST • ${vuelo.clima_destino["Fecha real"]}`;
+        cClone.querySelector('#infofecha02').textContent = `${vuelo["hora realDes"]} CST • ${vuelo["fecha abreviadaDes"]}`;
         cClone.querySelector('#infClima_02').textContent = vuelo.clima_destino.Clima;
         cClone.querySelector('#infoTemp_02').textContent = vuelo.clima_destino.Temperatura;
         cClone.querySelector('#range02').textContent = `${vuelo.clima_destino['Temperatura minima']}° - ${vuelo.clima_destino["Temperatura maxima"]}°`;
-        cClone.querySelector('#principal02').textContent = `Condición principal: ${vuelo.clima_destino["Descripcion del clima"]}.`;
+        cClone.querySelector('#principal02').textContent = `Condición principal: ${vuelo.clima_destino["Descripcion"]}.`;
         cClone.querySelector('#CNubosa02').textContent = `Cobertura nubosa: ${vuelo.clima_destino.Nubosidad}%`;
         cClone.querySelector('#Humedad02').textContent = `Humedad: ${vuelo.clima_destino.Humedad}%`;
-        cClone.querySelector('#Termica02').textContent = `Sensación térmica: ${vuelo.clima_destino.Termica01}°`;
+        cClone.querySelector('#Termica02').textContent = `Sensación térmica: ${vuelo.clima_destino.Termica}°`;
         cClone.querySelector('#velocidad02').textContent = `Velocidad del viento: ${vuelo.clima_destino["Velocidad del viento"]} m/s.`;
         cClone.querySelector('#direccion02').textContent = `Dirección del viento: ${vuelo.clima_destino["Direccion del viento"]}°`;
-        cClone.querySelector('#rafaga02').textContent = `Ráfagas de viento: ${vuelo.clima_destino["Rafagas de viento"]} m/s.`;
+        cClone.querySelector('#atmosfera02').textContent = `Presión atmosférica: ${vuelo.clima_destino["Presion atmosferica"]} hPa`;
+        icono(cClone, "#dIcono", vuelo.clima_destino.icono)
 
         return cClone;
     }
@@ -276,7 +284,7 @@ function expoElem(vuelo) {
         return;
     }
 
-    ticket.querySelector('.lineaDevuelo').textContent = vuelo.Aereolinea;
+    ticket.querySelector('.lineaDevuelo').textContent = vuelo.aereolinea;
     ticket.querySelector('.ciudadOr').textContent = vuelo.ciudadOr;
     ticket.querySelector('.iata_vuelos').textContent = vuelo.iata;
     ticket.querySelector('.ciudadDes').textContent = vuelo.ciudadDes;
@@ -288,22 +296,101 @@ function expoElem(vuelo) {
     info.style.display = "block";
 }
 
-function consulta(data) {
+/**
+ * Asigna el ícono de clima respectivo.
+ * @param {HTMLElement} clima - Elemento HTML que contiene la información del clima.
+ * @param {string} selector - Selector del ícono en HTML.
+ * @param {string} idIcono - ID del ícono del JSON.
+ */
+function icono(clima, selector, idIcono) {
+    // Selecciona el elemento del ícono usando el selector proporcionado
+    const iconoElement = clima.querySelector(selector);
 
-    if (data.length > 1) {
-        expoDatos(data);
-    } else {
-        expoElem(data);
+    // Mapa de iconos con sus clases correspondientes
+    const iconos = {
+        "01d": "wi-day-sunny",
+        "01n": "wi-night-clear",
+        "02d": "wi-day-cloudy",
+        "02n": "wi-night-alt-cloudy",
+        "03d": "wi-cloud",
+        "03n": "wi-cloud",
+        "04d": "wi-cloudy",
+        "04n": "wi-cloudy",
+        "09d": "wi-showers",
+        "09n": "wi-night-alt-showers",
+        "10d": "wi-day-rain",
+        "10n": "wi-night-alt-rain",
+        "11d": "wi-day-thunderstorm",
+        "11n": "wi-night-alt-thunderstorm",
+        "13d": "wi-day-snow",
+        "13n": "wi-night-alt-snow",
+        "50d": "wi-day-fog",
+        "50n": "wi-night-fog"
+    };
+
+    // Obtiene la clase correspondiente para el ícono
+    const clase = iconos[idIcono] || "noIcono";
+
+    // Si el elemento del ícono existe, actualiza su clase
+    if (iconoElement) {
+        iconoElement.classList.add(clase);
+        iconoElement.classList.add(dia_o_noche(idIcono));
     }
 }
 
-//Funcion temporal de prueba
-function direc() {
-    const input = prompt("Por favor, ingresa el número:");
-
-    if (input != 1) {
-        return "http://127.0.0.1:5501/plantilla.json";
-    } 
-
-    return "http://127.0.0.1:5501/solo.json";
+/**
+ * Elige el estilo de ícono dependiendo si es de día o noche.
+ * @param {string} idIcono - ID del ícono.
+ * @returns {string} Clase del estilo de CSS para el ícono.
+ */
+function dia_o_noche(idIcono) {
+    // Verifica si el cuarto carácter del ID es 'd' o 'n'
+    if (idIcono[2] === 'd') {
+        return "IconoStyleDay";
+    } else if (idIcono[2] === 'n') {
+        return "IconoStyleNight";
+    } else {
+        return "None";
+    }
 }
+
+/**
+ * Busca los codigos de errores de tipo error de entrada erronea
+ * @param data codigo de datos
+ * @returns {boolean} error encontrado
+ */
+function buscaError01(data) {
+    const Errores = ["500", "101", "103", "104", "105", "106", "107", "109"];
+    for (let index = 0; index < data.length; index++) {
+        if (data[0] === Errores[index]) {
+            return true;
+        }
+    }
+    return false;
+}
+
+/**
+ * Busca los codigos de errores de tipo error de codigo
+ * @param data codigo de datos
+ * @returns {boolean} error encontrado
+ */
+function buscaError02(data) {
+    const Errores = ["108", "102","200","201","202","203","204","300","301","302","302"];
+    for (let index = 0; index < data.length; index++) {
+        if (data[0] === Errores[index]) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function expoErro(data, procesarRespuesta) {
+    if (buscaError01(data)) {
+        document.querySelector('.error').style.display = 'block';
+    } else if (buscaError02(data)) {
+        document.querySelector('.apierror').style.display = 'block';
+    } else {
+        procesarRespuesta(data); // Procesa la respuesta con el callback adecuado
+    }
+}
+

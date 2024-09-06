@@ -4,6 +4,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.obtenerDatosFINALES import obtenerDatosporIATA, obtenerDatosporCiudad
 from utils.predicc import predicc
+from utils.cacheyEscritura import carpetaCache
 from services.obtenerclimas import verificaEnCacheClima
 from services.obtenervuelos import verificaEnCacheCiudad
 
@@ -19,13 +20,13 @@ from services.obtenervuelos import verificaEnCacheCiudad
 
     obtenerDatosporCiudad(origen, destino)'''
 
-print("Prueba de errores en el metodo 'obtenerDatosporIATA'")
+'''print("Prueba de errores en el metodo 'obtenerDatosporIATA'")
 print("________________________________________________________\n\n")
 
 iata = input("Ingresa la iata correcta de un vuelo que sale hoy:  ")
 
 obtenerDatosporIATA(iata)
-
+'''
 
 '''carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar los objetos
 nombre_archivo= f'climas_cache.json'
@@ -49,6 +50,7 @@ for vuelo in vuelos:
             print(clima)
             print("________________vuelo_________________-")
             print(vuelo)'''
+
 
 
 

@@ -4,6 +4,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from services.obtenervuelos import obtener_vuelosCiudad, obtener_vuelosPorIATA
 from utils.cacheyEscritura import guardar_cache
 from utils.predicc import predicc as pc
+from utils.traductor import traducirExcepcion
 from services.obtenerclimas import weather, buscar_clima
 
 def obtenerDatosporCiudad(origen, destino):
@@ -41,9 +42,8 @@ def obtenerDatosporCiudad(origen, destino):
         return vuelos_combinados
     
     except Exception as e:
-        print(f"Error al obtener los datos: {e}")
-        return []
-
+        return print(traducirExcepcion(str(e)))
+    
 def obtenerDatosporIATA(iata):
 
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar el json
@@ -81,9 +81,9 @@ def obtenerDatosporIATA(iata):
     
     except Exception as e:
 
-        print(f"Error al obtener los datos: {e}")
-        return [f"ERRORR {e}"]
+        return traducirExcepcion(str(e))
 
-obtenerDatosporCiudad("Monterrey", "México")
+
+
 
 
