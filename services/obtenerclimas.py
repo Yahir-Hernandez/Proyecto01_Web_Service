@@ -1,18 +1,15 @@
-import itertools
 import os
 import pandas as pd
 import requests
-import json
 import sys
 
-from utils.horasyTiempo import fecha_inicio, fecha_hoy, fecha_final
-
+from utils.horasyTiempo import fecha_hoy, fecha_final, ayer
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.iatas import iatasC
 from utils.cacheyEscritura import cargar_cache
 from utils.cacheyEscritura import guardar_cache
 from utils.predicc import predicc as pc
-from utils.horasyTiempo import convertDT_a_CST
+from utils.horasyTiempo import convertDT_a_CST, formato_ano_mes, formato_hora_minuto
 from utils.traductor import traducir_descripcion, traducir_main
 
 
@@ -53,7 +50,7 @@ def solicitarAPIClimaHistorico(lugar):
     @return: respuesta de la api del clima'''
     key = "bafa68a647e077182f2e167abc8648dd"
     lat, lon = obtener_coordenadas(lugar)  # valor la latitud y longitud del lugar
-    start = fecha_inicio(fecha_hoy())
+    start = ayer()
     end = fecha_final(fecha_hoy())
     url = f"https://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={key}&units=metric"
     rp = requests.get(url)
@@ -128,9 +125,6 @@ def buscar_clima(clima_data, ciudad, hora):
 
     for clima in clima_data:
         if clima['Fecha y hora']==hora and clima['Ciudad']==ciudad:
-            print("___________Clima encontra ____________")
-            print(clima)
-            print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
             return clima
     return None
 
@@ -153,10 +147,10 @@ def crear_clima(json_data, ciudad):
             "Velocidad del viento": clima_data.get('wind').get('speed'),
             "Direccion del viento": clima_data.get('wind').get('deg'),
             "Fecha y hora": convertDT_a_CST(clima_data.get('dt')),
+            "Fecha real": formato_ano_mes(convertDT_a_CST(clima_data.get('dt'))),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
         }
         climas.append(clima)
     
     return climas
-

@@ -5,6 +5,7 @@ import pytz
 # Configurar la zona horaria CST (Central Standard Time)
 cst = pytz.timezone('America/Chicago')
 
+   
 def reescribe_hora(fecha_hora_str):
     #convierte una cadena en formato ISO 8601 (como "2024-08-27T05:25:00+00:00") a un objeto datetime de Python.
     fecha_hora = datetime.fromisoformat(fecha_hora_str.replace("Z", "+00:00"))
@@ -18,8 +19,16 @@ def reescribe_hora(fecha_hora_str):
     else:
         fecha_hora_redondeada = (fecha_hora + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
     
-    # Convertir de nuevo el objeto datetime a string en el formato solicitado
     return fecha_hora_redondeada.strftime("%Y-%m-%d %H:%M:%S")
+"""
+    Redondea la hora a la hora en punto más cercana dependiendo de los minutos.
+
+    Args:
+        fecha_hora_str (str): un string del tipo "2024-08-27T05:25:00+00:00" a redondear.
+
+    Returns:
+        str: Un string con la fecha y la hora redondeada.
+"""
 
     
 def convertir_hora(hora):
@@ -34,23 +43,17 @@ def convertir_hora(hora):
     # Convertir de nuevo el objeto datetime a string en el formato solicitado
     return horaSCT.strftime("%Y-%m-%d %H:%M:%S")
 
-
-def fecha_inicio(fecha):
-    '''
-    Convierte la fecha proporcionada al inicio del día en formato UTC y devuelve el timestamp correspondiente.
-
-    Esta función toma una fecha en formato 'YYYY-MM-DD', la convierte al inicio del día en la zona horaria CST,
-    la convierte a UTC y luego devuelve el valor en formato timestamp.
-
-    Args:
-        fecha (str): Fecha en formato 'YYYY-MM-DD'.
+def ayer():
+    """
+    Devuelve el timestamp correspondiente a las 12:00 del mediodía del día anterior en formato UTC.
 
     Returns:
-        int: Timestamp en formato UTC correspondiente al inicio del día.
-    '''
-    # Convertir la fecha al inicio del día en CST
-    inicio_del_dia = cst.localize(datetime.strptime(fecha, "%Y-%m-%d").replace(hour=0, minute=0, second=0))
-    return int(inicio_del_dia.timestamp())
+        int: Timestamp en formato UTC correspondiente a las 12:00 del día anterior.
+    """
+    ayer = datetime.now() - timedelta(days=1)
+    # Asignar las 12:00 del mediodía en CST al día anterior
+    inicio_del_dia_anterior = cst.localize(ayer.replace(hour=0, minute=0, second=0, microsecond=0))
+    return int(inicio_del_dia_anterior.timestamp())
 
 def fecha_final(fecha):
     '''
@@ -84,3 +87,29 @@ def fecha_hoy():
 def convertDT_a_CST(dt):
     '''Convierte una fecha de codigo dt a fecha cst enformato año-mes-dia hora-minuto-segundo'''
     return datetime.fromtimestamp(dt, cst).strftime('%Y-%m-%d %H:%M:%S')
+
+
+def formato_hora_minuto(fecha):
+    """
+    Devuelve la fecha en formato "Hora-Minuto".
+
+    :param fecha: Objeto datetime o cadena con la fecha.
+    :param formato: Formato de la cadena de fecha si 'fecha' es una cadena.
+    :return: Cadena en formato "Hora-Minuto".
+    """
+    fech = datetime.strptime(fecha, "%Y-%m-%d %H:%M:%S")
+
+    return fech.strftime("%H-%M")
+
+
+def formato_ano_mes(fecha):
+    """
+    Devuelve la fecha en formato "Año/Mes".
+
+    :param fecha: Objeto datetime o cadena con la fecha.
+    :param formato: Formato de la cadena de fecha si 'fecha' es una cadena.
+    :return: Cadena en formato "Año/Mes".
+    """
+    fech = datetime.strptime(fecha, "%Y-%m-%d %H:%M:%S")
+
+    return fech.strftime("%Y/%m")

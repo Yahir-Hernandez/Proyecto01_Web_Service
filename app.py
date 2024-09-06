@@ -1,6 +1,7 @@
 import os
+import urllib.parse
 from flask import Flask, render_template, redirect, url_for, request, jsonify
-from utils.obtenerDatosFINALES import obtenerDatosporCiudad
+from utils.obtenerDatosFINALES import obtenerDatosporCiudad, obtenerDatosporIATA
 
 #El usuario debe de instalar Flask
 
@@ -25,13 +26,24 @@ def search():
     ciudad_destino = request.args.get('destino')
     codigo_vuelo = request.args.get('iata')
 
-    if codigo_vuelo != None:
+    if codigo_vuelo:
         # Lógica para el formulario 2 (código de vuelo)
-        return f"Código de Vuelo recibido:, {codigo_vuelo}\n"
-    else:
-        datos = obtenerDatosporCiudad(ciudad_origen, ciudad_destino)
+        codigo_vuelo = urllib.parse.unquote(codigo_vuelo).replace(' ', '')
+        print(codigo_vuelo)
+        datos = obtenerDatosporIATA(codigo_vuelo)
+        return jsonify(datos)  # Devuelve los datos en formato JSON
+
+    elif ciudad_origen and ciudad_destino:
         # Lógica para el formulario 1 (ciudad origen y destino)
+        ciudad_origen = urllib.parse.unquote(ciudad_origen).replace(' ', '')
+        ciudad_destino = urllib.parse.unquote(ciudad_destino).replace(' ', '')
+        print(ciudad_origen, ciudad_destino)
+        datos = obtenerDatosporCiudad(ciudad_origen, ciudad_destino)
         return jsonify(datos)
+
+    else:
+        return jsonify([])  # Devuelve una lista vacía en formato JSON
+
 
 if __name__ == '__main__':
     app.register_error_handler(404, error_page)
