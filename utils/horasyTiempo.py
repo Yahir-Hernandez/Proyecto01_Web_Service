@@ -89,3 +89,29 @@ def convertDT_a_CST(dt):
     return datetime.fromtimestamp(dt, cst).strftime('%Y-%m-%d %H:%M:%S')
 
 
+def formato_hora_minuto(fecha):
+    """
+    Devuelve la fecha en formato "Hora-Minuto".
+
+    :param fecha: Objeto datetime o cadena con la fecha.
+    :param formato: Formato de la cadena de fecha si 'fecha' es una cadena.
+    :return: Cadena en formato "Hora-Minuto".
+    """
+    fech = datetime.fromisoformat(fecha)
+
+    return fech.strftime("%H:%M")
+
+
+def formato_ano_mes(fecha):
+    """
+    Devuelve la fecha en formato "Año/Mes".
+
+    :param fecha: Objeto datetime o cadena con la fecha.
+    :param formato: Formato de la cadena de fecha si 'fecha' es una cadena.
+    :return: Cadena en formato "Año/Mes".
+    """
+    fech = datetime.fromisoformat(fecha)
+
+    return fech.strftime("%y/%d")
+
+

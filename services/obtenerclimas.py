@@ -9,7 +9,7 @@ from utils.iatas import iatasC
 from utils.cacheyEscritura import cargar_cache
 from utils.cacheyEscritura import guardar_cache
 from utils.predicc import predicc as pc
-from utils.horasyTiempo import convertDT_a_CST
+from utils.horasyTiempo import convertDT_a_CST, formato_ano_mes, formato_hora_minuto
 from utils.traductor import traducir_descripcion, traducir_main
 
 
@@ -147,6 +147,8 @@ def crear_clima(json_data, ciudad):
             "Velocidad del viento": clima_data.get('wind').get('speed'),
             "Direccion del viento": clima_data.get('wind').get('deg'),
             "Fecha y hora": convertDT_a_CST(clima_data.get('dt')),
+            "Fecha simplificada": formato_ano_mes(convertDT_a_CST(clima_data.get('dt'))),
+            "Hora simplificada": formato_hora_minuto(convertDT_a_CST(clima_data.get('dt'))),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
         }
