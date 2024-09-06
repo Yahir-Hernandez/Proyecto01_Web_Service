@@ -19,7 +19,7 @@ def weather(lugar):
     lugar = lugar.replace(" ", "")
     
     if not lugar or lugar == "":
-        raise Exception("Por favor selecciona un lugar válido.")
+        raise Exception("Por favor selecciona un lugar válido para solicitar el clima.")
     
     lugar = pc(lugar)
     
@@ -96,7 +96,7 @@ def verificaEnCacheClima(ruta, ciudad):
 def obtener_coordenadas(lugar):
 
     if not lugar or lugar == "":
-        raise Exception("Por favor, selecciona un lugar válido")
+        raise Exception("Por favor, selecciona un lugar válido para las coordenadas")
     
     # Construir la ruta al archivo CSV
     file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/dataset.csv'))
@@ -104,8 +104,8 @@ def obtener_coordenadas(lugar):
     # Leer el archivo CSV en un DataFrame
     try: 
         df = pd.read_csv(file_path)
-    except Exception:
-        return None
+    except:
+        raise Exception("No se pudo leer o no existe el archivo SCV dataset.")
 
     # Obtener el código IATA del lugar especificado
     Iata = iatasC(lugar)

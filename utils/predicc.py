@@ -16,8 +16,8 @@ def predicc(entrada):
     # Leer el archivo CSV en un DataFrame
     try: 
         df = pd.read_csv(archivo)
-    except Exception as e:
-        print(f"Error al abrir el archivo: {e}")
+    except Exception:
+        raise Exception ("No se pudo leer o no existe el archivo CSV IATAS.")
 
     # Buscar la ciudad por código IATA
     iata = df[df["IATA"] == entrada.upper()]
