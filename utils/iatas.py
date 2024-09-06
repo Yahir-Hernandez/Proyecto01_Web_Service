@@ -29,7 +29,7 @@ def iatasC(ciudad):
     iata_code = ciudad["IATA"].values 
     
     if len(iata_code) == 0:
-        raise Exception("No se encontró el IATA")
+        raise Exception("No se encontró el IATA.")
     
     #Devuelve el valor del string
     return iata_code[0]
