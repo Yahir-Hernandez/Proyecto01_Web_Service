@@ -73,9 +73,3 @@ def porcentaje(palabra):
     resultados_ordenados = sorted(resultados, key=lambda x: x[1], reverse=True)
 
     return resultados_ordenados
-
-# Ejemplo de uso:
-resultado = porcentaje("Mexi")
-for ciudad, similitud in resultado:
-    if int(porcentaje("ijewieniwe")[0][1]) < 70:
-        print("Si funcina")

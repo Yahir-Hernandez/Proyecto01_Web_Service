@@ -68,6 +68,7 @@ function manejarBusqueda(url, procesarRespuesta) {
             return response.json(); // O .text() si esperas texto
         })
         .then(data => {
+            console.log(data)
             if (data) {
                 expoErro(data, procesarRespuesta);
             } else {
@@ -361,12 +362,8 @@ function dia_o_noche(idIcono) {
  */
 function buscaError01(data) {
     const Errores = ["500", "101", "103", "104", "105", "106", "107", "109"];
-    for (let index = 0; index < data.length; index++) {
-        if (data[0] === Errores[index]) {
-            return true;
-        }
-    }
-    return false;
+    // Verifica si el primer elemento de 'data' está en la lista de 'Errores'
+    return Errores.includes(data[0]);
 }
 
 /**
@@ -375,22 +372,26 @@ function buscaError01(data) {
  * @returns {boolean} error encontrado
  */
 function buscaError02(data) {
-    const Errores = ["108", "102","200","201","202","203","204","300","301","302","302"];
-    for (let index = 0; index < data.length; index++) {
-        if (data[0] === Errores[index]) {
-            return true;
-        }
-    }
-    return false;
+    const Errores = ["108", "102", "200", "201", "202", "203", "204", "300", "301", "302"];
+    // Verifica si el primer elemento de 'data' está en la lista de 'Errores'
+    return Errores.includes(data[0]);
 }
 
 function expoErro(data, procesarRespuesta) {
-    if (buscaError01(data)) {
-        document.querySelector('.error').style.display = 'block';
+    // Selecciona los elementos de error de una sola vez
+    const errorElement = document.querySelector('.error');
+    const apiErrorElement = document.querySelector('.apierror');
+
+    // Oculta los mensajes de error inicialmente
+    errorElement.style.display = 'none';
+    apiErrorElement.style.display = 'none';
+
+    // Verifica si hay errores en los datos
+    if (data.length === 0 || buscaError01(data)) {
+        errorElement.style.display = 'block'; // Muestra el error general
     } else if (buscaError02(data)) {
-        document.querySelector('.apierror').style.display = 'block';
+        apiErrorElement.style.display = 'block'; // Muestra el error específico de la API
     } else {
-        procesarRespuesta(data); // Procesa la respuesta con el callback adecuado
+        procesarRespuesta(data); // Procesa la respuesta si no hay errores
     }
 }
-
