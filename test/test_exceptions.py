@@ -29,12 +29,16 @@ def test_cache_not_found(monkeypatch):
 
 
 @pytest.mark.exceptions
+# Prueba de IATA con espacios extras
+
 def test_iata_with_spaces(monkeypatch):
     def mock_verificaEnCacheIATA(ruta, iata):
         assert iata == "MEX", "La función no eliminó correctamente los espacios en blanco"
         return {"Vuelo": "MX123"}  # Simula un resultado
 
+
     monkeypatch.setattr(obtenervuelos, 'verificaEnCacheIATA', mock_verificaEnCacheIATA)  # Corregido
 
     resultado = obtener_vuelosPorIATA(" MEX ")
     assert resultado == {"Vuelo": "MX123"}, "No manejó correctamente el IATA con espacios en blanco"
+
