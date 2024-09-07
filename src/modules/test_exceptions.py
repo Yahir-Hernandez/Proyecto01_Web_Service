@@ -1,7 +1,12 @@
 import pytest
+<<<<<<< Updated upstream:src/modules/test_exceptions.py
 from obtenerclimas import weather, obtener_coordenadas  # Asegúrate de ajustar el nombre del módulo según tu estructura
 import os
 from obtenervuelos import obtener_vuelosPorIATA
+=======
+from services.obtenerclimas import weather, obtener_coordenadas 
+from services.obtenervuelos import obtener_vuelosPorIATA
+>>>>>>> Stashed changes:test/test_exceptions.py
 #===============================================================Obtener cordenadas========================================================================================
 
 

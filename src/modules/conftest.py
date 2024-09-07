@@ -22,6 +22,9 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     # Resumen para los tests de exceptions
     total_exceptions, passed_exceptions, failed_exceptions, skipped_exceptions, percentage_exceptions = count_tests_by_mark('exceptions')
     
+    # Resumen para los tests de traductor
+    total_traductor, passed_traductor, failed_traductor, skipped_traductor, percentage_traductor = count_tests_by_mark('traductor')
+
     # Mostrar los resultados generales
     terminalreporter.write_sep("=", "Resumen de tests por categoría")
     
@@ -48,3 +51,11 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     terminalreporter.write_line(f"Tests Corrección fallidos: {failed_exceptions}")
     terminalreporter.write_line(f"Tests Corrección omitidos: {skipped_exceptions}")
     terminalreporter.write_line(f"Porcentaje de éxito Exceptions: {percentage_exceptions:.2f}%")
+
+     # Resumen de los tests de traductor
+    terminalreporter.write_sep("-", "Resumen de tests Traductor")
+    terminalreporter.write_line(f"Total de tests Traductor: {total_traductor}")
+    terminalreporter.write_line(f"Tests Corrección pasados: {passed_traductor}")
+    terminalreporter.write_line(f"Tests Corrección fallidos: {failed_traductor}")
+    terminalreporter.write_line(f"Tests Corrección omitidos: {skipped_traductor}")
+    terminalreporter.write_line(f"Porcentaje de éxito Traductor: {percentage_traductor:.2f}%")
