@@ -140,3 +140,16 @@ def traducirExcepcion(msg):
             return [value]
     
     return [500] # 500 es error desconocido
+"""
+    Traduce un mensaje de error en un código numérico específico basado en un diccionario de excepciones predefinido.
+
+    Args:
+        msg (str): Mensaje de error que se desea traducir a un código numérico.
+
+    Returns:
+        list: Una lista que contiene el código numérico correspondiente al mensaje de error.
+        
+    Notes:
+        - El código 500 se utiliza para errores desconocidos que no están en el diccionario de excepciones.
+        - Los códigos numéricos y mensajes de error son definidos en el diccionario `exception` y corresponden a distintos errores específicos que pueden ocurrir durante la ejecución del programa.
+"""
