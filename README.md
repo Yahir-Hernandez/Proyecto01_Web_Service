@@ -2,6 +2,12 @@
 
 Repositorio para el primer proyecto de Modelado y Programación
 
+## Integrantes
+
+Oscar Yair Hernandez Garcia
+Said Apis Lorenzana
+Gerardo Gael Sandoval Sandoval
+
 ## Descripción
 
 Este proyecto está desarrollado utilizando Python, JavaScript, HTML y CSS. Proporciona una implementación de un servicio web utilizando Flask, entre otras herramientas.
