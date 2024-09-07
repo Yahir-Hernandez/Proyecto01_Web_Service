@@ -58,7 +58,7 @@ def search():
             return jsonify(["500"])
 
     except Exception as e:
-        return jsonify({"error": "Ocurrió un error en el servidor", "message": str(e)})
+        return jsonify(["500"])
 
 
 if __name__ == '__main__':
