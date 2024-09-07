@@ -128,8 +128,8 @@ def obtener_vuelosAPI_ciudad(dep_iata, arr_iata):
 
 def obtener_vuelosPorIATA(iata):
 
-    iata.replace(" ", "")
-    iata.replace("%20","")
+    iata=iata.replace(" ", "")
+    iata=iata.replace("%20","")
 
     if not iata or iata=="":
         raise Exception("Por favor selecciona un iata válido.")
