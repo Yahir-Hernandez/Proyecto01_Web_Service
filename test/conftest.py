@@ -3,6 +3,7 @@ import pytest
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 def pytest_terminal_summary(terminalreporter, exitstatus, config):
     # Obtener el número de tests totales, pasados, fallidos y omitidos
     total_tests = terminalreporter._numcollected
