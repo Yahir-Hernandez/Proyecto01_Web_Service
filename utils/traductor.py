@@ -2,7 +2,7 @@ from deep_translator import GoogleTranslator
 
 #Corrige datos en ingles
 
-def traducir_descripcion(descripcion):
+def traducir(descripcion):
     '''Método para traducir textos generados en los json
     @param descripcion: textos que desea traducir
     '''
@@ -82,13 +82,13 @@ def traducir_descripcion(descripcion_clima):
     @return: Descripción en español del clima
     '''
     traducciones_descripcion = {
-        "clear sky": "cielo despejado",
-        "few clouds": "pocas nubes",
-        "scattered clouds": "nubes dispersas",
-        "broken clouds": "nubes rasgadas",
-        "overcast clouds": "cielo nuboso",
-        "shower rain": "lluvia en chubascos",
-        "rain": "lluvia",
+        "Clear sky": "cielo despejado",
+        "Few clouds": "pocas nubes",
+        "Ccattered clouds": "nubes dispersas",
+        "Broken clouds": "nubes rasgadas",
+        "Overcast clouds": "cielo nuboso",
+        "Shower rain": "lluvia en chubascos",
+        "Rain": "lluvia",
         "light rain": "lluvia ligera",
         "moderate rain": "lluvia moderada",
         "heavy intensity rain": "lluvia intensa",
@@ -140,3 +140,16 @@ def traducirExcepcion(msg):
             return [value]
     
     return [500] # 500 es error desconocido
+"""
+    Traduce un mensaje de error en un código numérico específico basado en un diccionario de excepciones predefinido.
+
+    Args:
+        msg (str): Mensaje de error que se desea traducir a un código numérico.
+
+    Returns:
+        list: Una lista que contiene el código numérico correspondiente al mensaje de error.
+        
+    Notes:
+        - El código 500 se utiliza para errores desconocidos que no están en el diccionario de excepciones.
+        - Los códigos numéricos y mensajes de error son definidos en el diccionario `exception` y corresponden a distintos errores específicos que pueden ocurrir durante la ejecución del programa.
+"""

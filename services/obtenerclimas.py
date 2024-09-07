@@ -2,15 +2,14 @@ import os
 import pandas as pd
 import requests
 import sys
-
-from utils.horasyTiempo import fecha_hoy, fecha_final, ayer
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.horasyTiempo import fecha_hoy, fecha_final, ayer
 from utils.iatas import iatasC
 from utils.cacheyEscritura import cargar_cache
 from utils.cacheyEscritura import guardar_cache
 from utils.predicc import predicc as pc
 from utils.horasyTiempo import convertDT_a_CST, formato_ano_mes, formato_hora_minuto
-from utils.traductor import traducir_descripcion, traducir_main
+from utils.traductor import traducir_descripcion, traducir_main, traducir
 
 
 #Metodo para solicitar el clima de lugar que se da como parametro
@@ -30,7 +29,19 @@ def weather(lugar):
     climas = verificaEnCacheClima(ruta, lugar)
 
     return climas
+"""
+    Obtiene el clima de un lugar específico, verificando primero en el caché 
+    y solicitando datos de la API si no se encuentran coincidencias.
 
+    Args:
+        lugar (str): Nombre del lugar para solicitar el clima.
+
+    Raises:
+        Exception: Si no se proporciona un lugar válido.
+
+    Returns:
+        list: Lista de datos climáticos correspondientes al lugar solicitado.
+""" 
 def solicitarAPIClima(lugar):
 
     key = "bafa68a647e077182f2e167abc8648dd"
@@ -43,10 +54,22 @@ def solicitarAPIClima(lugar):
         raise Exception(f"Error en la solicitud de la API: {rp.status_code}")
     
     return rp.json()
+"""
+    Solicita el clima actual de una ciudad a través de la API de OpenWeather.
+
+    Args:
+        lugar (str): Nombre del lugar para el que se desea obtener el clima.
+
+    Raises:
+        Exception: Si ocurre un error en la solicitud a la API.
+
+    Returns:
+        dict: Respuesta en formato JSON con los datos climáticos del lugar solicitado.
+"""
 
 def solicitarAPIClimaHistorico(lugar):
     '''Solicita datos de horas anteriores a la hora actual de este mismo dias
-    @lugar: ciudad que se quiere consulta climar
+    @param: ciudad que se quiere consulta climar
     @return: respuesta de la api del clima'''
     key = "bafa68a647e077182f2e167abc8648dd"
     lat, lon = obtener_coordenadas(lugar)  # valor la latitud y longitud del lugar
@@ -60,7 +83,18 @@ def solicitarAPIClimaHistorico(lugar):
         raise Exception(f"Error en la solicitud de la API: {rp.status_code}")
 
     return rp.json()
+"""
+    Solicita el clima histórico de una ciudad para las horas previas a la hora actual.
 
+    Args:
+        lugar (str): Nombre del lugar para solicitar el clima histórico.
+
+    Raises:
+        Exception: Si ocurre un error en la solicitud a la API.
+
+    Returns:
+        dict: Respuesta en formato JSON con los datos climáticos históricos del lugar solicitado.
+"""
     
 def verificaEnCacheClima(ruta, ciudad):
 
@@ -69,7 +103,6 @@ def verificaEnCacheClima(ruta, ciudad):
     climas_encontrados = []
 
     if data_cache:
-        print("Verificando coincidencias en caché...")
 
         # Buscar en la lista de climas los que coincidan con la ciudad proporcionada
         for clima in data_cache:
@@ -78,11 +111,9 @@ def verificaEnCacheClima(ruta, ciudad):
 
         # Si se encontraron climas, devolverlos
         if climas_encontrados:
-            print("Coincidencias de clima encontradas en caché.")
             return climas_encontrados
 
     # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
-    print("Clima no encontrado en caché. Solicitando datos a la API.")
     data = solicitarAPIClimaHistorico(ciudad)
     climas_creados = crear_clima(data, ciudad)
     guardar_cache(ruta, climas_creados)
@@ -92,6 +123,17 @@ def verificaEnCacheClima(ruta, ciudad):
     guardar_cache(ruta, climas_creados2)
 
     return climas_creados + climas_creados2
+
+"""
+    Verifica si los datos climáticos de una ciudad están almacenados en el caché.
+
+    Args:
+        ruta (str): Ruta del archivo de caché.
+        ciudad (str): Nombre de la ciudad para buscar los datos climáticos en la caché.
+
+    Returns:
+        list: Lista de climas encontrados en la caché o solicitados a la API.
+"""
 
 def obtener_coordenadas(lugar):
 
@@ -121,12 +163,38 @@ def obtener_coordenadas(lugar):
     # Si no se encuentra el lugar, devolver None
     return None
 
+"""
+    Obtiene las coordenadas (latitud y longitud) de un lugar a partir de un archivo CSV.
+
+    Args:
+        lugar (str): Nombre del lugar o código IATA.
+
+    Raises:
+        Exception: Si no se proporciona un lugar válido o no se puede leer el archivo CSV.
+
+    Returns:
+        tuple: Coordenadas (latitud, longitud) del lugar solicitado.
+"""
+
 def buscar_clima(clima_data, ciudad, hora):
 
     for clima in clima_data:
         if clima['Fecha y hora']==hora and clima['Ciudad']==ciudad:
             return clima
     return None
+
+"""
+    Busca datos climáticos en una lista de datos climáticos basándose en la ciudad y la hora.
+
+    Args:
+        clima_data (list): Lista de diccionarios con los datos climáticos.
+        ciudad (str): Nombre de la ciudad para la cual se desea encontrar el clima.
+        hora (str): Hora específica en formato 'YYYY-MM-DD HH:MM:SS' para buscar el clima.
+
+    Returns:
+        dict or None: Diccionario con los datos climáticos si se encuentra una coincidencia,
+                      de lo contrario, retorna None.
+"""
 
 
 def crear_clima(json_data, ciudad):
@@ -137,7 +205,7 @@ def crear_clima(json_data, ciudad):
         #Evitar excepciones si una clave no está presente en el diccionario.
         clima = {
             "Ciudad": ciudad,
-            "Clima": traducir_descripcion(clima_data.get('weather')[0].get('main')),
+            "Clima": clima_data.get('weather')[0].get('main'),
             "Descripcion": traducir_main(clima_data.get('weather')[0].get('id')),
             "Temperatura": clima_data.get('main').get('temp'),
             "Nubosidad": clima_data.get('clouds').get('all'),
@@ -151,7 +219,20 @@ def crear_clima(json_data, ciudad):
             "Hora simplificada": formato_hora_minuto(convertDT_a_CST(clima_data.get('dt'))),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
+            "icono": clima_data.get('weather')[0].get("icon") ,
+            "Termica": clima_data.get('main').get("feels_like"),
         }
         climas.append(clima)
     
     return climas
+"""
+    Crea una lista de diccionarios que representan los datos climáticos de una ciudad a partir
+    de los datos JSON obtenidos de la API.
+
+    Args:
+        json_data (dict): Datos JSON devueltos por la API de OpenWeather.
+        ciudad (str): Nombre de la ciudad para la que se generarán los datos climáticos.
+
+    Returns:
+        list: Lista de diccionarios, donde cada uno contiene los detalles climáticos de un momento específico.
+"""
