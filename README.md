@@ -4,8 +4,8 @@ Repositorio para el primer proyecto de Modelado y Programación
 
 ## Integrantes
 
-Oscar Yair Hernandez Garcia
-Said Apis Lorenzana
+Oscar Yair Hernandez Garcia,
+Said Apis Lorenzana,
 Gerardo Gael Sandoval Sandoval
 
 ## Descripción
