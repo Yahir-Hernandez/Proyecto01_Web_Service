@@ -1,0 +1,510 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #131517;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1E1F25;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 3%;
+}
+
+header section {
+    margin: 20px auto;
+    max-width: 1200px;
+    margin-top: 2%;
+}
+
+header h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 10000,
+  'GRAD' 0,
+  'opsz' 24;
+    font-size: 24px;             /* Ajusta el tamaño del ícono */
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 10000,
+  'GRAD' 0,
+  'opsz' 48;
+    color: #9BABC5;
+    font-size: 70px;             /* Ajusta el tamaño del ícono */
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.search-container button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #131517
+}
+
+.search-container input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #9BABC5;
+    background-color: #131517
+    
+}
+
+.search-container button {
+    background-color: #1EA7FF;
+    color: #e0e0e0;
+    font-size:larger;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.search-container button:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.ciudad_search,
+.iata_search{
+    margin-right: 10px;
+}
+
+#BSeach {
+    margin-left: 10px;
+}
+
+#ciudad-input:focus, 
+#airline-input:focus, 
+#iata-input:focus,
+#ciudad-origen:focus,
+#ciudad-destino:focus {
+    flex: 1;
+    color: #9BABC5;
+    background-color: #131517;
+    outline-color: #1EA7FF;
+    font-size: 1rem;
+    line-height: normal
+}
+
+#ciudad-input::placeholder, 
+#airline-input::placeholder, 
+#iata-input::placeholder,
+#ciudad-origen::placeholder,
+#ciudad-destino::placeholder {
+    flex: 1;
+    color: #9BABC5;
+    padding-bottom: 100% ;
+    background-color: #131517;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal
+}
+
+#SEARCH_1, #SEARCH_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#SEARCH_1 div, #SEARCH_2 div {
+    flex: 1;
+    flex-basis: 200px;
+}
+
+main {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+/*ultima actualizacion*/
+/*
+.clima_unico div, p, h4, h2 {
+    border: 1px solid #3A7734;
+}*/
+
+.clima_unico {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1E1F25;
+    color: #e0e0e0;
+    border-radius: 10px;    
+    padding: 20px;
+}
+
+.clima_unico01, .clima_unico02 {
+    flex: 1;
+    flex-basis: 200px;
+}
+
+.clima_unico01 {
+    margin-bottom: 10%;
+}
+.principal {
+    background-color: #131517;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.principal p, h2{
+    flex: 1;
+    flex-basis: 200px;
+    margin: 0;
+}
+
+.principal h2 {
+    color: #9BABC5;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.principal p {
+    font-weight: lighter;
+    font-size: 15px;
+    justify-content: center;
+    height: 100%;
+    margin-top: 3px;
+}
+
+#localidad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#localidad h4 {
+    color: #e0e0e0;
+    font-size: 24px;
+    margin: 0;
+}
+
+#localidad p {  
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight:lighter;
+    padding-right: 13%;
+}
+
+#infoClima {
+    color: #e0e0e0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#infoClima div{
+    flex: 1;
+    flex-basis: 200px;
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 60px;
+}
+
+.clima-detalle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.clima-detalle p {
+    flex: 1;
+    align-self: center;
+    margin: 5px 0;
+}
+
+.estado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.temp-actual {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.temp-range {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.contentIcons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.weather-icon2 {
+    display: flex;
+    align-items: center;
+    background-color: #131517;
+    color: #9BABC5;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon2 i {
+    font-size: 24px;
+    color: #e0e0e0;
+    margin-right: 10px;
+}
+
+.weather-icon2 h4 {
+    font-size: 14px;
+    margin: 0 10px 0 0;
+}
+
+.weather-icon2 p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/*ultima actualizacion*/
+
+#listaVuelo {
+    list-style-type: none;
+    padding: 0;
+}
+#listaVuelo li {
+    padding: 10px;
+    position: relative;
+}
+
+.detalles {
+    display: none;
+}
+.active .detalles {
+    display: flex;
+}
+
+#listaVuelo {
+    width: 100%;
+}
+
+.aviso {
+    width: 100%;
+    margin: 6%;
+    border-radius: 5%;
+    background-color: #1E1F25;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.aviso h1, p {
+    justify-items: center;
+    color: #e0e0e0;
+    font-size: 2rem;
+}
+
+.content_vuelo {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 15%;
+}
+
+.climas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    color: #9BABC5;
+    border-radius: 10px;
+}
+
+/*
+.climas div, h1,h2,h3,h4,h5,h6, p,i, span {
+    border: 1px solid #3A7734;
+}*/
+
+.origen, .destino {
+    flex: 1;
+    flex-basis: 200px;
+    height: 100%;
+}
+
+.vuelo_ticket {
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    align-items: center;
+    background-color: #1E1F25;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.copia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    align-items: center;
+    background-color: #1E1F25;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ubicacion {
+    display: flex; /* Coloca los elementos hijos en una fila */
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 10px; /* Espacio entre los elementos (opcional) */
+    padding: 15px;
+    margin-bottom: 3%;
+    background-color: #1E1F25;
+    border-radius: 10px;
+}
+
+.info_ciudad p, h2 {
+    margin: 0; /* Elimina márgenes para minimizar el espacio */
+}
+.ubicacion01 {
+    color: #e0e0e0;
+    text-align: center;
+}
+.ubicacion02 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.ubicacion02 h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.ubicacion02 p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.noIcono {
+    background-color: #9C1A1C;
+    width: 20px;
+    height: 20px;
+}
+
+.IconoStyleDay {
+    color: #ffc400;
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    margin-right: 10px;
+}
+
+.IconoStyleNight {
+    color: #1EA7FF;
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    margin-right: 10px;
+}
+
+.copia div {
+    flex-grow: 1;
+    flex-basis: 200;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.vuelo_ticket div {
+    flex-grow: 1;
+    flex-basis: 200;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.aerolinea b,
+.ciudad b,
+.iata_vuelo b  {
+    color: #e0e0e0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.aerolinea p,
+.ciudad p,
+.iata_vuelo p  {
+    color: #9BABC5;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.vuelo_ticket:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+footer {
+    background-color: #1E1F25;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
