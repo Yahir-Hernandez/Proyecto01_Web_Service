@@ -104,7 +104,7 @@ def formato_hora_minuto(fecha):
 
 def formato_ano_mes(fecha):
     """
-    Devuelve la fecha en formato "Año/Mes".
+    Devuelve la fecha en formato "dia/Mes".
 
     :param fecha: Objeto datetime o cadena con la fecha.
     :param formato: Formato de la cadena de fecha si 'fecha' es una cadena.
@@ -112,6 +112,6 @@ def formato_ano_mes(fecha):
     """
     fech = datetime.fromisoformat(fecha)
 
-    return fech.strftime("%y/%d")
+    return fech.strftime("%d/%m")
 
 

@@ -37,6 +37,7 @@ function consultaPorCiudad() {
             event.preventDefault();
             borra_list()
             buscarPorCiudad();
+            borrarTexto()
         });
     }
 }
@@ -51,6 +52,7 @@ function consultaPorIata() {
             event.preventDefault();
             borra_list()
             buscarPorIATA();
+            borrarTexto()
         });
     }
 }
@@ -114,11 +116,9 @@ function manejarBusqueda(url, procesarRespuesta) {
  * Metodo para la busqueda por ciudades indicadas
  */
 function buscarPorCiudad() {
-    let ciudadOrigen = document.getElementById('ciudad-input').value;
-    let ciudadDestino = document.getElementById('airline-input').value;
-    const url = `/search?origen=${encodeURIComponent(ciudadOrigen)}&destino=${encodeURIComponent(ciudadDestino)}`;
-
-    manejarBusqueda(url, data => expoDatos(data));
+    let ciudad = document.getElementById('ciudad-input').value;
+    const url = `/search?ciudad=${encodeURIComponent(ciudad)}`;
+    manejarBusqueda(url, data => expoclima(data[0]));
 }
 
 /**
@@ -126,9 +126,7 @@ function buscarPorCiudad() {
  */
 function buscarPorIATA() {
     let codigoVuelo = document.getElementById('iata-input').value;
-    let ciudadOrigen = document.getElementById('ciudad-origen').value;
-    let ciudadDestino = document.getElementById('ciudad-destino').value;
-    const url = `/search?iata=${encodeURIComponent(codigoVuelo)}&origen=${encodeURIComponent(ciudadOrigen)}&destino=${encodeURIComponent(ciudadDestino)}`;
+    const url = `/search?iata=${encodeURIComponent(codigoVuelo)}&iata=${encodeURIComponent(codigoVuelo)}`;
     manejarBusqueda(url, data => expoElem(data[0]));
 }
 
@@ -138,6 +136,41 @@ function buscarPorIATA() {
 function borrarTexto() {
     document.getElementById('ciudad-input').value = '';
     document.getElementById('iata-input').value = '';
+}
+
+/**
+ * Espone el clima que el usuario especifico
+ * @param {object} data informacion del clima especificado
+ */
+function expoclima(data) {
+    let clima = document.querySelector('.clima_unico');
+
+    if (clima) {
+        asignaClima(clima, data);
+    }
+}
+
+/**
+ *  Asigna los valores del onjeto clima a las etiquetas correspondientes
+ *  en el front
+ * @param {HTMLElement} clima etiqueta HTMl clima
+ * @param {object} data informacion del clima especificado
+ */
+function asignaClima(clima,data) {
+    clima.querySelector(`#ciudad`).textContent = data.Ciudad;
+    clima.querySelector(`#horaFecha`).textContent = `${data.Hora_actual} CST • ${data['Fecha simplificada']}`;
+    clima.querySelector(`.estado`).textContent = data.Clima;
+    clima.querySelector(`.temp-actual`).textContent = `${data.Temperatura}°`;
+    clima.querySelector(`.temp-range`).textContent = `${data['Temperatura minima']}° - ${data["Temperatura maxima"]}°`;
+    clima.querySelector(`#principal`).textContent = data["Descripcion"];
+    clima.querySelector(`#CNubosa`).textContent = `${data.Nubosidad}%`;
+    clima.querySelector(`#Humedad`).textContent = `${data.Humedad}%`;
+    clima.querySelector(`#Termica`).textContent = `${data.Termica}°`;
+    clima.querySelector(`#velocidad`).textContent = `${data["Velocidad del viento"]} m/s.`;
+    clima.querySelector(`#direccion`).textContent = `${data["Direccion del viento"]}°`;
+    clima.querySelector(`#atmosfera`).textContent = `${data["Presion atmosferica"]} hPa`;
+    icono(clima, `#oIcono`, data.icono);
+    clima.style.display = 'flex';
 }
 
 /**
@@ -222,12 +255,12 @@ function asigna(vuelo) {
  */
 function asignaInformacion(clone, climaInfo, prefix, vuelo) {
     clone.querySelector(`#infoAero_${prefix}`).textContent = climaInfo === vuelo.clima_origen ? vuelo.origen : vuelo.destino;
-    clone.querySelector(`#info_ciudad${prefix}`).textContent = `Ciudad ${climaInfo === vuelo.clima_origen ? vuelo.ciudadOr :  vuelo.ciudadDes}`;
+    clone.querySelector(`#info_ciudad${prefix}`).textContent = `Ciudad: ${climaInfo === vuelo.clima_origen ? vuelo.ciudadOr :  vuelo.ciudadDes}`;
     clone.querySelector(`#infoHora${prefix}`).textContent = `Hora: ${vuelo["hora real" + (climaInfo === vuelo.clima_origen ? "Or" : "Des")]}`;
     clone.querySelector(`#infociudad_${prefix}`).textContent = climaInfo === vuelo.clima_origen ? vuelo.ciudadOr :  vuelo.ciudadDes;
     clone.querySelector(`#infofecha${prefix}`).textContent = `${vuelo["hora real" + (climaInfo === vuelo.clima_origen ? "Or" : "Des")]} CST • ${vuelo["fecha abreviada" + (climaInfo === vuelo.clima_origen ? "Or" : "Des")]}`;
 
-    asignaClima(clone, climaInfo, prefix);
+    asignaClimaClone(clone, climaInfo, prefix);
 }
 
 /**
@@ -236,7 +269,7 @@ function asignaInformacion(clone, climaInfo, prefix, vuelo) {
  * @param {object} climaInfo objeto de vuelo
  * @param {string} prefix prefijo de clima de origen o destino
  */
-function asignaClima(clone, climaInfo, prefix) {
+function asignaClimaClone(clone, climaInfo, prefix) {
     clone.querySelector(`#infClima_${prefix}`).textContent = climaInfo.Clima;
     clone.querySelector(`#infoTemp_${prefix}`).textContent = `${climaInfo.Temperatura}°`;
     clone.querySelector(`#range${prefix}`).textContent = `${climaInfo['Temperatura minima']}° - ${climaInfo["Temperatura maxima"]}°`;

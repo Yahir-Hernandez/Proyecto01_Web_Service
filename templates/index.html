@@ -20,7 +20,7 @@
                 <button type="button" id="toggle-button" class="button">Cambiar tipo busqueda<span class="material-symbols-outlined">change_circle</span></button>
                 <form id="SEARCH_1" action="/search" method="get">
                     <div class="ciudad_search">
-                        <input type="text" id="ciudad-input" name="ciudad" placeholder="Ingresa ciudad de origen o iata del aeropuerto">
+                        <input type="text" id="ciudad-input" name="ciudad" placeholder="Ingresa ciudad o iata del aeropuerto">
                     </div>
                     <button type="submit" class="button search-button" id="BSeach1">
                         <span class="material-symbols-outlined">search</span>
@@ -52,7 +52,7 @@
         </div>
         <ul id="listaVuelo">
         </ul>
-        <div class="content_vuelo" id="card_clima" style="display: none">
+        <div class="content_vuelo" id="card_clima" style="display: none;">
             <div class="vuelo_ticket" id="ticket">
                 <div class="aerolinea">
                     <b>Aerolinea</b>
@@ -221,15 +221,15 @@
                 </div>
             </div>
         </div>
-        <div class="clima_unico" style="display:none">
+        <div class="clima_unico" style="display: none">
             <div class="clima_unico01">
                 <div id="localidad">
-                    <h4>Ciudad de México</h4>
-                    <p>13:00 CST • 24/08</p>
+                    <h4 id="ciudad">Ciudad de México</h4>
+                    <p id="horaFecha">13:00 CST • 24/08</p>
                 </div>
                 <div id="infoClima">
                     <div class="weather-icon">
-                        <i class="wi wi-day-rain IconoStyleDay" id="oIcono"></i>
+                        <i class="wi " id="oIcono"></i>
                     </div>
                     <div class="clima-detalle">
                         <p class="estado">Despejado</p>
@@ -242,38 +242,38 @@
             <div class="clima_unico02">
                 <div class="principal">
                     <h2>Condición principal:</h2>
-                    <p>nubes dispersas.</p>
+                    <p id="principal">nubes dispersas.</p>
                 </div>
                 <div class="contentIcons">
                     <div class="weather-icon2">
                         <h4>Sensación térmica:</h4>
                         <i class="wi wi-thermometer" id="iconInfo"></i>
-                        <p>0°</p>
+                        <p id="Termica">0°</p>
                     </div>
                     <div class="weather-icon2">
                         <h4>Cobertura nubosa:</h4>
                         <i class="wi wi-cloud-up" id="iconInfo"></i>
-                        <p>0%</p>
+                        <p id="CNubosa">0%</p>
                     </div>
                     <div class="weather-icon2">
                         <h4>Humedad:</h4>
                         <i class="wi wi-humidity" id="iconInfo"></i>
-                        <p>0%</p>
+                        <p id="Humedad">0%</p>
                     </div>
                     <div class="weather-icon2">
                         <h4>Velocidad del viento:</h4>
                         <i class="wi wi-strong-wind" id="iconInfo"></i>
-                        <p>0 m/s</p>
+                        <p id="velocidad">0 m/s</p>
                     </div>
                     <div class="weather-icon2">
                         <h4>Dirección del viento:</h4>
                         <i class="wi wi-direction-right" id="iconInfo"></i>
-                        <p>0°</p>
+                        <p id="direccion">0°</p>
                     </div>
                     <div class="weather-icon2">
                         <h4>Presion atmosferica:</h4>
                         <i class="wi wi-barometer" id="iconInfo"></i>
-                        <p>O hPa</p>
+                        <p id="atmosfera">O hPa</p>
                     </div>
                 </div>
             </div>
