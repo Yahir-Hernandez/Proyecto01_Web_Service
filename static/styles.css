@@ -241,6 +241,7 @@ main {
 
 .weather-icon {
     font-size: 60px;
+    margin-bottom: 3%;
 }
 
 .clima-detalle {
@@ -369,13 +370,13 @@ main {
     flex: 1;
     flex-basis: 200px;
     height: 100%;
+    margin-top: 2%;
 }
 
 .vuelo_ticket {
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    margin-bottom: 2%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
@@ -468,14 +469,14 @@ main {
 
 .copia div {
     flex-grow: 1;
-    flex-basis: 200;
+    flex-basis: 200px;
     margin-top: 10px;
     text-align: center;
 }
 
 .vuelo_ticket div {
     flex-grow: 1;
-    flex-basis: 200;
+    flex-basis: 200px;
     margin-top: 10px;
     text-align: center;
 }

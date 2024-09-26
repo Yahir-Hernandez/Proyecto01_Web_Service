@@ -25,8 +25,7 @@ def error_page(error):
 @app.route('/search', methods=['GET'])
 def search():
     try:
-        ciudad_origen = request.args.get('origen')
-        ciudad_destino = request.args.get('destino')
+        ciudad = request.args.get('ciudad')
         codigo_vuelo = request.args.get('iata')
 
         # Lógica para el formulario 2 (código de vuelo)
@@ -36,26 +35,27 @@ def search():
             if datos:
                 return jsonify(datos)
             else:
-                return jsonify(["500"])
+                return jsonify(["500", "no cargados 1"])
 
         # Lógica para el formulario 1 (ciudad origen y destino)
-        elif ciudad_origen and ciudad_destino:
-            ciudad_origen = urllib.parse.unquote(ciudad_origen).replace(' ', '')
-            ciudad_destino = urllib.parse.unquote(ciudad_destino).replace(' ', '')
+        elif ciudad:
+            ciudad = urllib.parse.unquote(ciudad).replace(' ', '')
 
             # Comprobación del porcentaje de coincidencia
-            if int(porcentaje(ciudad_origen)[0][1]) < 70 or int(porcentaje(ciudad_destino)[0][1]) < 70:
-                return jsonify(["500"])
+            if int(porcentaje(ciudad)[0][1]) < 70:
+                return jsonify(["500", "no cargados 1"])
 
-            datos = obtenerDatosporCiudad(ciudad_origen, ciudad_destino)
+            #Debes de agregar el nuevo metodo que envia el clima actual de la ciudad
+            datos = obtenerDatosporIATA(ciudad)
+            
             if datos:
                 return jsonify(datos)
             else:
-                return jsonify(["500"])
+                return jsonify(["500", "no cargados 2"])
 
         # Si no se proporcionan ni ciudades ni código de vuelo
         else:
-            return jsonify(["500"])
+            return jsonify(["500", "no cargados 3"])
 
     except Exception as e:
         return jsonify([f"500, {e}"])

@@ -10,6 +10,7 @@ from utils.cacheyEscritura import guardar_cache
 from utils.predicc import predicc as pc
 from utils.horasyTiempo import convertDT_a_CST, formato_ano_mes, formato_hora_minuto
 from utils.traductor import traducir_descripcion, traducir_main, traducir
+from datetime import datetime
 
 
 #Metodo para solicitar el clima de lugar que se da como parametro
@@ -217,6 +218,7 @@ def crear_clima(json_data, ciudad):
             "Fecha y hora": convertDT_a_CST(clima_data.get('dt')),
             "Fecha simplificada": formato_ano_mes(convertDT_a_CST(clima_data.get('dt'))),
             "Hora simplificada": formato_hora_minuto(convertDT_a_CST(clima_data.get('dt'))),
+            "Hora_actual": datetime.now().strftime("%H:%M"),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
             "icono": clima_data.get('weather')[0].get("icon") ,
