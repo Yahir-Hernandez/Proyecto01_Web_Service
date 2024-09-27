@@ -25,8 +25,12 @@ def error_page(error):
 @app.route('/search', methods=['GET'])
 def search():
     try:
+<<<<<<< HEAD
         ciudad_origen = request.args.get('ciudad')
         ciudad_destino = request.args.get('destino')
+=======
+        ciudad = request.args.get('ciudad')
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
         codigo_vuelo = request.args.get('iata')
 
         # Lógica para el formulario 2 (código de vuelo)
@@ -36,6 +40,7 @@ def search():
             if datos:
                 return jsonify(datos)
             else:
+<<<<<<< HEAD
                 return jsonify(["500"])
 
         # Lógica para el formulario 1 (ciudad origen y destino)
@@ -59,6 +64,32 @@ def search():
 
     except Exception as e:
         return jsonify({"error": "Ocurrió un error en el servidor", "message": str(e)})
+=======
+                return jsonify(["500", "no cargados 1"])
+
+        # Lógica para el formulario 1 (ciudad origen y destino)
+        elif ciudad:
+            ciudad = urllib.parse.unquote(ciudad).replace(' ', '')
+
+            # Comprobación del porcentaje de coincidencia
+            if int(porcentaje(ciudad)[0][1]) < 70:
+                return jsonify(["500", "no cargados 1"])
+
+            #Debes de agregar el nuevo metodo que envia el clima actual de la ciudad
+            datos = obtenerDatosporIATA(ciudad)
+            
+            if datos:
+                return jsonify(datos)
+            else:
+                return jsonify(["500", "no cargados 2"])
+
+        # Si no se proporcionan ni ciudades ni código de vuelo
+        else:
+            return jsonify(["500", "no cargados 3"])
+
+    except Exception as e:
+        return jsonify([f"500, {e}"])
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 
 
 if __name__ == '__main__':
