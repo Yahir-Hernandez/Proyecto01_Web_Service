@@ -38,8 +38,9 @@ function consultaPorCiudad() {
             document.querySelector("#card_clima").style.display = "none";
             document.querySelector('.search-container').classList.remove('active');
             document.querySelector('.container-suggestions').style.border = 'none';
-
             event.preventDefault();
+            quitaClima();
+            noSpam(BSeach1);
             borra_list()
             buscarPorCiudad();
             borrarTexto()
@@ -58,9 +59,11 @@ function consultaPorIata() {
             document.querySelector('.container-suggestions').style.border = 'none';
             document.querySelector('.carga').style.display = 'flex';
             event.preventDefault();
-            borra_list()
+            quitaClima();
+            noSpam(BSeach2);
+            borra_list();
             buscarPorIATA();
-            borrarTexto()
+            borrarTexto();
         });
     }
 }
@@ -90,6 +93,7 @@ function formula(toggleButton, Form1, Form2) {
 
     Form1.style.display = isForm2Visible ? "flex" : "none";
     Form2.style.display = isForm2Visible ? "none" : "flex";
+    quitaClima();
     // Usa innerHTML para agregar texto y HTML juntos
     toggleButton.innerHTML = isForm2Visible
         ? 'Cambiar busqueda <span class="material-symbols-outlined">change_circle</span>'
@@ -144,6 +148,17 @@ function buscarPorIATA() {
 function borrarTexto() {
     document.getElementById('ciudad-input').value = '';
     document.getElementById('iata-input').value = '';
+}
+
+/**
+ * Elimina de la vista informacion del clima de busquedas
+ * anteriores para mostrar nueva informacion de clima
+ */
+function quitaClima() {
+    const ticket = document.querySelector('.content_vuelo');
+    const clima = document.querySelector('#climaCiudad-Iata');
+    if (ticket || (ticket.style.display === "flex")) {ticket.style.display = 'none';}
+    if (clima || (clima.style.display === "flex")) {clima.style.display = 'none';}
 }
 
 /**
@@ -328,7 +343,7 @@ function expoElem(vuelo) {
 
     ticket.classList.remove('vuelo_ticket');
     ticket.classList.add('copia');
-    carga.style.display = 'none'; 
+    carga.style.display = 'none';
     info.style.display = "block";
 
 }
@@ -428,15 +443,55 @@ function buscaError02(data) {
 function expoErro(data, procesarRespuesta) {
     const errorElement = document.querySelector('.error');
     const apiErrorElement = document.querySelector('.apierror');
+    const carga = document.querySelector('.carga');
+    const boton1 = document.querySelector('#BSeach1');
+    const boton2 = document.querySelector('#BSeach2');
 
     errorElement.style.display = 'none';
     apiErrorElement.style.display = 'none';
 
     if (data.length === 0 || buscaError01(data)) {
+        carga.style.display = 'none';
         errorElement.style.display = 'block';
+        setTimeout(() => {
+            boton1.style.backgroundColor = '#1EA7FF';
+            boton2.style.backgroundColor = '#1EA7FF';
+            boton1.disabled = false;
+            boton2.disabled = false;
+        }, 3000);
     } else if (buscaError02(data)) {
         apiErrorElement.style.display = 'block';
+        carga.style.display = 'none';
+        setTimeout(() => {
+            boton1.style.backgroundColor = '#1EA7FF';
+            boton2.style.backgroundColor = '#1EA7FF';
+            boton1.disabled = false;
+            boton2.disabled = false;
+        }, 3000);
+
     } else {
         procesarRespuesta(data);
     }
 }
+
+/**
+ * Evita el spam en lo botones de busqueda.
+ * @param {HTMLElement} boton que sera desactivado por un momento
+ */
+function noSpam(boton) {
+
+    // Deshabilitar el botón inmediatamente
+    boton.disabled = true;
+    boton.style.backgroundColor = "#1E1F25";
+
+    // Lógica o acción que se debe ejecutar
+    console.log('Enviando datos...');
+
+    // Rehabilitar el botón después de 5 segundos
+    setTimeout(() => {
+        boton.style.backgroundColor = '#1EA7FF';
+        boton.disabled = false;
+        console.log('Botón habilitado de nuevo');
+    }, 10000); // 5000 ms = 5 segundos
+}
+
