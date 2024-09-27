@@ -1,14 +1,17 @@
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.iatas import iatasC
 from utils.predicc import predicc
 from utils.cacheyEscritura import cargar_cache, guardar_cache
 from utils.horasyTiempo import reescribe_hora, formato_hora_minuto, formato_ano_mes
 import requests
-import os 
+
 
 #Si se ingresas origen en CDMX, se debe de ingresar destino
 
 # Clave de acceso para la API
-api_key = '57fdee256d89b56c321e90f5f9a8cc17'
+api_key = 'db70993a21112c5a1d1a192ee71b8875'
 # Endpoint de la API para obtener información de vuelos
 endpoint = 'http://api.aviationstack.com/v1/flights'
     
@@ -128,8 +131,8 @@ def obtener_vuelosAPI_ciudad(dep_iata, arr_iata):
 
 def obtener_vuelosPorIATA(iata):
 
-    iata.replace(" ", "")
-    iata.replace("%20","")
+    iata=iata.replace(" ", "")
+    iata=iata.replace("%20","")
 
     if not iata or iata=="":
         raise Exception("Por favor selecciona un iata válido.")

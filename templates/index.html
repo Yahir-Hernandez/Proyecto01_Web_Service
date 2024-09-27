@@ -17,6 +17,7 @@
         <section id="search" class="section">
             <h2>Busca tu vuelo</h2>
             <div class="search-container ">
+<<<<<<< HEAD
                 <button type="button" id="toggle-button" class="button">Buscar por ciudad<span class="material-symbols-outlined">change_circle</span></button>
                 <form id="SEARCH_1" action="/search" method="get">
                     <div class="ciudad_search">
@@ -34,6 +35,25 @@
                         <input type="text" id="iata-input" name="iata" placeholder="Ingresa código de vuelo">
                     </div>
                     <button type="submit" class="button search-button" id="BSeach2">
+=======
+                <button type="button" id="toggle-button" class="button">Cambiar busqueda <span class="material-symbols-outlined">change_circle</span></button>
+                <form id="SEARCH_1" action="/search" method="get">
+                    <div class="ciudad_search">
+                        <input type="text" id="ciudad-input" name="ciudad" placeholder="Ingresa ciudad o iata del aeropuerto">
+                        <ul class="container-suggestions" style="position: absolute;">
+                        </ul>
+                    </div>
+                    <button type="submit" class="button search-button" id="BSeach1" onclick='noSpam(this)'>
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </form>
+
+                <form id="SEARCH_2" action="/search" method="get" style="display: none">
+                    <div class="iata_search">
+                        <input type="text" id="iata-input" name="iata" placeholder="Ingresa código iata del vuelo">
+                    </div>
+                    <button type="submit" class="button search-button" id="BSeach2" onclick="noSpam(this)">
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
                         <span class="material-symbols-outlined">search</span>
                     </button>
                 </form>
@@ -41,9 +61,20 @@
         </section>
     </header>
     <main id="main">
+<<<<<<< HEAD
         <div class="carga aviso" style="display: none;">
             <h1>Cargando información</h1>
             <p>Espere porfavor</p>
+=======
+        <div class="carga aviso" style="display: none">
+            <span class="material-symbols-outlined cargaIcon">
+            progress_activity
+            </span>
+            <div>
+                <h1>Cargando información</h1>
+                <p>Espere porfavor</p>
+            </div>
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
         </div>
         <div class="error aviso" style="display: none;">
             <h1>Error de busqueda</h1>
@@ -76,6 +107,7 @@
             </div>
             <div class="climas" id="informacion">
                 <div class="origen">
+<<<<<<< HEAD
                     <div class="info_vuelo" id="origen">
                         <span class="material-symbols-sharp">flight_takeoff</span> <h2 class="text">Origen</h2>
                     </div>
@@ -121,11 +153,82 @@
                                     <li id="velocidad01">Velocidad del viento: 4.53 m/s.</li>
                                     <li id="direccion01">Dirección del viento: 27° Noroeste</li>
                                 </ul>
+=======
+                    <div class="ubicacion">
+                        <div class="info_vuelo ubicacion01" id="origen">
+                            <span class="material-symbols-sharp">flight_takeoff</span>
+                            <h2 class="text">Origen</h2>
+                        </div>
+                        <div class="info_vuelo ubicacion02" id="origen">
+                            <h3 id="infoAero_01">Aeropuerto Internacional de la Ciudad de México</h3>
+                            <div class="info_ciudad">
+                                <p id="info_ciudad01">Ciudad: Ciudad de México</p>
+                                <p id="infoHora01">Hora: 13:00 hrs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="clima_unico">
+                            <div class="clima_unico01">
+                                <div id="localidad">
+                                    <h4 id="infociudad_01">Ciudad de México</h4>
+                                    <p id="infofecha01">13:00 CST • 24/08</p>
+                                </div>
+                                <div id="infoClima">
+                                    <div class="weather-icon">
+                                        <i class="wi" id="oIcono"></i>
+                                    </div>
+                                    <div class="clima-detalle">
+                                        <p class="estado" id="infClima_01">Despejado</p>
+                                        <p class="temp-actual" id="infoTemp_01">24°</p>
+                                        <p class="temp-range" id="range01">23° - 24°</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clima_unico02">
+                                <div class="principal">
+                                    <h2>Condición principal:</h2>
+                                    <p id="principal01">nubes dispersas.</p>
+                                </div>
+                                <div class="contentIcons">
+                                    <div class="weather-icon2">
+                                        <h4>Sensación térmica:</h4>
+                                        <i class="wi wi-thermometer" id="iconInfo"></i>
+                                        <p id="Termica01">0°</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Cobertura nubosa:</h4>
+                                        <i class="wi wi-cloud-up" id="iconInfo"></i>
+                                        <p id="CNubosa01">0%</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Humedad:</h4>
+                                        <i class="wi wi-humidity" id="iconInfo"></i>
+                                        <p id="Humedad01">0%</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Velocidad del viento:</h4>
+                                        <i class="wi wi-strong-wind" id="iconInfo"></i>
+                                        <p id="velocidad01">0 m/s</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Dirección del viento:</h4>
+                                        <i class="wi wi-direction-right" id="iconInfo"></i>
+                                        <p id="direccion01">0°</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Presion atmosferica:</h4>
+                                        <i class="wi wi-barometer" id="iconInfo"></i>
+                                        <p id="atmosfera01">O hPa</p>
+                                    </div>
+                                </div>
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="destino">
+<<<<<<< HEAD
                     <div class="info_vuelo" id="destino">
                         <span class="material-symbols-sharp">flight_land</span>
                         <h2 class="text">Destino</h2>
@@ -172,13 +275,147 @@
                                     <li id="velocidad02">Velocidad del viento: 4.53 m/s.</li>
                                     <li id="direccion02">Dirección del viento: 27° Noroeste</li
                                 </ul>
+=======
+                    <div class="ubicacion">
+                        <div class="info_vuelo ubicacion01" id="destino">
+                            <span class="material-symbols-sharp">flight_land</span>
+                            <h2 class="text">Destino</h2>
+                        </div>
+                        <div class="info_vuelo ubicacion02" id="destino">
+                            <h3 id="infoAero_02">Aeropuerto Internacional de la Ciudad de México</h3>
+                            <div class="info_ciudad">
+                                <p id="info_ciudad02">Ciudad: Ciudad de México</p>
+                                <p id="infoHora02">Hora: 13:00 hrs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="clima_unico">
+                            <div class="clima_unico01">
+                                <div id="localidad">
+                                    <h4 id="infociudad_02">Ciudad de México</h4>
+                                    <p id="infofecha02">13:00 CST • 24/08</p>
+                                </div>
+                                <div id="infoClima">
+                                    <div class="weather-icon">
+                                        <i class="wi" id="dIcono"></i>
+                                    </div>
+                                    <div class="clima-detalle">
+                                        <p class="estado" id="infClima_02">Despejado</p>
+                                        <p class="temp-actual" id="infoTemp_02">24°</p>
+                                        <p class="temp-range" id="range02">23° - 24°</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="clima_unico02">
+                                <div class="principal">
+                                    <h2>Condición principal:</h2>
+                                    <p id="principal02">nubes dispersas.</p>
+                                </div>
+                                <div class="contentIcons">
+                                    <div class="weather-icon2">
+                                        <h4>Sensación térmica:</h4>
+                                        <i class="wi wi-thermometer" id="iconInfo"></i>
+                                        <p id="Termica02">0°</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Cobertura nubosa:</h4>
+                                        <i class="wi wi-cloud-up" id="iconInfo"></i>
+                                        <p id="CNubosa02">0%</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Humedad:</h4>
+                                        <i class="wi wi-humidity" id="iconInfo"></i>
+                                        <p id="Humedad02">0%</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Velocidad del viento:</h4>
+                                        <i class="wi wi-strong-wind" id="iconInfo"></i>
+                                        <p id="velocidad02">0 m/s</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Dirección del viento:</h4>
+                                        <i class="wi wi-direction-right" id="iconInfo"></i>
+                                        <p id="direccion02">0°</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Presion atmosferica:</h4>
+                                        <i class="wi wi-barometer" id="iconInfo"></i>
+                                        <p id="atmosfera02">O hPa</p>
+                                    </div>
+                                </div>
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </main>
     <script src="../static/script.js"></script>
+=======
+        <div class="clima_unico" id="climaCiudad-Iata" style="display: none">
+            <div class="clima_unico01">
+                <div id="localidad">
+                    <h4 id="ciudad">Ciudad de México</h4>
+                    <p id="horaFecha">13:00 CST • 24/08</p>
+                </div>
+                <div id="infoClima">
+                    <div class="weather-icon">
+                        <i class="wi " id="oIcono"></i>
+                    </div>
+                    <div class="clima-detalle">
+                        <p class="estado">Despejado</p>
+                        <p class="temp-actual">24°</p>
+                        <p class="temp-range">23° - 24°</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clima_unico02">
+                <div class="principal">
+                    <h2>Condición principal:</h2>
+                    <p id="principal">nubes dispersas.</p>
+                </div>
+                <div class="contentIcons">
+                    <div class="weather-icon2">
+                        <h4>Sensación térmica:</h4>
+                        <i class="wi wi-thermometer" id="iconInfo"></i>
+                        <p id="Termica">0°</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Cobertura nubosa:</h4>
+                        <i class="wi wi-cloud-up" id="iconInfo"></i>
+                        <p id="CNubosa">0%</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Humedad:</h4>
+                        <i class="wi wi-humidity" id="iconInfo"></i>
+                        <p id="Humedad">0%</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Velocidad del viento:</h4>
+                        <i class="wi wi-strong-wind" id="iconInfo"></i>
+                        <p id="velocidad">0 m/s</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Dirección del viento:</h4>
+                        <i class="wi wi-direction-right" id="iconInfo"></i>
+                        <p id="direccion">0°</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Presion atmosferica:</h4>
+                        <i class="wi wi-barometer" id="iconInfo"></i>
+                        <p id="atmosfera">O hPa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../static/script.js"></script>
+    <script src="../static/sugerencias.js"></script>
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 </body>
 </html>

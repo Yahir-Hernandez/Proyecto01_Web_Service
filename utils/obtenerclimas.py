@@ -2,15 +2,15 @@ import os
 import pandas as pd
 import requests
 import sys
-
-from utils.horasyTiempo import fecha_hoy, fecha_final, ayer
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.horasyTiempo import fecha_hoy, fecha_final, ayer
 from utils.iatas import iatasC
 from utils.cacheyEscritura import cargar_cache
 from utils.cacheyEscritura import guardar_cache
 from utils.predicc import predicc as pc
 from utils.horasyTiempo import convertDT_a_CST, formato_ano_mes, formato_hora_minuto
 from utils.traductor import traducir_descripcion, traducir_main, traducir
+from datetime import datetime
 
 
 #Metodo para solicitar el clima de lugar que se da como parametro
@@ -142,7 +142,7 @@ def obtener_coordenadas(lugar):
         raise Exception("Por favor, selecciona un lugar válido para las coordenadas")
     
     # Construir la ruta al archivo CSV
-    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/dataset.csv'))
+    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/dataset.csv'))
     
     # Leer el archivo CSV en un DataFrame
     try: 
@@ -218,6 +218,7 @@ def crear_clima(json_data, ciudad):
             "Fecha y hora": convertDT_a_CST(clima_data.get('dt')),
             "Fecha simplificada": formato_ano_mes(convertDT_a_CST(clima_data.get('dt'))),
             "Hora simplificada": formato_hora_minuto(convertDT_a_CST(clima_data.get('dt'))),
+            "Hora_actual": datetime.now().strftime("%H:%M"),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
             "icono": clima_data.get('weather')[0].get("icon") ,

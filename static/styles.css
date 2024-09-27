@@ -39,11 +39,17 @@ header h2 {
     font-size: 24px;             /* Ajusta el tamaño del ícono */
     vertical-align: middle;
     text-align: center;
+<<<<<<< HEAD
     margin-left: 10px;
     margin-right: 10px;
 }
 
 
+=======
+    margin: 0 10px;
+}
+
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 .material-symbols-sharp {
   font-variation-settings:
   'FILL' 0,
@@ -54,8 +60,12 @@ header h2 {
     font-size: 70px;             /* Ajusta el tamaño del ícono */
     vertical-align: middle;
     text-align: center;
+<<<<<<< HEAD
     margin-left: 10px;
     margin-right: 10px;
+=======
+    margin: 0 10px;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 .search-container {
@@ -90,7 +100,10 @@ header h2 {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+<<<<<<< HEAD
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+=======
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 .search-container button:hover {
@@ -112,18 +125,39 @@ header h2 {
 
 #ciudad-input:focus, 
 #airline-input:focus, 
+<<<<<<< HEAD
 #iata-input:focus {
+=======
+#iata-input:focus,
+#ciudad-origen:focus,
+#ciudad-destino:focus {
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     flex: 1;
     color: #9BABC5;
     background-color: #131517;
     outline-color: #1EA7FF;
+<<<<<<< HEAD
     font-size: 1rem;
     line-height: normal
+=======
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: 0;
+    font-size: 1rem;
+    line-height: normal;
+    border: none;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 #ciudad-input::placeholder, 
 #airline-input::placeholder, 
+<<<<<<< HEAD
 #iata-input::placeholder {
+=======
+#iata-input::placeholder,
+#ciudad-origen::placeholder,
+#ciudad-destino::placeholder {
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     flex: 1;
     color: #9BABC5;
     padding-bottom: 100% ;
@@ -137,6 +171,10 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+<<<<<<< HEAD
+=======
+    transition: opacity 0.5s ease, height 0.5s ease;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 #SEARCH_1 div, #SEARCH_2 div {
@@ -145,11 +183,173 @@ header h2 {
 }
 
 main {
+<<<<<<< HEAD
+=======
+    justify-content: center;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
 }
+<<<<<<< HEAD
+=======
+/*ultima actualizacion*/
+/*
+.clima_unico div, p, h4, h2 {
+    border: 1px solid #3A7734;
+}*/
+
+.clima_unico {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1E1F25;
+    color: #e0e0e0;
+    border-radius: 10px;    
+    padding: 20px;
+}
+
+.clima_unico01, .clima_unico02 {
+    flex: 1;
+    flex-basis: 200px;
+}
+
+.clima_unico01 {
+    margin-bottom: 10%;
+}
+.principal {
+    background-color: #131517;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.principal p, h2{
+    flex: 1;
+    flex-basis: 200px;
+    margin: 0;
+}
+
+.principal h2 {
+    color: #9BABC5;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.principal p {
+    font-weight: lighter;
+    font-size: 15px;
+    justify-content: center;
+    height: 100%;
+    margin-top: 3px;
+}
+
+#localidad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#localidad h4 {
+    color: #e0e0e0;
+    font-size: 24px;
+    margin: 0;
+}
+
+#localidad p {  
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight:lighter;
+    padding-right: 13%;
+}
+
+#infoClima {
+    color: #e0e0e0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#infoClima div{
+    flex: 1;
+    flex-basis: 200px;
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.clima-detalle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.clima-detalle p {
+    flex: 1;
+    align-self: center;
+    margin: 5px 0;
+}
+
+.estado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.temp-actual {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.temp-range {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.contentIcons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.weather-icon2 {
+    display: flex;
+    align-items: center;
+    background-color: #131517;
+    color: #9BABC5;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon2 i {
+    font-size: 24px;
+    color: #e0e0e0;
+    margin-right: 10px;
+}
+
+.weather-icon2 h4 {
+    font-size: 14px;
+    margin: 0 10px 0 0;
+}
+
+.weather-icon2 p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/*ultima actualizacion*/
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 
 #listaVuelo {
     list-style-type: none;
@@ -174,11 +374,19 @@ main {
 .aviso {
     width: 100%;
     margin: 6%;
+<<<<<<< HEAD
     border-radius: 5%;
+=======
+    border-radius: 10px;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     background-color: #1E1F25;
     justify-content: center;
     justify-items: center;
     text-align: center;
+<<<<<<< HEAD
+=======
+    transition: opacity 0.5s ease, height 0.5s ease;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 .aviso h1, p {
@@ -187,9 +395,71 @@ main {
     font-size: 2rem;
 }
 
+<<<<<<< HEAD
 .content_vuelo, .climas {
     width: 100%;
     box-sizing: border-box;
+=======
+.carga span {
+    text-align: center;
+    color: #9BABC5;
+    justify-content: center;
+    align-self: center;
+    margin-top: 3%;
+    animation: rotate 1s linear infinite;
+}
+
+.carga {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cargaIcon {
+    display: inline-block; /* Asegúrate de que el span se comporte como un bloque */
+    font-size: 100px; /* Ajusta según el tamaño deseado */
+    transform-origin: center; /* La rotación se hace desde el centro */
+    animation: rotate 2s linear infinite; /* Animación suave, constante, e infinita */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+.content_vuelo {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 15%;
+}
+
+.climas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    color: #9BABC5;
+    border-radius: 10px;
+}
+
+/*
+.climas div, h1,h2,h3,h4,h5,h6, p,i, span {
+    border: 1px solid #3A7734;
+}*/
+
+.origen, .destino {
+    flex: 1;
+    flex-basis: 200px;
+    height: 100%;
+    margin-top: 2%;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 .vuelo_ticket {
@@ -204,7 +474,10 @@ main {
     font-size: 1rem;
     align-items: center;
     background-color: #1E1F25;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     font-family: 'DM Sans', sans-serif;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -226,6 +499,48 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+<<<<<<< HEAD
+=======
+.ubicacion {
+    display: flex; /* Coloca los elementos hijos en una fila */
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 10px; /* Espacio entre los elementos (opcional) */
+    padding: 15px;
+    margin-bottom: 3%;
+    background-color: #1E1F25;
+    border-radius: 10px;
+}
+
+.info_ciudad p, h2 {
+    margin: 0; /* Elimina márgenes para minimizar el espacio */
+}
+.ubicacion01 {
+    color: #e0e0e0;
+    text-align: center;
+}
+.ubicacion02 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.ubicacion02 h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.ubicacion02 p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 .noIcono {
     background-color: #9C1A1C;
     width: 20px;
@@ -233,7 +548,11 @@ main {
 }
 
 .IconoStyleDay {
+<<<<<<< HEAD
     color: #ffc400;
+=======
+    color: #ffae00;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     width: 100px;
     height: 100px;
     font-size: 100px;
@@ -241,7 +560,11 @@ main {
 }
 
 .IconoStyleNight {
+<<<<<<< HEAD
     color: #1EA7FF;
+=======
+    color: #0081ff;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     width: 100px;
     height: 100px;
     font-size: 100px;
@@ -250,14 +573,23 @@ main {
 
 .copia div {
     flex-grow: 1;
+<<<<<<< HEAD
     flex-basis: 200;
+=======
+    flex-basis: 200px;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     margin-top: 10px;
     text-align: center;
 }
 
 .vuelo_ticket div {
+<<<<<<< HEAD
     flex-grow: 1;
     flex-basis: 200;
+=======
+    flex: 1;
+    flex-basis: 200px;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     margin-top: 10px;
     text-align: center;
 }
@@ -283,6 +615,7 @@ main {
     border-color: #0056b3;
 }
 
+<<<<<<< HEAD
 .climas {
     display: flex;
     flex-wrap: wrap;
@@ -437,6 +770,53 @@ main {
     padding: 10px;
     font-size: 1rem;
     color: #ffc400;
+=======
+/* Contenedor de sugerencias */
+.container-suggestions {
+	max-height: 300px;
+	pointer-events: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+	padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #131517;
+    color: #9BABC5;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: lighter;
+    border-radius: 10px;
+    width: 208px;
+    scrollbar-width: thin;
+    scrollbar-color: #1EA7FF #131517;
+}
+
+.search-container.active .container-suggestions {
+	opacity: 1;
+	pointer-events: auto;
+	padding: 10px 8px;
+}
+
+.search-container.active .container-suggestions li {
+	display: block;
+}
+
+.container-suggestions li {
+	list-style: none;
+	width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+	border-radius: 5px;
+	display: none;
+}
+
+.container-suggestions li:hover{
+    background-color: #1EA7FF;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+>>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 footer {
