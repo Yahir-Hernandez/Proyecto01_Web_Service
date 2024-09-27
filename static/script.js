@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 function cambioBusqueda(BotonC, Form1, Form2) {
     if (BotonC && Form1 && Form2) {
         BotonC.addEventListener("click", function () {
+            document.querySelector('.search-container').classList.remove('active');
+            document.querySelector('.container-suggestions').style.border = 'none';
             formula(BotonC, Form1, Form2);
         });
     }
@@ -34,6 +36,9 @@ function consultaPorCiudad() {
     if (BSeach1) {
         BSeach1.addEventListener('click', function (event) {
             document.querySelector("#card_clima").style.display = "none";
+            document.querySelector('.search-container').classList.remove('active');
+            document.querySelector('.container-suggestions').style.border = 'none';
+
             event.preventDefault();
             borra_list()
             buscarPorCiudad();
@@ -49,6 +54,9 @@ function consultaPorIata() {
      const BSeach2 = getElementByIdSafe('BSeach2');
     if (BSeach2) {
         BSeach2.addEventListener('click', function (event) {
+            document.querySelector('.search-container').classList.remove('active');
+            document.querySelector('.container-suggestions').style.border = 'none';
+            document.querySelector('.carga').style.display = 'flex';
             event.preventDefault();
             borra_list()
             buscarPorIATA();
@@ -84,8 +92,8 @@ function formula(toggleButton, Form1, Form2) {
     Form2.style.display = isForm2Visible ? "none" : "flex";
     // Usa innerHTML para agregar texto y HTML juntos
     toggleButton.innerHTML = isForm2Visible
-        ? 'Cambiar tipo busqueda <span class="material-symbols-outlined">change_circle</span>'
-        : 'Cambiar tipo busqueda <span class="material-symbols-outlined">change_circle</span>';
+        ? 'Cambiar busqueda <span class="material-symbols-outlined">change_circle</span>'
+        : 'Cambiar busqueda <span class="material-symbols-outlined">change_circle</span>';
 }
 
 /**
@@ -144,9 +152,18 @@ function borrarTexto() {
  */
 function expoclima(data) {
     let clima = document.querySelector('.clima_unico');
+    let carga = document.querySelector('.carga'); // Asegúrate de seleccionar el elemento correctamente
 
-    if (clima) {
+    if (clima && carga) {
         asignaClima(clima, data);
+
+        setTimeout(() => {
+            clima.style.display = 'flex';
+            console.log('Ocultando carga...');
+            carga.style.display = 'none'; // Asegúrate de que esta línea esté funcionando
+        }, 10000);
+    } else {
+        console.error('El elemento .clima_unico o .carga no existe en el DOM');
     }
 }
 
@@ -170,7 +187,6 @@ function asignaClima(clima,data) {
     clima.querySelector(`#direccion`).textContent = `${data["Direccion del viento"]}°`;
     clima.querySelector(`#atmosfera`).textContent = `${data["Presion atmosferica"]} hPa`;
     icono(clima, `#oIcono`, data.icono);
-    clima.style.display = 'flex';
 }
 
 /**
@@ -300,6 +316,7 @@ function expoElem(vuelo) {
     const clima = document.querySelector('#informacion');
     const ticket = document.getElementById('ticket');
     const info = document.getElementById('card_clima');
+    const carga = document.querySelector('.carga');
 
     if (!clima || !ticket || !info) {
         console.error("Uno de los elementos no existe en el DOM");
@@ -311,7 +328,9 @@ function expoElem(vuelo) {
 
     ticket.classList.remove('vuelo_ticket');
     ticket.classList.add('copia');
+    carga.style.display = 'none'; 
     info.style.display = "block";
+
 }
 
 /**
