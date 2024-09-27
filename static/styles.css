@@ -116,8 +116,12 @@ header h2 {
     color: #9BABC5;
     background-color: #131517;
     outline-color: #1EA7FF;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: 0;
     font-size: 1rem;
-    line-height: normal
+    line-height: normal;
+    border: none;
 }
 
 #ciudad-input::placeholder, 
@@ -138,6 +142,7 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    transition: opacity 0.5s ease, height 0.5s ease;
 }
 
 #SEARCH_1 div, #SEARCH_2 div {
@@ -331,17 +336,53 @@ main {
 .aviso {
     width: 100%;
     margin: 6%;
-    border-radius: 5%;
+    border-radius: 10px;
     background-color: #1E1F25;
     justify-content: center;
     justify-items: center;
     text-align: center;
+    transition: opacity 0.5s ease, height 0.5s ease;
 }
 
 .aviso h1, p {
     justify-items: center;
     color: #e0e0e0;
     font-size: 2rem;
+}
+
+.carga span {
+    text-align: center;
+    color: #9BABC5;
+    justify-content: center;
+    align-self: center;
+    margin-top: 3%;
+    animation: rotate 1s linear infinite;
+}
+
+.carga div {
+}
+
+.carga {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cargaIcon {
+    display: inline-block; /* Asegúrate de que el span se comporte como un bloque */
+    font-size: 100px; /* Ajusta según el tamaño deseado */
+    transform-origin: center; /* La rotación se hace desde el centro */
+    animation: rotate 2s linear infinite; /* Animación suave, constante, e infinita */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
 }
 
 .content_vuelo {
@@ -500,6 +541,53 @@ main {
 .vuelo_ticket:hover {
     background-color: #0056b3;
     border-color: #0056b3;
+}
+
+/* Contenedor de sugerencias */
+.container-suggestions {
+	max-height: 300px;
+	pointer-events: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+	padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #131517;
+    color: #9BABC5;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: lighter;
+    border-radius: 10px;
+    width: 208px;
+    scrollbar-width: thin;
+    scrollbar-color: #1EA7FF #131517;
+}
+
+.search-container.active .container-suggestions {
+	opacity: 1;
+	pointer-events: auto;
+	padding: 10px 8px;
+}
+
+.search-container.active .container-suggestions li {
+	display: block;
+}
+
+.container-suggestions li {
+	list-style: none;
+	width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+	border-radius: 5px;
+	display: none;
+}
+
+.container-suggestions li:hover{
+    background-color: #1EA7FF;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 footer {
