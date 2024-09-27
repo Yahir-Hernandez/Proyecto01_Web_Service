@@ -87,7 +87,6 @@ header h2 {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search-container button:hover {
@@ -359,9 +358,6 @@ main {
     animation: rotate 1s linear infinite;
 }
 
-.carga div {
-}
-
 .carga {
     display: flex;
     flex-direction: column;
@@ -493,7 +489,7 @@ main {
 }
 
 .IconoStyleDay {
-    color: #ffc400;
+    color: #ffae00;
     width: 100px;
     height: 100px;
     font-size: 100px;
@@ -501,7 +497,7 @@ main {
 }
 
 .IconoStyleNight {
-    color: #1EA7FF;
+    color: #0081ff;
     width: 100px;
     height: 100px;
     font-size: 100px;
@@ -516,7 +512,7 @@ main {
 }
 
 .vuelo_ticket div {
-    flex-grow: 1;
+    flex: 1;
     flex-basis: 200px;
     margin-top: 10px;
     text-align: center;
