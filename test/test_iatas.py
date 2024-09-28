@@ -2,7 +2,7 @@ import pytest
 import sys
 import os
 
-# Añadir el directorio raíz del proyecto al sys.path
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utils.iatas import iatasC
@@ -406,3 +406,10 @@ def test_iatasC_tuxtla_gutierrez():
 @pytest.mark.iatas
 def test_iatasC_washington_dc():
     assert iatasC("Washington D.C.") == "DCA"
+"""
+Este conjunto de pruebas está diseñado para verificar la correcta funcionalidad de la función `iatasC`, que busca el código IATA correspondiente a una ciudad especificada.
+
+Cada prueba utiliza el marcador `@pytest.mark.iatas` y cubre diferentes casos de ciudades conocidas para asegurarse de que la función retorne el código IATA correcto. Las pruebas verifican la precisión de los resultados cuando se ingresan nombres de ciudades:
+
+Estas pruebas aseguran que la función `iatasC` maneje correctamente ciudades con caracteres especiales o diferentes convenciones de escritura y devuelva el código IATA correspondiente.
+"""

@@ -13,7 +13,6 @@ from utils.traductor import traducir_descripcion, traducir_main, traducir
 from datetime import datetime
 
 
-#Metodo para solicitar el clima de lugar que se da como parametro
 def weather(lugar):
 
     lugar = lugar.replace(" ", "")
@@ -23,7 +22,7 @@ def weather(lugar):
     
     lugar = pc(lugar)
     
-    carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar los objetos
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') 
     nombre_archivo= f'climas_cache.json' 
     ruta = os.path.join(carpeta_destino, nombre_archivo)
 
@@ -46,11 +45,10 @@ def weather(lugar):
 def solicitarAPIClima(lugar):
 
     key = "bafa68a647e077182f2e167abc8648dd"
-    lat, lon = obtener_coordenadas(lugar) #valor la latitud y longitud del lugar
+    lat, lon = obtener_coordenadas(lugar) 
     url = f"https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={key}&units=metric&lang=es"
     rp = requests.get(url) 
     
-    # status_code sera igual a 200 si la solicitud fue recibida, entendida y procesada con éxito.
     if rp.status_code != 200:
         raise Exception(f"Error en la solicitud de la API: {rp.status_code}")
     
@@ -73,13 +71,12 @@ def solicitarAPIClimaHistorico(lugar):
     @param: ciudad que se quiere consulta climar
     @return: respuesta de la api del clima'''
     key = "bafa68a647e077182f2e167abc8648dd"
-    lat, lon = obtener_coordenadas(lugar)  # valor la latitud y longitud del lugar
+    lat, lon = obtener_coordenadas(lugar)  
     start = ayer()
     end = fecha_final(fecha_hoy())
     url = f"https://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={key}&units=metric"
     rp = requests.get(url)
 
-    # status_code sera igual a 200 si la solicitud fue recibida, entendida y procesada con éxito.
     if rp.status_code != 200:
         raise Exception(f"Error en la solicitud de la API: {rp.status_code}")
 
@@ -99,22 +96,18 @@ def solicitarAPIClimaHistorico(lugar):
     
 def verificaEnCacheClima(ruta, ciudad):
 
-    # Cargar los datos de clima desde el archivo de caché si existe
     data_cache = cargar_cache(ruta)
     climas_encontrados = []
 
     if data_cache:
 
-        # Buscar en la lista de climas los que coincidan con la ciudad proporcionada
         for clima in data_cache:
             if ciudad == clima['Ciudad']:
                 climas_encontrados.append(clima)
 
-        # Si se encontraron climas, devolverlos
         if climas_encontrados:
             return climas_encontrados
 
-    # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
     data = solicitarAPIClimaHistorico(ciudad)
     climas_creados = crear_clima(data, ciudad)
     guardar_cache(ruta, climas_creados)
@@ -141,19 +134,15 @@ def obtener_coordenadas(lugar):
     if not lugar or lugar == "":
         raise Exception("Por favor, selecciona un lugar válido para las coordenadas")
     
-    # Construir la ruta al archivo CSV
     file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/dataset.csv'))
     
-    # Leer el archivo CSV en un DataFrame
     try: 
         df = pd.read_csv(file_path)
     except:
         raise Exception("No se pudo leer o no existe el archivo SCV dataset.")
 
-    # Obtener el código IATA del lugar especificado
     Iata = iatasC(lugar)
     
-    # Buscar en las columnas 'origin' y 'destination'
     for columna in ["origin", "destination"]:
         busca = df[df[columna] == Iata]
         if not busca.empty:
@@ -161,7 +150,6 @@ def obtener_coordenadas(lugar):
             lon = busca[f"{columna}_longitude"].values[0]
             return lat, lon
     
-    # Si no se encuentra el lugar, devolver None
     return None
 
 """
@@ -202,8 +190,7 @@ def crear_clima(json_data, ciudad):
     climas = []
     
     for clima_data in json_data.get('list', []):
-        #Usar get en lugar de acceder directamente a las claves y listas.
-        #Evitar excepciones si una clave no está presente en el diccionario.
+
         clima = {
             "Ciudad": ciudad,
             "Clima": clima_data.get('weather')[0].get('main'),

@@ -4,7 +4,6 @@ import sys
 
 
 def cargar_cache(ruta):
-    # Deserializar y cargar los objetos de la lista de vuelos desde un archivo
     if os.path.exists(ruta):
         with open(ruta, 'r') as archivo:
             return json.load(archivo)
@@ -28,7 +27,7 @@ def guardar_cache(ruta, archivos):
 
         arch_existentes.extend(archivos)
     else:
-        arch_existentes = archivos # Si no existen vuelos previos, usar solo los nuevos
+        arch_existentes = archivos 
 
     with open(ruta, 'w') as archivo:
         json.dump(arch_existentes, archivo, indent=4)
@@ -46,7 +45,16 @@ def guardar_cache(ruta, archivos):
 
 
 def carpetaCache():
-    """
+    
+    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../cache'))
+
+    if file_path not in sys.path:
+        sys.path.append(file_path)
+
+    if not os.path.exists(file_path):
+        os.makedirs(file_path)
+    
+"""
     Verifica si la carpeta 'cache' existe en el sistema de archivos y la crea si es necesario.
     Además, agrega la ruta de la carpeta al sys.path si aún no está presente.
 
@@ -55,18 +63,6 @@ def carpetaCache():
 
     Returns:
         None
-    """
-    # Definir la ruta de la carpeta 'cache' relativa al archivo actual
-    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../cache'))
-
-    # Verificar si la ruta está en el sys.path, si no, agregarla
-    if file_path not in sys.path:
-        sys.path.append(file_path)
-
-    # Crear la carpeta si no existe
-    if not os.path.exists(file_path):
-        os.makedirs(file_path)
-    
-    
+"""
 
   

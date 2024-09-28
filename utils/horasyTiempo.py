@@ -51,7 +51,7 @@ def ayer():
         int: Timestamp en formato UTC correspondiente a las 12:00 del día anterior.
     """
     ayer = datetime.now() - timedelta(days=1)
-    # Asignar las 12:00 del mediodía en CST al día anterior
+    
     inicio_del_dia_anterior = cst.localize(ayer.replace(hour=0, minute=0, second=0, microsecond=0))
     return int(inicio_del_dia_anterior.timestamp())
 
@@ -67,8 +67,8 @@ def fecha_final(fecha):
 
         Returns:
             int: Timestamp en formato UTC correspondiente al inicio del día.
-        '''
-    # Convertir la fecha al final del día en CST
+    '''
+    
     final_del_dia = cst.localize(datetime.strptime(fecha, "%Y-%m-%d").replace(hour=23, minute=59, second=59))
     return int(final_del_dia.timestamp())
 
@@ -79,9 +79,8 @@ def fecha_hoy():
     Returns:
         str: Fecha actual en formato 'YYYY-MM-DD'.
     """
-    # Obtener la fecha actual
     hoy = datetime.now()
-    # Formatear la fecha como 'YYYY-MM-DD'
+
     return hoy.strftime('%Y-%m-%d')
 
 def convertDT_a_CST(dt):

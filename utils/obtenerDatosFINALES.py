@@ -9,10 +9,10 @@ from utils.obtenerclimas import weather, buscar_clima
 
 def obtenerDatosporCiudad(origen, destino):
 
-    carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar el json
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') 
     nombre_archivo= f'info_final_ciudad.json' 
 
-    ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
+    ruta = os.path.join(carpeta_destino, nombre_archivo) 
 
     try:
 
@@ -60,10 +60,10 @@ def obtenerDatosporCiudad(origen, destino):
     
 def obtenerDatosporIATA(iata):
 
-    carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar el json
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') 
     nombre_archivo= f'info_final_iata.json' 
 
-    ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
+    ruta = os.path.join(carpeta_destino, nombre_archivo) 
 
     try:
         vuelos = obtener_vuelosPorIATA(iata)
