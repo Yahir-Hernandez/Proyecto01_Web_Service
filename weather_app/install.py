@@ -80,7 +80,7 @@ def run_app(venv_dir='venv'):
     try:
         logging.info("Ejecutando app.py...")
         # Configura la variable de entorno FLASK_APP
-        os.environ['FLASK_APP'] = 'app.py'
+        os.environ['FLASK_APP'] = 'weather_app/app.py'
         os.environ['FLASK_ENV'] = 'development'  # Habilita el modo de desarrollo
         os.environ['DEBUG'] = '1'  # Asegura que el modo debug está activado
 
