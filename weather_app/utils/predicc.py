@@ -31,7 +31,7 @@ def predicc(entrada):
     nombres = df['Ciudad'].values
 
     # Buscar la mejor coincidencia
-    coincidencias = process.extractOne(ct, nombres, score_cutoff=70)
+    coincidencias = process.extractOne(ct, nombres, score_cutoff=80)
 
     if coincidencias:
         # Retornar la mejor coincidencia
@@ -73,3 +73,5 @@ def porcentaje(palabra):
     resultados_ordenados = sorted(resultados, key=lambda x: x[1], reverse=True)
 
     return resultados_ordenados
+
+

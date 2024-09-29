@@ -1,7 +1,7 @@
 import os
 import urllib.parse
 from flask import Flask, render_template, redirect, url_for, request, jsonify
-from utils.obtenerDatosFINALES import obtenerDatosporCiudad, obtenerDatosporIATA
+from utils.obtenerDatosFINALES import datosCiudad, datosTicket
 from utils.predicc import porcentaje
 
 #El usuario debe de instalar Flask
@@ -31,7 +31,7 @@ def search():
         # Lógica para el formulario 2 (código de vuelo)
         if codigo_vuelo:
             codigo_vuelo = urllib.parse.unquote(codigo_vuelo).replace(' ', '')
-            datos = obtenerDatosporIATA(codigo_vuelo)
+            datos = datosTicket(codigo_vuelo)
             if datos:
                 return jsonify(datos)
             else:
@@ -46,7 +46,7 @@ def search():
                 return jsonify(["500", "no cargados 1"])
 
             #Debes de agregar el nuevo metodo que envia el clima actual de la ciudad
-            datos = obtenerDatosporIATA(ciudad)
+            datos = datosCiudad(ciudad)
             
             if datos:
                 return jsonify(datos)
