@@ -62,7 +62,7 @@ header h2 {
     justify-content: center;
 }
 
-.search-container button {
+.button {
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -80,7 +80,7 @@ header h2 {
     
 }
 
-.search-container button {
+.button {
     background-color: #1EA7FF;
     color: #e0e0e0;
     font-size:larger;
@@ -89,11 +89,11 @@ header h2 {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.search-container button:hover {
+.button:hover {
     background-color: #0056b3;
 }
 
-.search-container button:focus {
+.button:focus {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
@@ -152,6 +152,7 @@ header h2 {
 main {
     justify-content: center;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
@@ -169,6 +170,11 @@ main {
     color: #e0e0e0;
     border-radius: 10px;    
     padding: 20px;
+}
+
+.unica {
+    margin-left: 19%;
+    margin-right: 19%;
 }
 
 .clima_unico01, .clima_unico02 {
@@ -312,13 +318,26 @@ main {
 
 /*ultima actualizacion*/
 
-#listaVuelo {
+.listaClimas {
     list-style-type: none;
     padding: 0;
 }
-#listaVuelo li {
+.listaClimas li {
     padding: 10px;
     position: relative;
+}
+
+.histClima {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.sinHistorial p, h1 {
+    padding: 20px;
+}
+
+.ciudadesClimas {
+    margin: 5%;
 }
 
 .detalles {
@@ -328,19 +347,27 @@ main {
     display: flex;
 }
 
-#listaVuelo {
+.listaClimas {
     width: 100%;
 }
 
 .aviso {
-    width: 100%;
+
     margin: 6%;
     border-radius: 10px;
     background-color: #1E1F25;
     justify-content: center;
     justify-items: center;
+    align-content: center;
     text-align: center;
     transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .aviso h1, p {
@@ -584,6 +611,13 @@ main {
     color: white;
     font-weight: bold;
     font-size: 17px;
+}
+
+.containerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 footer {

@@ -55,6 +55,11 @@ def porcentaje(palabra):
     except Exception:
         raise Exception("No se pudo leer o no existe el archivo CSV IATAS.")
 
+    # Buscar la ciudad por código IATA
+    iata = df[df["IATA"] == palabra.upper()]
+    if not iata.empty:
+        return [('E','75'),('R','75')]
+
     # Capitalizar la palabra
     ct = palabra.title()
 

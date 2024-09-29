@@ -78,10 +78,12 @@ inputSearch.onkeyup = e => {
         // Muestra las sugerencias en el contenedor.
         showSuggestions(emptyArray);
 
-        // Añade un evento 'onclick' a cada elemento <li>.
+        // Añade un evento 'click' a cada elemento <li>.
         let allList = boxSuggestions.querySelectorAll('li');
         allList.forEach(li => {
-            li.setAttribute('onclick', 'select(this)');
+            li.addEventListener('click', () => {
+                select(li); // Llamas a la función select directamente desde el módulo
+            });
         });
     } else {
         boxSuggestions.style.border = 'none'; // Elimina el borde cuando no hay sugerencias.
@@ -93,7 +95,7 @@ inputSearch.onkeyup = e => {
  * Función para seleccionar una sugerencia.
  * @param {HTMLElement} element - El elemento <li> seleccionado.
  */
-function select(element) {
+export function select(element) {
     let selectUserData = element.textContent; // Obtiene el texto de la sugerencia seleccionada.
     inputSearch.value = selectUserData; // Asigna el valor seleccionado al input de búsqueda.
     searchContainer.classList.remove('active'); // Remueve la clase 'active' al seleccionar una sugerencia.

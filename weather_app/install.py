@@ -82,6 +82,7 @@ def run_app(venv_dir='venv'):
         # Configura la variable de entorno FLASK_APP
         os.environ['FLASK_APP'] = 'app.py'
         os.environ['FLASK_ENV'] = 'development'  # Habilita el modo de desarrollo
+        os.environ['DEBUG'] = '1'  # Asegura que el modo debug está activado
 
         subprocess.check_call([python_executable, '-m', 'flask', 'run'])
         logging.info("app.py se ejecutó exitosamente.")
