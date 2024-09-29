@@ -11,11 +11,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 def predicc(entrada):
     
     # Construir la ruta al archivo CSV
-<<<<<<< HEAD
-    archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/IATAS.csv'))
-=======
     archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/IATAS.csv'))
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     
     # Leer el archivo CSV en un DataFrame
     try: 
@@ -51,11 +47,7 @@ def porcentaje(palabra):
     @return: porcentaje de parecido
     '''
     # Construir la ruta al archivo CSV
-<<<<<<< HEAD
-    archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/IATAS.csv'))
-=======
     archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/IATAS.csv'))
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 
     # Leer el archivo CSV en un DataFrame
     try:
