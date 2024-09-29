@@ -1,19 +1,11 @@
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-<<<<<<< HEAD
-from services.obtenervuelos import obtener_vuelosCiudad, obtener_vuelosPorIATA
-from utils.cacheyEscritura import guardar_cache
-from utils.predicc import predicc as pc
-from utils.traductor import traducirExcepcion
-from services.obtenerclimas import weather, buscar_clima
-=======
 from utils.obtenervuelos import obtener_vuelosCiudad, obtener_vuelosPorIATA
 from utils.cacheyEscritura import guardar_cache
 from utils.predicc import predicc as pc
 from utils.traductor import traducirExcepcion
 from utils.obtenerclimas import weather, buscar_clima
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 
 def obtenerDatosporCiudad(origen, destino):
 

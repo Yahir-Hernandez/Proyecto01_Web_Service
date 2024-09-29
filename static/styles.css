@@ -39,17 +39,9 @@ header h2 {
     font-size: 24px;             /* Ajusta el tamaño del ícono */
     vertical-align: middle;
     text-align: center;
-<<<<<<< HEAD
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-
-=======
     margin: 0 10px;
 }
 
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 .material-symbols-sharp {
   font-variation-settings:
   'FILL' 0,
@@ -60,12 +52,7 @@ header h2 {
     font-size: 70px;             /* Ajusta el tamaño del ícono */
     vertical-align: middle;
     text-align: center;
-<<<<<<< HEAD
-    margin-left: 10px;
-    margin-right: 10px;
-=======
     margin: 0 10px;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 .search-container {
@@ -100,10 +87,6 @@ header h2 {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-<<<<<<< HEAD
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-=======
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 .search-container button:hover {
@@ -125,39 +108,26 @@ header h2 {
 
 #ciudad-input:focus, 
 #airline-input:focus, 
-<<<<<<< HEAD
-#iata-input:focus {
-=======
 #iata-input:focus,
 #ciudad-origen:focus,
 #ciudad-destino:focus {
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     flex: 1;
     color: #9BABC5;
     background-color: #131517;
     outline-color: #1EA7FF;
-<<<<<<< HEAD
-    font-size: 1rem;
-    line-height: normal
-=======
     outline-width: 2px;
     outline-style: solid;
     outline-offset: 0;
     font-size: 1rem;
     line-height: normal;
     border: none;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 #ciudad-input::placeholder, 
 #airline-input::placeholder, 
-<<<<<<< HEAD
-#iata-input::placeholder {
-=======
 #iata-input::placeholder,
 #ciudad-origen::placeholder,
 #ciudad-destino::placeholder {
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     flex: 1;
     color: #9BABC5;
     padding-bottom: 100% ;
@@ -171,10 +141,7 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-<<<<<<< HEAD
-=======
     transition: opacity 0.5s ease, height 0.5s ease;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 #SEARCH_1 div, #SEARCH_2 div {
@@ -183,17 +150,12 @@ header h2 {
 }
 
 main {
-<<<<<<< HEAD
-=======
     justify-content: center;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
 }
-<<<<<<< HEAD
-=======
 /*ultima actualizacion*/
 /*
 .clima_unico div, p, h4, h2 {
@@ -349,7 +311,6 @@ main {
 }
 
 /*ultima actualizacion*/
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 
 #listaVuelo {
     list-style-type: none;
@@ -374,19 +335,12 @@ main {
 .aviso {
     width: 100%;
     margin: 6%;
-<<<<<<< HEAD
-    border-radius: 5%;
-=======
     border-radius: 10px;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     background-color: #1E1F25;
     justify-content: center;
     justify-items: center;
     text-align: center;
-<<<<<<< HEAD
-=======
     transition: opacity 0.5s ease, height 0.5s ease;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 .aviso h1, p {
@@ -395,11 +349,6 @@ main {
     font-size: 2rem;
 }
 
-<<<<<<< HEAD
-.content_vuelo, .climas {
-    width: 100%;
-    box-sizing: border-box;
-=======
 .carga span {
     text-align: center;
     color: #9BABC5;
@@ -459,7 +408,6 @@ main {
     flex-basis: 200px;
     height: 100%;
     margin-top: 2%;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 .vuelo_ticket {
@@ -474,10 +422,6 @@ main {
     font-size: 1rem;
     align-items: center;
     background-color: #1E1F25;
-<<<<<<< HEAD
-    width: 100%;
-=======
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     font-family: 'DM Sans', sans-serif;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -499,8 +443,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-<<<<<<< HEAD
-=======
 .ubicacion {
     display: flex; /* Coloca los elementos hijos en una fila */
     align-items: center; /* Alinea verticalmente los elementos */
@@ -540,7 +482,6 @@ main {
 }
 
 
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 .noIcono {
     background-color: #9C1A1C;
     width: 20px;
@@ -548,11 +489,7 @@ main {
 }
 
 .IconoStyleDay {
-<<<<<<< HEAD
-    color: #ffc400;
-=======
     color: #ffae00;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     width: 100px;
     height: 100px;
     font-size: 100px;
@@ -560,11 +497,7 @@ main {
 }
 
 .IconoStyleNight {
-<<<<<<< HEAD
-    color: #1EA7FF;
-=======
     color: #0081ff;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     width: 100px;
     height: 100px;
     font-size: 100px;
@@ -573,23 +506,14 @@ main {
 
 .copia div {
     flex-grow: 1;
-<<<<<<< HEAD
-    flex-basis: 200;
-=======
     flex-basis: 200px;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     margin-top: 10px;
     text-align: center;
 }
 
 .vuelo_ticket div {
-<<<<<<< HEAD
-    flex-grow: 1;
-    flex-basis: 200;
-=======
     flex: 1;
     flex-basis: 200px;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     margin-top: 10px;
     text-align: center;
 }
@@ -615,162 +539,6 @@ main {
     border-color: #0056b3;
 }
 
-<<<<<<< HEAD
-.climas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.origen, .destino {
-    flex: 1;
-    
-}
-
-#informacion {
-    transition: opacity 0.5s ease-in-out, max-height 1.0s ease-in-out;
-}
-
-#origen , #destino {
-    background-color: #1E1F25 ;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.info_vuelo {
-    flex-grow: 1;
-    text-align: center;
-
-}
-
-
-.info_vuelo h2 {
-    margin: 10px;
-    color: #e0e0e0;
-    padding: 1%;
-}
-.info_vuelo h3 {
-    color: #e0e0e0;
-    padding-top: 3%;
-    font-weight: bold;
-}
-
-.info_vuelo span {
-    margin: 30px;
-}
-
-.info_ciudad {
-    padding-bottom: 1%;
-}
-
-.info_ciudad p {
-    color: #9BABC5;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.info_clima {
-    color: #e0e0e0;
-    padding: 5%;
-}
-
-.info_clima00 {
-    padding: 5%;
-    height: 90%;
-}
-
-.info_02, .info_03 {
-    padding: 20px;
-}
-
-.lineaH {
-    height: 100%; 
-    background-color: #e0e0e0; 
-    width: 30px;
-}
-
-.info_00 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-}
-
-.info_00 h4 {
-    text-align: left;
-    flex-basis: 200;
-}
-
-.info_00 p {
-    flex: 1;
-    text-align: right;
-    flex-basis: 200;
-    font-size: 20px;
-}
-
-.info_01 {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    gap: 30px;
-}
-
-.lineaHorizontal {
-    width: 90%; /* Ancho de la línea horizontal */
-    height: 1px; /* Altura de la línea */
-    background-color: #f0f0f0; /* Color de la línea */
-    margin: 15px auto; /* Centrado horizontal */
-}
-
-.lineaVertical {
-    height: 40px;
-    width: 1px;
-    background-color: #f0f0f0;
-}
-
-.temp-range {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    font-size: 1.5em;
-    width: 180px;
-}
-
-.temp {
-    text-align: center;
-    font-size: 2.0em; 
-}
-
-.info_01 .temperatura {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    gap: 30px;
-}
-
-.weather-icon {
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1rem;
-    color: #ffc400;
-=======
 /* Contenedor de sugerencias */
 .container-suggestions {
 	max-height: 300px;
@@ -816,7 +584,6 @@ main {
     color: white;
     font-weight: bold;
     font-size: 17px;
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
 }
 
 footer {

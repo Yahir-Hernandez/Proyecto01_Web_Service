@@ -11,11 +11,7 @@ from utils.predicc import predicc
 def iatasC(ciudad):
    
     # Construir la ruta al archivo JSON
-<<<<<<< HEAD
-    archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/IATAS.csv'))
-=======
     archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/IATAS.csv'))
->>>>>>> 11749fc26b5cc0fddd7565ed6f5331abbe572dc8
     
     #LEE el pdf de pandas y lo regresa en un data frame
     try: 
