@@ -100,7 +100,6 @@ def traducir_descripcion(descripcion_clima):
         "heavy snow": "nieve intensa",
         "sleet": "aguanieve",
         "shower sleet": "chubascos de aguanieve",
-        "dust": "polvo",
         "fog": "niebla",
         "sand": "arena",
         "dust": "polvo",
@@ -108,7 +107,6 @@ def traducir_descripcion(descripcion_clima):
         "squall": "ráfaga",
         "tornado": "tornado"
     }
-
     return traducciones_descripcion.get(descripcion_clima, descripcion_clima)
 
 

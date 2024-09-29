@@ -11,7 +11,7 @@ import requests
 #Si se ingresas origen en CDMX, se debe de ingresar destino
 
 # Clave de acceso para la API
-api_key = 'db70993a21112c5a1d1a192ee71b8875'
+api_key = 'a7701764743e02a9ea0cff6b636f4a59'
 # Endpoint de la API para obtener información de vuelos
 endpoint = 'http://api.aviationstack.com/v1/flights'
     
