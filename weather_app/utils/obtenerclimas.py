@@ -3,33 +3,29 @@ import pandas as pd
 import requests
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.horasyTiempo import fecha_hoy, fecha_final, ayer
+from utils.horasyTiempo import hoy, timestamp, redondea_hora, ayer, convertDT_a_CST, formato_dia_mes, formato_hora_minuto
 from utils.iatas import iatasC
-from utils.cacheyEscritura import cargar_cache
-from utils.cacheyEscritura import guardar_cache
+from utils.cacheyEscritura import cargar_cache, guardar_cache
 from utils.predicc import predicc as pc
-from utils.horasyTiempo import convertDT_a_CST, formato_ano_mes, formato_hora_minuto
-from utils.traductor import traducir_descripcion, traducir_main, traducir
-from datetime import datetime
+from utils.traductor import traducir_main
 
+def weather(ciudad):
 
-#Metodo para solicitar el clima de lugar que se da como parametro
-def weather(lugar):
-
-    lugar = lugar.replace(" ", "")
+    ciudad = ciudad.replace(" ", "")
     
-    if not lugar or lugar == "":
+    if not ciudad or ciudad == "":
         raise Exception("Por favor selecciona un lugar válido para solicitar el clima.")
     
-    lugar = pc(lugar)
+    ciudad = pc(ciudad)
     
-    carpeta_destino = os.path.join(os.path.dirname(__file__), '../cache') #definir una carpeta donde gaurdar los objetos
-    nombre_archivo= f'climas_cache.json' 
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar los objetos
+    nombre_archivo= f'climas_{iatasC(ciudad)}.json' 
     ruta = os.path.join(carpeta_destino, nombre_archivo)
 
-    climas = verificaEnCacheClima(ruta, lugar)
+    climas = verificaEnCacheClima(ruta, ciudad)
 
     return climas
+
 """
     Obtiene el clima de un lugar específico, verificando primero en el caché 
     y solicitando datos de la API si no se encuentran coincidencias.
@@ -69,13 +65,11 @@ def solicitarAPIClima(lugar):
 """
 
 def solicitarAPIClimaHistorico(lugar):
-    '''Solicita datos de horas anteriores a la hora actual de este mismo dias
-    @param: ciudad que se quiere consulta climar
-    @return: respuesta de la api del clima'''
+    
     key = "bafa68a647e077182f2e167abc8648dd"
     lat, lon = obtener_coordenadas(lugar)  # valor la latitud y longitud del lugar
-    start = ayer()
-    end = fecha_final(fecha_hoy())
+    start = timestamp(ayer())
+    end = timestamp(hoy())
     url = f"https://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={key}&units=metric"
     rp = requests.get(url)
 
@@ -99,20 +93,10 @@ def solicitarAPIClimaHistorico(lugar):
     
 def verificaEnCacheClima(ruta, ciudad):
 
-    # Cargar los datos de clima desde el archivo de caché si existe
     data_cache = cargar_cache(ruta)
-    climas_encontrados = []
 
     if data_cache:
-
-        # Buscar en la lista de climas los que coincidan con la ciudad proporcionada
-        for clima in data_cache:
-            if ciudad == clima['Ciudad']:
-                climas_encontrados.append(clima)
-
-        # Si se encontraron climas, devolverlos
-        if climas_encontrados:
-            return climas_encontrados
+        return data_cache
 
     # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
     data = solicitarAPIClimaHistorico(ciudad)
@@ -141,27 +125,21 @@ def obtener_coordenadas(lugar):
     if not lugar or lugar == "":
         raise Exception("Por favor, selecciona un lugar válido para las coordenadas")
     
-    # Construir la ruta al archivo CSV
     file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/dataset.csv'))
     
-    # Leer el archivo CSV en un DataFrame
     try: 
         df = pd.read_csv(file_path)
     except:
         raise Exception("No se pudo leer o no existe el archivo SCV dataset.")
 
-    # Obtener el código IATA del lugar especificado
     Iata = iatasC(lugar)
-    
-    # Buscar en las columnas 'origin' y 'destination'
+
     for columna in ["origin", "destination"]:
         busca = df[df[columna] == Iata]
         if not busca.empty:
             lat = busca[f"{columna}_latitude"].values[0]
             lon = busca[f"{columna}_longitude"].values[0]
             return lat, lon
-    
-    # Si no se encuentra el lugar, devolver None
     return None
 
 """
@@ -177,10 +155,10 @@ def obtener_coordenadas(lugar):
         tuple: Coordenadas (latitud, longitud) del lugar solicitado.
 """
 
-def buscar_clima(clima_data, ciudad, hora):
+def buscar_clima(clima_data, hora):
 
     for clima in clima_data:
-        if clima['Fecha y hora']==hora and clima['Ciudad']==ciudad:
+        if clima['Fecha y hora']==hora:
             return clima
     return None
 
@@ -216,9 +194,8 @@ def crear_clima(json_data, ciudad):
             "Velocidad del viento": clima_data.get('wind').get('speed'),
             "Direccion del viento": clima_data.get('wind').get('deg'),
             "Fecha y hora": convertDT_a_CST(clima_data.get('dt')),
-            "Fecha simplificada": formato_ano_mes(convertDT_a_CST(clima_data.get('dt'))),
+            "Fecha simplificada": formato_dia_mes(convertDT_a_CST(clima_data.get('dt'))),
             "Hora simplificada": formato_hora_minuto(convertDT_a_CST(clima_data.get('dt'))),
-            "Hora_actual": datetime.now().strftime("%H:%M"),
             "Humedad": clima_data.get('main').get('humidity'),
             "Visibilidad": clima_data.get('visibility'),
             "icono": clima_data.get('weather')[0].get("icon") ,
