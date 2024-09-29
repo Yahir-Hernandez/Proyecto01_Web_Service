@@ -10,10 +10,6 @@ from utils.predicc import predicc
 
 def iatasC(ciudad):
    
-<<<<<<< HEAD:utils/iatas.py
-    # Construir la ruta al archivo JSON
-=======
->>>>>>> Said:weather_app/utils/iatas.py
     archivo = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/IATAS.csv'))
     
     try: 
