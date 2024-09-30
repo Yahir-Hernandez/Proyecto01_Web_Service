@@ -166,7 +166,6 @@ function muestraError2(apiErrorElement, carga, boton1, boton2) {
         }, 3000);
 }
 
-
 /**
  * Asigna los valores del objeto clima a las etiquetas correspondientes en el front-end.
  * @param {HTMLElement} clima Elemento HTML que contiene las etiquetas del clima.
