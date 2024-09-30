@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.horasyTiempo import hoy, timestamp, redondea_hora, ayer, convertDT_a_CST, formato_dia_mes, formato_hora_minuto
+from utils.horasyTiempo import hoy, timestamp, ayer, convertDT_a_CST, formato_dia_mes, formato_hora_minuto
 from utils.iatas import iatasC
 from utils.cacheyEscritura import cargar_cache, guardar_cache
 from utils.predicc import predicc as pc
@@ -20,6 +20,7 @@ def weather(ciudad):
     
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar los objetos
     nombre_archivo= f'climas_{iatasC(ciudad)}.json' 
+
     ruta = os.path.join(carpeta_destino, nombre_archivo)
 
     climas = verificaEnCacheClima(ruta, ciudad)

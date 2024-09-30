@@ -29,12 +29,12 @@ def historial():
 
 @app.route('/historial/iatas')
 def iatas():
-    datos = cargar_cache('utils/cache/TicketsConsultados.json')
+    datos = cargar_cache('utils/cache/tickets_Consultados.json')
     return jsonify(datos)
 
 @app.route('/historial/tickets')
 def tickets():
-    datos = cargar_cache('utils/cache/ClimasConsultados.json')
+    datos = cargar_cache('utils/cache/climas_Consultados.json')
     return jsonify(datos)
 @app.route('/search', methods=['GET'])
 def search():

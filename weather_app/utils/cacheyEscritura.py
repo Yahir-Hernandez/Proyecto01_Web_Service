@@ -1,7 +1,8 @@
+from datetime import datetime, timedelta
 import json
 import os
 import sys
-
+from horasyTiempo import hoy
 
 def cargar_cache(ruta):
     if os.path.exists(ruta):
@@ -21,6 +22,8 @@ def cargar_cache(ruta):
 
 def guardar_cache(ruta, archivos):
     carpetaCache()
+    guardaFecha()
+
     arch_existentes = cargar_cache(ruta)
 
     if arch_existentes: 
@@ -43,6 +46,15 @@ def guardar_cache(ruta, archivos):
         None
 """
 
+def guardaFecha():
+
+    ruta = os.path.join(os.path.dirname(__file__), '../utils/cache/fecha.txt')
+
+    if not os.path.exists(ruta):
+        with open(ruta, 'w') as archivo:
+            archivo.write(hoy())
+
+
 def carpetaCache():
     """
     Verifica si la carpeta 'cache' existe en el sistema de archivos y la crea si es necesario.
@@ -63,5 +75,35 @@ def carpetaCache():
         os.makedirs(file_path)
     
     
+def decide_SiBorrarCache():
 
-  
+    ruta = os.path.join(os.path.dirname(__file__), '../utils/cache/fecha.txt')
+    cache = os.path.join(os.path.dirname(__file__), '../utils/cache')
+    actual = datetime.strptime(hoy() , '%Y-%m-%d %H:%M:%S')
+
+    if os.path.exists(ruta):
+
+        with open(ruta, 'r') as archivo:
+            fecha = datetime.strptime(archivo.read().strip(), '%Y-%m-%d %H:%M:%S')
+
+        diferencia = actual - fecha
+
+        if diferencia > timedelta(hours=20):
+            eliminarTickets(cache)
+            eliminarClimas(cache)
+            os.remove(ruta)
+
+def eliminarClimas(ruta):
+
+    for file in os.listdir(ruta):
+        if file.startswith('climas_'):
+            os.remove(os.path.join(ruta, file))
+
+
+def eliminarTickets(ruta):
+
+    for file in os.listdir(ruta):
+        if file.startswith('tickets_'):
+            os.remove(os.path.join(ruta, file))
+
+
