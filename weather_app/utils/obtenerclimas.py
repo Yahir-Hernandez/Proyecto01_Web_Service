@@ -16,9 +16,7 @@ def weather(ciudad):
     if not ciudad or ciudad == "":
         raise Exception("Por favor selecciona un lugar válido para solicitar el clima.")
     
-    ciudad = pc(ciudad)
-    
-    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar los objetos
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') 
     nombre_archivo= f'climas_{iatasC(ciudad)}.json' 
 
     ruta = os.path.join(carpeta_destino, nombre_archivo)

@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 import json
 import os
 import sys
-from horasyTiempo import hoy
+from utils.horasyTiempo import hoy
 
 def cargar_cache(ruta):
     if os.path.exists(ruta):
@@ -105,5 +105,4 @@ def eliminarTickets(ruta):
     for file in os.listdir(ruta):
         if file.startswith('tickets_'):
             os.remove(os.path.join(ruta, file))
-
 

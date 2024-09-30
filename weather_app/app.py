@@ -1,8 +1,8 @@
+import json
 import os
 import urllib.parse
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 
-from utils.cacheyEscritura import cargar_cache
 from utils.obtenerDatosFINALES import datosCiudad, datosTicket
 from utils.predicc import porcentaje
 
@@ -29,13 +29,25 @@ def historial():
 
 @app.route('/historial/iatas')
 def iatas():
-    datos = cargar_cache('utils/cache/tickets_Consultados.json')
+    carpeta_destino= os.path.join(os.path.dirname(__file__), 'utils/cache')
+    ruta = os.path.join(carpeta_destino, 'climas_Consultados.json')
+    datos = cargarDatos(ruta)
     return jsonify(datos)
 
 @app.route('/historial/tickets')
 def tickets():
-    datos = cargar_cache('utils/cache/climas_Consultados.json')
+    carpeta_destino= os.path.join(os.path.dirname(__file__), 'utils/cache')
+    ruta = os.path.join(carpeta_destino, 'tickets_Consultados.json')
+    datos = cargarDatos(ruta)
     return jsonify(datos)
+
+def cargarDatos(ruta):
+    if os.path.exists(ruta):
+        with open(ruta, 'r') as archivo:
+            datos = json.load(archivo)
+            return datos
+    return None
+
 @app.route('/search', methods=['GET'])
 def search():
     try:
