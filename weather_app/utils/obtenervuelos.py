@@ -1,7 +1,6 @@
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.iatas import iatasC
 from utils.predicc import predicc
 from utils.cacheyEscritura import cargar_cache, guardar_cache
 from utils.horasyTiempo import formato_hora_minuto, formato_dia_mes, redondea_hora
@@ -24,7 +23,7 @@ def obtener_vuelo(ticket):
         raise Exception("Por favor selecciona un formato de ticket válido.")
     
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
-    nombre_archivo= f'Tickets.json' 
+    nombre_archivo= f'tickets_vuelo.json' 
 
     ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
 

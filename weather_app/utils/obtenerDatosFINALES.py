@@ -1,7 +1,7 @@
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.cacheyEscritura import guardar_cache
+from utils.cacheyEscritura import guardar_cache, decide_SiBorrarCache
 from utils.horasyTiempo import redondea_hora, hoy
 from utils.obtenervuelos import obtener_vuelo
 from utils.predicc import predicc as pc
@@ -11,8 +11,11 @@ from utils.obtenerclimas import weather, buscar_clima
 def datosCiudad(destino):
 
     try:
+
+        decide_SiBorrarCache()
+    
         carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
-        nombre_archivo= f'ClimasConsultados.json' 
+        nombre_archivo= f'climas_Consultados.json' 
 
         ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
 
@@ -49,33 +52,41 @@ def datosCiudad(destino):
 
 def datosTicket(ticket):
 
-    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
-    nombre_archivo= f'TicketsConsultados.json' 
+    try:
 
-    ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
+        decide_SiBorrarCache()
 
-    vuelo = obtener_vuelo(ticket)
+        carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
+        nombre_archivo= f'tickets_Consultados.json' 
 
-    vuelos_combinados = []
-    origen = vuelo[0]['ciudadOr']
-    destino = vuelo[0]['ciudadDes']
-    hr_origen = vuelo[0]['hrorigen']
-    hr_destino = vuelo[0]['hrdestino']
+        ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
+
+        vuelo = obtener_vuelo(ticket)
+
+        vuelos_combinados = []
+        origen = vuelo[0]['ciudadOr']
+        destino = vuelo[0]['ciudadDes']
+        hr_origen = vuelo[0]['hrorigen']
+        hr_destino = vuelo[0]['hrdestino']
         
-    climaorigen = weather(origen)
-    climadestino = weather(destino)
+        climaorigen = weather(origen)
+        climadestino = weather(destino)
 
-    clima_para_origen = buscar_clima(climaorigen, hr_origen)
-    clima_para_destino = buscar_clima(climadestino, hr_destino)
+        clima_para_origen = buscar_clima(climaorigen, hr_origen)
+        clima_para_destino = buscar_clima(climadestino, hr_destino)
 
-    if clima_para_origen and clima_para_destino:
-        vuelo[0]['clima_origen'] = clima_para_origen
-        vuelo[0]['clima_destino'] = clima_para_destino
+        if clima_para_origen and clima_para_destino:
+            vuelo[0]['clima_origen'] = clima_para_origen
+            vuelo[0]['clima_destino'] = clima_para_destino
 
-    vuelos_combinados.append(vuelo[0])
-    guardar_cache(ruta, vuelos_combinados)
+        vuelos_combinados.append(vuelo[0])
+        guardar_cache(ruta, vuelos_combinados)
 
-    return vuelos_combinados
+        return vuelos_combinados
+
+    except Exception as e:
+        return traducirExcepcion(str(e))
+    
      
 """
     Combina los datos de vuelos obtenidos a través de un código IATA con los climas de las ciudades de origen y destino,
