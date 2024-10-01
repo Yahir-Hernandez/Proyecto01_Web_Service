@@ -28,4 +28,27 @@ def iatasC(ciudad):
     
     return iata_code[0]
 
+"""
+    Obtiene el código IATA correspondiente a una ciudad dada.
+
+    Esta función lee un archivo CSV que contiene las ciudades y sus códigos IATA. 
+    Primero, intenta cargar el archivo, y si no se puede leer, lanza una excepción con un mensaje específico. 
+    Luego, utiliza la función `predicc` para corregir el nombre de la ciudad y busca en el DataFrame el código IATA. 
+    Si no encuentra un código IATA para la ciudad, se lanza otra excepción.
+
+    Args:
+        ciudad (str): Nombre de la ciudad para la cual se desea obtener el código IATA.
+
+    Raises:
+        Exception: Si el archivo CSV no se puede leer o no existe, 
+                   o si no se encuentra el código IATA correspondiente a la ciudad.
+
+    Returns:
+        str: El código IATA de la ciudad especificada.
+
+    Examples:
+        >>> iatasC("Tepic")
+        "TPQ"
+"""
+
 

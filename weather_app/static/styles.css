@@ -36,7 +36,7 @@ header h2 {
   'wght' 10000,
   'GRAD' 0,
   'opsz' 24;
-    font-size: 24px;             /* Ajusta el tamaño del ícono */
+    font-size: 24px;             
     vertical-align: middle;
     text-align: center;
     margin: 0 10px;
@@ -49,7 +49,7 @@ header h2 {
   'GRAD' 0,
   'opsz' 48;
     color: #9BABC5;
-    font-size: 70px;             /* Ajusta el tamaño del ícono */
+    font-size: 70px;             
     vertical-align: middle;
     text-align: center;
     margin: 0 10px;
@@ -157,11 +157,6 @@ main {
     gap: 20px;
     padding: 20px;
 }
-/*ultima actualizacion*/
-/*
-.clima_unico div, p, h4, h2 {
-    border: 1px solid #3A7734;
-}*/
 
 .clima_unico {
     display: flex;
@@ -393,10 +388,10 @@ main {
 }
 
 .cargaIcon {
-    display: inline-block; /* Asegúrate de que el span se comporte como un bloque */
-    font-size: 100px; /* Ajusta según el tamaño deseado */
-    transform-origin: center; /* La rotación se hace desde el centro */
-    animation: rotate 2s linear infinite; /* Animación suave, constante, e infinita */
+    display: inline-block; 
+    font-size: 100px; 
+    transform-origin: center; 
+    animation: rotate 2s linear infinite; 
 }
 
 @keyframes rotate {
@@ -424,11 +419,6 @@ main {
     color: #9BABC5;
     border-radius: 10px;
 }
-
-/*
-.climas div, h1,h2,h3,h4,h5,h6, p,i, span {
-    border: 1px solid #3A7734;
-}*/
 
 .origen, .destino {
     flex: 1;
@@ -471,9 +461,9 @@ main {
 }
 
 .ubicacion {
-    display: flex; /* Coloca los elementos hijos en una fila */
-    align-items: center; /* Alinea verticalmente los elementos */
-    gap: 10px; /* Espacio entre los elementos (opcional) */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
     padding: 15px;
     margin-bottom: 3%;
     background-color: #1E1F25;
@@ -481,7 +471,7 @@ main {
 }
 
 .info_ciudad p, h2 {
-    margin: 0; /* Elimina márgenes para minimizar el espacio */
+    margin: 0; 
 }
 .ubicacion01 {
     color: #e0e0e0;
@@ -566,7 +556,6 @@ main {
     border-color: #0056b3;
 }
 
-/* Contenedor de sugerencias */
 .container-suggestions {
 	max-height: 300px;
 	pointer-events: none;

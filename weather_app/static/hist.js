@@ -147,7 +147,7 @@ function expoDatos(datos) {
         li.appendChild(tClone);
 
         const clim = asigna(vuelo);
-        clim.style.display = "none"; // Asegúrate de que está oculto al inicio
+        clim.style.display = "none"; 
         clim.classList.add("detalles");
         li.appendChild(clim);
         lista.appendChild(li);

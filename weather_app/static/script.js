@@ -94,7 +94,7 @@ function formula(toggleButton, Form1, Form2) {
     Form1.style.display = isForm2Visible ? "flex" : "none";
     Form2.style.display = isForm2Visible ? "none" : "flex";
     quitaClima();
-    // Usa innerHTML para agregar texto y HTML juntos
+    
     toggleButton.innerHTML = isForm2Visible
         ? 'Cambiar busqueda <span class="material-symbols-outlined">change_circle</span>'
         : 'Cambiar busqueda <span class="material-symbols-outlined">change_circle</span>';
@@ -143,7 +143,7 @@ function quitaClima() {
  */
 function expoclima(data) {
     let clima = document.querySelector('#climaCiudad-Iata');
-    let carga = document.querySelector('.carga'); // Asegúrate de seleccionar el elemento correctamente
+    let carga = document.querySelector('.carga'); 
     //carga.style.display = 'flex';
 
     if (clima && carga) {
@@ -152,7 +152,7 @@ function expoclima(data) {
         /*setTimeout(() => {
             clima.style.display = 'flex';
             console.log('Ocultando carga...');
-            carga.style.display = 'none'; // Asegúrate de que esta línea esté funcionando
+            carga.style.display = 'none'; 
         }, 3000);*/
     } else {
         console.error('El elemento .clima_unico o .carga no existe en el DOM');
@@ -299,7 +299,7 @@ function icono(clima, selector, idIcono) {
  * @returns {string} Clase del estilo de CSS para el ícono.
  */
 function dia_o_noche(idIcono) {
-    // Verifica si el cuarto carácter del ID es 'd' o 'n'
+    
     if (idIcono[2] === 'd') {
         return "IconoStyleDay";
     } else if (idIcono[2] === 'n') {

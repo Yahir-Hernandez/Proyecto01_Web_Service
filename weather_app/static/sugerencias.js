@@ -53,41 +53,37 @@ const boxSuggestions = document.querySelector('.container-suggestions');
  * @param {Event} e - El evento de teclado.
  */
 inputSearch.onkeyup = e => {
-    let userData = e.target.value; // Obtiene el valor ingresado por el usuario
+    let userData = e.target.value; 
     let emptyArray = [];
 
     if (userData) {
-        // Filtra las sugerencias que comienzan con el valor ingresado por el usuario.
+        
         emptyArray = suggestions.filter(data => {
             return data
                 .toLocaleLowerCase()
                 .startsWith(userData.toLocaleLowerCase());
         });
 
-        // Aplica estilo a las sugerencias.
         styleSuggestions(emptyArray);
 
-        // Convierte las sugerencias filtradas en elementos <li>.
         emptyArray = emptyArray.map(data => {
-            boxSuggestions.style.border = '2px solid #1DA7FF'; // Aplica un borde cuando hay sugerencias.
+            boxSuggestions.style.border = '2px solid #1DA7FF'; 
             return `<li>${data}</li>`;
         });
 
-        // Añade la clase 'active' al contenedor de búsqueda.
         searchContainer.classList.add('active');
-        // Muestra las sugerencias en el contenedor.
+    
         showSuggestions(emptyArray);
 
-        // Añade un evento 'click' a cada elemento <li>.
         let allList = boxSuggestions.querySelectorAll('li');
         allList.forEach(li => {
             li.addEventListener('click', () => {
-                select(li); // Llamas a la función select directamente desde el módulo
+                select(li); 
             });
         });
     } else {
-        boxSuggestions.style.border = 'none'; // Elimina el borde cuando no hay sugerencias.
-        searchContainer.classList.remove('active'); // Remueve la clase 'active' si no hay datos.
+        boxSuggestions.style.border = 'none'; 
+        searchContainer.classList.remove('active'); 
     }
 };
 
@@ -96,10 +92,10 @@ inputSearch.onkeyup = e => {
  * @param {HTMLElement} element - El elemento <li> seleccionado.
  */
 export function select(element) {
-    let selectUserData = element.textContent; // Obtiene el texto de la sugerencia seleccionada.
-    inputSearch.value = selectUserData; // Asigna el valor seleccionado al input de búsqueda.
-    searchContainer.classList.remove('active'); // Remueve la clase 'active' al seleccionar una sugerencia.
-    boxSuggestions.style.border = 'none'; // Elimina el borde del contenedor de sugerencias.
+    let selectUserData = element.textContent; 
+    inputSearch.value = selectUserData; 
+    searchContainer.classList.remove('active'); 
+    boxSuggestions.style.border = 'none'; 
 }
 
 /**
@@ -111,12 +107,12 @@ const showSuggestions = list => {
 
     if (!list.length) {
         let userValue = inputSearch.value;
-        listData = `<li>${userValue}</li>`; // Si no hay sugerencias, muestra el valor del input.
+        listData = `<li>${userValue}</li>`; 
     } else {
-        listData = list.join(' '); // Junta las sugerencias en una sola cadena.
-        boxSuggestions.style.border = '2px solid #1DA7FF'; // Aplica un borde cuando hay sugerencias.
+        listData = list.join(' '); 
+        boxSuggestions.style.border = '2px solid #1DA7FF'; 
     }
-    boxSuggestions.innerHTML = listData; // Asigna las sugerencias al contenedor de sugerencias.
+    boxSuggestions.innerHTML = listData; 
 };
 
 /**
@@ -125,8 +121,8 @@ const showSuggestions = list => {
  */
 function styleSuggestions(emptyArray) {
     if (emptyArray.length === 0) {
-        boxSuggestions.style.border = '2px solid #1DA7FF'; // Aplica un borde si no hay sugerencias.
+        boxSuggestions.style.border = '2px solid #1DA7FF'; 
     } else {
-        boxSuggestions.style.border = 'none'; // Elimina el borde si hay sugerencias.
+        boxSuggestions.style.border = 'none'; 
     }
 }

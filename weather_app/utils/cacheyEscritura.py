@@ -56,7 +56,28 @@ def guardaIATAS(iatas):
     with open(archivo_txt, 'w') as file:
         for iata in iatas:
             file.write(iata + '\n')
-  
+
+"""
+    Guarda una lista de códigos IATA en un archivo de texto dentro de la carpeta 'cache'. 
+    Si la carpeta no existe, la crea antes de escribir el archivo.
+
+    Args:
+        iatas (list): Una lista de códigos IATA (cadenas) que se desea guardar en el archivo.
+
+    Returns:
+        None
+
+    Ejemplo:
+        Si se pasa una lista de códigos IATA como ["MEX", "LAX", "JFK"], la función creará 
+        (o sobrescribirá) el archivo 'ejemplo_tickets.txt' en la carpeta 'cache' y escribirá 
+        cada código IATA en una nueva línea del archivo.
+
+    Excepciones:
+        - Si no se tienen permisos para crear el directorio o escribir el archivo, se lanzará 
+          un `OSError` o `PermissionError`, lo que requeriría que el usuario verifique los 
+          permisos de escritura en el sistema de archivos.
+
+"""
 
 def guardaFecha():
 
@@ -66,9 +87,37 @@ def guardaFecha():
         with open(ruta, 'w') as archivo:
             archivo.write(hoy())
 
+"""
+    Guarda la fecha actual en un archivo de texto llamado 'fecha.txt' dentro de la carpeta 'cache'.
+    Si la carpeta o el archivo no existen, la función los creará antes de escribir la fecha.
+
+    Args:
+        None
+
+    Returns:
+        None
+
+    Ejemplo:
+        La función obtiene la fecha actual llamando a la función `hoy()` y la guarda en el archivo 
+        'fecha.txt' en la carpeta 'cache'. Si la carpeta 'cache' no existe, se creará automáticamente.
+
+    Excepciones:
+        - Si no se puede crear la carpeta o el archivo debido a restricciones de permisos, se lanzará 
+          un `OSError` o `PermissionError`, indicando que el sistema no puede completar la operación.
+"""
+
 
 def carpetaCache():
-    """
+   
+    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../utils/cache'))
+
+    if file_path not in sys.path:
+        sys.path.append(file_path)
+
+    if not os.path.exists(file_path):
+        os.makedirs(file_path)
+
+"""
     Verifica si la carpeta 'cache' existe en el sistema de archivos y la crea si es necesario.
     Además, agrega la ruta de la carpeta al sys.path si aún no está presente.
 
@@ -77,16 +126,8 @@ def carpetaCache():
 
     Returns:
         None
-    """
-    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../utils/cache'))
-
-    if file_path not in sys.path:
-        sys.path.append(file_path)
-
-    if not os.path.exists(file_path):
-        os.makedirs(file_path)
-    
-    
+"""
+ 
 def decide_SiBorrarCache():
 
     ruta = os.path.join(os.path.dirname(__file__), '../utils/cache/fecha.txt')
@@ -105,11 +146,34 @@ def decide_SiBorrarCache():
             eliminarClimas(cache)
             os.remove(ruta)
 
+"""
+    Verifica si han pasado más de 20 horas desde la última vez que se guardó la fecha en el archivo de caché.
+    Si es así, elimina los archivos relacionados con climas y tickets en la carpeta 'cache' y borra el archivo
+    que contiene la fecha.
+
+    Args:
+        None
+
+    Returns:
+        None
+"""
+
 def eliminarClimas(ruta):
 
     for file in os.listdir(ruta):
         if file.startswith('climas_'):
             os.remove(os.path.join(ruta, file))
+
+"""
+    Elimina todos los archivos en la carpeta especificada que comiencen con el prefijo 'climas_'.
+    Esto permite gestionar la limpieza de archivos de caché relacionados con el clima.
+
+    Args:
+        ruta (str): La ruta a la carpeta donde se encuentran los archivos de caché.
+
+    Returns:
+        None
+"""
 
 
 def eliminarTickets(ruta):
@@ -118,3 +182,13 @@ def eliminarTickets(ruta):
         if file.startswith('tickets_'):
             os.remove(os.path.join(ruta, file))
 
+"""
+    Elimina todos los archivos en la carpeta especificada que comiencen con el prefijo 'tickets_'.
+    Esto permite gestionar la limpieza de archivos de caché relacionados con los tickets de vuelo.
+
+    Args:
+        ruta (str): La ruta a la carpeta donde se encuentran los archivos de caché.
+
+    Returns:
+        None
+"""

@@ -5,7 +5,7 @@
  */
 export function buscaError01(data) {
     const Errores = ["500", "101", "103", "104", "105", "106", "107", "109"];
-    // Verifica si el primer elemento de 'data' está en la lista de 'Errores'
+    
     return Errores.includes(data[0]);
 }
 
@@ -63,7 +63,7 @@ export function icono(clima, selector, idIcono) {
  * @returns {string} Clase del estilo de CSS para el ícono.
  */
 export function dia_o_noche(idIcono) {
-    // Verifica si el cuarto carácter del ID es 'd' o 'n'
+
     if (idIcono[2] === 'd') {
         return "IconoStyleDay";
     } else if (idIcono[2] === 'n') {
@@ -85,7 +85,7 @@ export function manejarBusqueda(url, procesarRespuesta, nullError) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            return response.json(); // O .text() si esperas texto
+            return response.json(); 
         })
         .then(data => {
             console.log(data)
@@ -193,7 +193,7 @@ export function asignaClima(clima, data) {
  */
 function formFecha() {
     const fechaActual = new Date();
-    const horas = fechaActual.getHours().toString().padStart(2, '0'); // Asegura que siempre haya dos dígitos
+    const horas = fechaActual.getHours().toString().padStart(2, '0'); 
     const minutos = fechaActual.getMinutes().toString().padStart(2, '0');
     return `${horas}:${minutos}`;
 }
@@ -206,19 +206,17 @@ function formFecha() {
 function noSpam(boton,tiempo) {
 
     if (boton) {
-        // Deshabilitar el botón inmediatamente
+        
         boton.disabled = true;
         boton.style.backgroundColor = "#1E1F25";
 
-        // Lógica o acción que se debe ejecutar
         console.log('Enviando datos...');
 
-        // Rehabilitar el botón después de 5 segundos
         setTimeout(() => {
             boton.style.backgroundColor = '#1EA7FF';
             boton.disabled = false;
             console.log('Botón habilitado de nuevo');
-        }, tiempo); // 5000 ms = 5 segundos
+        }, tiempo); 
     }
 }
 

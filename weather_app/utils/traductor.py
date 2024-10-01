@@ -1,19 +1,25 @@
 from deep_translator import GoogleTranslator
 
-#Corrige datos en ingles
-
 def traducir(descripcion):
-    '''Método para traducir textos generados en los json
-    @param descripcion: textos que desea traducir
-    '''
-    # Traducir la descripción del inglés al español
+
     traduccion = GoogleTranslator(source='en', target='es').translate(descripcion)
     return traduccion
 
+"""
+    Traduce un texto en inglés al español utilizando Google Translator.
+
+    Esta función utiliza la biblioteca GoogleTranslator para traducir un texto
+    de inglés a español. Si la traducción se realiza correctamente, se devuelve
+    el texto traducido.
+
+    Args:
+        descripcion (str): Texto en inglés que se desea traducir.
+
+    Returns:
+        str: Texto traducido al español.
+"""
+
 def traducir_main(clima_id):
-    ''' Método que traduce el ID del clima a una descripción en español
-    @param clima_id: ID del clima que se desea traducir
-    @return: Descripción en español del clima'''
 
     traducciones = {
         200: "tormenta eléctrica con lluvia ligera",
@@ -75,12 +81,23 @@ def traducir_main(clima_id):
 
     return traducciones.get(clima_id, "Descripción no disponible")
 
+"""
+    Devuelve la descripción del clima correspondiente a un código de condición meteorológica.
+
+    Esta función utiliza un diccionario predefinido que mapea códigos de clima
+    a descripciones en español. Si el código proporcionado no se encuentra en el 
+    diccionario, se devuelve una descripción predeterminada.
+
+    Args:
+        clima_id (int): Código de condición meteorológica.
+
+    Returns:
+        str: Descripción del clima en español correspondiente al código.
+"""
+
 
 def traducir_descripcion(descripcion_clima):
-    '''Método que traduce la descripción detallada del clima al español
-    @param descripcion_clima: Descripción detallada del clima (e.g., "clear sky")
-    @return: Descripción en español del clima
-    '''
+
     traducciones_descripcion = {
         "Clear sky": "cielo despejado",
         "Few clouds": "pocas nubes",
@@ -109,27 +126,41 @@ def traducir_descripcion(descripcion_clima):
     }
     return traducciones_descripcion.get(descripcion_clima, descripcion_clima)
 
+"""
+    Traduce la descripción detallada del clima del inglés al español.
+
+    Esta función toma una descripción en inglés del clima y busca su traducción
+    en un diccionario predefinido. Si no se encuentra una traducción, se devuelve
+    la descripción original.
+
+    Args:
+        descripcion_clima (str): Descripción del clima en inglés (e.g., "clear sky").
+
+    Returns:
+        str: Descripción del clima en español.
+"""
+
 
 def traducirExcepcion(msg):
 
     exception ={
 
-        "Por favor selecciona un lugar válido para solicitar el clima." : "101", #Error (Sin parámtero en weather)
-        "No se pudo leer o no existe el archivo SCV dataset.": "102", #Error (No existe o pandas no pudo leer el SCV de coordenadas)
-        "Selecciona un origen o destino válidos." : "103", #Error (Sin origen o destino en obtener_vuelosCiudad)
-        "La ciudad de origen o destino debe de ser la Ciudad de México.": "104", #Error (Ninguno de los parámetros en obtener_vuelosCiudad es la CDMX)
-        "La ciudad de origen y destino deben ser distintas." : "105", #Error (Los parámetros en obtener_vuelosCiudad son iguales)
-        "Por favor selecciona un iata válido." : "106", #Error (Sin parámtero en obtener_vuelosPorIATA)
-        "No se encontraron coincidencias para esa ciudad." : "107", #Error (Predicc no encontró coincidencias con fuzzywuzzy)
+        "Por favor selecciona un lugar válido para solicitar el clima." : "101", 
+        "No se pudo leer o no existe el archivo SCV dataset.": "102", 
+        "Selecciona un origen o destino válidos." : "103", 
+        "La ciudad de origen o destino debe de ser la Ciudad de México.": "104", 
+        "La ciudad de origen y destino deben ser distintas." : "105", 
+        "Por favor selecciona un iata válido." : "106", 
+        "No se encontraron coincidencias para esa ciudad." : "107", 
         "No se pudo leer o no existe el archivo CSV IATAS." : "108",
-        "No se encontró el IATA." : "109", #Error (iatasC no encontró coincidencias)
-        "Error en la solicitud de la API: 400": "200",  # Error (Mal Request)
-        "Error en la solicitud de la API: 401": "201",  # Error (No autorizado por la API)
-        "Error en la solicitud de la API: 403": "203",  # Error (Prohibido)
-        "Error en la solicitud de la API: 404": "204",  # Error (No encontrado)
-        "Error en la solicitud de la API: 500": "300",  # Error (Error Interno del Servidor)
-        "Error en la solicitud de la API: 502": "302",  # Error (Mala Puerta de Enlace)
-        "Error en la solicitud de la API: 503": "303",  # Error (Servicio No Disponible)
+        "No se encontró el IATA." : "109", 
+        "Error en la solicitud de la API: 400": "200",  
+        "Error en la solicitud de la API: 401": "201",  
+        "Error en la solicitud de la API: 403": "203",
+        "Error en la solicitud de la API: 404": "204",  
+        "Error en la solicitud de la API: 500": "300",  
+        "Error en la solicitud de la API: 502": "302", 
+        "Error en la solicitud de la API: 503": "303",  
         
     }
 
@@ -137,7 +168,7 @@ def traducirExcepcion(msg):
         if key in msg:
             return [value, msg]
     
-    return ["500", "error desconocido"] # 500 es error desconocido
+    return ["500", "error desconocido"] 
 """
     Traduce un mensaje de error en un código numérico específico basado en un diccionario de excepciones predefinido.
 

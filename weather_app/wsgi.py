@@ -1,4 +1,4 @@
-from app import app  # Importa la aplicación Flask desde app.py
+from app import app 
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
