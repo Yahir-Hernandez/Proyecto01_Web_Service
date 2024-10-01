@@ -17,13 +17,13 @@
     <header>
         <h1>Calcula el clima de tu destino</h1>
         <section id="search" class="section">
-            <h2>Busca tu vuelo</h2>
+            <h2>Busca por ciudad o por ticket de vuelo</h2>
             <div class="search-container ">
                 <button class="button" onclick="location.href='/historial';">Historial</button>
-                <button type="button" id="toggle-button" class="button">Cambiar busqueda <span class="material-symbols-outlined">change_circle</span></button>
+                <button type="button" id="toggle-button" class="button">Cambiar búsqueda <span class="material-symbols-outlined">change_circle</span></button>
                 <form id="SEARCH_1" action="/search" method="get">
                     <div class="ciudad_search">
-                        <input type="text" id="ciudad-input" name="ciudad" placeholder="Ingresa ciudad o iata del aeropuerto">
+                        <input type="text" id="ciudad-input" name="ciudad" placeholder="Ingresa ciudad o IATA del aeropuerto">
                         <ul class="container-suggestions" style="position: absolute;">
                         </ul>
                     </div>
@@ -34,7 +34,7 @@
 
                 <form id="SEARCH_2" action="/search" method="get" style="display: none">
                     <div class="iata_search">
-                        <input type="text" id="iata-input" name="iata" placeholder="Ingresa código iata del vuelo">
+                        <input type="text" id="iata-input" name="iata" placeholder="Ingresa un ticket de vuelo (ej. UA1085)">
                     </div>
                     <button type="submit" class="button search-button" id="BSeach2">
                         <span class="material-symbols-outlined">search</span>
@@ -54,12 +54,12 @@
             </div>
         </div>
         <div class="error aviso" style="display: none;">
-            <h1>Error de busqueda</h1>
-            <p>Ingrese datos correctos</p>
+            <h1>Error de búsqueda</h1>
+            <p>Por favor, ingrese datos válidos</p>
         </div>
         <div class="apierror aviso" style="display: none">
-            <hi>Hay un problemas con nuestra pagina</hi>
-            <p>Por el momento no podemos bridarle este servicio</p>
+            <hi>¡Hay un problema con nuestra pagina!</hi>
+            <p>Por el momento, no podemos bridarle este servicio.</p>
         </div>
         <div class="content_vuelo" id="card_clima" style="display: none;">
             <div class="vuelo_ticket" id="ticket">

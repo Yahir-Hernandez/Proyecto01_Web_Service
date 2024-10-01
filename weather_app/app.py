@@ -3,6 +3,7 @@ import os
 import urllib.parse
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 
+from utils.obtenervuelos import obtenerIATAS
 from utils.obtenerDatosFINALES import datosCiudad, datosTicket
 from utils.predicc import porcentaje
 
@@ -88,5 +89,9 @@ def search():
 
 
 if __name__ == '__main__':
+    try:
+        obtenerIATAS()
+    except Exception as e:
+        print(e)
     app.register_error_handler(404, error_page)
     app.run(debug=True, host='0.0.0.0')

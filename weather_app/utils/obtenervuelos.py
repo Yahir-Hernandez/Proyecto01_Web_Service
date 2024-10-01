@@ -2,7 +2,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.predicc import predicc
-from utils.cacheyEscritura import cargar_cache, guardar_cache
+from utils.cacheyEscritura import cargar_cache, guardar_cache, guardaIATAS
 from utils.horasyTiempo import formato_hora_minuto, formato_dia_mes, redondea_hora
 import requests
 
@@ -74,6 +74,46 @@ def verificaEnCachevuelo(ruta, ticket):
     Returns:
         list: Lista de vuelos encontrados o solicitados.
     """
+
+def obtenerIATAS():
+
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
+    nombre_archivo= f'tickets_vuelo.json' 
+
+    ruta = os.path.join(carpeta_destino, nombre_archivo)
+
+    vuelos = consulta_API()
+    vuelo = crear_vuelos(vuelos)
+    guardar_cache(ruta, vuelo)
+    iatas = creaIATAS(vuelos)
+
+    guardaIATAS(iatas)
+
+def consulta_API():
+
+    params = {
+        'access_key': api_key,
+        "limit" : 25,
+        "dep_iata" : "MEX",
+        "offset" : 0
+    }
+
+    apiresponse = requests.get(endpoint, params=params)
+
+    if apiresponse.status_code != 200: 
+        raise Exception(f"Error en la solicitud de la API: {apiresponse.status_code}")
+
+    return apiresponse.json()
+
+def creaIATAS(json_data):
+
+    vuelos = []
+    for vuelo_data in json_data['data']:
+        iata = vuelo_data['flight']['iata'] 
+        if iata:
+            vuelos.append(f"Ticket: {iata}")
+
+    return vuelos
 
 def obtener_vuelosAPI(ticket):
 

@@ -46,6 +46,18 @@ def guardar_cache(ruta, archivos):
         None
 """
 
+def guardaIATAS(iatas):
+    ruta = os.path.join(os.path.dirname(__file__), '../utils/cache')
+    archivo_txt = os.path.join(ruta, 'ejemplo_tickets.txt')
+
+    if not os.path.exists(ruta):
+        os.makedirs(ruta)
+        
+    with open(archivo_txt, 'w') as file:
+        for iata in iatas:
+            file.write(iata + '\n')
+  
+
 def guardaFecha():
 
     ruta = os.path.join(os.path.dirname(__file__), '../utils/cache/fecha.txt')

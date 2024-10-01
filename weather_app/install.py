@@ -3,6 +3,7 @@ import subprocess
 import sys
 from pathlib import Path
 import logging
+from utils.obtenervuelos import obtenerIATAS
 
 # Configuración básica del logger
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -97,6 +98,10 @@ def main():
     Función principal que crea el entorno virtual, instala los requisitos, y ejecuta la aplicación.
     """
     create_virtualenv()
+    try:
+        obtenerIATAS()
+    except Exception as e:
+        print(e)
     install_requirements()
     run_app()
 
