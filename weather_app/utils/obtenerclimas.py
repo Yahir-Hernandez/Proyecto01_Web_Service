@@ -10,12 +10,10 @@ from utils.predicc import predicc as pc
 from utils.traductor import traducir_main
 
 def weather(ciudad):
-
-    ciudad = ciudad.replace(" ", "")
     
     if not ciudad or ciudad == "":
         raise Exception("Por favor selecciona un lugar válido para solicitar el clima.")
-    
+
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') 
     nombre_archivo= f'climas_{iatasC(ciudad)}.json' 
 
