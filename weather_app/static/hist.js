@@ -9,8 +9,8 @@ import {asignaClima, icono, manejarBusqueda} from "./metodos.js";
 document.addEventListener("DOMContentLoaded", () => {
     const boton1 = document.querySelector('#boton1');
     const boton2 = document.querySelector('#boton2');
-    consulta('/historial/tickets', expoClimas , boton1, boton2);
-    consulta('/historial/iatas', expoDatos , boton2, boton1);
+    consulta('/historial/iatas', expoClimas , boton1, boton2);
+    consulta('/historial/tickets', expoDatos , boton2, boton1);
 });
 
 /**
