@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from dotenv import load_dotenv
 from utils.horasyTiempo import hoy, timestamp, ayer, convertDT_a_CST, formato_dia_mes, formato_hora_minuto
 from utils.iatas import iatasC
 from utils.cacheyEscritura import cargar_cache, guardar_cache
@@ -38,7 +39,9 @@ def weather(ciudad):
 """ 
 def solicitarAPIClima(lugar):
 
-    key = "bafa68a647e077182f2e167abc8648dd"
+    load_dotenv()
+    
+    key = os.getenv('WEATHER_KEY')
     lat, lon = obtener_coordenadas(lugar) #valor la latitud y longitud del lugar
     url = f"https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={key}&units=metric&lang=es"
     rp = requests.get(url) 
@@ -62,8 +65,10 @@ def solicitarAPIClima(lugar):
 """
 
 def solicitarAPIClimaHistorico(lugar):
+
+    load_dotenv()
     
-    key = "bafa68a647e077182f2e167abc8648dd"
+    key = os.getenv('WEATHER_KEY')
     lat, lon = obtener_coordenadas(lugar)  # valor la latitud y longitud del lugar
     start = timestamp(ayer())
     end = timestamp(hoy())

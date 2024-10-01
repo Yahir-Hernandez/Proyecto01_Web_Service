@@ -101,3 +101,4 @@ def datosTicket(ticket):
     Raises:
         Exception: Si ocurre algún error en el proceso, se traduce el mensaje de excepción.
 """
+

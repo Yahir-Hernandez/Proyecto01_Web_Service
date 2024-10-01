@@ -1,6 +1,7 @@
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from dotenv import load_dotenv
 from utils.predicc import predicc
 from utils.cacheyEscritura import cargar_cache, guardar_cache, guardaIATAS
 from utils.horasyTiempo import formato_hora_minuto, formato_dia_mes, redondea_hora
@@ -8,9 +9,9 @@ import requests
 
 
 #Si se ingresas origen en CDMX, se debe de ingresar destino
-
+load_dotenv()
 # Clave de acceso para la API
-api_key = 'a7701764743e02a9ea0cff6b636f4a59'
+api_key = os.getenv('FLIGHT_KEY')
 # Endpoint de la API para obtener información de vuelos
 endpoint = 'http://api.aviationstack.com/v1/flights'
     
