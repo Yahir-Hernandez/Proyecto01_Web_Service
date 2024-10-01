@@ -14,10 +14,10 @@ def datosCiudad(destino):
 
         decide_SiBorrarCache()
     
-        carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
+        carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') 
         nombre_archivo= f'climas_Consultados.json' 
 
-        ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
+        ruta = os.path.join(carpeta_destino, nombre_archivo) 
 
         clima = []
 
@@ -56,10 +56,10 @@ def datosTicket(ticket):
 
         decide_SiBorrarCache()
 
-        carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
+        carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') 
         nombre_archivo= f'tickets_Consultados.json' 
 
-        ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
+        ruta = os.path.join(carpeta_destino, nombre_archivo) 
 
         vuelo = obtener_vuelo(ticket)
 

@@ -42,11 +42,10 @@ def solicitarAPIClima(lugar):
     load_dotenv()
     
     key = os.getenv('WEATHER_KEY')
-    lat, lon = obtener_coordenadas(lugar) #valor la latitud y longitud del lugar
+    lat, lon = obtener_coordenadas(lugar) 
     url = f"https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={key}&units=metric&lang=es"
     rp = requests.get(url) 
     
-    # status_code sera igual a 200 si la solicitud fue recibida, entendida y procesada con éxito.
     if rp.status_code != 200:
         raise Exception(f"Error en la solicitud de la API: {rp.status_code}")
     
@@ -69,13 +68,12 @@ def solicitarAPIClimaHistorico(lugar):
     load_dotenv()
     
     key = os.getenv('WEATHER_KEY')
-    lat, lon = obtener_coordenadas(lugar)  # valor la latitud y longitud del lugar
+    lat, lon = obtener_coordenadas(lugar) 
     start = timestamp(ayer())
     end = timestamp(hoy())
     url = f"https://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={key}&units=metric"
     rp = requests.get(url)
 
-    # status_code sera igual a 200 si la solicitud fue recibida, entendida y procesada con éxito.
     if rp.status_code != 200:
         raise Exception(f"Error en la solicitud de la API: {rp.status_code}")
 
@@ -100,7 +98,6 @@ def verificaEnCacheClima(ruta, ciudad):
     if data_cache:
         return data_cache
 
-    # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
     data = solicitarAPIClimaHistorico(ciudad)
     climas_creados = crear_clima(data, ciudad)
     guardar_cache(ruta, climas_creados)
@@ -182,8 +179,7 @@ def crear_clima(json_data, ciudad):
     climas = []
     
     for clima_data in json_data.get('list', []):
-        #Usar get en lugar de acceder directamente a las claves y listas.
-        #Evitar excepciones si una clave no está presente en el diccionario.
+        
         clima = {
             "Ciudad": ciudad,
             "Clima": clima_data.get('weather')[0].get('main'),

@@ -7,12 +7,10 @@ from utils.cacheyEscritura import cargar_cache, guardar_cache, guardaIATAS
 from utils.horasyTiempo import formato_hora_minuto, formato_dia_mes, redondea_hora
 import requests
 
-
-#Si se ingresas origen en CDMX, se debe de ingresar destino
 load_dotenv()
-# Clave de acceso para la API
+
 api_key = os.getenv('FLIGHT_KEY')
-# Endpoint de la API para obtener información de vuelos
+
 endpoint = 'http://api.aviationstack.com/v1/flights'
     
 
@@ -23,10 +21,10 @@ def obtener_vuelo(ticket):
     if not ticket or ticket=="":
         raise Exception("Por favor selecciona un formato de ticket válido.")
     
-    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') 
     nombre_archivo= f'tickets_vuelo.json' 
 
-    ruta = os.path.join(carpeta_destino, nombre_archivo) #Definir la ruta del archivo para guardar los objetos
+    ruta = os.path.join(carpeta_destino, nombre_archivo) 
 
     vuelo = verificaEnCachevuelo(ruta, ticket)
 
@@ -58,7 +56,6 @@ def verificaEnCachevuelo(ruta, ticket):
         if vuelos_encontrados:
             return vuelos_encontrados
 
-    # Si no hay coincidencias en el caché, solicitar nuevos datos a la API
     data_nueva = obtener_vuelosAPI(ticket)
     vuelo = crear_vuelos(data_nueva)
     guardar_cache(ruta, vuelo)
@@ -78,7 +75,7 @@ def verificaEnCachevuelo(ruta, ticket):
 
 def obtenerIATAS():
 
-    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') #definir una carpeta donde gaurdar el json
+    carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') 
     nombre_archivo= f'tickets_vuelo.json' 
 
     ruta = os.path.join(carpeta_destino, nombre_archivo)
@@ -89,7 +86,25 @@ def obtenerIATAS():
     iatas = creaIATAS(vuelos)
 
     guardaIATAS(iatas)
+    
+"""
+    Obtiene los códigos IATA de los vuelos y los guarda en un archivo de caché.
 
+    Esta función consulta una API para obtener información sobre vuelos, 
+    procesa la respuesta para crear un conjunto de vuelos y guarda los 
+    datos en un archivo JSON en la carpeta de caché. También extrae los 
+    códigos IATA de los vuelos y los guarda en un archivo de texto específico.
+
+    Args:
+        None
+
+    Raises:
+        Exception: Puede lanzar excepciones si hay errores durante la consulta 
+                   a la API o al guardar los datos.
+
+    Returns:
+        None
+"""
 def consulta_API():
 
     params = {
@@ -106,6 +121,23 @@ def consulta_API():
 
     return apiresponse.json()
 
+"""
+    Realiza una solicitud a la API para obtener datos de vuelos.
+
+    Esta función envía una solicitud GET a un endpoint de API con parámetros específicos, 
+    como la clave de acceso y el código IATA de origen. Si la respuesta no es exitosa, 
+    lanza una excepción.
+
+    Args:
+        None
+
+    Raises:
+        Exception: Si la respuesta de la API no es un código de estado 200.
+
+    Returns:
+        dict: La respuesta de la API en formato JSON.
+"""
+
 def creaIATAS(json_data):
 
     vuelos = []
@@ -115,6 +147,20 @@ def creaIATAS(json_data):
             vuelos.append(f"Ticket: {iata}")
 
     return vuelos
+
+"""
+    Extrae los códigos IATA de los datos de vuelo proporcionados.
+
+    Esta función itera sobre la lista de vuelos en los datos JSON, 
+    extrae el código IATA de cada vuelo y lo agrega a una lista. 
+    Solo se añaden los vuelos que tienen un código IATA válido.
+
+    Args:
+        json_data (dict): Datos de vuelo en formato JSON.
+
+    Returns:
+        list: Lista de códigos IATA extraídos de los datos de vuelo.
+"""
 
 def obtener_vuelosAPI(ticket):
 
