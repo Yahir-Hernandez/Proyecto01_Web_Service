@@ -144,16 +144,10 @@ function quitaClima() {
 function expoclima(data) {
     let clima = document.querySelector('#climaCiudad-Iata');
     let carga = document.querySelector('.carga'); 
-    //carga.style.display = 'flex';
 
     if (clima && carga) {
         asignaClima(clima, data[0]);
         clima.style.display = 'flex';
-        /*setTimeout(() => {
-            clima.style.display = 'flex';
-            console.log('Ocultando carga...');
-            carga.style.display = 'none'; 
-        }, 3000);*/
     } else {
         console.error('El elemento .clima_unico o .carga no existe en el DOM');
     }
@@ -299,7 +293,7 @@ function icono(clima, selector, idIcono) {
  * @returns {string} Clase del estilo de CSS para el ícono.
  */
 function dia_o_noche(idIcono) {
-    
+
     if (idIcono[2] === 'd') {
         return "IconoStyleDay";
     } else if (idIcono[2] === 'n') {

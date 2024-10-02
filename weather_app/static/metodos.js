@@ -88,12 +88,10 @@ export function manejarBusqueda(url, procesarRespuesta, nullError) {
             return response.json(); 
         })
         .then(data => {
-            console.log(data)
             if (data) {
                 expoErro(data, procesarRespuesta, nullError);
             } else {
                 nullError();
-                console.log(`Hubo un error al procesar la respuesta:  ${data}`);
             }
         })
         .catch(error => console.error('Error:', error));
@@ -210,12 +208,10 @@ function noSpam(boton,tiempo) {
         boton.disabled = true;
         boton.style.backgroundColor = "#1E1F25";
 
-        console.log('Enviando datos...');
 
         setTimeout(() => {
             boton.style.backgroundColor = '#1EA7FF';
             boton.disabled = false;
-            console.log('Botón habilitado de nuevo');
         }, tiempo); 
     }
 }
