@@ -135,10 +135,6 @@ def run_app(venv_dir='venv'):
 def main():
 
     create_virtualenv()
-    try:
-        obtenerIATAS()
-    except Exception as e:
-        print(e)
     install_requirements()
     run_app()
 

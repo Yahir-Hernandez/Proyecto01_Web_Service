@@ -123,7 +123,7 @@ function expoErro(data, procesarRespuesta, nullError) {
         noSpam(boton1, 3000);
         muestraError2(apiErrorElement, carga, boton1, boton2);
     } else {
-        noSpam(boton1, 10000);
+        noSpam(boton1, 7000);
         procesarRespuesta(data);
     }
 }

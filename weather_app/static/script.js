@@ -42,6 +42,7 @@ function consultaPorCiudad() {
             document.querySelector("#card_clima").style.display = "none";
             document.querySelector('.search-container').classList.remove('active');
             document.querySelector('.container-suggestions').style.border = 'none';
+            document.querySelector('.carga').style.display = 'flex';
             event.preventDefault();
             quitaClima();
             buscarPorCiudad();
@@ -96,8 +97,8 @@ function formula(toggleButton, Form1, Form2) {
     quitaClima();
     
     toggleButton.innerHTML = isForm2Visible
-        ? 'Cambiar busqueda <span class="material-symbols-outlined">change_circle</span>'
-        : 'Cambiar busqueda <span class="material-symbols-outlined">change_circle</span>';
+        ? 'Buscar por ticket <span class="material-symbols-outlined">change_circle</span>'
+        : 'Buscar por ciudad-iata <span class="material-symbols-outlined">change_circle</span>';
 }
 
 /**
@@ -147,6 +148,7 @@ function expoclima(data) {
 
     if (clima && carga) {
         asignaClima(clima, data[0]);
+        carga.style.display = 'none';
         clima.style.display = 'flex';
     } else {
         console.error('El elemento .clima_unico o .carga no existe en el DOM');
