@@ -12,20 +12,20 @@ Repositorio para el primer proyecto de Modelado y Programación
 
 Este proyecto está desarrollado utilizando Python, JavaScript, HTML y CSS. Proporciona una implementación de un servicio web utilizando Flask, entre otras herramientas.
 
-##  **Prueba de busqueda por tickets**
+##  **Prueba de búsqueda por tickets**
 
-Puedes consultar climas de los tickets de vuelo completamente reales, en nuestra página. Para probar este apartado, sugerimos que una vez instalado el proyecto, visites la ruta:
+En nuestra pagína puedes consultar climas asociados al origen y al destino de vuelos completamente reales. Para probar este apartado, sugerimos que una vez instalado el proyecto, visites la ruta:
 
 ```bash
 <tu_ruta_al_proyecto>/weather_app/utils/cache/
 ```
-Y consulte el archivo:
+Y consultes el archivo:
 
 ```bash
 ejemplo_tickets.txt
 ```
 Que tendrá escritos algunos tickets recuperados en tiempo real desde la página oficial del [Aereopuerto Internacional de la Ciudad de México](https://www.aicm.com.mx/pasajeros/vuelos
-). Otra opción para probar este apartado es copiar y pegar algún ticket de vuelo, localizados en la columna vuelos, desde la página antes mencionada, e ingresarlo en nuestro proyecto.
+). Otra opción para probar este apartado es copiar y pegar algún ticket de vuelo (localizados en la columna vuelos) desde la página antes mencionada, e ingresarlo en nuestro proyecto.
 
 ## Instalación
 
