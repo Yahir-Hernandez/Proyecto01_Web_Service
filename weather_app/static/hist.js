@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /**
- * Metodo que maneja
+ * Metodo que maneja el boton de consulta del tipo de historial
  * @param {String} url de respuesta a la peticion de datos
  * @param {function} manejaRespuesta metodo que manejaran lo datos recibidos
  * @param {HTMLElement} boton1 de accion de consulta del historial

@@ -1,7 +1,7 @@
-html {
+    html {
     scrollbar-arrow-color: #1EA7FF;
     scrollbar-width: thin;
-    scrollbar-color: #9BABC5 #131517;
+    scrollbar-color: #1EA7FF #131517;
 }
 
 body {
@@ -165,9 +165,6 @@ main {
 
 }
 
-
-
-
 .clima_unico {
     display: flex;
     flex-wrap: wrap;
@@ -176,14 +173,13 @@ main {
     border-radius: 10px;    
     padding: 20px;
     margin-top: 20px;
+    gap: 35px;
 }
 
 .unica {
-
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-right: 20%;
-    margin-left: 20%;
+    flex: 1;
+    flex-basis: 200px;
+    margin: 20px 25% 0;
 }
 
 .clima_unico01, .clima_unico02 {
@@ -195,10 +191,6 @@ main {
 
 .clima_unico02 {
     align-content: center;
-}
-
-.weather-icon,.clima-detalle {
-    margin: 0;
 }
 
 .principal {
@@ -332,20 +324,58 @@ main {
     margin: 0;
 }
 
-/*ultima actualizacion*/
-
 .listaClimas {
     list-style-type: none;
     padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 .listaClimas li {
     padding: 10px;
     position: relative;
 }
 
+@media screen and (min-width: 1024px) {
+    .content_vuelo {
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 0 15%;
+    }
+
+    li.histClima {
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 0 23%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content_vuelo {
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    li.histClima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+    }
+}
+
 .histClima {
-    margin-right: 20%;
-    margin-left: 20%;
+    flex: 1;
+    flex-basis: 200px;
+    height: 100%;
+    margin-top: 2%;
 }
 
 .sinHistorial p, h1 {
@@ -361,10 +391,6 @@ main {
 }
 .active .detalles {
     display: flex;
-}
-
-.listaClimas {
-    width: 100%;
 }
 
 .aviso {
@@ -422,13 +448,6 @@ main {
   to {
     transform: rotate(720deg);
   }
-}
-
-.content_vuelo {
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin: 0 15%;
 }
 
 .climas {
@@ -636,4 +655,5 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 

@@ -3,7 +3,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from dotenv import load_dotenv
 from utils.predicc import predicc
-from utils.cacheyEscritura import cargar_cache, guardar_cache, guardaIATAS
+from utils.cacheyEscritura import cargar_cache, guardar_cache, guardaIATAS, carpetaCache
 from utils.horasyTiempo import formato_hora_minuto, formato_dia_mes, redondea_hora
 import requests
 
@@ -74,7 +74,7 @@ def verificaEnCachevuelo(ruta, ticket):
     """
 
 def obtenerIATAS():
-
+    carpetaCache()
     carpeta_destino = os.path.join(os.path.dirname(__file__), '../utils/cache') 
     nombre_archivo= f'tickets_vuelo.json' 
 
