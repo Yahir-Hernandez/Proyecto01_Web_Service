@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Historial</h1>
+        <button class="button" onclick="location.href='/';">Pagina principal</button>
+    </header>
+    <main>
+        <div class="carga aviso" style="display: none">
+            <span class="material-symbols-outlined cargaIcon">
+            progress_activity
+            </span>
+            <div>
+                <h1>Cargando información</h1>
+                <p>Espere porfavor</p>
+            </div>
+        </div>
+        <div class="error aviso" style="display: none;">
+            <h1>Error de busqueda</h1>
+            <p>Ingrese datos correctos</p>
+        </div>
+        <div class="apierror aviso" style="display: none">
+            <h1>Hay un problemas con nuestra pagina</h1>
+            <p>Por el momento no podemos bridarle este servicio</p>
+        </div>
+        <div class="sinHistorial aviso" style="display: none;">
+            <h1>Historial no disponible</h1>
+            <p>Aún no se han realizado búsquedas</p>
+        </div>
+        <div class="containerButton">
+            <button class="button" id="boton1">Historial por ciudad/IATA</button>
+            <button class="button" id="boton2">Historial por ticket</button>
+        </div>
+        <ul class="listaClimas">
+        </ul>
+        <div class="content_vuelo" id="card_clima" style="display: none">
+            <div class="vuelo_ticket" id="ticket">
+                <div class="aerolinea">
+                    <b>Aerolinea</b>
+                    <p class="lineaDevuelo">holaaaaaaaaaaa</p>
+                </div>
+                <div class="ciudad">
+                    <b class="ciudad_o">Ciudad de origen: </b>
+                    <p class="ciudadOr" id="ciudadOr">Ciudad de México</p>
+                </div>
+                <div class="iata_vuelo">
+                    <b class="iata_v">Código de vuelo: </b>
+                    <p class="iata_vuelos" id="iata_vuelos">AM 127</p>
+                </div>
+                <div class="ciudad">
+                    <b class="ciudad_d">Ciudad de destino: </b>
+                    <p class="ciudadDes" id="ciudadDes">Monterrey</p>
+                </div>
+            </div>
+            <div class="climas" id="informacion">
+                <div class="origen">
+                    <div class="ubicacion">
+                        <div class="info_vuelo ubicacion01" id="origen">
+                            <span class="material-symbols-sharp">flight_takeoff</span>
+                            <h2 class="text">Origen</h2>
+                        </div>
+                        <div class="info_vuelo ubicacion02" id="origen">
+                            <h3 id="infoAero_01">Aeropuerto Internacional de la Ciudad de México</h3>
+                            <div class="info_ciudad">
+                                <p id="info_ciudad01">Ciudad: Ciudad de México</p>
+                                <p id="infoHora01">Hora: 13:00 hrs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="clima_unico">
+                            <div class="clima_unico01">
+                                <div id="localidad">
+                                    <h4 id="infociudad_01">Ciudad de México</h4>
+                                    <p id="infofecha01">13:00 CST • 24/08</p>
+                                </div>
+                                <div id="infoClima">
+                                    <div class="weather-icon">
+                                        <i class="wi" id="oIcono"></i>
+                                    </div>
+                                    <div class="clima-detalle">
+                                        <p class="estado" id="infClima_01">Despejado</p>
+                                        <p class="temp-actual" id="infoTemp_01">24°</p>
+                                        <p class="temp-range" id="range01">23° - 24°</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clima_unico02">
+                                <div class="principal">
+                                    <h2>Condición principal:</h2>
+                                    <p id="principal01">nubes dispersas.</p>
+                                </div>
+                                <div class="contentIcons">
+                                    <div class="weather-icon2">
+                                        <h4>Sensación térmica:</h4>
+                                        <i class="wi wi-thermometer" id="iconInfo"></i>
+                                        <p id="Termica01">0°</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Cobertura nubosa:</h4>
+                                        <i class="wi wi-cloud-up" id="iconInfo"></i>
+                                        <p id="CNubosa01">0%</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Humedad:</h4>
+                                        <i class="wi wi-humidity" id="iconInfo"></i>
+                                        <p id="Humedad01">0%</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Velocidad del viento:</h4>
+                                        <i class="wi wi-strong-wind" id="iconInfo"></i>
+                                        <p id="velocidad01">0 m/s</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Dirección del viento:</h4>
+                                        <i class="wi wi-direction-right" id="iconInfo"></i>
+                                        <p id="direccion01">0°</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Presion atmosferica:</h4>
+                                        <i class="wi wi-barometer" id="iconInfo"></i>
+                                        <p id="atmosfera01">O hPa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destino">
+                    <div class="ubicacion">
+                        <div class="info_vuelo ubicacion01" id="destino">
+                            <span class="material-symbols-sharp">flight_land</span>
+                            <h2 class="text">Destino</h2>
+                        </div>
+                        <div class="info_vuelo ubicacion02" id="destino">
+                            <h3 id="infoAero_02">Aeropuerto Internacional de la Ciudad de México</h3>
+                            <div class="info_ciudad">
+                                <p id="info_ciudad02">Ciudad: Ciudad de México</p>
+                                <p id="infoHora02">Hora: 13:00 hrs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="clima_unico">
+                            <div class="clima_unico01">
+                                <div id="localidad">
+                                    <h4 id="infociudad_02">Ciudad de México</h4>
+                                    <p id="infofecha02">13:00 CST • 24/08</p>
+                                </div>
+                                <div id="infoClima">
+                                    <div class="weather-icon">
+                                        <i class="wi" id="dIcono"></i>
+                                    </div>
+                                    <div class="clima-detalle">
+                                        <p class="estado" id="infClima_02">Despejado</p>
+                                        <p class="temp-actual" id="infoTemp_02">24°</p>
+                                        <p class="temp-range" id="range02">23° - 24°</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="clima_unico02">
+                                <div class="principal">
+                                    <h2>Condición principal:</h2>
+                                    <p id="principal02">nubes dispersas.</p>
+                                </div>
+                                <div class="contentIcons">
+                                    <div class="weather-icon2">
+                                        <h4>Sensación térmica:</h4>
+                                        <i class="wi wi-thermometer" id="iconInfo"></i>
+                                        <p id="Termica02">0°</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Cobertura nubosa:</h4>
+                                        <i class="wi wi-cloud-up" id="iconInfo"></i>
+                                        <p id="CNubosa02">0%</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Humedad:</h4>
+                                        <i class="wi wi-humidity" id="iconInfo"></i>
+                                        <p id="Humedad02">0%</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Velocidad del viento:</h4>
+                                        <i class="wi wi-strong-wind" id="iconInfo"></i>
+                                        <p id="velocidad02">0 m/s</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Dirección del viento:</h4>
+                                        <i class="wi wi-direction-right" id="iconInfo"></i>
+                                        <p id="direccion02">0°</p>
+                                    </div>
+                                    <div class="weather-icon2">
+                                        <h4>Presion atmosferica:</h4>
+                                        <i class="wi wi-barometer" id="iconInfo"></i>
+                                        <p id="atmosfera02">O hPa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clima_unico " id="climaCiudad-Iata" style="display: none">
+            <div class="clima_unico01">
+                <div id="localidad">
+                    <h4 id="ciudad">Ciudad de México</h4>
+                    <p id="horaFecha">13:00 CST • 24/08</p>
+                </div>
+                <div id="infoClima">
+                    <div class="weather-icon">
+                        <i class="wi " id="oIcono"></i>
+                    </div>
+                    <div class="clima-detalle">
+                        <p class="estado">Despejado</p>
+                        <p class="temp-actual">24°</p>
+                        <p class="temp-range">23° - 24°</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clima_unico02">
+                <div class="principal">
+                    <h2>Condición principal:</h2>
+                    <p id="principal">nubes dispersas.</p>
+                </div>
+                <div class="contentIcons">
+                    <div class="weather-icon2">
+                        <h4>Sensación térmica:</h4>
+                        <i class="wi wi-thermometer" id="iconInfo"></i>
+                        <p id="Termica">0°</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Cobertura nubosa:</h4>
+                        <i class="wi wi-cloud-up" id="iconInfo"></i>
+                        <p id="CNubosa">0%</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Humedad:</h4>
+                        <i class="wi wi-humidity" id="iconInfo"></i>
+                        <p id="Humedad">0%</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Velocidad del viento:</h4>
+                        <i class="wi wi-strong-wind" id="iconInfo"></i>
+                        <p id="velocidad">0 m/s</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Dirección del viento:</h4>
+                        <i class="wi wi-direction-right" id="iconInfo"></i>
+                        <p id="direccion">0°</p>
+                    </div>
+                    <div class="weather-icon2">
+                        <h4>Presion atmosferica:</h4>
+                        <i class="wi wi-barometer" id="iconInfo"></i>
+                        <p id="atmosfera">O hPa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../static/hist.js"></script>
+</body>
+</html>
