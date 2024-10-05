@@ -4,9 +4,9 @@ Repositorio para el primer proyecto de Modelado y Programación
 
 ## Integrantes
 
-Oscar Yair Hernandez Garcia,
-Said Apis Lorenzana,
-Gerardo Gael Sandoval Sandoval
+Oscar Yair Hernandez Garcia **Rol: Project Manager y desarrollador Front-End**
+Said Apis Lorenzana **Rol: Desarrollador Back-End**
+Gerardo Gael Sandoval Sandoval **Rol: Beta-Tester y desarrollador de pruebas unitarias**
 
 ## Descripción
 
@@ -75,4 +75,20 @@ Esto creará un entorno virtual y instalará los siguientes paquetes requeridos:
 * urllib3==2.2.2
 * Werkzeug==3.0.4
 
-Después de instalar los paquetes, se correra flask y se creara el link a la pagina Web.
+Después de instalar los paquetes, se correra flask y se creará el link a la página Web.
+
+##  **Sugerencias para el usuario**
+
+Puedes consultar tickets de vuelo completamente reales en nuestra página. Para probar este apartado, sugerimos encarecidamente que una vez instalado el proyecto, visites la ruta:
+
+```bash
+<tu_ruta_al_proyecto>/weather_app/utils/cache
+```
+Y consultes el archivo:
+
+```bash
+ejemplo_tickets.txt
+```
+Que tendrá escritos algunos tickets recuperados en tiempo real directamente desde la página oficial del Aereopuerto Internacional de la Ciudad de México. Otra opción para probar este apartado es copiar y pegar algún ticket de la página antes mencionada, y probarlo en nuestro proyecto.
+
+**Link a la página del AICM**: https://www.aicm.com.mx/pasajeros/vuelos
