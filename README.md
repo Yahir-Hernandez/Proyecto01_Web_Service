@@ -4,9 +4,9 @@ Repositorio para el primer proyecto de Modelado y Programación
 
 ## Integrantes
 
-+ Oscar Yair Hernandez Garcia // **Rol: Project Manager y desarrollador Front-End**
-+ Said Apis Lorenzana // **Rol: Desarrollador Back-End**
-+ Gerardo Gael Sandoval Sandoval // **Rol: Beta-Tester y desarrollador de pruebas unitarias**
++ Oscar Yahir Hernandez Garcia // **Rol: Project Manager y desarrollador Front-End** // No. de cuenta: 321052847
++ Said Apis Lorenzana // **Rol: Desarrollador Back-End** // No. de cuenta: 321080550
++ Gerardo Gael Sandoval Sandoval // **Rol: Beta-Tester y desarrollador de pruebas unitarias** // No. de cuenta:
 
 ## Descripción
 
