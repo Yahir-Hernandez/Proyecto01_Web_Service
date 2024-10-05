@@ -89,5 +89,5 @@ Y consultes el archivo:
 ```bash
 ejemplo_tickets.txt
 ```
-Que tendrá escritos algunos tickets recuperados en tiempo real directamente desde la página oficial del [Aereopuerto Internacional de la Ciudad de México](https://www.aicm.com.mx/pasajeros/vuelos
+Que tendrá escritos algunos tickets recuperados en tiempo real desde la página oficial del [Aereopuerto Internacional de la Ciudad de México](https://www.aicm.com.mx/pasajeros/vuelos
 ). Otra opción para probar este apartado es copiar y pegar algún ticket de vuelo desde la página antes mencionada, e ingresarlo en nuestro proyecto.
