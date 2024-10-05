@@ -64,6 +64,7 @@ Esto creará un entorno virtual y instalará los siguientes paquetes requeridos:
 * pluggy==1.5.0
 * pytest==8.3.2
 * python-dateutil==2.9.0.post0
+* python-dotenv==1.0.1
 * pytz==2024.1
 * rapidfuzz==3.9.6
 * requests==2.32.3
