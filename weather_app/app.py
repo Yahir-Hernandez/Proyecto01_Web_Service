@@ -156,12 +156,12 @@ def search():
                   o un mensaje de error en caso de fallo.
 """
 
+try:
+    obtenerIATAS()
+except Exception as e:
+    print(f"{e}")
 
 if __name__ == '__main__':
-    try:
-        obtenerIATAS()
-    except Exception as e:
-        print(e)
     app.register_error_handler(404, error_page)
     app.run(debug=True, host='0.0.0.0')
 

@@ -98,7 +98,7 @@ function formula(toggleButton, Form1, Form2) {
     
     toggleButton.innerHTML = isForm2Visible
         ? 'Buscar por ticket <span class="material-symbols-outlined">change_circle</span>'
-        : 'Buscar por ciudad-iata <span class="material-symbols-outlined">change_circle</span>';
+        : 'Buscar por ciudad/Iata <span class="material-symbols-outlined">change_circle</span>';
 }
 
 /**

@@ -27,7 +27,7 @@ let suggestions = [
     "SAL", "San Salvador", "SLC", "Salt Lake City", "SJO", "San José", "GRU", "São Paulo",
     "SEA", "Seattle", "ICN", "Seúl", "SZX", "Shenzhen", "SJD", "San José del Cabo",
     "SDQ", "Santo Domingo", "TPA", "Tampa", "TAP", "Tapachula", "TPQ", "Tepic",
-    "NRT", "Tokio", "TGZ", "Tuxtla Gutiérrez", "DCA", "Washington D.C."
+    "NRT", "Tokio", "TGZ", "Tuxtla Gutiérrez", "DCA", "Washington D.C.", "BCN","Barcelona"
 ];
 
 /**
