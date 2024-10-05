@@ -12,6 +12,21 @@ Repositorio para el primer proyecto de Modelado y Programación
 
 Este proyecto está desarrollado utilizando Python, JavaScript, HTML y CSS. Proporciona una implementación de un servicio web utilizando Flask, entre otras herramientas.
 
+##  **Prueba de busqueda por tickets**
+
+Puedes consultar climas de los tickets de vuelo completamente reales, en nuestra página. Para probar este apartado, sugerimos que una vez instalado el proyecto, visites la ruta:
+
+```bash
+<tu_ruta_al_proyecto>/weather_app/utils/cache/
+```
+Y consulte el archivo:
+
+```bash
+ejemplo_tickets.txt
+```
+Que tendrá escritos algunos tickets recuperados en tiempo real desde la página oficial del [Aereopuerto Internacional de la Ciudad de México](https://www.aicm.com.mx/pasajeros/vuelos
+). Otra opción para probar este apartado es copiar y pegar algún ticket de vuelo, localizados en la columna vuelos, desde la página antes mencionada, e ingresarlo en nuestro proyecto.
+
 ## Instalación
 
 Para configurar el entorno de desarrollo, sigue estos pasos:
@@ -20,12 +35,12 @@ Para configurar el entorno de desarrollo, sigue estos pasos:
 
    ```Bash
    git clone https://github.com/Yahir-Hernandez/Proyecto01_Web_Service.git
-   cd Proyecto01_Web_Service
+   cd Proyecto01_Web_Service/weather_app
    ```
 
 2. **Ejecuta el modulo install.py:**
 
-En la carpeta raíz del proyecto, encontrarás un módulo de Python llamado install.py. Este módulo crea un entorno virtual de Python e instala todos los paquetes necesarios para ejecutar el proyecto.
+En la carpeta weather_app/ del proyecto, encontrarás un módulo de Python llamado install.py. Este módulo crea un entorno virtual de Python e instalara todos los paquetes necesarios para ejecutar el proyecto.
 
 Ejecuta el siguiente comando para configurar el entorno:
 
@@ -78,17 +93,4 @@ Esto creará un entorno virtual y instalará los siguientes paquetes requeridos:
 
 Después de instalar los paquetes, se correra flask y se creará el link a la página Web.
 
-##  **Sugerencias para el usuario**
 
-Puedes consultar tickets de vuelo completamente reales en nuestra página. Para probar este apartado, sugerimos encarecidamente que una vez instalado el proyecto, visites la ruta:
-
-```bash
-<tu_ruta_al_proyecto>/weather_app/utils/cache
-```
-Y consultes el archivo:
-
-```bash
-ejemplo_tickets.txt
-```
-Que tendrá escritos algunos tickets recuperados en tiempo real desde la página oficial del [Aereopuerto Internacional de la Ciudad de México](https://www.aicm.com.mx/pasajeros/vuelos
-). Otra opción para probar este apartado es copiar y pegar algún ticket de vuelo desde la página antes mencionada, e ingresarlo en nuestro proyecto.
